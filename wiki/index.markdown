@@ -10,7 +10,7 @@ title : Wiki
 [swig](/wiki/swig.html) 
 [vnstat](/wiki/vnstat.html) 
 [maruku](/wiki/maruku.html) 
-[SGE](/wiki/SGE.html) 
+[SGE](/wiki/sge.html) 
 [bash](/wiki/bash.html) 
 [ssh](/wiki/ssh.html) 
 [screen](/wiki/screen.html) 
@@ -40,6 +40,6 @@ title : Wiki
 {:enlaces} 
 ## Control de versiones
 [Mercurial](/wiki/Mercurial.html) 
-[Git](/wiki/Git.html) 
+[Git](/wiki/git.html) 
 [Subversion](/wiki/Subversion.html) 
 {:enlaces} 
