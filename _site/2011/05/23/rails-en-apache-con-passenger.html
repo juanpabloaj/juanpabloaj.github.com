@@ -1,0 +1,101 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen" /> 
+<link rel="stylesheet" href="/css/style.css" type="text/css" media="screen" /> 
+<link rel="stylesheet" href="/css/syntax.css" type="text/css" media="screen" /> 
+<title>Rails en Apache con Passenger</title>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16949831-7']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+
+<body>
+<div class="container">
+	<div id="cuello">
+		<div><a href="/">Home</a></div>
+		<div><a href="/wiki">Wiki</a></div>
+		<div><a href="http://github.com/pixelmuerto">Github</a></div>
+	</div>
+	<div style="clear:both;"></div>
+	<h1>Rails en Apache con Passenger</h1>
+		<p>Teniendo instalado rails3 y apache2 vamos a instalar passenger</p>
+
+<pre><code>$ gem install passenger
+$ gem passenger-install-apache2-module</code></pre>
+
+<p>passenger irá guiando la instalación, si necesita dependencias y mostrara las lineas que hay que agregar a los archivos de configuración de apache</p>
+
+<pre><code>Please edit your Apache configuration file, and add these lines:
+LoadModule passenger_module /usr/local/rvm/gems/ruby-1.9.2-p180/gems/passenger-3.0.7/ext/apache2/mod_passenger.so
+PassengerRoot /usr/local/rvm/gems/ruby-1.9.2-p180/gems/passenger-3.0.7
+PassengerRuby /usr/local/rvm/wrappers/ruby-1.9.2-p180/ruby</code></pre>
+
+<p>terminará con un mensaje similar a este</p>
+
+<pre><code>Suppose you have a Rails application in /somewhere. Add a virtual host to your
+Apache configuration file and set its DocumentRoot to /somewhere/public:
+
+   &lt;VirtualHost *:80&gt;
+      ServerName www.yourhost.com
+      DocumentRoot /somewhere/public    # &lt;-- be sure to point to &#39;public&#39;!
+      &lt;Directory /somewhere/public&gt;
+         AllowOverride all              # &lt;-- relax Apache security settings
+         Options -MultiViews            # &lt;-- MultiViews must be turned off
+      &lt;/Directory&gt;
+   &lt;/VirtualHost&gt;
+
+And that&#39;s it! You may also want to check the Users Guide for security and
+optimization tips, troubleshooting and other useful information:</code></pre>
+
+<p>moverse al archivo de los mods de apache</p>
+
+<pre><code>$ cd /etc/apache2/mods-available</code></pre>
+
+<p>crear el archivo <code>passenger.conf</code> y agregar las lineas antes mostradas</p>
+
+<pre><code>PassengerRoot /usr/local/rvm/gems/ruby-1.9.2-p180/gems/passenger-3.0.7
+PassengerRuby /usr/local/rvm/wrappers/ruby-1.9.2-p180/ruby</code></pre>
+
+<p>y <code>passenger.load</code></p>
+
+<pre><code>LoadModule passenger_module /usr/local/rvm/gems/ruby-1.9.2-p180/gems/passenger-3.0.7/ext/apache2/mod_passenger.so</code></pre>
+
+<p>subir el modulo y reiniciar apache</p>
+
+<pre><code>$ sudo a2enmod passenger
+$ sudo /etc/init.d/apache2 restart</code></pre>
+
+<p>crear el archivo de <code>virtualhost</code></p>
+
+<pre><code>   &lt;VirtualHost *:80&gt;
+      ServerName www.yourhost.com
+      DocumentRoot /somewhere/public    # &lt;-- be sure to point to &#39;public&#39;!
+      &lt;Directory /somewhere/public&gt;
+         AllowOverride all              # &lt;-- relax Apache security settings
+         Options -MultiViews            # &lt;-- MultiViews must be turned off
+      &lt;/Directory&gt;
+   &lt;/VirtualHost&gt;</code></pre>
+
+<p>Este es un punto importante, <code>public</code> debe ser el directorio <code>public</code> de la aplicación creada por rails.</p>
+
+<h3 id='referencias'>Referencias</h3>
+
+<ul class='enlaceGris'>
+<li><a href='http://bootpolish.net/home_howto_installrubyonrails3ondebianlenny'>Rails on debian lenny</a></li>
+</ul>
+
+	<div id="footer">
+	</div>
+</div>
+</body>
+</html>

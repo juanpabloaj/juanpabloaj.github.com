@@ -1,0 +1,88 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen" /> 
+<link rel="stylesheet" href="/css/style.css" type="text/css" media="screen" /> 
+<link rel="stylesheet" href="/css/syntax.css" type="text/css" media="screen" /> 
+<title>ssh</title>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16949831-7']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+
+<body>
+<div class="container">
+	<div id="cuello">
+		<div><a href="/">Home</a></div>
+		<div><a href="/wiki">Wiki</a></div>
+		<div><a href="http://github.com/pixelmuerto">Github</a></div>
+	</div>
+	<div style="clear:both;"></div>
+	<h1>ssh</h1>
+		<p>SSH sin password</p>
+
+<p>automatico</p>
+
+<pre><code>ssh-copy-id -i ~/.ssh/id_rsa.pub user@remoteHost</code></pre>
+
+<p>manual Generar llave en equipo cliente</p>
+
+<pre><code>ssh-keygen -t rsa</code></pre>
+
+<p>pedira una frase, dejar en blanco</p>
+
+<p>En el directorio ~/.ssh se creo el archivo id_rsa.pub, es necesario enviarlo al equipo a conectar.</p>
+
+<pre><code>scp ~/.ssh/id_rsa.pub user@equipo:.ssh/authorized_keys2</code></pre>
+
+<p>cambiar los permisos en la llave copiada</p>
+
+<pre><code>chmod 700 ~/.ssh
+chmod 644 ~/.ssh/authorized_keys2</code></pre>
+
+<p>en el caso de tener mas de una llave agregar al final del archivo</p>
+
+<pre><code>cat id_rsa.pub &gt;&gt; ~/.ssh/authorized_keys2</code></pre>
+
+<h2 id='ssh_tunel_inverso'>SSH tunel inverso</h2>
+
+<p>Conectar a un equipo remoto detras de un router, este inicia la conexion para poder acceder a el</p>
+
+<pre><code>u_local@local (www.miip.com)   &lt; - - - -   u_remoto@remoto (192.168.0.12) </code></pre>
+
+<p>en equipo remoto</p>
+
+<pre><code>ssh -l u_local -R 22222:localhost:22 -N www.miip.com</code></pre>
+
+<p>en el local</p>
+
+<pre><code>ssh -p 22222 u_remoto@localhost</code></pre>
+
+<h2 id='config'>Config</h2>
+
+<p>crear el archivo ~/.ssh/config con lo siguiente</p>
+
+<pre><code>Host nombre_del_host
+Hostname ip_del_host
+port puerto
+user usuario
+ForwardX11 yes</code></pre>
+
+<p>para hacer la conexión basta con</p>
+
+<pre><code>ssh nombre_del_host</code></pre>
+
+	<div id="footer">
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+--- 
+layout: default
+title : JuanpabloAJ Page
+---
+<br/>
+{% for post in site.posts limits:5 %}
+	<div class="postEnlace"> 
+		<em>{{ post.date | date_to_long_string }}</em> : <a href="{{ post.url }}">{{ post.title }}</a>
+	</div>
+{% endfor %}
+
+<br/>
+{% highlight diff %}
+{% include gitDiffStat.markdown %}
+{% endhighlight %}
+<br />
+<!-- 
+{{ site.categories | size}}
+{% for category in site.categories %}
+	<a name="{{ category | first }}">{{ category | first }}</a>
+{% endfor %}
+-->

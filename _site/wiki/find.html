@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen" /> 
+<link rel="stylesheet" href="/css/style.css" type="text/css" media="screen" /> 
+<link rel="stylesheet" href="/css/syntax.css" type="text/css" media="screen" /> 
+<title>find</title>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16949831-7']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+
+<body>
+<div class="container">
+	<div id="cuello">
+		<div><a href="/">Home</a></div>
+		<div><a href="/wiki">Wiki</a></div>
+		<div><a href="http://github.com/pixelmuerto">Github</a></div>
+	</div>
+	<div style="clear:both;"></div>
+	<h1>find</h1>
+		<p>mostrar los encontrados en forma ls<br /><code>find . -ls</code></p>
+
+<p>mostrar solo los directorios<br /><code>find . -type d</code></p>
+
+<p>mostrar solo los archivos<br /><code>find . -type f</code></p>
+
+<p>Buscar por nombre<br /><code>find . -name &quot;archivo*.tx*&quot;</code></p>
+
+<p>por fecha</p>
+
+<p>buscar archivos creados después de la fecha exacta</p>
+
+<pre><code>$ touch -d &quot;13 may 2001 17:54:19&quot; marker  
+$ find . -newer marker </code></pre>
+
+<p>mostrar su fecha de creación y nombre<br /><code>find . -newer marker -printf %Cc&quot;\t&quot;%P&quot;\n&quot;</code></p>
+
+<p>mostrar permisos y ultima fecha de ultima modificación<br /><code>find . -newer marker -printf %M&quot;\t&quot;%Ac&quot;\t&quot;%P&quot;\n&quot;</code></p>
+
+<p>antes de la fecha exacta<br /><code>$ find . \! -cnewer marker</code></p>
+
+	<div id="footer">
+	</div>
+</div>
+</body>
+</html>

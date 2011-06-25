@@ -1,0 +1,110 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen" /> 
+<link rel="stylesheet" href="/css/style.css" type="text/css" media="screen" /> 
+<link rel="stylesheet" href="/css/syntax.css" type="text/css" media="screen" /> 
+<title>Wordpress</title>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16949831-7']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+
+<body>
+<div class="container">
+	<div id="cuello">
+		<div><a href="/">Home</a></div>
+		<div><a href="/wiki">Wiki</a></div>
+		<div><a href="http://github.com/pixelmuerto">Github</a></div>
+	</div>
+	<div style="clear:both;"></div>
+	<h1>Wordpress</h1>
+		<h3 id='instalacin'>Instalación</h3>
+
+<p>Los pre requisitos del sistema</p>
+
+<pre><code>$ aptitude install apache2
+$ aptitude install php5
+$ aptitude install mysql-server php5-mysql</code></pre>
+
+<p>Descargar y descomprimir wordpress</p>
+
+<pre><code>$ wget http://wordpress.org/latest.tar.gz
+$ tar -xvfz latest.tar.gz</code></pre>
+
+<p>Copiar el contenido al directorio de apache</p>
+
+<pre><code>$ cp -r wordpress/* /var/www </code></pre>
+
+<p>Crear un base de datos y usuario en mysql para wordpress</p>
+
+<pre><code>$ mysql -u adminusername -p
+Enter password:
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 5340 to server version: 3.23.54
+ 
+Type &#39;help;&#39; or &#39;\h&#39; for help. Type &#39;\c&#39; to clear the buffer.
+ 
+mysql&gt; CREATE DATABASE databasename;
+Query OK, 1 row affected (0.00 sec)
+ 
+mysql&gt; GRANT ALL PRIVILEGES ON databasename.* TO &quot;wordpressusername&quot;@&quot;hostname&quot;
+	-&gt; IDENTIFIED BY &quot;password&quot;;
+Query OK, 0 rows affected (0.00 sec)
+  
+mysql&gt; FLUSH PRIVILEGES;
+Query OK, 0 rows affected (0.01 sec)
+
+mysql&gt; EXIT
+Bye
+$ </code></pre>
+
+<p>En el archivo wp-config-sample.php definir las variables a lo establecido en mysql. Después cambiar el nombre a</p>
+
+<pre><code>$ mv wp-config-sample.php wp-config.php</code></pre>
+
+<p>Para comenzar la instalación ir a la url de la maquina donde se instalar wordpress</p>
+
+<pre><code>http://localhost/wp-admin/install.php</code></pre>
+
+<p>Ahora wordpress nos pedira que llenemos una serie de información de usuario</p>
+
+<h3 id='pretty_links'>Pretty links</h3>
+
+<p>Crear el archivo .htaccess en el directorio de worpress con</p>
+
+<pre><code>&lt;IfModule mod_rewrite.c&gt;
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+&lt;/IfModule&gt;</code></pre>
+
+<p>subir modulo rewrite</p>
+
+<pre><code>$ a2enmod rewrite </code></pre>
+
+<p>modificar el archivo de apache /etc/apache2/sites-available/default , cambiar <code>AllowOverride None</code> por <code>AllowOverride All</code></p>
+
+<h3 id='referencias'>Referencias</h3>
+
+<ul class='enlaceGris'>
+<li><a href='http://codex.wordpress.org/Installing_WordPress#Famous_5-Minute_Install'>Wordpress Famous 5 minutes install</a></li>
+</ul>
+
+	<div id="footer">
+	</div>
+</div>
+</body>
+</html>

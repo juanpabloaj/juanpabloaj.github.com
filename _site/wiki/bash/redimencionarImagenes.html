@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen" /> 
+<link rel="stylesheet" href="/css/style.css" type="text/css" media="screen" /> 
+<link rel="stylesheet" href="/css/syntax.css" type="text/css" media="screen" /> 
+<title>redimencionar Imágenes</title>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16949831-7']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+
+<body>
+<div class="container">
+	<div id="cuello">
+		<div><a href="/">Home</a></div>
+		<div><a href="/wiki">Wiki</a></div>
+		<div><a href="http://github.com/pixelmuerto">Github</a></div>
+	</div>
+	<div style="clear:both;"></div>
+	<h1>redimencionar Imágenes</h1>
+		<p>Sera necesario tener instalado imagemagic</p>
+<div class='highlight'><pre><code class='bash'><span class='k'>for </span>a in *.jpg
+<span class='k'>do</span>
+<span class='nv'>b</span><span class='o'>=</span><span class='k'>$(</span> <span class='nb'>echo</span> <span class='nv'>$a</span> | sed -e <span class='s1'>&#39;s/.jpg//g&#39;</span><span class='k'>)</span>
+convert -resize 512 <span class='nv'>$b</span>.jpg nuevo_dir/<span class='nv'>$b</span>.png  
+<span class='k'>done</span>
+</code></pre>
+</div>
+<p>las imagenes quedaran de 512px y en png</p>
+
+	<div id="footer">
+	</div>
+</div>
+</body>
+</html>

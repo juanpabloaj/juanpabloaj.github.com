@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen" /> 
+<link rel="stylesheet" href="/css/style.css" type="text/css" media="screen" /> 
+<link rel="stylesheet" href="/css/syntax.css" type="text/css" media="screen" /> 
+<title>apache2</title>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16949831-7']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+
+<body>
+<div class="container">
+	<div id="cuello">
+		<div><a href="/">Home</a></div>
+		<div><a href="/wiki">Wiki</a></div>
+		<div><a href="http://github.com/pixelmuerto">Github</a></div>
+	</div>
+	<div style="clear:both;"></div>
+	<h1>apache2</h1>
+		<h2 id='mod_rewrite_enable'>mod_rewrite enable</h2>
+
+<p>en varios CMS es posible activar pretty links ( joomla: frienly urls, wordpress: pretty links), para lo cual es necesario activar el modulo de rewrite</p>
+
+<pre><code>$ a2enmod rewrite</code></pre>
+
+<p>en el archivo de configuración del sitio, normalmente ubicado en</p>
+
+<pre><code>/etc/apache2/sites-enabled </code></pre>
+
+<p>buscar el archivo de sitio y cambiar AllowOverride none a AllowOverride All</p>
+
+<p>y reiniciar el apache</p>
+
+<pre><code>$ /etc/init.d/apache2 restart</code></pre>
+
+<p>ahora se debería poder activar los pretty links</p>
+
+<p>en <code>/etc/apache2/sites-available</code> habilitar un sitio</p>
+
+<pre><code>$  a2ensite sitio.com</code></pre>
+
+<p>desabilidar un sitio</p>
+
+<pre><code>$ a2dissite sitio.com</code></pre>
+
+	<div id="footer">
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen" /> 
+<link rel="stylesheet" href="/css/style.css" type="text/css" media="screen" /> 
+<link rel="stylesheet" href="/css/syntax.css" type="text/css" media="screen" /> 
+<title>Tocando Mongolab desde rails3</title>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16949831-7']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+
+<body>
+<div class="container">
+	<div id="cuello">
+		<div><a href="/">Home</a></div>
+		<div><a href="/wiki">Wiki</a></div>
+		<div><a href="http://github.com/pixelmuerto">Github</a></div>
+	</div>
+	<div style="clear:both;"></div>
+	<h1>Tocando Mongolab desde rails3</h1>
+		<p>Si rails no está instalado</p>
+
+<pre><code>$ gem install rails</code></pre>
+
+<p>Crear una aplicación</p>
+
+<pre><code>$ rails new touchMongoLab --skip-active-record
+$ cd touchMongoLab</code></pre>
+
+<p>Editar el archivo <code>Gemfile</code></p>
+
+<pre><code># Edit this Gemfile to bundle your application&#39;s dependencies.
+require &#39;rubygems&#39;
+require &#39;mongo&#39;
+source &#39;http://gemcutter.org&#39;
+
+gem &#39;rails&#39;, &#39;3.1.0.beta1&#39;
+gem &quot;mongo_mapper&quot;</code></pre>
+
+<p>Instalar las gemas necesarias</p>
+
+<pre><code>$ bundle install</code></pre>
+
+<p>Crear el archivo <code>config/initializers/mongo.rb</code></p>
+
+<pre><code>MongoMapper.connection = Mongo::Connection.new(&#39;namexyz.mongolab.com&#39;, port )
+MongoMapper.database = &quot;dbname&quot;
+MongoMapper.database.authenticate(&#39;user&#39;,&#39;passwd&#39;)
+
+if defined?(PhusionPassenger)
+   PhusionPassenger.on_event(:starting_worker_process) do |forked|
+	 MongoMapper.connection.connect_to_master if forked
+   end 
+end</code></pre>
+
+<p>Crear el modelo en el archivo <code>app/models/user.rb</code></p>
+
+<pre><code>class User
+  include MongoMapper::Document
+  key :name
+end</code></pre>
+
+<p>Crear un usuario desde la consola</p>
+
+<pre><code>$ rails console
+ruby-1.9.2-p180 :006 &gt; user= User.new(:name =&gt; &quot;hola mundo&quot;)
+ =&gt; #&lt;User _id: BSON::ObjectId(&#39;4dd097464cfad1e8ab000003&#39;), name: &quot;hola mundo&quot;&gt; 
+ruby-1.9.2-p180 :006 &gt; user.save()
+ =&gt; true </code></pre>
+
+<p>Verificar la existencia del usuario en la db</p>
+
+<pre><code>&gt; db.users.find()
+{ &quot;_id&quot; : ObjectId(&quot;4dd097604cfad1e8ab000004&quot;), &quot;name&quot; : &quot;hola mundo&quot; }</code></pre>
+
+<h3 id='referencias'>Referencias</h3>
+
+<p class='enlaceGris'><a href='http://www.mongodb.org/display/DOCS/Rails+3+-+Getting+Started'>mongoDB &amp;&amp; Rails 3 - Getting Started</a><br /><a href='https://github.com/banker/mongodb-rails3-sample/blob/master/app/models/user.rb'>user.rb</a></p>
+
+	<div id="footer">
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen" /> 
+<link rel="stylesheet" href="/css/style.css" type="text/css" media="screen" /> 
+<link rel="stylesheet" href="/css/syntax.css" type="text/css" media="screen" /> 
+<title>MongoDB</title>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16949831-7']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+
+<body>
+<div class="container">
+	<div id="cuello">
+		<div><a href="/">Home</a></div>
+		<div><a href="/wiki">Wiki</a></div>
+		<div><a href="http://github.com/pixelmuerto">Github</a></div>
+	</div>
+	<div style="clear:both;"></div>
+	<h1>MongoDB</h1>
+		<p>Mostrar todas las colecciones</p>
+
+<pre><code>&gt; show collections;</code></pre>
+
+<p>Mostrar todos los registros</p>
+
+<pre><code>&gt; db.mycollection.find()</code></pre>
+
+<p>Borrar el contenido de una collection</p>
+
+<pre><code>&gt; db.mycollection.remove()</code></pre>
+
+<p>Borrar una collection</p>
+
+<pre><code>&gt; db.mycollection.drop()</code></pre>
+
+<p>Contar todos los registros que tengan <code>nombre:&quot;test&quot;</code> y fecha mayor que el <code>2011-05-10</code></p>
+
+<pre><code>&gt; db.collTest.count({nombre:&quot;test&quot;,fecha:{$gt:&quot;2011-05-10&quot;}})</code></pre>
+
+<p>La última fecha</p>
+
+<pre><code>&gt; db.collTest.find({},{fecha:1}).sort({fecha:-1}).limit(1)</code></pre>
+
+<h3 id='mongoimport'>mongoimport</h3>
+
+<p>Generar un csv desde sql</p>
+
+<pre><code>mysql&gt; select columns INTO OUTFILE &#39;/path/to/csv&#39; 
+   FIELDS TERMINATED BY &#39;,&#39; OPTIONALLY ENCLOSED BY &#39;&quot;&#39;
+      LINES TERMINATED BY &#39;\n&#39; from table [where clause]</code></pre>
+
+<p>importar el csv a mongodb, en -f se especifica el nombre de cada campo a importar</p>
+
+<pre><code>./mongoimport --host host --port port -u user -p password -d database -c collection -type csv -f campo0,campo1,campo2 --drop csvFuente.csv </code></pre>
+
+<p>Cuando se importa se sobre escribe la collection</p>
+
+<p>Reparar db</p>
+
+<pre><code>db.repairDatabase()</code></pre>
+
+	<div id="footer">
+	</div>
+</div>
+</body>
+</html>

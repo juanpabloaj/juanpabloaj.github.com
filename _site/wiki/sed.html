@@ -1,0 +1,98 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen" /> 
+<link rel="stylesheet" href="/css/style.css" type="text/css" media="screen" /> 
+<link rel="stylesheet" href="/css/syntax.css" type="text/css" media="screen" /> 
+<title>sed</title>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16949831-7']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+
+<body>
+<div class="container">
+	<div id="cuello">
+		<div><a href="/">Home</a></div>
+		<div><a href="/wiki">Wiki</a></div>
+		<div><a href="http://github.com/pixelmuerto">Github</a></div>
+	</div>
+	<div style="clear:both;"></div>
+	<h1>sed</h1>
+		<p>obtener las 10 primeras lineas</p>
+
+<pre><code>cat archivo | sed -n -e &#39;1,10p&#39;</code></pre>
+
+<p>quitar las comillas simples (&#8216;) de un texto</p>
+
+<pre><code>sed -e &#39;s/&#39;\&#39;&#39;//g&#39; archivo</code></pre>
+
+<p>borrar las lineas que contengan numeros</p>
+
+<pre><code>sed &#39;/[0-9]/d&#39;</code></pre>
+
+<p>borra las que no contengan numeros</p>
+
+<pre><code>sed &#39;/[0-9]/!d&#39;</code></pre>
+
+<p>! : entrega el opuesto de la orden</p>
+
+<h3 id='llamar_porciones_guardadas'>Llamar porciones guardadas</h3>
+
+<p>en un archivo con numero y letras solo queremos ver los 0&#8217;s encerrados en 1&#8217;s</p>
+
+<pre><code>4Ds65a4d10014d6a4sd610017845sa4D6a
+4d6Sa4d6101sd4aJd4a644d5as61000001
+sda41000014d6as4d56adsa114d5sa64dA
+
+sed &#39;s/[0-Z]*\(10*1\)[0-Z]*\(10*1\)[0-Z]*/\1 \2/&#39; sample 
+
+1001 1001
+101 1000001
+100001 11</code></pre>
+
+<p>las expresiones entre ( ) se guardan en \n, en este caso, la primera aparicion se guardo en \1 y la segunda en \2</p>
+
+<pre><code>[0-Z]* : letra o numero
+10*1 : ceros entre 1&#39;s, puede no haber cero </code></pre>
+
+<h3 id='incrementa_un_numero_binario_en_1'> Incrementa un numero binario en 1</h3>
+<div class='highlight'><pre><code class='bash'>	<span class='c'>#!/bin/sed -f</span>
+	s/<span class='se'>\(</span><span class='o'>[</span>0-1<span class='o'>]</span>*<span class='se'>\)</span>++/<span class='se'>\1</span>/; td
+	b fin 
+	<span class='c'>## funcion de incremento</span>
+	:d
+	s/1<span class='se'>\(</span>_*<span class='se'>\)</span><span class='nv'>$/</span>_<span class='se'>\1</span>/
+	td
+	s/^<span class='se'>\(</span>_*<span class='se'>\)</span><span class='nv'>$/</span>1<span class='se'>\1</span>/; tn  
+	s/0<span class='se'>\(</span>_*<span class='se'>\)</span><span class='nv'>$/</span>1<span class='se'>\1</span>/; tn  
+	:n
+	y/_/0/
+	:fin
+</code></pre>
+</div>
+<p><code>t</code> : saltos conficionales, si se realiza con exito el remplazo se salta a una etiqueta <br /><code>:etiqueta</code> , el &#8221;:&#8221; anuncia una etiqueta<br /><code>b</code> : incondicionalmente salta a una etiqueta</p>
+
+<p>para uitlizarla</p>
+
+<pre><code>$ echo &quot;101++&quot; | ./sedc
+110</code></pre>
+
+<h3 id='refencias'>Refencias</h3>
+
+<p><a href='http://www.gnu.org/software/sed/manual/sed.html'>Manual gnu de sed</a></p>
+
+	<div id="footer">
+	</div>
+</div>
+</body>
+</html>

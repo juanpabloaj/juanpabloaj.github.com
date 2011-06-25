@@ -1,0 +1,111 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen" /> 
+<link rel="stylesheet" href="/css/style.css" type="text/css" media="screen" /> 
+<link rel="stylesheet" href="/css/syntax.css" type="text/css" media="screen" /> 
+<title>Git</title>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16949831-7']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+
+<body>
+<div class="container">
+	<div id="cuello">
+		<div><a href="/">Home</a></div>
+		<div><a href="/wiki">Wiki</a></div>
+		<div><a href="http://github.com/pixelmuerto">Github</a></div>
+	</div>
+	<div style="clear:both;"></div>
+	<h1>Git</h1>
+		<p>descargar cambios</p>
+
+<pre><code>$ git pull </code></pre>
+
+<p>hacer un commit con mensaje</p>
+
+<pre><code>$ git commit -am &quot;este es el mensaje&quot;</code></pre>
+
+<p>subir los cambios</p>
+
+<pre><code>$ git push</code></pre>
+
+<h2 id='diff'>Diff</h2>
+
+<p>Solo las lineas de diferencia</p>
+
+<pre><code>$ git diff -U0 </code></pre>
+
+<p>Diferencias entre commits</p>
+
+<pre><code>$ git diff HEAD^ HEAD
+$ git diff HEAD~2 HEAD </code></pre>
+
+<p>Diferencias en resumen</p>
+
+<pre><code>$ git diff --stat</code></pre>
+
+<h2 id='branch'>Branch</h2>
+
+<p>ver las branchs locales</p>
+
+<pre><code>$ git branch   
+* master</code></pre>
+
+<p>ver las branchs ocultas, incluyendo las remotas</p>
+
+<pre><code>$ git branch -a
+* master
+  origin/HEAD
+  origin/master
+  origin/v1.0-stable
+  origin/experimental</code></pre>
+
+<p>cambiarse a una branch</p>
+
+<pre><code>$ git checkout origin/experimental</code></pre>
+
+<p>para trabajar en la branch</p>
+
+<pre><code>$ git checkout -b experimental origin/experimental</code></pre>
+
+<p>ahora está entre las branchs</p>
+
+<pre><code>$ git branch
+  master
+* experimental</code></pre>
+
+<p><a href='http://stackoverflow.com/questions/67699/how-do-i-clone-all-remote-branches-with-git'>Fuente stackOverflow</a></p>
+
+<p>borrar una rama</p>
+
+<pre><code>$ git branch -D nombreRama</code></pre>
+
+<h2 id='graph'>graph</h2>
+
+<p>log más gráfico</p>
+
+<pre><code>git log --pretty=oneline --graph</code></pre>
+
+<h2 id='reset'>reset</h2>
+
+<p>volver al estado del commit y borrar archivos recien creados</p>
+
+<pre><code>$ git reset --hard
+$ git clean -f -d</code></pre>
+
+	<div id="footer">
+	</div>
+</div>
+</body>
+</html>

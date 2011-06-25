@@ -1,0 +1,97 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen" /> 
+<link rel="stylesheet" href="/css/style.css" type="text/css" media="screen" /> 
+<link rel="stylesheet" href="/css/syntax.css" type="text/css" media="screen" /> 
+<title>Mercurial</title>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16949831-7']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+
+<body>
+<div class="container">
+	<div id="cuello">
+		<div><a href="/">Home</a></div>
+		<div><a href="/wiki">Wiki</a></div>
+		<div><a href="http://github.com/pixelmuerto">Github</a></div>
+	</div>
+	<div style="clear:both;"></div>
+	<h1>Mercurial</h1>
+		<p>status del repositorio<br /><code>hg st</code></p>
+
+<p>traer los cambios<br /><code>hg pull</code></p>
+
+<p>actualizar los cambios descargados<br /><code>hg update</code></p>
+
+<p>traer y actualizar los cambios<br /><code>hg pull -u</code></p>
+
+<p>ver el log de la revision numero 2<br /><code>hg log -r 2</code></p>
+
+<p>el último log<br /><code>hg log -r -1</code></p>
+
+<p>los últimos 2 logs<br /><code>hg log -r -1:-2</code></p>
+
+<p>comparar los cambios desde la revision -3<br /><code>hg diff -r -3</code></p>
+
+<p>comparar los cambios con las revisiones entre -2:-3<br /><code>hg diff -r -2:-3</code></p>
+
+<p>ver un resumen de las modificaciones solo los nombres de los archivos modificados</p>
+
+<pre><code>hg diff --stat</code></pre>
+
+<h2 id='hgignore'>.hgignore</h2>
+
+<p>para ignorar archivos que no se quieran considerar en el repositorio</p>
+
+<p>ignorar todos los que terminen en .py<br /><code>*py</code></p>
+
+<p>ignorar todos los que no terminen en .c o .h<br /><code>*[!.c|!.h]</code></p>
+
+<h2 id='branches'>Branches</h2>
+
+<p>Crear una rama nueva</p>
+
+<pre><code>$ hg branch ramaNueva</code></pre>
+
+<p>mostrar las existentes</p>
+
+<pre><code>$ hg branches
+ramaNueva                    10:d3959df85fcf
+default                        9:7d1a900129f9 </code></pre>
+
+<p>moverse a la rama default</p>
+
+<pre><code>$ hg update default </code></pre>
+
+<p>saber en que rama estamos</p>
+
+<pre><code>$ hg branch
+default</code></pre>
+
+<p>traer los cambios desde otra rama</p>
+
+<pre><code>$ hg merge ramaNueva </code></pre>
+
+<h2 id='glog'>glog</h2>
+
+<p>Agregar al archivo <code>~/.hgrc</code></p>
+
+<pre><code>[extensions]
+hgext.graphlog =</code></pre>
+
+	<div id="footer">
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen" /> 
+<link rel="stylesheet" href="/css/style.css" type="text/css" media="screen" /> 
+<link rel="stylesheet" href="/css/syntax.css" type="text/css" media="screen" /> 
+<title>Contando Ips</title>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16949831-7']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+
+<body>
+<div class="container">
+	<div id="cuello">
+		<div><a href="/">Home</a></div>
+		<div><a href="/wiki">Wiki</a></div>
+		<div><a href="http://github.com/pixelmuerto">Github</a></div>
+	</div>
+	<div style="clear:both;"></div>
+	<h1>Contando Ips</h1>
+		<p>Uno de los objetivos de este ejemplo es aprender a manipular tuberías (pipes) Primero conozcamos awk si tipeamos</p>
+
+<pre><code>$ date
+sáb nov 10 13:33:36 CLST 2007</code></pre>
+
+<p>si solo quisiéramos la hora</p>
+
+<pre><code>$ date | awk &#39;{print $4}&#39;</code></pre>
+
+<p>awk solo nos entrega la columna 4 de la salida</p>
+
+<p>en ubuntu el log de sshd queda en <code>/var/log/auth.log</code></p>
+
+<pre><code>$ cat auth.log | grep Accepted | awk &#39;{print $11}&#39; |awk &#39;BEGIN {FS=&quot;|&quot;} {print $1}&#39;|sort|uniq -c|sort -r</code></pre>
+
+<p>obtenemos una salida como</p>
+
+<pre><code>6 192.168.2.112
+8 192.168.2.136</code></pre>
+
+<p>donde el primer numero indica la frecuencia de aparición</p>
+
+<p>para que la salida esta ordenada por cantidad de apariciones al ultimo sort se le agrega la opción -n, asi ordena numéricamente</p>
+
+<p>Mezclándolo con un cron podríamos recibir alertas en caso que algún ip sea muy insistente.</p>
+
+	<div id="footer">
+	</div>
+</div>
+</body>
+</html>
