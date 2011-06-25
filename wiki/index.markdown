@@ -5,7 +5,7 @@ title : Wiki
 {:enlaces: .enlaceGris } 
 
 [vim](/wiki/vim.html) 
-[Cygwin](/wiki/Cygwin.html) 
+[Cygwin](/wiki/cygwin.html) 
 [Apache](/wiki/apache.html) 
 [swig](/wiki/swig.html) 
 [vnstat](/wiki/vnstat.html) 
@@ -18,7 +18,7 @@ title : Wiki
 [jekyll](/wiki/jekyll.html) 
 {:enlaces} 
 ## DB
-[MySQL](/wiki/MySQL.html) 
+[MySQL](/wiki/mysql.html) 
 [MongoDB](/wiki/mongodb.html) 
 {:enlaces} 
 ## CMS
@@ -39,7 +39,7 @@ title : Wiki
 [ruby](/wiki/ruby.html) 
 {:enlaces} 
 ## Control de versiones
-[Mercurial](/wiki/Mercurial.html) 
+[Mercurial](/wiki/mercurial.html) 
 [Git](/wiki/git.html) 
-[Subversion](/wiki/Subversion.html) 
+[Subversion](/wiki/subversion.html) 
 {:enlaces} 
