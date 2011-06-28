@@ -84,6 +84,10 @@ volver al estado del commit y borrar archivos recien creados
 	$ git reset --hard
 	$ git clean -f -d
 
+ver lo que se ha hecho 
+
+	$ git reflog
+
 ## Forks
 
 Merge con otros repos/forks

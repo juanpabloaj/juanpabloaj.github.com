@@ -152,6 +152,11 @@ al primer error
 al último error  
 `:clast`
 
+### Vimdiff
+
+`[c`: Saltar a la diferencia previa  
+`]c`: Saltar a la diferencia siguiente  
+
 ### Status line 
 
 	:h statusline 
