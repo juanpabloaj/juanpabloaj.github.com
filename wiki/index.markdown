@@ -15,6 +15,7 @@ title : Wiki
 [ssh](/wiki/ssh.html) 
 [screen](/wiki/screen.html) 
 [sed](/wiki/sed.html) 
+[latex](/wiki/latex.html) 
 [jekyll](/wiki/jekyll.html) 
 {:enlaces} 
 ## DB

@@ -41,10 +41,11 @@ ver las branchs ocultas, incluyendo las remotas
 
     $ git branch -a
     * master
-      origin/HEAD
-      origin/master
-      origin/v1.0-stable
-      origin/experimental
+      remotes/origin/HEAD
+      remotes/origin/master
+      remotes/origin/v1.0-stable
+      remotes/origin/experimental
+	  remotes/otroRepo/experimental
 
 crear una nueva rama llamada `test`  
 
@@ -57,6 +58,10 @@ cambiarse a una branch
 para trabajar en la branch 
 
     $ git checkout -b experimental origin/experimental
+
+Esto es valido para una branch no propia, puedes cambiarte a una branch de otro remote
+
+	$ git checkout -b experimental otroRepo/experimental 
 
 ahora está entre las branchs 
 
@@ -76,7 +81,7 @@ borrar una rama
 
 log más gráfico 
 
-	git log --pretty=oneline --graph
+	lg = log --graph --pretty=format:'%Cgreen%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(blue)<%an>%Creset' --abbrev-commit --date=relative
 
 ## reset
 volver al estado del commit y borrar archivos recien creados
@@ -87,6 +92,8 @@ volver al estado del commit y borrar archivos recien creados
 ver lo que se ha hecho 
 
 	$ git reflog
+
+muy útil para recuperar hash que se resetearon	
 
 ## Forks
 
