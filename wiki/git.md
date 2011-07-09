@@ -112,3 +112,28 @@ Ver las diferencias con otros forks
 
 [github pull request](http://help.github.com/send-pull-requests/)  
 {:enlaces} 
+
+fetch a todas las remotas
+
+	$ git remote update
+
+## submodules
+
+Agregar un nuevo submodulo
+
+	$ git submodule add http://url_submodule path_a_instalar
+	
+Iniciar y actualizar 
+
+	$ git submodule init 
+	$ git submodule update 
+	
+o 
+
+	$ git submodule update --init
+
+actualizar todos los submodulos
+
+	$ git submodule update --init --recursive
+
+

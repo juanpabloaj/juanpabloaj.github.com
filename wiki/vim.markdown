@@ -157,6 +157,11 @@ al último error
 `[c`: Saltar a la diferencia previa  
 `]c`: Saltar a la diferencia siguiente  
 
+`diffget`
+`diffput`
+`dp` : lo mismo que diffput pero sin argumento
+
+
 ### Status line 
 
 	:h statusline 
