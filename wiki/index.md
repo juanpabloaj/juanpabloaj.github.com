@@ -17,6 +17,7 @@ title : Wiki
 [sed](/wiki/sed.html) 
 [latex](/wiki/latex.html) 
 [jekyll](/wiki/jekyll.html) 
+[rvm](/wiki/rvm.html) 
 {:enlaces} 
 ## DB
 [MySQL](/wiki/mysql.html) 

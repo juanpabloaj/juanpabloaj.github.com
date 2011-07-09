@@ -23,6 +23,12 @@ sqlite3
 
 de no reconocer el comando `rails`, agregar la ubicación al PATH, debería ser algo como `/var/lib/gems/1.8/bin`.  
 
+### update 
+
+para actualizar rails
+
+	$ gem update rails
+
 ### Model 
 
 crear db de producción

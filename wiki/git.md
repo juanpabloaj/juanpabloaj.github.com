@@ -15,6 +15,18 @@ subir los cambios
 
 	$ git push
 
+eliminar cambios 
+
+	$ git reset --all 
+
+volver a cambios del origin/master
+	
+	$ git reset --all origin/master
+
+forzar el borrardo de archivos y directorios que se han agregado sin añandir 
+
+	$ git clean -fd
+
 ## Diff
 	
 Solo las lineas de diferencia  
