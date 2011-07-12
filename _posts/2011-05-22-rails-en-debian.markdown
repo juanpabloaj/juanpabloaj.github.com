@@ -8,32 +8,38 @@ categories:
 ---
 {:enlaces: .enlaceGris}
 
+## Pre requisitos 
+
+* curl 
+* build-essential 
+* zlib1g-dev
+
 ##Instalar
 Instalar rvm como root
 
 	$ bash < <(curl -s https://rvm.beginrescueend.com/install/rvm)
 
-agregarlo a `~/.bash_profile ` y recargar 
+Agregarlo a `~/.bash_profile ` y recargar 
 
 	$ echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function' >> ~/.bash_profile
 	$ source ~/.bash_profile
 	
-instalar ruby 
+Instalar ruby 
 	
 	$ rvm install 1.9.2 
 
-este comando me mostraba el siguiente error 
+Este comando me mostraba el siguiente error 
 
 	rvm install 1.9.2
 	-su: /usr/local/rvm/scripts/manage: Permission denied
 
-por lo que le di permisos de ejecución al archivo 
+Por lo que le di permisos de ejecución al archivo 
 
 	$ chmod u+x /usr/local/rvm/scripts/manage
 
 ruby 1.9.2 por defecto
 
-	$ rvm user 1.9.2 --default
+	$ rvm use 1.9.2 --default
 
 Instalar gem 
 

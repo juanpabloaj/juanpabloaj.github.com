@@ -4,7 +4,7 @@ title : Rails Model
 ---
 {:enlaces: .enlaceGris }  
 
-### Modificar el atributo de una tabla
+### Modificar atributo de una tabla
 
 Eliminar el atributo 
 

@@ -30,6 +30,11 @@ Para actualizar rails
 	$ gem update rails
 
 ## Introducción
+
+Se puede acceder a la consola de rails con 
+
+	$ rails console
+
 ### Entornos
 
 Rails tiene tres entornos de trabajo 
@@ -72,7 +77,7 @@ Creando definir y crear una tabla en el DB
 	$ rails generate scaffold User name:strig
 	$ rake db:migrate 
 
-La app básica debería estar funcionando, para visualizarla en el navegador 
+La app básica debería estar funcionando, levantar un servidor local para visualizarla en el navegador 
 
 	$ rails s
 
