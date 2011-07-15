@@ -9,7 +9,7 @@ categories:
 ### Pre requisitos 
 
 
-	$ aptitude install build-essential zlib1g-dev libssl-dev libpq-dev libcurl4-openssl-dev curl
+	$ aptitude install build-essential zlib1g-dev libssl-dev libpq-dev libcurl4-openssl-dev curl libreadline-dev
 
 Dependiendo de la base de datos a usar van a ser necesarios algunos paquetes, si se va a ocupar sqlite3
 

@@ -43,6 +43,20 @@ Rails tiene tres entornos de trabajo
 * test : para test unitarios, funcionales, etc.  
 * producción : 
 
+Cuando se vaya a realizar una acción es muy importante especificar a que entorno correspondo, por ejemplo, una tarea de mantención 
+
+
+	$ rake mistareas:mantención
+
+Solo tendría efecto en development environment, para que sea valido en production 
+
+	$ RAILS_ENV=production rake mistareas:mantencion
+
+Con la variable `Rails.env.production?` se puede condicionar para entornos específicos, ejemplo: solo mostrar `params` en development
+
+	<%= debug(params) if Rails.env.development?  %>
+
+
 ### Model 
 
 Crear db de development 
