@@ -18,6 +18,7 @@ title : Wiki
 [latex](/wiki/latex.html) 
 [jekyll](/wiki/jekyll.html) 
 [rvm](/wiki/rvm.html) 
+[tar](/wiki/tar.html)
 {:enlaces} 
 ## DB
 [MySQL](/wiki/mysql.html) 

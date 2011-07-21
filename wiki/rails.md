@@ -86,7 +86,7 @@ En el archivo `Gemfile` está la lista de las `gems` de las cuales depende la ap
 
 Dependiendo si la instalación es como root o como usuario variaran algunos comando, necesitando agregar antes `sudo` o `bundle exec` según corresponda.   
 
-Creando definir y crear una tabla en el DB  
+Definir y crear un `controller`, `model` y `view` para `User` con scaffold 
 
 	$ rails generate scaffold User name:strig
 	$ rake db:migrate 
