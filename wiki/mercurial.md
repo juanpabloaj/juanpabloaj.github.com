@@ -3,34 +3,47 @@ layout: default
 title : Mercurial
 ---
 
-status del repositorio  
-`hg st` 
+Inicializar repositorio 
 
-traer los cambios  
-`hg pull` 
+	hg init 
 
-actualizar los cambios descargados  
-`hg update` 
+Status del repositorio  
 
-traer y actualizar los cambios  
-`hg pull -u` 
+	hg st 
 
-ver el log de la revision numero 2  
-`hg log -r 2`
+Traer los cambios  
 
-el último log  
-`hg log -r -1`
+	hg pull
 
-los últimos 2 logs  
-`hg log -r -1:-2`
+Actualizar los cambios descargados  
 
-comparar los cambios desde la revision -3  
-`hg diff -r -3`
+	hg update
 
-comparar los cambios con las revisiones entre -2:-3  
-`hg diff -r -2:-3`
+Traer y actualizar los cambios  
 
-ver un resumen de las modificaciones solo los nombres de los archivos modificados
+	hg pull -u
+
+Ver el log de la revisión numero 2  
+
+	hg log -r 2
+
+Último log  
+
+	hg log -r -1
+
+Los últimos 2 logs
+
+	hg log -r -1:-2
+
+Comparar los cambios desde la revisión -3  
+
+	hg diff -r -3
+
+Comparar los cambios con las revisiones entre -2:-3  
+
+	hg diff -r -2:-3
+
+Ver un resumen de las modificaciones solo los nombres de los archivos modificados
 
 	hg diff --stat
 
@@ -43,28 +56,28 @@ ignorar todos los que terminen en .py
 ignorar todos los que no terminen en .c o .h  
 `*[!.c|!.h]`
 
-## Branches
+## Branch
 
 Crear una rama nueva
 
 	$ hg branch ramaNueva
 
-mostrar las existentes
+Mostrar las existentes
 
 	$ hg branches
 	ramaNueva                    10:d3959df85fcf
 	default                        9:7d1a900129f9 
 
-moverse a la rama default
+Moverse a la rama default
 
 	$ hg update default 
 
-saber en que rama estamos 
+Saber en que rama estamos 
 
 	$ hg branch
 	default
 
-traer los cambios desde otra rama
+Traer los cambios desde otra rama
 
 	$ hg merge ramaNueva 
 
