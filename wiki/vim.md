@@ -10,12 +10,20 @@ Permite editar archivos comprimidos con bzip2, gzip, zip.
 	$ vim -o archivo1.txt archivo2.txt   # División horizontal
 	$ vim -p archivo1.txt archivo2.txt   # División por tab
 
-solo lectura del archivo 
+Abrir archivo en modo lectura
 
 	$ vim -R archivo
 
-### Modo Comando 
+Abrir archivo en la linea 10
 
+	$ vim +10 archivo
+
+Capturar la salida de una tubería 
+
+### Modo Normal
+
+	 ZQ		Salir sin guardar
+	 ZZ		Guardar y salir 
      v             Seleccionar en modo visual
      y             copiar 
      p             pegar
@@ -27,20 +35,17 @@ solo lectura del archivo
      Ctrl-W k      ir a la ventana superior
      Ctrl-W l      ir a la ventana derecha
      Ctrl-W W      Cambia el foco entre ventanas
-
-### Autocompletación 
-
-	Ctrl-p
-	Ctrl-n
+	 Ctrl-p		Autocompletar
+	 Ctrl-n		Autocompletar 
 
 ### Modo insert
 
 
-para insertar un comando como si fuera modo normal y volver a modo insertar
+Para insertar un comando como si fuera modo comando y volver a modo insertar
 
 	Ctrl-o: 
 
-###Modo linea
+### Modo linea
 
 Ir a la linea n 
 

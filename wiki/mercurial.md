@@ -81,6 +81,30 @@ Traer los cambios desde otra rama
 
 	$ hg merge ramaNueva 
 
+### Ejemplo de branches y merge
+
+	#!/bin/bash
+	mkdir eBranch
+	cd eBranch
+	hg init
+	echo "Creado e inicializado proyecto"
+	touch README core.py 
+	hg st  
+	hg add README core.py
+	hg st  
+	hg ci -m "primer commit"
+	hg branch server 
+	echo "branch server creada y movido a esta"
+	touch server.py
+	hg add server.py
+	hg ci -m "agregardo server.py en server branch"
+	hg up default
+	hg merge server
+	hg st
+	hg ci -m "mezclando desde server a default"
+	hg branches
+	hg log 
+
 ## glog 
 
 Agregar al archivo `~/.hgrc`  

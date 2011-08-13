@@ -7,25 +7,33 @@ descargar cambios
 
 	$ git pull 
 
-hacer un commit con mensaje  
+Hacer un commit con mensaje  
 
 	$ git commit -am "este es el mensaje"
 
-subir los cambios  
+Subir los cambios  
 
 	$ git push
 
-eliminar cambios 
+Eliminar cambios 
 
 	$ git reset --all 
 
-volver a cambios del origin/master
+Volver a cambios del origin/master
 	
 	$ git reset --all origin/master
 
-forzar el borrardo de archivos y directorios que se han agregado sin añandir 
+Forzar el borrardo de archivos y directorios que se han agregado sin añandir 
 
 	$ git clean -fd
+
+Ver log de los últimos commits 
+
+    $ git log -n5
+
+Regresar un archivo al estado anterior 
+
+    $ git checkout HEAD~4 file
 
 ## Diff
 	
