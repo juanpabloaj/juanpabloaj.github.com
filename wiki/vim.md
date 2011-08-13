@@ -20,6 +20,8 @@ Abrir archivo en la linea 10
 
 Capturar la salida de una tubería 
 
+	$ date | vim -
+
 ### Modo Normal
 
 	 ZQ		Salir sin guardar
