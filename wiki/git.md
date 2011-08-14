@@ -3,6 +3,9 @@ layout: default
 title : Git
 ---
 {:enlaces: .enlaceGris }  
+
+## Básicos 
+
 descargar cambios  
 
 	$ git pull 
@@ -67,15 +70,15 @@ ver las branchs ocultas, incluyendo las remotas
       remotes/origin/experimental
 	  remotes/otroRepo/experimental
 
-crear una nueva rama llamada `test`  
+Crear una nueva rama llamada `test`  
 
 	$git branch test
 
-cambiarse a una branch 
+Cambiarse a una branch 
 
     $ git checkout origin/experimental
 
-para trabajar en la branch 
+Para trabajar en la branch 
 
     $ git checkout -b experimental origin/experimental
 
@@ -83,7 +86,7 @@ Esto es valido para una branch no propia, puedes cambiarte a una branch de otro 
 
 	$ git checkout -b experimental otroRepo/experimental 
 
-ahora está entre las branchs 
+Ahora está entre las branchs 
 
     $ git branch
       master
@@ -93,29 +96,28 @@ ahora está entre las branchs
 [Fuente stackOverflow](http://stackoverflow.com/questions/67699/how-do-i-clone-all-remote-branches-with-git)
 {:enlaces} 
 
-borrar una rama
+Borrar una rama
 
 	$ git branch -D nombreRama
 
-## graph 
+### Remote branches
 
-log más gráfico 
+Track una branch remota
 
-	lg = log --graph --pretty=format:'%Cgreen%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(blue)<%an>%Creset' --abbrev-commit --date=relative
+	$ git checkout -b test origin/test
 
-## reset
-volver al estado del commit y borrar archivos recien creados
-	
-	$ git reset --hard
-	$ git clean -f -d
+Push los cambios de a la rama en el origen 
 
-ver lo que se ha hecho 
+	$ git push origin test
 
-	$ git reflog
+Borrar una rama remota
 
-muy útil para recuperar hash que se resetearon	
+	$ git push origin :test
 
-## Forks
+[ Pro git - remote branches](http://progit.org/book/ch3-5.html)
+{:enlaces} 
+
+### Remotes
 
 Merge con otros repos/forks
 
@@ -133,9 +135,28 @@ Ver las diferencias con otros forks
 [github pull request](http://help.github.com/send-pull-requests/)  
 {:enlaces} 
 
-fetch a todas las remotas
+Fetch a todas las remotas
 
 	$ git remote update
+
+
+## graph 
+
+log más gráfico 
+
+	lg = log --graph --pretty=format:'%Cgreen%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(blue)<%an>%Creset' --abbrev-commit --date=relative
+
+## reset
+volver al estado del commit y borrar archivos recien creados
+	
+	$ git reset --hard
+	$ git clean -f -d
+
+Ver lo que se ha hecho 
+
+	$ git reflog
+
+Muy útil para recuperar hash que se resetearon	
 
 ## submodules
 
