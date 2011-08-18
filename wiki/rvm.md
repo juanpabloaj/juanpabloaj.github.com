@@ -4,6 +4,7 @@ title : rvm
 ---
 {:enlaces: .enlaceGris } 
 [rvm site](https://rvm.beginrescueend.com/)  
+{:enlaces} 
 
 
 Instalar ruby 
@@ -23,4 +24,3 @@ Definir por defecto
 
 	$ rvm 1.9.2rails3 --default
 
-{:enlaces} 

@@ -67,7 +67,7 @@ Crear db de producción
 
 	$ RAILS_ENV=production rake db:create db:migrate
 
-[More](rails/model.html)
+[More](model)
 {:enlaces}
 
 ## Primera app
@@ -99,12 +99,12 @@ Y en el navegador escribir la dirección `localhost:3000/users`. Con lo cual se 
 
 ##Gems 
 
-[MongoMapper](/wiki/rails/mongomapper.html)  
-[Passenger](/wiki/rails/passenger.html)
+[MongoMapper](/wiki/rails/mongomapper)  
+[Passenger](/wiki/rails/passenger)
 {:enlaces}
 
 ##Docs
 
-* [getting started](http://guides.rubyonrails.org/getting_started.html)  
+* [getting started](http://guides.rubyonrails.org/getting_started)  
 {:enlaces}
 

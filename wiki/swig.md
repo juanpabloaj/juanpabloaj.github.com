@@ -4,7 +4,7 @@ title: swig
 ---
 
 ### Ejemplos
-[std Vector](/wiki/swig/stdVector.html)  
+[std Vector](/wiki/swig/stdVector)  
 {.enlaceGris}
 ### Documentación
 

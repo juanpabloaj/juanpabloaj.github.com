@@ -15,9 +15,9 @@ Mostrar cajas de dialogo para shell scripts
 
 ### Ejemplos
 
-[Contando ips](/wiki/bash/contandoIp.html)  
-[Descomprimir varios Zip](/wiki/bash/descomprimirZip.html)  
-[Redimencionar varias imágenes](/wiki/bash/redimencionarImagenes.html)  
-[Barra de progreso](/wiki/bash/barraProgreso.html)  
-[Batería baja](/wiki/bash/bateriaBaja.html)  
+[Contando ips](/wiki/bash/contandoIp)  
+[Descomprimir varios Zip](/wiki/bash/descomprimirZip)  
+[Redimencionar varias imágenes](/wiki/bash/redimencionarImagenes)  
+[Barra de progreso](/wiki/bash/barraProgreso)  
+[Batería baja](/wiki/bash/bateriaBaja)  
 {:enlaces} 

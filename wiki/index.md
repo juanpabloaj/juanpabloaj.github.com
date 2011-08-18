@@ -4,45 +4,45 @@ title : Wiki
 ---
 {:enlaces: .enlaceGris } 
 
-[vim](/wiki/vim.html) 
-[Cygwin](/wiki/cygwin.html) 
-[Apache](/wiki/apache.html) 
-[swig](/wiki/swig.html) 
-[vnstat](/wiki/vnstat.html) 
-[maruku](/wiki/maruku.html) 
-[SGE](/wiki/sge.html) 
-[bash](/wiki/bash.html) 
-[ssh](/wiki/ssh.html) 
-[screen](/wiki/screen.html) 
-[sed](/wiki/sed.html) 
-[latex](/wiki/latex.html) 
-[jekyll](/wiki/jekyll.html) 
-[rvm](/wiki/rvm.html) 
-[tar](/wiki/tar.html)
+[vim](/wiki/vim) 
+[Cygwin](/wiki/cygwin) 
+[Apache](/wiki/apache) 
+[swig](/wiki/swig) 
+[vnstat](/wiki/vnstat) 
+[maruku](/wiki/maruku) 
+[SGE](/wiki/sge) 
+[bash](/wiki/bash) 
+[ssh](/wiki/ssh) 
+[screen](/wiki/screen) 
+[sed](/wiki/sed) 
+[latex](/wiki/latex) 
+[jekyll](/wiki/jekyll) 
+[rvm](/wiki/rvm) 
+[tar](/wiki/tar)
 {:enlaces} 
 ## DB
-[MySQL](/wiki/mysql.html) 
-[MongoDB](/wiki/mongodb.html) 
+[MySQL](/wiki/mysql) 
+[MongoDB](/wiki/mongodb) 
 {:enlaces} 
 ## CMS
-[Wordpress](/wiki/wordpress.html) 
-[Joomla](/wiki/joomla.html) 
+[Wordpress](/wiki/wordpress) 
+[Joomla](/wiki/joomla) 
 {:enlaces} 
 ## Frameworks
-[Rails](/wiki/rails.html) 
-[Django](/wiki/django.html) 
+[Rails](/wiki/rails) 
+[Django](/wiki/django) 
 {:enlaces}
 ## OS
-[OSX](/wiki/osx.html) 
-[Debian](/wiki/debian.html) 
+[OSX](/wiki/osx) 
+[Debian](/wiki/debian) 
 {:enlaces} 
 ## Lenguajes
-[cpp](/wiki/cpp.html) 
-[python](/wiki/python.html) 
-[ruby](/wiki/ruby.html) 
+[cpp](/wiki/cpp) 
+[python](/wiki/python) 
+[ruby](/wiki/ruby) 
 {:enlaces} 
 ## Control de versiones
-[Mercurial](/wiki/mercurial.html) 
-[Git](/wiki/git.html) 
-[Subversion](/wiki/subversion.html) 
+[Mercurial](/wiki/mercurial) 
+[Git](/wiki/git) 
+[Subversion](/wiki/subversion) 
 {:enlaces} 
