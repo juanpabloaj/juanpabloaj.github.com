@@ -82,14 +82,24 @@ Diferencias en resumen
 
 	$ git diff --stat
 
+## rebase 
+
+Eliminar un commit 
+
+	$ git rebase -i HEAD~5
+
+De la lista mostrada borrar la linea del commit
+[removing selected commits from repository](http://stackoverflow.com/questions/495345/git-removing-selected-commits-from-repository)
+{:enlaces} 
+
 ## Branch
 
-ver las branchs locales  
+Ver las branchs locales  
 
     $ git branch   
     * master
 
-ver las branchs ocultas, incluyendo las remotas  
+Ver las branchs ocultas, incluyendo las remotas  
 
     $ git branch -a
     * master
