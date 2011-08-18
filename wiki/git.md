@@ -38,6 +38,35 @@ Regresar un archivo al estado anterior
 
     $ git checkout HEAD~4 file
 
+## ~/.gitconfig
+
+Definir las configuraciones de git. Ejemplo 
+
+	[user]
+		name = userName
+		email = userName@gmail.com
+
+	[diff]
+		color = auto
+
+	[pager]
+		color = true
+
+	[status]
+		color = auto
+	[push]
+		default = current
+	[alias]
+		st = status
+
+Excluir en todos los repos
+
+	$ git config --global core.excludesfile '~/.gitexcludes'
+	$ echo tags > ~/.gitexcludes
+
+[Tracking generated files with Pathogen](https://github.com/tpope/vim-pathogen/issues/18)
+{:enlaces} 
+
 ## Diff
 	
 Solo las lineas de diferencia  
