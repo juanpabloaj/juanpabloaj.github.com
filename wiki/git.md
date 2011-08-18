@@ -88,7 +88,7 @@ Eliminar un commit
 
 	$ git rebase -i HEAD~5
 
-De la lista mostrada borrar la linea del commit
+De la lista mostrada borrar la linea del commit  
 [removing selected commits from repository](http://stackoverflow.com/questions/495345/git-removing-selected-commits-from-repository)
 {:enlaces} 
 
