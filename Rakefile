@@ -28,7 +28,6 @@ task :post, [:nombre] do |t,args|
 			salida.puts '{:enlaces: .enlaceGris}'
 		end
 		sh 'vim '+fichero+' +$' # vim en modo insert al final del fichero
-		sh 'git add .'
 	else 
 		puts "Debe ingresar el nombre del post"
 		puts "rake post[nombre-del-post]"

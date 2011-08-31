@@ -8,7 +8,7 @@ title: Vim Plugins
 [vim-markdown](http://github.com/allison/vim-markdown) sintaxis para markdown  
 [nerdcommenter](https://github.com/scrooloose/nerdcommenter)  
 [nerdtree](https://github.com/scrooloose/nerdtree)  
-[snipmate-snippets](https://github.com/juanpabloaj/snipmate-snippets)  
+[snipmate-snippets](https://github.com/juanpabloaj/snipmate-snippets) snippets para snipmate  
 [tlib_vim](https://github.com/tomtom/tlib_vim)  
 [vim-addon-mw-utils](https://github.com/MarcWeber/vim-addon-mw-utils)  
 [vim-extradite](https://github.com/juanpabloaj/vim-extradite)  
