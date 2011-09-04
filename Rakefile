@@ -17,7 +17,7 @@ task :post, [:nombre] do |t,args|
 	require 'date'
 	nombre = "#{args.nombre}"
 	fecha = Time.now.strftime("%Y-%m-%d")
-	fichero = '_posts/'+fecha+'-'+nombre+'.markdown'
+	fichero = '_posts/'+fecha+'-'+nombre+'.md'
 	if nombre != "" 
 		File.open(fichero,'w') do |salida|
 			salida.puts '---'

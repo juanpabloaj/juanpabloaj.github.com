@@ -1,6 +1,6 @@
 --- 
 layout: default
-title : JuanPabloAJ Page
+title : JuanPabloAJ
 ---
 <br/>
 {% for post in site.posts limits:5 %}
@@ -10,9 +10,11 @@ title : JuanPabloAJ Page
 {% endfor %}
 
 <br/>
+<div class="span-15">
 {% highlight diff %}
 {% include gitDiffStat.markdown %}
 {% endhighlight %}
+</div>
 <br />
 <!-- 
 {{ site.categories | size}}
