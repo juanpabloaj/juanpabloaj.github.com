@@ -150,13 +150,13 @@ solo abre la ventana si hubo errores
 al siguiente error  
 `:cn`
 
-al error previo   
+Al error previo   
 `:cp`
 
-al primer error  
+Al primer error  
 `:cfirst`
 
-al último error  
+Al último error  
 `:clast`
 
 ### Vimdiff

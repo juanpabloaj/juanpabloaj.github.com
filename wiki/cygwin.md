@@ -2,6 +2,7 @@
 layout: default
 title : Cygwin
 ---
+{:enlaces: .enlaceGris }  
 ## Recomendable instalar 
 * vim 
 * ctags
@@ -27,3 +28,14 @@ dejar por defecto xterm con fondo negro y letras blancas, agregar al archivo
 las lineas    
 `*background:       black`  
 `*foreground:       white`  
+
+### puttycyg 
+
+Una buena alternativa a instalar las X es [puttycyg](http://code.google.com/p/puttycyg/) se utiliza igual a putty.
+{:enlaces}
+
+## Referencias 
+
+[puttycyg](http://code.google.com/p/puttycyg/)  
+[Terminales para Cygwin. Notas sobre Terminfo y Termcap](http://www.vicente-navarro.com/blog/2007/07/28/terminales-para-cygwin-notas-sobre-terminfo-y-termcap/)  
+{:enlaces}
