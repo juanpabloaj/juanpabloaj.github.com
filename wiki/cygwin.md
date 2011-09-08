@@ -4,6 +4,7 @@ title : Cygwin
 ---
 {:enlaces: .enlaceGris }  
 ## Recomendable instalar 
+
 * vim 
 * ctags
 * python 
@@ -11,6 +12,9 @@ title : Cygwin
 * git 
 * mercurial  
 * screen  
+* wget 
+* make 
+* zsh 
 
 ## X
 
@@ -33,6 +37,15 @@ las lineas
 
 Una buena alternativa a instalar las X es [puttycyg](http://code.google.com/p/puttycyg/) se utiliza igual a putty.
 {:enlaces}
+
+## apt-cyg 
+
+Instalación de paquetes desde la linea de comandos  
+
+	$ wget http://apt-cyg.googlecode.com/svn/trunk/apt-cyg
+	$ chmod +x apt-cyg 
+	$ mv apt-cyg /usr/local/bin 
+	$ apt-cyg install vim
 
 ## Referencias 
 
