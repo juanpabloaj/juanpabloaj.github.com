@@ -15,6 +15,7 @@ title : Cygwin
 * wget 
 * make 
 * zsh 
+* ncurses
 
 ## X
 
