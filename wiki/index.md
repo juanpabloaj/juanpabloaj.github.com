@@ -19,6 +19,7 @@ title : Wiki
 [jekyll](/wiki/jekyll) 
 [rvm](/wiki/rvm) 
 [tar](/wiki/tar)
+[Visual Studio](/wiki/visualStudio)
 {:enlaces} 
 ## DB
 [MySQL](/wiki/mysql) 
