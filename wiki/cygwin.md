@@ -5,31 +5,22 @@ title : Cygwin
 {:enlaces: .enlaceGris }  
 ## Recomendable instalar 
 
-* vim 
-* ctags
-* python 
-* ssh 
-* git 
-* mercurial  
-* screen  
-* wget 
-* make 
-* zsh 
-* ncurses
+	vim ctags python ssh git mercurial screen wget make zsh ncurses
 
 ## X
 
 ### Instalar 
-* xorg-server   
-* xinit  
-* xorg-docs   
-* X-start-menu-icons  
-  
-para lanzar las aplicaciones gráficas  
-`startxwin`
+
+	xorg-server xinit xorg-docs X-start-menu-icons 
+
+para lanzar las aplicaciones gráficas 
+
+	startxwin
 
 dejar por defecto xterm con fondo negro y letras blancas, agregar al archivo  
-`/etc/X11/app-defaults/XTerm`  
+
+	/etc/X11/app-defaults/XTerm
+	
 las lineas    
 
 {% highlight bash %}
