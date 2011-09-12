@@ -31,8 +31,13 @@ para lanzar las aplicaciones gráficas
 dejar por defecto xterm con fondo negro y letras blancas, agregar al archivo  
 `/etc/X11/app-defaults/XTerm`  
 las lineas    
-`*background:       black`  
-`*foreground:       white`  
+
+{% highlight bash %}
+
+	*background:       black
+	*foreground:       white
+
+{% endhighlight %}
 
 ### puttycyg 
 
@@ -43,10 +48,14 @@ Una buena alternativa a instalar las X es [puttycyg](http://code.google.com/p/pu
 
 Instalación de paquetes desde la linea de comandos  
 
+{% highlight bash %}
+
 	$ wget http://apt-cyg.googlecode.com/svn/trunk/apt-cyg
 	$ chmod +x apt-cyg 
 	$ mv apt-cyg /usr/local/bin 
 	$ apt-cyg install vim
+
+{% endhighlight %}
 
 ## Referencias 
 
