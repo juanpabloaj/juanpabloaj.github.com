@@ -61,6 +61,8 @@ Passenger se debería encargar del resto
 Dirá si falta algo, incluso se encargar de instalar nginx de ser necesario. 
 La instalación debería terminar con algo como 
 
+{% highlight nginx %}
+
 	This installer has already modified the configuration file for you! The
 	following configuration snippet was inserted:
 
@@ -79,9 +81,11 @@ La instalación debería terminar con algo como
 	  passenger_enabled on;
 	}
 
+{% endhighlight %}
 
 El archivo para administrar nginx en `/etc/init.d/nginx`
 
+{% highlight bash %}
 
 	#! /bin/sh
 
@@ -145,6 +149,7 @@ El archivo para administrar nginx en `/etc/init.d/nginx`
 
 		exit 0
 
+{% endhighlight %}
 
 Darle los permisos de ejecución
 
