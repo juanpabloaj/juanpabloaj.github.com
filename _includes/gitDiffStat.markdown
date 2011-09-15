@@ -1,1 +1,2 @@
- wiki/cygwin.md                 |   29 ++++++++++-------------------
+ wiki/brew.md                   |    8 ++++++++
+ wiki/index.md                  |    2 ++

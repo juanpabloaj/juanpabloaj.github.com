@@ -19,6 +19,8 @@ title : Wiki
 [jekyll](/wiki/jekyll) 
 [rvm](/wiki/rvm) 
 [tar](/wiki/tar)
+[brew](/wiki/brew)
+[gurobi](/wiki/gurobi)
 [Visual Studio](/wiki/visualStudio)
 {:enlaces} 
 ## DB
