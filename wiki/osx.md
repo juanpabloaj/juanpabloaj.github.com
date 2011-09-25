@@ -2,6 +2,7 @@
 layout: default
 title : OSX
 ---
+{:enlaces: .enlaceGris }  
 Pegar en la terminal 
 
 	pbpaste
@@ -57,3 +58,4 @@ Y volver al archivo a binario
 ## Referencias:
 [Screenshot filename in Lion](https://discussions.apple.com/thread/3214350?start=0&tstart=0)  
 [How do I change the default screenshot name in OS X Lion?](http://superuser.com/questions/339702/how-do-i-change-the-default-screenshot-name-in-os-x-lion/)   
+{:enlaces}
