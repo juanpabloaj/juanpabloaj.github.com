@@ -2,7 +2,15 @@
 layout: default
 title : OSX
 ---
-{:enlaces: .enlaceGris }  
+{:enlaces: .enlaceGris }
+## Recomendados
+
+* TotalTerminal
+* geektool
+* Alfred
+* Sparrow
+
+## pbpaste
 Pegar en la terminal 
 
 	pbpaste
@@ -11,7 +19,7 @@ Copiar desde la terminal
 
 	cat archivo.txt | pbcopy 
 
-## top 
+## top
 
 Ordenar proceso por cpu 
 
