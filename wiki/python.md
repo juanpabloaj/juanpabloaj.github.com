@@ -2,9 +2,16 @@
 layout: default
 title : python
 ---
+### String
+Mostrar todas las letras
+
+	import string
+	for a in string.lowercase:
+		print a
+
 ### Listas
 
-Evaluar una lista con elementos booleanos 
+Evaluar una lista con elementos booleanos
 
 	>>> t=[True]*5 + [False]
 	>>> t
@@ -14,8 +21,8 @@ Evaluar una lista con elementos booleanos
 	>>> reduce(lambda a,b: a and b, t)
 	False
 
-### yield 
- 
-devuelve un objeto de tipo generator 
+### yield
+
+Devuelve un objeto de tipo generator
 
 ## __hash__
