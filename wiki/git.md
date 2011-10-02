@@ -198,22 +198,32 @@ Ver lo que se ha hecho
 Muy útil para recuperar hash que se resetearon	
 
 ## submodules
-
+###add
 Agregar un nuevo submodulo
 
 	$ git submodule add http://url_submodule path_a_instalar
-	
-Iniciar y actualizar 
 
-	$ git submodule init 
-	$ git submodule update 
-	
-o 
+Iniciar y actualizar
+
+	$ git submodule init
+	$ git submodule update
+
+O
 
 	$ git submodule update --init
 
-actualizar todos los submodulos
+Actualizar todos los submodulos
 
 	$ git submodule update --init --recursive
 
+###rm
+No es tan simple como al agregar, es necesario eliminar las lineas que mencionen al submodulo en los archivos
 
+	$ vim .gitsubmodules # eliminar referencias al submodulo
+	$ vim .git/config #  eliminar referencias al submodulo
+	$ git rm --cached path_to_subModule
+	$ git commit
+
+Pueden quedar archivos del submodulo
+
+	$ rm -rf path_to_subModule
