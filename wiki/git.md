@@ -227,3 +227,15 @@ No es tan simple como al agregar, es necesario eliminar las lineas que mencionen
 Pueden quedar archivos del submodulo
 
 	$ rm -rf path_to_subModule
+
+###Tags
+Crear una en el actual commit
+
+	git tag v0.0.1
+Mostrarla
+
+	git show v0.0.1
+
+Subir las tags
+
+	git push --tags
