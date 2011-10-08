@@ -50,10 +50,10 @@ Ver un resumen de las modificaciones solo los nombres de los archivos modificado
 ## .hgignore 
 para ignorar archivos que no se quieran considerar en el repositorio  
 
-ignorar todos los que terminen en .py  
+Ignorar todos los que terminen en .py  
 `*py`
 
-ignorar todos los que no terminen en .c o .h  
+Ignorar todos los que no terminen en .c o .h  
 `*[!.c|!.h]`
 
 ## Branch
@@ -111,3 +111,10 @@ Agregar al archivo `~/.hgrc`
 
 	[extensions]
 	hgext.graphlog =
+
+##.hgrc
+###alias
+
+	[alias]
+	d0 = diff -U0
+
