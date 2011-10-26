@@ -6,7 +6,7 @@ title : Git
 
 ## Básicos 
 
-descargar cambios  
+Descargar cambios  
 
 	$ git pull 
 
