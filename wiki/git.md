@@ -178,7 +178,6 @@ Fetch a todas las remotas
 
 	$ git remote update
 
-
 ## graph 
 
 log más gráfico 
@@ -219,7 +218,7 @@ Actualizar todos los submodulos
 ###rm
 No es tan simple como al agregar, es necesario eliminar las lineas que mencionen al submodulo en los archivos
 
-	$ vim .gitsubmodules # eliminar referencias al submodulo
+	$ vim .gitmodules # eliminar referencias al submodulo
 	$ vim .git/config #  eliminar referencias al submodulo
 	$ git rm --cached path_to_subModule
 	$ git commit
@@ -228,7 +227,7 @@ Pueden quedar archivos del submodulo
 
 	$ rm -rf path_to_subModule
 
-###Tags
+##Tags
 Crear una en el actual commit
 
 	git tag v0.0.1

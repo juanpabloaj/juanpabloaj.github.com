@@ -3,31 +3,31 @@ layout: default
 title : Mercurial
 ---
 
-Inicializar repositorio 
+Inicializar repositorio
 
-	hg init 
+	hg init
 
-Status del repositorio  
+Status del repositorio
 
-	hg st 
+	hg st
 
-Traer los cambios  
+Traer los cambios
 
 	hg pull
 
-Actualizar los cambios descargados  
+Actualizar los cambios descargados
 
 	hg update
 
-Traer y actualizar los cambios  
+Traer y actualizar los cambios
 
 	hg pull -u
 
-Ver el log de la revisión numero 2  
+Ver el log de la revisión numero 2
 
 	hg log -r 2
 
-Último log  
+Último log
 
 	hg log -r -1
 
@@ -35,11 +35,11 @@ Los últimos 2 logs
 
 	hg log -r -1:-2
 
-Comparar los cambios desde la revisión -3  
+Comparar los cambios desde la revisión -3
 
 	hg diff -r -3
 
-Comparar los cambios con las revisiones entre -2:-3  
+Comparar los cambios con las revisiones entre -2:-3
 
 	hg diff -r -2:-3
 
@@ -47,14 +47,16 @@ Ver un resumen de las modificaciones solo los nombres de los archivos modificado
 
 	hg diff --stat
 
-## .hgignore 
-para ignorar archivos que no se quieran considerar en el repositorio  
+## .hgignore
+para ignorar archivos que no se quieran considerar en el repositorio
 
-Ignorar todos los que terminen en .py  
-`*py`
+Ignorar todos los que terminen en .py
 
-Ignorar todos los que no terminen en .c o .h  
-`*[!.c|!.h]`
+	*py
+
+Ignorar todos los que no terminen en .c o .h
+
+	*[!.c|!.h]
 
 ## Branch
 
@@ -66,20 +68,20 @@ Mostrar las existentes
 
 	$ hg branches
 	ramaNueva                    10:d3959df85fcf
-	default                        9:7d1a900129f9 
+	default                        9:7d1a900129f9
 
 Moverse a la rama default
 
-	$ hg update default 
+	$ hg update default
 
-Saber en que rama estamos 
+Saber en que rama estamos
 
 	$ hg branch
 	default
 
 Traer los cambios desde otra rama
 
-	$ hg merge ramaNueva 
+	$ hg merge ramaNueva
 
 ### Ejemplo de branches y merge
 
@@ -88,12 +90,12 @@ Traer los cambios desde otra rama
 	cd eBranch
 	hg init
 	echo "Creado e inicializado proyecto"
-	touch README core.py 
-	hg st  
+	touch README core.py
+	hg st
 	hg add README core.py
-	hg st  
+	hg st
 	hg ci -m "primer commit"
-	hg branch server 
+	hg branch server
 	echo "branch server creada y movido a esta"
 	touch server.py
 	hg add server.py
@@ -103,11 +105,12 @@ Traer los cambios desde otra rama
 	hg st
 	hg ci -m "mezclando desde server a default"
 	hg branches
-	hg log 
+	hg log
 
-## glog 
+## subrepo
+## glog
 
-Agregar al archivo `~/.hgrc`  
+Agregar al archivo `~/.hgrc`
 
 	[extensions]
 	hgext.graphlog =

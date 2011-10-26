@@ -9,23 +9,24 @@ title : OSX
 * geektool
 * Alfred
 * Sparrow
+* cloudapp
 
 ## pbpaste
-Pegar en la terminal 
+Pegar en la terminal
 
 	pbpaste
 
-Copiar desde la terminal 
+Copiar desde la terminal
 
-	cat archivo.txt | pbcopy 
+	cat archivo.txt | pbcopy
 
 ## top
 
-Ordenar proceso por cpu 
+Ordenar proceso por cpu
 
 	top -o cpu
 
-## defaults 
+## defaults
 
 Es preferible usar uxterm a xterm, ya que ofrece soporte para unicode.  
 Dejar uxterm en una posición especifica al comienzo de X11  
@@ -65,5 +66,5 @@ Y volver al archivo a binario
 
 ## Referencias:
 [Screenshot filename in Lion](https://discussions.apple.com/thread/3214350?start=0&tstart=0)  
-[How do I change the default screenshot name in OS X Lion?](http://superuser.com/questions/339702/how-do-i-change-the-default-screenshot-name-in-os-x-lion/)   
+[How do I change the default screenshot name in OS X Lion?](http://superuser.com/questions/339702/how-do-i-change-the-default-screenshot-name-in-os-x-lion/)  
 {:enlaces}
