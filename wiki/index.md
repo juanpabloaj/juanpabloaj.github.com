@@ -24,6 +24,7 @@ title : Wiki
 [Visual Studio](/wiki/visualStudio)
 [irssi](/wiki/irssi)
 [dropbox](/wiki/dropbox)
+[matplotlib](/wiki/matplotlib)
 {:enlaces}
 ## DB
 [MySQL](/wiki/mysql)
