@@ -1,4 +1,4 @@
---- 
+---
 layout: default
 title : python
 ---
@@ -35,6 +35,9 @@ Devuelve un objeto de tipo generator
 
 	__hash__
 
+###more...
+[Herencia](/wiki/python/Herencia)
+{:enlaces}
 ##easy_install
 Para facilitar la instalación de paquetes.
 
