@@ -2,8 +2,9 @@
 layout: default
 title : python
 ---
+{:enlaces: .enlaceGris }  
 ##easy_install
-Para facilitar la instalación de paquetes.  
+Para facilitar la instalación de paquetes.
 
 	easy_install networkx
 
@@ -12,6 +13,7 @@ Si instala para `python2.7` y se requiere para `python2.6`
 	easy_install-2.6 networkx
 
 ###Pypi
+##General
 ### String
 Mostrar todas las letras
 
@@ -40,3 +42,16 @@ Evaluar una lista con elementos booleanos
 Devuelve un objeto de tipo generator
 
 ## __hash__
+## Windows
+python se debería instalar en `C:\python26` o un directorio similar.  
+Es recomendable agregar la ubicación en la variable de entorno `PATH` en
+
+	Sistema > optiones avanzadas > variables de entorno
+
+###Executable
+Para crear un executable para windows es necesario bajar el paquete (py2exe)[http://py2exe.org/].  
+{:enlaces}
+Crear un archivo `setup.py` y usar el comando
+
+	python setup.py py2exe
+
