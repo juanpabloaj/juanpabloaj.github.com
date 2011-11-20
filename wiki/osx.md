@@ -10,6 +10,8 @@ title : OSX
 * Alfred
 * Sparrow
 * cloudapp
+* iTerm2
+* moon
 
 ## pbpaste
 Pegar en la terminal

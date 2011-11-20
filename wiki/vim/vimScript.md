@@ -2,23 +2,22 @@
 layout: default
 title: Vim Scripts
 ---
-Mostrar el tipo de archivo  
+Mostrar el tipo de archivo
 
 	:echo &ft
 
 ### Funciones
 Algunos ejemplos de funciones para modificar csv.
 
-	" for csv {{{1
-	" ReordenarFecha {{{2
+	" for csv
+	" ReordenarFecha
 
 	function! ReordenarFecha()
 		"de dia-mes-anno a anno-mes-dia
 		exe "%s/^\\([0-9][0-9]\\)-\\([0-9][0-9]\\)-\\([0-9][0-9][0-9][0-9]\\)\t/\\3-\\2-\\1\t/"
 	endfunction
 
-	" }}}2
-	" CambioFechas {{{2
+	" CambioFechas
 	" cambiar junta dos columnas anno mes a un sola fecha para mysql
 	function! CambioFechas(args)
 		let s:meses = [
@@ -51,8 +50,7 @@ Algunos ejemplos de funciones para modificar csv.
 		endif
 	endfunction
 
-	" }}}2
-	" CsvToSql {{{2
+	" CsvToSql
 	" convierte un csv a sql, solo el ultimo campo numerico
 	function! CsvToSql(entrada)
 		"exe "%s/\(09[0-9][0-9]01\);/\1;0-10;/"
@@ -63,6 +61,3 @@ Algunos ejemplos de funciones para modificar csv.
 		exe "%s/,'\\([0-9,.]*\\));$/,\\1);/" 
 	endfunction
 	command! -nargs=+ -complete=command CsvToSql call CsvToSql(<q-args>)
-
-	" }}}2
-	" }}}1
