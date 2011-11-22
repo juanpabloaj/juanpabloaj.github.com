@@ -12,6 +12,7 @@ title : Wiki
 [maruku](/wiki/maruku)
 [SGE](/wiki/sge)
 [bash](/wiki/bash)
+[zsh](/wiki/zsh)
 [ssh](/wiki/ssh)
 [screen](/wiki/screen)
 [sed](/wiki/sed)
