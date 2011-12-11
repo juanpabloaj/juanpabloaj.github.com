@@ -1,3 +1,1 @@
- _posts/2011-11-19-Una-vista-rapida-a-virtualenv.md |   55 ++++++++++++++++++++
- wiki/osx.md                                        |    2 +
- wiki/vim/vimScript.md                              |   15 ++----
+ _posts/2011-12-11-automata-celular-con-HTML5.md |   74 +++++++++++++++++++++++
