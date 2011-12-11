@@ -5,7 +5,8 @@ title : JuanPabloAJ
 <br/>
 {% for post in site.posts limits:5 %}
 	<div class="enlaceGris"> 
-		<em>{{ post.date | date_to_string }}</em> : <a href="{{ post.url }}">{{ post.title }}</a>
+		<div class="span-2"><em>{{ post.date | date_to_string }}</em></div>
+		<div>:  <a href="{{ post.url }}">{{ post.title }}</a></div>
 	</div>
 {% endfor %}
 
