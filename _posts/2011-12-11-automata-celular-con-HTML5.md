@@ -8,9 +8,9 @@ categories:
 Para probar canvas de HTML5 un automata celular con la [regla 110](http://en.wikipedia.org/wiki/Rule_110)
 {:enlaces}
 
-<div class="span-6 last prepend-1 append-17">
-	<img src="http://f.cl.ly/items/2p3h363K0C3b2y1B0s1z/ss%202011-12-11_at_13.54.51.png">
-	</img>
+<div class="">
+		<img src="http://f.cl.ly/items/2p3h363K0C3b2y1B0s1z/ss%202011-12-11_at_13.54.51.png">
+		</img>
 </div>
 
 Y el [código](https://gist.github.com/1461541) :
