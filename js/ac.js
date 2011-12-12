@@ -6,13 +6,15 @@ function ac () {
     var a=new Array();
     var b=new Array();
     for (var i = 0; i < 41; i += 1) a[i]=Math.round(Math.random());
-    for (var j = 0; j < alto; j += 1)
-        for (var i = 0; i < a.length; i += 1) {
-            canvasContext.fillRect(i*dx,j*dx,dx-1,dx-1);
-        };
-    canvasContext.fillStyle = "rgba(200,200,200,0.8)";
-    var alpha=0.9;
+    //for (var j = 0; j < alto; j += 1)
+        //for (var i = 0; i < a.length; i += 1) {
+            //canvasContext.fillRect(i*dx,j*dx,dx-1,dx-1);
+        //};
+    canvasContext.fillStyle = "rgba(60,60,60,0.4)";
+    var alpha=0.4;
     for (var j = 0; j < alto; j += 1){
+        //alpha+=0.04
+        //canvasContext.globalAlpha=alpha;
         for (var i = 0; i < a.length; i += 1) b[i]=a[i];
         for (var i = 0; i < a.length; i += 1) {
             bj=b[(i+1)%a.length];
@@ -23,8 +25,6 @@ function ac () {
                 canvasContext.fillRect(i*dx,j*dx,dx-1,dx-1);
             }
         };
-        alpha-=0.01;
-        canvasContext.globalAlpha=alpha;
     }
 }
 function r110 (j,k,l) {
