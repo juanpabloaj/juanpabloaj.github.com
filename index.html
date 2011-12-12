@@ -1,10 +1,10 @@
---- 
-layout: default
+---
+layout: ac
 title : JuanPabloAJ
 ---
 <br />
 {% for post in site.posts limits:5 %}
-	<div class="enlaceGris"> 
+	<div class="enlaceGris">
 		<div class="row">
 			<div class="span2"><em>{{ post.date | date_to_string }}</em></div>
 			<div>:  <a href="{{ post.url }}">{{ post.title }}</a></div>
