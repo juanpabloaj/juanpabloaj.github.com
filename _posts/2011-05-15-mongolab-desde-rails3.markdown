@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: post
+comments: true
 title : Tocando Mongolab desde rails3
 categories:
 - mongodb

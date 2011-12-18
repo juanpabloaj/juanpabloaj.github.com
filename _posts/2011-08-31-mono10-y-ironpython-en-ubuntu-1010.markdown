@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: post
+comments: true
 title : Mono 10 y ironpython en Ubuntu 10.10
 categories:
 ---

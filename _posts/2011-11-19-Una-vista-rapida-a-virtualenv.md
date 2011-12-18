@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: post
+comments: true
 title : Una vista rápida a virtualenv
 categories:
 ---

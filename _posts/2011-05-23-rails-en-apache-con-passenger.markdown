@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: post
+comments: true
 title : Rails en Apache con Passenger
 categories:
 ---

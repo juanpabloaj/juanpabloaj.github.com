@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: post
+comments: true
 title : Rails con Passenger nginx en Squeeze
 categories:
 ---

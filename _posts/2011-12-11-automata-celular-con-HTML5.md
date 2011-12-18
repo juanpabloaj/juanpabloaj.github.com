@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: post
+comments: true
 title : Automata celular con HTML5
 categories:
 ---
