@@ -1,1 +1,1 @@
- _posts/2011-12-11-automata-celular-con-HTML5.md |   74 +++++++++++++++++++++++
+ _posts/2011-12-18-Verbatim-en-beamer.md |    3 +-
