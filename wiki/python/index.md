@@ -15,7 +15,8 @@ Mostrar todas las letras
 Ignorar warnings
 	import warnings
 	warnings.filterwarnings(action="ignore", message='the sets module is deprecated')
-### Listas
+## Listas
+### Funcional
 
 Evaluar una lista con elementos booleanos
 
@@ -26,6 +27,18 @@ Evaluar una lista con elementos booleanos
 	True
 	>>> reduce(lambda a,b: a and b, t)
 	False
+
+Un if en map
+
+	a = [ i for i in range(10)]
+	m= map(lambda i: i > 0, a)
+	print m
+	print reduce(lambda a,b: a and b, m)
+
+map entrega una lista y reduce un valor
+
+    [False, True, True, True, True, True, True, True, True, True]
+    False
 
 ### yield
 
