@@ -18,10 +18,11 @@ task :post, [:nombre] do |t,args|
 	nombre = "#{args.nombre}"
 	fecha = Time.now.strftime("%Y-%m-%d")
 	fichero = '_posts/'+fecha+'-'+nombre+'.md'
-	if nombre != "" 
+	if nombre != ""
 		File.open(fichero,'w') do |salida|
 			salida.puts '---'
-			salida.puts 'layout: default'
+			salida.puts 'layout: post'
+			salida.puts 'comments: true'
 			salida.puts 'title : '+nombre.gsub('-',' ')
 			salida.puts 'categories:'
 			salida.puts '---'
