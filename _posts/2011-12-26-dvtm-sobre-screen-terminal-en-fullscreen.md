@@ -17,9 +17,9 @@ ellas aprovechando lo mejor posible la pantalla.
 Una solución clásica es usar [screen](http://www.gnu.org/software/screen/)
 que soportan varias terminales a la vez y cosas como split. Sin olvidar
 que puedes dejar corriendo tareas en background y recuperarlas.
+{:enlaces}
 
 Pero la gestión de los espacios sigue siendo tarea del usuario.
-{:enlaces}
 
 Ahí es donde entra dvtm. Como awesome, se encarga de gestionar las ventanas con
 tiling, cada vez que lanzas una shell se acomoda al estilo de layout
