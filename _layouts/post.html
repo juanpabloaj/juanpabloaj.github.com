@@ -34,38 +34,64 @@
             <div class="container">
                 <ul class="nav">
                     <li class="active"><a href="/">Home</a></li>
+                    <li><a href="/blog">Blog</a></li>
                     <li><a href="/wiki">Wiki</a></li>
-                    <li><a href="http://github.com/juanpabloaj">Github</a></li>
                 </ul>
+                <div class="pull-right">
+                    <ul class="nav">
+                        <li><a href="http://twitter.com/#!/juanpabloaj">twitter</a></li>
+                        <li><a href="http://github.com/juanpabloaj">github</a></li>
+                        <li><a href="https://bitbucket.org/juanpablo">bitbucket</a></li>
+                            <li ><a href="#"><span id="mail"></span></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
 <div class="container">
-    <h1>{{ page.title }}</h1>
-		{{ content }}
+    <div class="row">
+        <div class="span5">
+                <ul class="media-grid">
+                    <li>
+                        <a href="/">
+                        <img class="thumbnail" src="http://f.cl.ly/items/332o2z0V0h2T2w0M2Y0m/deLado.jpg" alt="" />
+                        </a>
+                    </li>
+                </ul>
+            <h3>Posts</h3>
+            {% for post in site.posts limits:5 %}
+                <div class="enlaceGris">
+                    <div><a href="{{ post.url }}">{{ post.title }}</a></div>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="span10">
+            <h1>{{ page.title }}</h1>
+            {{ content }}
+            {{ % if page.comments % }}
+                <div id="disqus_thread"></div>
+                <script type="text/javascript">
+                    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+                    var disqus_shortname = 'juanpabloaj'; // required: replace example with your forum shortname
 
-        {{ % if page.comments % }}
-            <div id="disqus_thread"></div>
-            <script type="text/javascript">
-                /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-                var disqus_shortname = 'juanpabloaj'; // required: replace example with your forum shortname
-
-                /* * * DON'T EDIT BELOW THIS LINE * * */
-                (function() {
-                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                    dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-                })();
-            </script>
-            <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-        {{ % endif %}}
+                    /* * * DON'T EDIT BELOW THIS LINE * * */
+                    (function() {
+                        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            {{ % endif %}}
+        </div>
+    </div>
 	<div class="span-24 enlaceGris" id="footer"><!-- use blueprint footer -->
 		Powered by {
 		<a href="https://github.com">github</a>,
 		<a href="https://github.com/mojombo/jekyll">jekyll</a>,
 		<a href="http://www.vim.org">vim</a>
 		+ <a href="/wiki/vim/vimPlugins">plugins</a>}
-        <p class="pull-right"><a href="http://feeds.feedburner.com/juanpabloaj">RSS</a></p>
+        <p class="pull-right"><a href="http://feeds.feedburner.com/juanpabloaj">feed</a></p>
 	</div>
 </div>
 </body>
