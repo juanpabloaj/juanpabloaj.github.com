@@ -25,6 +25,7 @@ title : Wiki
 [Visual Studio](/wiki/visualStudio)
 [irssi](/wiki/irssi)
 [dropbox](/wiki/dropbox)
+[Xauthority](/wiki/Xauthority)
 {:enlaces}
 ## DB
 [MySQL](/wiki/mysql)
