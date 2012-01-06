@@ -15,17 +15,21 @@ title : Wiki
 [zsh](/wiki/zsh)
 [ssh](/wiki/ssh)
 [screen](/wiki/screen)
-[sed](/wiki/sed)
 [latex](/wiki/latex)
 [jekyll](/wiki/jekyll)
 [rvm](/wiki/rvm)
-[tar](/wiki/tar)
 [brew](/wiki/brew)
 [gurobi](/wiki/gurobi)
 [Visual Studio](/wiki/visualStudio)
 [irssi](/wiki/irssi)
 [dropbox](/wiki/dropbox)
 [Xauthority](/wiki/Xauthority)
+{:enlaces}
+## Comandos
+[ldconfig](/wiki/ldconfig)
+[tar](/wiki/tar)
+[sed](/wiki/sed)
+[find](/wiki/find)
 {:enlaces}
 ## DB
 [MySQL](/wiki/mysql)
