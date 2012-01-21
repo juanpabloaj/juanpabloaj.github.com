@@ -46,6 +46,7 @@ title : Wiki
 ## OS
 [OSX](/wiki/osx)
 [Debian](/wiki/debian)
+[Suse](/wiki/suse)
 {:enlaces}
 ## Lenguajes
 [cpp](/wiki/cpp)
