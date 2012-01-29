@@ -36,4 +36,10 @@ Genera
         font: 14px Arial, sans-serif;
     }
 
+No puedo dejar de mencionar el argumento
+
+    style --watch style.styl
+
+Con esto cada vez que modifique el archivo `style.styl` se generara automáticamente el archivo `style.css`.
+
 Más detalles en el sitio de [stylus](http://learnboost.github.com/stylus/)
