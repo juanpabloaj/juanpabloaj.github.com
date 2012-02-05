@@ -20,11 +20,11 @@ Subir los cambios
 
 Eliminar cambios 
 
-	$ git reset --all 
+	$ git reset --hard
 
 Volver a cambios del origin/master
-	
-	$ git reset --all origin/master
+
+	$ git reset --hard origin/master
 
 Forzar el borrardo de archivos y directorios que se han agregado sin añandir 
 
