@@ -1,6 +1,6 @@
 ---
 layout: default
-title : irssi
+title : Dropbox
 ---
 ###OSX
 Si el proceso `opendirectoryd` habitualmente consume demasiada CPU, uno de los causantes puede ser enlaces simbólicos rotos en Dropbox.  
