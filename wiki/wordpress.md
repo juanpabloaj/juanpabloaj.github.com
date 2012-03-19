@@ -71,6 +71,12 @@ subir modulo rewrite
 
 modificar el archivo de apache /etc/apache2/sites-available/default , cambiar `AllowOverride None` por `AllowOverride All`  
 
+### DB
+
+Algunas variables se pueden modificar directamente sobre la db
+
+    update wp_options set option_value = 'http://mydomain' where option_name = 'siteurl';
+
 ### Referencias  
 
 * [Wordpress Famous 5 minutes install](http://codex.wordpress.org/Installing_WordPress#Famous_5-Minute_Install)  
