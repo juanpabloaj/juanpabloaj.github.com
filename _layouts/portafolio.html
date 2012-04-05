@@ -15,25 +15,8 @@
 <link rel="stylesheet" href="/css/syntax.css" type="text/css" media="screen" />
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/noisy/1.1/jquery.noisy.min.js"></script>
-		<script>
-            $(document).ready(iniciar);
-            function iniciar () {
-                $('body').noisy({
-                    intensity: 1,
-                    size: 200,
-                    opacity: 0.08,
-                    monochrome: false
-                });
-                $('#mail').html(function(){
-                    var a="jp";
-                    var b="abloaj";
-                    var c="@gmail.com";
-                    var m='mailto:'+a+b+c;
-                    $(this).parent('a').attr('href',m);
-                    return "email";
-                });
-            }
-		</script>
+    <script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/bootstrap-transition.js"></script>
+    <script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/bootstrap-carousel.js"></script>
 <title>{{ page.title }}</title>
 <script type="text/javascript">
 
@@ -80,33 +63,48 @@
 <body>
     <div class="container">
         <div class="content">
-            <div class="row-fluid">
-                <div class="span4">
-                    <ul class="thumbnails">
-                        <li>
-                            <a href="/">
-                            <img class="thumbnail" src="http://f.cl.ly/items/332o2z0V0h2T2w0M2Y0m/deLado.jpg" alt="" />
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div id="about" class="span8">
-                    {{ content }}
-                    <br />
-                        <div class="navbar pull-right">
-                            <ul class="nav">
-                                <li><a href="/blog">blog</a></li>
-                                <li><a href="/portafolio">portafolio</a></li>
-                                <li><a href="http://twitter.com/#!/juanpabloaj">twitter</a></li>
-                                <li><a href="http://github.com/juanpabloaj">github</a></li>
-                                <li><a href="https://bitbucket.org/juanpablo">bitbucket</a></li>
-                                    <li ><a href="#"><span id="mail"></span></a></li>
-                            </ul>
+            <div class="page-header">
+                <h1>Portafolio </h1>
+            </div>
+            <div id="myCarousel" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img class="thumbnail" src="http://f.cl.ly/items/2K062y1D0K1E1Q0v241C/agromod_650_478.png" alt=""/>
+                        <div class="carousel-caption">
+                            <h4>Agromod</h4>
+                            <p>Diseño e implementación de aplicación de escritorio y sitio web.</p>
                         </div>
+                    </div>
+                    <div class="item">
+                        <img class="thumbnail" src="http://f.cl.ly/items/1o200I0o031N1v352b2A/caid_650_478.png" alt=""/>
+                        <div class="carousel-caption">
+                            <h4>Centro Agronómico de Investigación y Desarrollo</h4>
+                            <p>Diseño y levantamiento sitio web.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img class="thumbnail" src="http://f.cl.ly/items/3g2d1d0z2F2P1j1M1Q1O/meteoagro_650_478.png" alt=""/>
+                        <div class="carousel-caption">
+                            <h4>Meteoagro</h4>
+                            <p>Diseño e implementación de plataforma para visualización gráfica de reportes metereológicos predictivos e historicos.
+                            </p>
+                        </div>
+                    </div>
                 </div>
+                <!-- Carousel nav -->
+                <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+                <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
             </div>
         </div>
     </div>
+<script>
+
+$(function() {
+    $('#myCarousel').carousel({
+        interval: 10000
+    });
+});
+
+</script>
 </body>
 </html>
-

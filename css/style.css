@@ -11,3 +11,7 @@ a {text-decoration:none;color:#bbb;}
 pre, code {line-height:1.2;}
 /* bootstrap */
 code {background:none;}
+#myCarousel img {
+    margin:auto;
+    width:620px;
+}
