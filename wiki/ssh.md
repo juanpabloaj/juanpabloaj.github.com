@@ -3,7 +3,7 @@ layout: default
 title: ssh
 ---
 
-SSH sin password
+## SSH sin password
 
 automatico
 
