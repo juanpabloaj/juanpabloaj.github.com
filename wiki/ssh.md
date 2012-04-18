@@ -1,6 +1,6 @@
 ---
 layout: default
-title: ssh
+title: SSH
 ---
 
 ## SSH sin password
