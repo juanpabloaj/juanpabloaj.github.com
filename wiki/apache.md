@@ -40,3 +40,8 @@ en `/etc/apache2/sites-available` habilitar un sitio
 desabilidar un sitio 
 
 	$ a2dissite sitio.com
+
+## Virtualhost
+
+    Alias /blog /var/www/wordpress
+    ScriptAlias /wiki /srv/www/localwiki/public_html
