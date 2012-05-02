@@ -64,7 +64,7 @@ Para hacer la conexión basta con
 
 Solo alojar usuarios específicos
 
-    AllowUsers pablo
+    AllowUsers user1 user2
 
 No permitir password, solo se puede autentificar por llave
 
