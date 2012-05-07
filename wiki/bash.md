@@ -3,7 +3,7 @@ layout: default
 title: bash
 ---
 
-{:enlaces: .enlaceGris }  
+{:enlaces: .enlaceGris }
 
 Editar el bashrc de cada nuevo usuario.
 
@@ -11,7 +11,14 @@ Editar el bashrc de cada nuevo usuario.
 
 Mostrar cajas de dialogo para shell scripts
 
-	dialog --msgbox "hola mundo" 6 25 
+	dialog --msgbox "hola mundo" 6 25
+
+### bashrc
+Si cuando se entra a bash el prompt se ve similar a
+
+    -bash-3.2
+
+Una de las posibles causas es la falta del archivo `.bash_profile`
 
 ### Ejemplos
 
