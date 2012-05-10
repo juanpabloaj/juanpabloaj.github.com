@@ -2,7 +2,6 @@
 layout: default
 title: SSH
 ---
-
 ## SSH sin password
 
 ###Automático
@@ -29,6 +28,16 @@ Cambiar los permisos en la llave copiada
 En el caso de tener mas de una llave agregar al final del archivo
 
 	cat id_rsa.pub >> ~/.ssh/authorized_keys2
+
+### Importando public key
+Desde cliente tectia para openssh
+
+    OpenSSH: ssh-keygen -i -f [filename]
+
+Desde openssh a tectia
+
+    OpenSSH: ssh-keygen -e -f [filename].
+    Tectia: ssh-keygen --import-public-key [infile] [outfile]
 
 ## SSH túnel inverso
 
@@ -69,3 +78,7 @@ Solo alojar usuarios específicos
 No permitir password, solo se puede autentificar por llave
 
     PasswordAuthentication no
+
+###Referencias
+
+* [How do I get publickey user authentication to work?](http://www.snailbook.com/faq/publickey-userauth.auto.html)  
