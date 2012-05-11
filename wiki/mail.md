@@ -1,0 +1,11 @@
+---
+layout: default
+title: mail
+---
+Usar less como PAGER de mail
+
+    PAGER=less mail
+
+O exportar la variable PAGER en `~/.bashrc`
+
+    export PAGER=less
