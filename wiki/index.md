@@ -32,6 +32,7 @@ title : Wiki
 [mount](/wiki/mount)
 [awk](/wiki/awk)
 [find](/wiki/find)
+[mail](/wiki/mail)
 {:enlaces}
 ## DB
 [MySQL](/wiki/mysql)
