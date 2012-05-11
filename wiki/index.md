@@ -29,6 +29,8 @@ title : Wiki
 [ldconfig](/wiki/ldconfig)
 [tar](/wiki/tar)
 [sed](/wiki/sed)
+[mount](/wiki/mount)
+[awk](/wiki/awk)
 [find](/wiki/find)
 {:enlaces}
 ## DB
