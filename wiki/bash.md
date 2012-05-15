@@ -5,6 +5,12 @@ title: bash
 
 {:enlaces: .enlaceGris }
 
+Para saber si el último comando fue exitoso
+
+    echo $?
+
+0 cuando no hubieron problemas
+
 Editar el bashrc de cada nuevo usuario.
 
 	/etc/skel/.bashrc
