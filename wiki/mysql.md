@@ -2,6 +2,10 @@
 layout: default
 title : MySQL
 ---
+Mostrar usuarios
+
+    SELECT user FROM mysql.user;
+
 Borrar registro  
 `delete from laTabla where laColumna='unValor'`
   
