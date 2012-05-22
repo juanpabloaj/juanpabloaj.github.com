@@ -31,7 +31,7 @@ Crear un base de datos y usuario en mysql para wordpress
 	mysql> CREATE DATABASE databasename;
 	Query OK, 1 row affected (0.00 sec)
 	 
-	mysql> GRANT ALL PRIVILEGES ON databasename.* TO "wordpressuser"@"hostname"
+	mysql> GRANT ALL PRIVILEGES ON databasename.* TO "wordpressuser"@"localhost"
 		-> IDENTIFIED BY "password";
 	Query OK, 0 rows affected (0.00 sec)
 	  
