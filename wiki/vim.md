@@ -2,9 +2,9 @@
 layout: default
 title : vim
 ---
-{:enlaces: .enlaceGris }  
+{:enlaces: .enlaceGris }
 
-Permite editar archivos comprimidos con bzip2, gzip, zip.  
+Permite editar archivos comprimidos con bzip2, gzip, zip.
 
 	$ vim -O archivo1.txt archivo2.txt   # División vertical
 	$ vim -o archivo1.txt archivo2.txt   # División horizontal
@@ -37,8 +37,10 @@ Capturar la salida de una tubería
      Ctrl-W k      ir a la ventana superior
      Ctrl-W l      ir a la ventana derecha
      Ctrl-W W      Cambia el foco entre ventanas
+     Ctrl-W K      Dejar ventanas en split horizontal
+     Ctrl-W H      Dejar ventanas en split vertical
 	 Ctrl-p		Autocompletar
-	 Ctrl-n		Autocompletar 
+	 Ctrl-n		Autocompletar
 
 ### Modo insert
 
