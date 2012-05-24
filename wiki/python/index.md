@@ -2,7 +2,6 @@
 layout: default
 title : python
 ---
-{:enlaces: .enlaceGris }  
 ##General
 ### String
 Mostrar todas las letras
@@ -76,4 +75,5 @@ Crear un archivo `setup.py` y usar el comando
 
 ##Libs
 [matplotlib](/wiki/python/matplotlib)
+[ftplib](/wiki/python/ftplib)
 {:enlaces}
