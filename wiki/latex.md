@@ -17,3 +17,13 @@ Y
     \sum_{b\in \mathcal{B}}
 
 Es que en el primer caso el indice queda abajo, en el segundo queda al lado de la sumaria.
+
+##Citaciones
+
+Multiples citaciones
+
+    \cite{citation01,citation02,citation03}
+
+##Referencias
+
+* [wikibooks](http://en.wikibooks.org/wiki/LaTeX/Bibliography_Management)  
