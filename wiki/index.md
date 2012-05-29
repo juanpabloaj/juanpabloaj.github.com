@@ -15,6 +15,7 @@ title : Wiki
 [zsh](/wiki/zsh)
 [ssh](/wiki/ssh)
 [screen](/wiki/screen)
+[tmux](/wiki/tmux)
 [latex](/wiki/latex)
 [jekyll](/wiki/jekyll)
 [rvm](/wiki/rvm)
