@@ -18,6 +18,11 @@ Y
 
 Es que en el primer caso el indice queda abajo, en el segundo queda al lado de la sumaria.
 
+##Tablas
+Cambiar el caption de cuadro a tabla, cambiar la llamada al paquete spanish
+
+    \usepackage[spanish, es-tabla]{babel}
+
 ##Citaciones
 
 Multiples citaciones
