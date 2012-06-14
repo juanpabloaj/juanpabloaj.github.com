@@ -2,6 +2,6 @@
 layout: default
 title : alsa
 ---
-Iniciar
+Iniciar el device
 
     alsactl init
