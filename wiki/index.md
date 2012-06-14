@@ -5,6 +5,7 @@ title : Wiki
 
 [vim](/wiki/vim)
 [Cygwin](/wiki/cygwin)
+[MinGW](/wiki/mingw)
 [Apache](/wiki/apache)
 [swig](/wiki/swig)
 [vnstat](/wiki/vnstat)
