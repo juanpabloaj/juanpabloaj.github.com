@@ -23,6 +23,15 @@ Cambiar el caption de cuadro a tabla, cambiar la llamada al paquete spanish
 
     \usepackage[spanish, es-tabla]{babel}
 
+
+Para que una tabla no se mueva de posición donde se define, usar el paquete
+
+    \usepackage{float}
+
+Y al declarar la tabla usar `H`
+
+    \begin{table}[H]
+
 ##Citaciones
 
 Multiples citaciones
@@ -32,3 +41,4 @@ Multiples citaciones
 ##Referencias
 
 * [wikibooks](http://en.wikibooks.org/wiki/LaTeX/Bibliography_Management)  
+* [Keeping tables/figures close to where they are mentioned](http://tex.stackexchange.com/questions/2275/keeping-tables-figures-close-to-where-they-are-mentioned)  
