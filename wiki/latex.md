@@ -4,7 +4,7 @@ title : Latex
 ---
 Para hacer referencia a una ecuación es más como usar `\eqref` que `\ref`, ya que auto agrega los `()`.  
 
-Una frase entre comillas, con dos `´´` al inicio y `"` al final
+Una frase entre comillas, con dos acentos graves &#96;&#96; al inicio y una comilla doble `"` al final
 
 	´´Esto es una frase entre comillas"
 
