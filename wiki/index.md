@@ -50,9 +50,12 @@ title : Wiki
 {:enlaces}
 ## OS
 [OSX](/wiki/osx)
+
+### Linux distribuciones
 [Debian](/wiki/debian)
 [Suse](/wiki/suse)
-{:enlaces}
+[Fedora](/wiki/fedora)
+[Centos](/wiki/centos)
 ## Lenguajes
 [cpp](/wiki/cpp)
 [python](/wiki/python)
