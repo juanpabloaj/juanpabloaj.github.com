@@ -2,7 +2,6 @@
 layout: default
 title : Wiki
 ---
-{:enlaces: .enlaceGris }
 
 [vim](/wiki/vim)
 [Cygwin](/wiki/cygwin)

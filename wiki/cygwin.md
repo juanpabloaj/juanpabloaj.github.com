@@ -2,7 +2,6 @@
 layout: default
 title : Cygwin
 ---
-{:enlaces: .enlaceGris }  
 ## Recomendable instalar 
 
 	vim ctags python ssh git mercurial screen wget make zsh ncurses
