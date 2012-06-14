@@ -26,10 +26,10 @@ title : Wiki
 [dropbox](/wiki/dropbox)
 [virtualbox](/wiki/virtualbox)
 [Xauthority](/wiki/Xauthority)
-{:enlaces}
 ## Comandos
 [ldconfig](/wiki/ldconfig)
 [tar](/wiki/tar)
+[yum](/wiki/yum)
 [sed](/wiki/sed)
 [mount](/wiki/mount)
 [awk](/wiki/awk)
