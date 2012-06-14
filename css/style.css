@@ -1,6 +1,7 @@
 body {padding-top:60px;}
 .fondogris {background-color:#fff;}
 a {text-decoration:none;color:#bbb;}
+a:hover {text-decoration:none;color:#aaa;}
 .postEnlace a {text-decoration:none;color:#bbb;}
 #cuello div {float:left;margin:10px 4px 0px 4px;}
 #cuello div a {text-decoration:none;color:#bbb;}
