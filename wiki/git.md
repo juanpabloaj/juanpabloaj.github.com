@@ -1,8 +1,7 @@
---- 
+---
 layout: default
 title : Git
 ---
-{:enlaces: .enlaceGris }  
 
 ## Básicos 
 
@@ -238,3 +237,7 @@ Mostrarla
 Subir las tags
 
 	git push --tags
+
+### Referencias
+
+* [resolving a merge](http://www.kernel.org/pub/software/scm/git/docs/v1.7.3/user-manual.html#resolving-a-merge)  
