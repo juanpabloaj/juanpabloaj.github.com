@@ -41,6 +41,7 @@ Capturar la salida de una tubería
      Ctrl-W H      Dejar ventanas en split vertical
 	 Ctrl-p		Autocompletar
 	 Ctrl-n		Autocompletar
+     zz         Centrar ventana en cursor
 
 ### Modo insert
 
@@ -49,7 +50,7 @@ Para insertar un comando como si fuera modo comando y volver a modo insertar
 
 	Ctrl-o: 
 
-### Modo linea
+### Modo comandos
 
 Ir a la linea n 
 
@@ -139,14 +140,17 @@ cerrar el cursor cuando no este el cursor
 
 ### :make 
 
-llamar al comando make con el respectivo archivo Makefile  
-`:make`  
+Llamar al comando make con el respectivo archivo Makefile
 
-abre en una ventana la salida de la compitación   
-`:copen`  
+    :make
 
-solo abre la ventana si hubo errores  
-`:cw`  
+Abre en una ventana la salida de la compilación
+
+    :copen
+
+Solo abre la ventana si hubo errores
+
+    :cw
 
 ### Moverse entre los errores
 al siguiente error  
@@ -190,5 +194,3 @@ Cuando mostrar la barra de estatus
 [Strings](/wiki/vim/vimStrings)  
 [Vim script](/wiki/vim/vimScript)  
 [Vim plugins](/wiki/vim/vimPlugins)  
-{:enlaces}
-
