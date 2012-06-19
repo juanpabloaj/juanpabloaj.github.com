@@ -6,7 +6,7 @@ En tmux hay al menos tres conceptos claves:
 
 * Sesiones
 * Ventanas
-* Sesiones
+* Paneles
 
 Donde se pueden tener varias sesiones, una sesión puede contener varias ventanas y una ventana puede tener varios paneles.
 
