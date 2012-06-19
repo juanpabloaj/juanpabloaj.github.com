@@ -42,6 +42,7 @@ Capturar la salida de una tubería
 	 Ctrl-p		Autocompletar
 	 Ctrl-n		Autocompletar
      zz         Centrar ventana en cursor
+     q:         historia de comandos
 
 ### Modo insert
 
