@@ -85,11 +85,16 @@ Mover el cursor simultaneamente en dos ventanas
 
 ### scp
 
-Para editar un archivo remoto 
+Para editar un archivo remoto
 
 	vim scp://user@host/path_al_archivo
 	:e scp://user@host/path_al_archivo
 
+Si se tiene creado el archivo `~/.ssh/config` se pueden usar los host definidos
+
+    scp://host_definido/desde_home/ruta/fichero
+
+Cuando el primer `/` representa el `$HOME`
 
 ### Registros 
 

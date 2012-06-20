@@ -17,3 +17,13 @@ Actualizar registros que cumplan las condiciones
 Mostrar un intervalo de fechas
 
     select * from miTable fecha > now() - interval 4 hour and fecha < now() + interval 4 hour
+
+### my.conf
+El `/etc/mysql/my.conf/` se definen las configuraciones.
+
+Para que se pueda realizar una consulta remota es necesario cambiar la linea que contiene `bind-address`
+
+    [mysqld]
+    bind-address    = ip_real
+
+Y reiniciar el el servicio `MySQL`.
