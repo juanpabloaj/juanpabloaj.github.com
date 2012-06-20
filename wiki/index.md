@@ -34,6 +34,7 @@ title : Wiki
 [mount](/wiki/mount)
 [awk](/wiki/awk)
 [find](/wiki/find)
+[fdisk](/wiki/fdisk)
 [mail](/wiki/mail)
 [pip](/wiki/pip)
 {:enlaces}

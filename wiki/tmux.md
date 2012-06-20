@@ -45,6 +45,10 @@ Crear una nueva sesión, la cual debe crearse fuera de tmux
 
     tmux new -s nueva_session
 
+Cambiar de nombre a la sesión
+
+    C-a $
+
 ##Referencias
 
 * [tmux.conf](https://github.com/juanpabloaj/dotfiles/blob/master/.tmux.conf)  
