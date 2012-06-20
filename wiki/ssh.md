@@ -69,7 +69,7 @@ Para hacer la conexión basta con
 
 	ssh nombre_del_host
 
-## ssh_config
+## sshd_config
 
 Solo alojar usuarios específicos
 
