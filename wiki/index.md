@@ -35,6 +35,7 @@ title : Wiki
 [awk](/wiki/awk)
 [find](/wiki/find)
 [mail](/wiki/mail)
+[pip](/wiki/pip)
 {:enlaces}
 ## DB
 [MySQL](/wiki/mysql)
