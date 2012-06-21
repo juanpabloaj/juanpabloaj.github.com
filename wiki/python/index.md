@@ -2,6 +2,34 @@
 layout: default
 title : python
 ---
+#Install
+## Windows
+python se debería instalar en `C:\python26` o un directorio similar.  
+Es recomendable agregar la ubicación en la variable de entorno `PATH` en
+
+	Sistema > optiones avanzadas > variables de entorno
+
+###Executable
+Para crear un executable para windows es necesario bajar el paquete [py2exe](http://py2exe.org/).  
+{:enlaces}
+Crear un archivo `setup.py` y usar el comando
+
+	python setup.py py2exe
+
+##easy_install
+Para facilitar la instalación de paquetes.
+
+	easy_install networkx
+
+Si instala para `python2.7` y se requiere para `python2.6`
+
+	easy_install-2.6 networkx
+
+##Pypi
+##Libs
+[matplotlib](/wiki/python/matplotlib)
+[ftplib](/wiki/python/ftplib)
+
 ##General
 ### String
 Mostrar todas las letras
@@ -49,35 +77,9 @@ Devuelve un objeto de tipo generator
 
 ###more...
 [Herencia](/wiki/python/Herencia)
-{:enlaces}
-##easy_install
-Para facilitar la instalación de paquetes.
-
-	easy_install networkx
-
-Si instala para `python2.7` y se requiere para `python2.6`
-
-	easy_install-2.6 networkx
-
-##Pypi
-## Windows
-python se debería instalar en `C:\python26` o un directorio similar.  
-Es recomendable agregar la ubicación en la variable de entorno `PATH` en
-
-	Sistema > optiones avanzadas > variables de entorno
-
-###Executable
-Para crear un executable para windows es necesario bajar el paquete [py2exe](http://py2exe.org/).  
-{:enlaces}
-Crear un archivo `setup.py` y usar el comando
-
-	python setup.py py2exe
-
-##Libs
-[matplotlib](/wiki/python/matplotlib)
-[ftplib](/wiki/python/ftplib)
 
 ##Ejemplos
 
-* [listas: moda y mediana](https://gist.github.com/2832821)  
-* [archivos: suma columna](https://gist.github.com/2920582)  
+* [Listas: moda y mediana](https://gist.github.com/2832821)  
+* [Archivos: suma columna](https://gist.github.com/2920582)  
+* [Captura de entrada](https://gist.github.com/2965892)  
