@@ -76,4 +76,8 @@ Crear un archivo `setup.py` y usar el comando
 ##Libs
 [matplotlib](/wiki/python/matplotlib)
 [ftplib](/wiki/python/ftplib)
-{:enlaces}
+
+##Ejemplos
+
+* [listas: moda y mediana](https://gist.github.com/2832821)  
+* [archivos: suma columna](https://gist.github.com/2920582)  
