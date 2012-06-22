@@ -51,20 +51,25 @@
 <div class="container">
     <div class="row">
         <div class="span5">
-                <ul class="media-grid">
+            <div style="position:fixed;top:80px;">
+                <ul class="media-grid" >
                     <li>
                         <a href="/">
                         <img class="thumbnail" src="http://f.cl.ly/items/332o2z0V0h2T2w0M2Y0m/deLado.jpg" alt="" />
                         </a>
                     </li>
                 </ul>
-            <h3>Posts</h3>
-            {% for post in site.posts limits:5 %}
-                <div class="enlaceGris">
-                    <div><a href="{{ post.url }}">{{ post.title }}</a></div>
-                </div>
-            {% endfor %}
+                <h3>Posts</h3>
+                {% for post in site.posts limits:5 %}
+                    <div class="enlaceGris">
+                        <div><a href="{{ post.url }}">{{ post.title }}</a></div>
+                    </div>
+                {% endfor %}
+            </div>
         </div>
+            <div class="span5">
+                <br />
+            </div>
         <div class="span10">
             {{ content }}
         </div>
