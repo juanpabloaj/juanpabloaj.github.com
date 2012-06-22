@@ -2,6 +2,13 @@
 layout: default
 title: SSH
 ---
+## scp
+Para transferencia de archivos usar el comando `scp`
+
+    scp archivo user@host:
+
+Donde `host` es el remoto donde se transferirá el archivo, notar los dos puntos al final.
+
 ## SSH sin password
 
 ###Automático
@@ -79,6 +86,7 @@ No permitir password, solo se puede autentificar por llave
 
     PasswordAuthentication no
 
-###Referencias
+##Referencias
 
 * [How do I get publickey user authentication to work?](http://www.snailbook.com/faq/publickey-userauth.auto.html)  
+* [Using Putty on Windows to login Linux securely via OpenSSH](http://www.linux-sxs.org/networking/openssh.putty.html)  
