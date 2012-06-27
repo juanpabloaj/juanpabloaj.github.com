@@ -29,6 +29,7 @@ title : Wiki
 ## Comandos
 [ldconfig](/wiki/ldconfig)
 [tar](/wiki/tar)
+[cron](/wiki/cron)
 [yum](/wiki/yum)
 [sed](/wiki/sed)
 [mount](/wiki/mount)
