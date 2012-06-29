@@ -26,7 +26,6 @@ task :post, [:nombre] do |t,args|
 			salida.puts 'title : '+nombre.gsub('-',' ')
 			salida.puts 'categories:'
 			salida.puts '---'
-			salida.puts '{:enlaces: .enlaceGris}'
 		end
 		sh 'vim '+fichero+' +$' # vim en modo insert al final del fichero
 	else 
