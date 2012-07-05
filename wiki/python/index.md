@@ -25,6 +25,16 @@ Si instala para `python2.7` y se requiere para `python2.6`
 
 	easy_install-2.6 networkx
 
+## setup.py
+
+Es posible instalar los paquetes como usuario en un directorio especifico, con prefix
+
+    python setup.py install --prefix=$HOME/opt
+
+Con lo cual se crearan algunos directorios los cuales es necesario añadir al `PYTHONPATH`
+
+    export PYTHONPATH=$HOME/opt/lib/python2.7/site-packages:$PYTHONPATH
+
 ##Pypi
 ##Libs
 [matplotlib](/wiki/python/matplotlib)
