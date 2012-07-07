@@ -144,7 +144,25 @@ Ver los registros
 
     :registers
 
-### folding
+### Folding
+
+Fold se puede traducir como pliegue, es un trozo de código o texto que se "pliega" en una linea. Con lo cual es posible trabajar de una forma más fácil sobre ficheros con muchas lineas.
+
+Abrir el fold donde se encuentra el cursor
+
+    zo
+
+Cerrar el fold
+
+    zc
+
+Abrir recursivamente todos los sub folds
+
+    zO
+
+Cerrar todos los folds del archivo
+
+    zM
 
 Abrir el fold cuando se este con el cursor
 
@@ -153,6 +171,10 @@ Abrir el fold cuando se este con el cursor
 Cerrar el cursor cuando no este el cursor
 
     set fcl=all
+
+Más info en
+
+    :h folding
 
 ### scp
 
@@ -223,11 +245,12 @@ Cuando mostrar la barra de estatus
 
 	:h status-line
 
+### Enlaces internos
 
 * [Strings](/wiki/vim/vimStrings)  
 * [Vim script](/wiki/vim/vimScript)  
 * [Vim plugins](/wiki/vim/vimPlugins)  
 
-### Enlaces
+### Enlaces externos
 
 * [Best of Vim Tips](http://rayninfo.co.uk/vimtips.html)  

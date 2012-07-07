@@ -41,16 +41,19 @@
         </div>
     </div>
 <div class="container">
-    <h1>{{ page.title }}</h1>
-		{{ content }}
+    <div id="wiki_content">
+        <h1>{{ page.title }}</h1>
+            {{ content }}
 
-	<div class="span-24 enlaceGris" id="footer"><!-- use blueprint footer -->
-		Powered by {
-		<a href="https://github.com">github</a>,
-		<a href="https://github.com/mojombo/jekyll">jekyll</a>,
-		<a href="http://www.vim.org">vim</a>
-		+ <a href="/wiki/vim/vimPlugins">plugins</a>}
-	</div>
+        <hr>
+        <div class="span-24 enlaceGris wiki_footer" id="footer"><!-- use blueprint footer -->
+            Powered by {
+            <a href="https://github.com">github</a>,
+            <a href="https://github.com/mojombo/jekyll">jekyll</a>,
+            <a href="http://www.vim.org">vim</a>
+            + <a href="https://github.com/juanpabloaj/dotfiles/tree/master/.vim/bundle">plugins</a>}
+        </div>
+    </div>
 </div>
 </body>
 </html>

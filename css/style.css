@@ -16,3 +16,14 @@ code {background:none;}
     margin:auto;
     width:620px;
 }
+/* wiki */
+#wiki_content {
+    width: 800px;
+    margin: auto;
+}
+.wiki_footer{
+    text-align:center;
+}
+#footer{
+    color : #bbb;
+}

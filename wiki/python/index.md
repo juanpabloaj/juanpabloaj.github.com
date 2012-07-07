@@ -36,11 +36,7 @@ Con lo cual se crearan algunos directorios los cuales es necesario añadir al `P
     export PYTHONPATH=$HOME/opt/lib/python2.7/site-packages:$PYTHONPATH
 
 ##Pypi
-##Libs
-[matplotlib](/wiki/python/matplotlib)
-[ftplib](/wiki/python/ftplib)
-
-##General
+#General
 ### String
 Mostrar todas las letras
 
@@ -88,8 +84,13 @@ Devuelve un objeto de tipo generator
 ###more...
 [Herencia](/wiki/python/Herencia)
 
-##Ejemplos
+#Libs
+[matplotlib](/wiki/python/matplotlib)
+[ftplib](/wiki/python/ftplib)
+
+#Ejemplos
 
 * [Listas: moda y mediana](https://gist.github.com/2832821)  
 * [Archivos: suma columna](https://gist.github.com/2920582)  
 * [Captura de entrada](https://gist.github.com/2965892)  
+* [Búsqueda en varios archivos](https://gist.github.com/3050904)  
