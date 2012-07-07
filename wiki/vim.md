@@ -1,8 +1,7 @@
---- 
+---
 layout: default
 title : vim
 ---
-{:enlaces: .enlaceGris }
 
 Permite editar archivos comprimidos con bzip2, gzip, zip.
 
@@ -18,18 +17,18 @@ Abrir archivo en la linea 10
 
 	$ vim +10 archivo
 
-Capturar la salida de una tubería 
+Capturar la salida de una tubería
 
 	$ date | vim -
 
 ### Modo Normal
 
 	 ZQ		Salir sin guardar
-	 ZZ		Guardar y salir 
+	 ZZ		Guardar y salir
      v             Seleccionar en modo visual
-     y             copiar 
+     y             copiar
      p             pegar
-     *             moverse entre resultados de búsqueda 
+     *             moverse entre resultados de búsqueda
      Ctrl-W +      incrementar el tamaño de una ventana
      Ctrl-W -      disminuir el tamaño de una ventana
      Ctrl-W h      ir a la ventana izquierda
@@ -49,15 +48,15 @@ Capturar la salida de una tubería
 
 Para insertar un comando como si fuera modo comando y volver a modo insertar
 
-	Ctrl-o: 
+	Ctrl-o:
 
 ### Modo comandos
 
-Ir a la linea n 
+Ir a la linea n
 
-    :n 
+    :n
 
-Ir a la lina 0 
+Ir a la linea 0
 
     :0
 
@@ -74,14 +73,86 @@ Para dividir la pantalla para mostrar diferentes archivos, escriba en la línea 
     :split otro-archivo
     :vsplit otro-archivo
 
-mostrar/ocultar numero de linea 
+Mostrar/ocultar numero de linea
 
 	:set number
 	:set nonumber
 
-Mover el cursor simultaneamente en dos ventanas
+Mover el cursor simultáneamente en dos ventanas
 
 	:set scrollbind
+
+### Copiar y pegar
+
+Copiar la linea 10 y pegar después linea 5
+
+    :10y | 15pu
+
+Copiar la linea 10 y pegar antes de la linea 5
+
+    :10y | 15pu!
+
+Copiar el registro 0 después linea 10
+
+    10pu 0
+
+Agregar opciones especificas a un archivo
+
+    # vim: st=8
+
+La sintaxis del comentario depende de cada lenguaje, en C sería
+
+    // vim: st=8
+
+### Motions y operators
+
+En modo normal hay una serie de operadores y motions, por ejemplo `d` para borrar que se puede usar con `w`
+
+    dw
+
+Va a borrar la palabra donde este cursos, con
+
+    d2w
+
+Se borraran las dos palabras desde el cursor.
+
+Más info con
+
+    :h cursor-motions
+
+### Buffers
+
+Mostrar lista de buffers existentes
+
+	:buffers
+
+Borrar buffer, donde `[N]` es el número del buffer
+
+	:bd[N]
+
+Agregar archivo a un buffer
+
+	:badd ~/ruta/archivo
+
+Abrir un buffer en split
+
+	:[N]sp
+
+### Registros
+
+Ver los registros
+
+    :registers
+
+### folding
+
+Abrir el fold cuando se este con el cursor
+
+    set fdo=all
+
+Cerrar el cursor cuando no este el cursor
+
+    set fcl=all
 
 ### scp
 
@@ -96,55 +167,7 @@ Si se tiene creado el archivo `~/.ssh/config` se pueden usar los host definidos
 
 Cuando el primer `/` representa el `$HOME`
 
-### Registros 
-
-ver los registros  
-`:registers`
-
-### Copiar y pegar
-
-copiar la linea 10 y pegar después linea 5  
-`:10y | 15pu`
-
-copiar la linea 10 y pegar antes de la linea 5  
-`:10y | 15pu!`
-
-copiar el registro 0 después linea 10  
-`10pu 0`
-
-
-agregar opciones especificas a un archivo  
-`# vim: st=8`  
-la sintaxis del comentario depende de cada lenguaje, en C sería  
-`// vim: st=8`
-
-### Buffers 
-
-mostrar lista de buffers existentes 
-
-	:buffers
-
-borrar buffer, donde `[N]` es el número del buffer
-
-	:bd[N]
-
-agregar archivo a un buffer
-
-	:badd ~/ruta/archivo
-
-abrir un buffer en split
-
-	:[N]sp
-
-### folding 
-
-abrir el fold cuando se este con el cursor  
-`set fdo=all`
-
-cerrar el cursor cuando no este el cursor  
-`set fcl=all`
-
-### :make 
+### :make
 
 Llamar al comando make con el respectivo archivo Makefile
 
@@ -159,44 +182,48 @@ Solo abre la ventana si hubo errores
     :cw
 
 ### Moverse entre los errores
-al siguiente error  
+al siguiente error
 `:cn`
 
-Al error previo   
+Al error previo
 `:cp`
 
-Al primer error  
+Al primer error
 `:cfirst`
 
-Al último error  
+Al último error
 `:clast`
 
 ### Vimdiff
 
-`[c`: Saltar a la diferencia previa  
-`]c`: Saltar a la diferencia siguiente  
+    [c : Saltar a la diferencia previa
+    ]c : Saltar a la diferencia siguiente
 
-`diffget`
-`diffput`
-`dp` : lo mismo que diffput pero sin argumento
+    diffget
+    diffput
+    dp : lo mismo que diffput pero sin argumento
 
+### Status line
 
-### Status line 
-
-	:h statusline 
+	:h statusline
 
 Ejemplo
 
 	":set statusline=%F%m%r%h%w\ [B=%n]\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
 
-Cuando mostrar la barra de estatus 
-	
+Cuando mostrar la barra de estatus
+
 	:set laststatus=0 " nunca mostrar barra de status
 	:set laststatus=1 " mostrar barra de status cuando haya mas de una ventana
 	:set laststatus=2 " siempre mostrar barra de status
 
 	:h status-line
 
-[Strings](/wiki/vim/vimStrings)  
-[Vim script](/wiki/vim/vimScript)  
-[Vim plugins](/wiki/vim/vimPlugins)  
+
+* [Strings](/wiki/vim/vimStrings)  
+* [Vim script](/wiki/vim/vimScript)  
+* [Vim plugins](/wiki/vim/vimPlugins)  
+
+### Enlaces
+
+* [Best of Vim Tips](http://rayninfo.co.uk/vimtips.html)  
