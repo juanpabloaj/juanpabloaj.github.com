@@ -2,8 +2,8 @@
 layout: default
 title : vim
 ---
-
-Permite editar archivos comprimidos con bzip2, gzip, zip.
+### General
+Permite editar archivos planos en ascii como comprimidos con bzip2, gzip, zip.
 
 	$ vim -O archivo1.txt archivo2.txt   # División vertical
 	$ vim -o archivo1.txt archivo2.txt   # División horizontal
@@ -183,16 +183,20 @@ Solo abre la ventana si hubo errores
 
 ### Moverse entre los errores
 al siguiente error
-`:cn`
+
+    :cn
 
 Al error previo
-`:cp`
+
+    :cp
 
 Al primer error
-`:cfirst`
+
+    :cfirst
 
 Al último error
-`:clast`
+
+    :clast
 
 ### Vimdiff
 
