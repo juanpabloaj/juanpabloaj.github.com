@@ -4,7 +4,6 @@ comments: true
 title : Automata celular con HTML5
 categories:
 ---
-{:enlaces: .enlaceGris}
 
 Para probar canvas de HTML5 un automata celular con la [regla 110](http://en.wikipedia.org/wiki/Rule_110)
 {:enlaces}

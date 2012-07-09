@@ -2,7 +2,6 @@
 layout: default
 title : OSX
 ---
-{:enlaces: .enlaceGris }
 ## Recomendados
 
 * TotalTerminal

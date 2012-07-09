@@ -2,7 +2,6 @@
 layout: default
 title : MongoMapper
 ---
-{:enlaces: .enlaceGris }  
 
 Contar los registros
 

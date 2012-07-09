@@ -2,7 +2,6 @@
 layout: default
 title : Rails Model
 ---
-{:enlaces: .enlaceGris }  
 
 ### Modificar atributo de una tabla
 

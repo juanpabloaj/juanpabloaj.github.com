@@ -2,7 +2,6 @@
 layout: default
 title: zsh
 ---
-{:enlaces: .enlaceGris }
 # Instalar
 
 Clonar

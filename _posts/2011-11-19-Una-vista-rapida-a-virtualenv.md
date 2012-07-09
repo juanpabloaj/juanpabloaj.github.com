@@ -4,7 +4,6 @@ comments: true
 title : Una vista rápida a virtualenv
 categories:
 ---
-{:enlaces: .enlaceGris}
 Más de alguna vez he querido instalar alguna lib de python para probarla sin tener que modificar mucho el sistema.  
 La solución `virtualenv`.  
 Se puede instalar desde `easy_install`

@@ -2,7 +2,6 @@
 layout: default
 title : rvm
 ---
-{:enlaces: .enlaceGris } 
 [rvm site](https://rvm.beginrescueend.com/)  
 {:enlaces} 
 

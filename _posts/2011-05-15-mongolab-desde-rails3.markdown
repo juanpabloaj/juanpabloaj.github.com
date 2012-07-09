@@ -7,7 +7,6 @@ categories:
 - rails
 - mongolab
 ---
-{:enlaces: .enlaceGris } 
 
 Si rails no está instalado
 

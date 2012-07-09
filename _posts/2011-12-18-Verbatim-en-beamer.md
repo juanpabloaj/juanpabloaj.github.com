@@ -4,7 +4,6 @@ comments: true
 title : Verbatim en beamer
 categories:
 ---
-{:enlaces: .enlaceGris}
 Cuando se intenta usar `Verbatim` en `Beamer` para hacer una presentación con latex,
 se pueden presentar problemas al momento de la compilación. La solución está en usar
 

@@ -7,7 +7,6 @@ categories:
 - debian
 - rvm
 ---
-{:enlaces: .enlaceGris}
 
 ## Pre requisitos 
 

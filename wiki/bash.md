@@ -3,8 +3,6 @@ layout: default
 title: bash
 ---
 
-{:enlaces: .enlaceGris }
-
 Para saber si el último comando fue exitoso
 
     echo $?

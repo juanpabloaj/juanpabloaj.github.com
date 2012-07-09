@@ -4,7 +4,6 @@ comments: true
 title : dvtm sobre screen
 categories:
 ---
-{:enlaces: .enlaceGris}
 Hace algunos años usé [awesome window manager](http://awesome.naquadah.org/),
 probando el tiling en todo su potencial.
 {:enlaces}

@@ -4,8 +4,6 @@ comments: true
 title : Rails con Passenger nginx en Squeeze
 categories:
 ---
-{:enlaces: .enlaceGris}
-
 
 ### Pre requisitos 
 

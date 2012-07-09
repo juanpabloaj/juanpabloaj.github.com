@@ -80,5 +80,3 @@ Algunas variables se pueden modificar directamente sobre la db
 ### Referencias  
 
 * [Wordpress Famous 5 minutes install](http://codex.wordpress.org/Installing_WordPress#Famous_5-Minute_Install)  
-{.enlaceGris}
-

@@ -4,7 +4,6 @@ comments: true
 title : rxvt-unicode con 256 colors para dvtm
 categories:
 ---
-{:enlaces: .enlaceGris}
 El problema comenzó cuando desde `dvtm` iniciaba una conexión ssh a una maquina
 ubuntu, obtenía este mensaje
 

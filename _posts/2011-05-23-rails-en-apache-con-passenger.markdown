@@ -4,7 +4,6 @@ comments: true
 title : Rails en Apache con Passenger
 categories:
 ---
-{:enlaces: .enlaceGris}
 
 Teniendo instalado rails3 y apache2 vamos a instalar passenger 
 

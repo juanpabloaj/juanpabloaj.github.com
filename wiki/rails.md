@@ -2,7 +2,6 @@
 layout: default
 title : Rails
 ---
-{:enlaces: .enlaceGris }  
 ## Install 
 
 ### Debian
