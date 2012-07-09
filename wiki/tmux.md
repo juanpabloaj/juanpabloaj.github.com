@@ -31,6 +31,11 @@ Dejar `C-a` como screen
     set -g prefix C-a
     bind C-a send-prefix
 
+## Ventanas
+Crear nueva ventana en fondo desde comando
+
+    new-window -n 'nueva_ventana' -d 'vim'
+
 ## Sesiones
 
 Escoger entre sesiones
@@ -44,6 +49,10 @@ Listar sesiones existentes
 Crear una nueva sesión, la cual debe crearse fuera de tmux
 
     tmux new -s nueva_session
+
+Crear desde la linea de comandos
+
+    new-session -s nueva_session
 
 Cambiar de nombre a la sesión
 
