@@ -19,6 +19,9 @@ Llamar a otro panel de una ventana diferente y agregarlo como split, en modo com
     join-pane -s 1:2.0
 
 El panel 0 de la ventana 2 de la sesión 1.
+Si la sesión de nombre `se`, tiene la ventana 2 con un único panel
+
+    join-pane -s se:2
 
 ## ~/.tmux.conf
 
