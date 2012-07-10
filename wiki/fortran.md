@@ -2,9 +2,15 @@
 layout: default
 title : fortran
 ---
+## General
 Las primeras 6 columnas de cada linea están reservadas, por lo que se puede usar desde la 7 a la 80.
 
-##Ejemplos
+## f77
+Para instalar f77 en Ubuntu
+
+    apt-get install fort77
+
+## Ejemplos
 Mostrar pares multiplicados por 10
 
            program test
@@ -42,3 +48,4 @@ Y `out.txt` debería tener
 
 * [Un breve curso de FORTRAN por E. Velasco](http://www.uam.es/departamentos/ciencias/fisicateoricamateria/especifica/hojas/kike/FORTRAN/FORTRAN.html)  
 * [Fortran, File IO](http://folk.uio.no/steikr/doc/f77/tutorial/files.html)  
+* [Upgrading from f77 to f90](http://charles.karney.info/misc/f90-sem.html)  
