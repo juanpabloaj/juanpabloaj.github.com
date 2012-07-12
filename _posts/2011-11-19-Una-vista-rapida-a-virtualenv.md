@@ -4,8 +4,10 @@ comments: true
 title : Una vista rápida a virtualenv
 categories:
 ---
-Más de alguna vez he querido instalar alguna lib de python para probarla sin tener que modificar mucho el sistema.  
-La solución `virtualenv`.  
+Más de alguna vez he querido instalar alguna lib de python para probarla sin tener que modificar mucho el sistema.
+
+La solución `virtualenv`.
+
 Se puede instalar desde `easy_install`
 
 	sudo easy_install virtualenv
@@ -31,7 +33,8 @@ Activar el entorno
 
 	source venv/bin/activate
 
-El prompt debería haber cambiado mostrando la activación del entorno.  
+El prompt debería haber cambiado mostrando la activación del entorno.
+
 Ahora se pueden instalar paquetes que solo tendrán efectos sobre sobre el entorno.
 
 	pip install django
@@ -49,6 +52,14 @@ Y para salir de entorno
 	deactivate
 
 Debería haber un cambio en el prompt mostrando la salida.
+
+### Edit 2012-07-12
+
+Para instalar `pip` es necesario tener instalado `python-setuptools`.
+
+En ubuntu/debian basta con
+
+    apt-get install python-setuptools
 
 ###Referencias
 [virtualenv tutorial](http://simononsoftware.com/virtualenv-tutorial/)  
