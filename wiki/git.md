@@ -130,6 +130,11 @@ Ahora está entre las branchs
       master
     * experimental
 
+Mezclar dos ramas, estando en la rama `test`, me cambio `master` y traigo los cambios
+
+    $ git co master
+    $ git merge test
+
 
 [Fuente stackOverflow](http://stackoverflow.com/questions/67699/how-do-i-clone-all-remote-branches-with-git)
 {:enlaces} 
