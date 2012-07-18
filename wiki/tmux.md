@@ -23,6 +23,10 @@ Si la sesión de nombre `se`, tiene la ventana 2 con un único panel
 
     join-pane -s se:2
 
+Mandar el panel actual a una ventana nueva en la misma sesión
+
+    break-pane
+
 ## ~/.tmux.conf
 
 El archivo de configuración se llama `tmux.conf` y normalmente está ubicado en el home del usuario.
