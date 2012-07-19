@@ -7,7 +7,7 @@ Mostrar los discos y particiones
     fdisk -l
 
 ## Crear una partición en un disco vacío
-Tomar el disco 
+Tomar el disco
 
     fdisk /dev/hdb
 
@@ -30,6 +30,8 @@ Ahora podemos crear una sistema de archivos sobre la partición.
 Y montar
 
     mount -t ext3 /dev/hdb1 /directorio_para_montar
+
+O agregar a `/etc/fstab`, ver [fstab](/wiki/fstab).
 
 ## Referencias
 
