@@ -31,6 +31,7 @@ title : Wiki
 [tar](/wiki/tar)
 [dd](/wiki/dd)
 [du](/wiki/du)
+[hwclock](/wiki/hwclock)
 [cron](/wiki/cron)
 [yum](/wiki/yum)
 [sed](/wiki/sed)
