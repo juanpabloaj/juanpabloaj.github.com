@@ -3,21 +3,21 @@ layout: default
 title : Git
 ---
 
-## Básicos 
+## Básicos
 
-Descargar cambios  
+Descargar cambios
 
-	$ git pull 
+	$ git pull
 
-Hacer un commit con mensaje  
+Hacer un commit con mensaje
 
 	$ git commit -am "este es el mensaje"
 
-Subir los cambios  
+Subir los cambios
 
 	$ git push
 
-Eliminar cambios 
+Eliminar cambios
 
 	$ git reset --hard
 
@@ -25,21 +25,21 @@ Volver a cambios del origin/master
 
 	$ git reset --hard origin/master
 
-Forzar el borrardo de archivos y directorios que se han agregado sin añandir 
+Forzar el borrado de archivos y directorios que se han agregado sin añadir
 
 	$ git clean -fd
 
-Ver log de los últimos commits 
+Ver log de los últimos commits
 
     $ git log -n5
 
-Regresar un archivo al estado anterior 
+Regresar un archivo al estado anterior
 
     $ git checkout HEAD~4 file
 
 ## ~/.gitconfig
 
-Definir las configuraciones de git. Ejemplo 
+Definir las configuraciones de git. Ejemplo
 
 	[user]
 		name = userName
@@ -64,41 +64,39 @@ Excluir en todos los repos
 	$ echo tags > ~/.gitexcludes
 
 [Tracking generated files with Pathogen](https://github.com/tpope/vim-pathogen/issues/18)
-{:enlaces} 
 
 ## Diff
-	
-Solo las lineas de diferencia  
 
-	$ git diff -U0 
+Solo las lineas de diferencia
 
-Diferencias entre commits  
+	$ git diff -U0
+
+Diferencias entre commits
 
 	$ git diff HEAD^ HEAD
-	$ git diff HEAD~2 HEAD 
+	$ git diff HEAD~2 HEAD
 
-Diferencias en resumen  
+Diferencias en resumen
 
 	$ git diff --stat
 
-## rebase 
+## rebase
 
-Eliminar un commit 
+Eliminar un commit
 
 	$ git rebase -i HEAD~5
 
-De la lista mostrada borrar la linea del commit  
+De la lista mostrada borrar la linea del commit
 [removing selected commits from repository](http://stackoverflow.com/questions/495345/git-removing-selected-commits-from-repository)
-{:enlaces} 
 
 ## Branch
 
-Ver las branchs locales  
+Ver las branchs locales
 
-    $ git branch   
+    $ git branch
     * master
 
-Ver las branchs ocultas, incluyendo las remotas  
+Ver las branchs ocultas, incluyendo las remotas
 
     $ git branch -a
     * master
@@ -108,23 +106,23 @@ Ver las branchs ocultas, incluyendo las remotas
       remotes/origin/experimental
 	  remotes/otroRepo/experimental
 
-Crear una nueva rama llamada `test`  
+Crear una nueva rama llamada `test`
 
 	$git branch test
 
-Cambiarse a una branch 
+Cambiarse a una branch
 
     $ git checkout origin/experimental
 
-Para trabajar en la branch 
+Para trabajar en la branch
 
     $ git checkout -b experimental origin/experimental
 
 Esto es valido para una branch no propia, puedes cambiarte a una branch de otro remote
 
-	$ git checkout -b experimental otroRepo/experimental 
+	$ git checkout -b experimental otroRepo/experimental
 
-Ahora está entre las branchs 
+Ahora está entre las branchs
 
     $ git branch
       master
@@ -137,7 +135,6 @@ Mezclar dos ramas, estando en la rama `test`, me cambio `master` y traigo los ca
 
 
 [Fuente stackOverflow](http://stackoverflow.com/questions/67699/how-do-i-clone-all-remote-branches-with-git)
-{:enlaces} 
 
 Borrar una rama
 
@@ -149,7 +146,7 @@ Track una branch remota
 
 	$ git checkout -b test origin/test
 
-Push los cambios de a la rama en el origen 
+Push los cambios de a la rama en el origen
 
 	$ git push origin test
 
@@ -158,7 +155,6 @@ Borrar una rama remota
 	$ git push origin :test
 
 [ Pro git - remote branches](http://progit.org/book/ch3-5.html)
-{:enlaces} 
 
 ### Remotes
 
@@ -166,39 +162,38 @@ Merge con otros repos/forks
 
 	$ git co master
 	$ git remote add userRepo git://github.com/userRepo/otroRepo.git
-	$ git fetch userRepo 
+	$ git fetch userRepo
 	$ git merge userRepo/master
-	$ git push 
+	$ git push
 
 Ver las diferencias con otros forks
 
 	$git fetch userRepo
 	$git log --oneline HEAD..userRepo/master
 
-[github pull request](http://help.github.com/send-pull-requests/)  
-{:enlaces} 
+[github pull request](http://help.github.com/send-pull-requests/)
 
 Fetch a todas las remotas
 
 	$ git remote update
 
-## graph 
+## graph
 
-log más gráfico 
+log más gráfico
 
 	lg = log --graph --pretty=format:'%Cgreen%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(blue)<%an>%Creset' --abbrev-commit --date=relative
 
 ## reset
-volver al estado del commit y borrar archivos recien creados
-	
+volver al estado del commit y borrar archivos recién creados
+
 	$ git reset --hard
 	$ git clean -f -d
 
-Ver lo que se ha hecho 
+Ver lo que se ha hecho
 
 	$ git reflog
 
-Muy útil para recuperar hash que se resetearon	
+Muy útil para recuperar hash que se resetearon
 
 ## submodules
 ###add
