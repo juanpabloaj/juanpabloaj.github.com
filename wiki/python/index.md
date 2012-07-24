@@ -4,14 +4,15 @@ title : python
 ---
 #Install
 ## Windows
-python se debería instalar en `C:\python26` o un directorio similar.  
+python se debería instalar en `C:\python26` o un directorio similar.
+
 Es recomendable agregar la ubicación en la variable de entorno `PATH` en
 
 	Sistema > optiones avanzadas > variables de entorno
 
 ###Executable
-Para crear un executable para windows es necesario bajar el paquete [py2exe](http://py2exe.org/).  
-{:enlaces}
+Para crear un executable para windows es necesario bajar el paquete [py2exe](http://py2exe.org/).
+
 Crear un archivo `setup.py` y usar el comando
 
 	python setup.py py2exe
