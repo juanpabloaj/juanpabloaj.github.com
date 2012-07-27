@@ -17,6 +17,11 @@ Mostrar cajas de dialogo para shell scripts
 
 	dialog --msgbox "hola mundo" 6 25
 
+### Redirection
+Agregar el `stderr` en el archivo de log, y dejar corriendo de fondo.
+
+    ./script > script.log 2>&1 &
+
 ### bashrc
 Si cuando se entra a bash el prompt se ve similar a
 
