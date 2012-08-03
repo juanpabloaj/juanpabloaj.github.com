@@ -11,6 +11,7 @@ title : Wiki
 [vnstat](/wiki/vnstat)
 [maruku](/wiki/maruku)
 [SGE](/wiki/sge)
+[xen](/wiki/xen)
 [bash](/wiki/bash)
 [zsh](/wiki/zsh)
 [ssh](/wiki/ssh)
