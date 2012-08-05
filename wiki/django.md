@@ -2,6 +2,25 @@
 layout: default
 title : Django
 ---
-levantar el server
+Crear proyecto
+
+    django-admin.py startproject mysite
+
+Levantar el server
 
     python manage.py runserver
+
+##Models
+
+Crear las tablas en el db
+
+    python manage.py sql places
+    python manage.py syncdb
+
+Para inicializar datos, crear el archivo `initdata.json` en el directorio fixtures de la app y usar el comando
+
+    python manage.py loaddata initdata.json
+
+##Referencias
+
+* [Django documentation - Getting started](https://docs.djangoproject.com/en/dev/intro/)
