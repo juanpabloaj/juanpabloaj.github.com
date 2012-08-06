@@ -15,6 +15,7 @@ title : Wiki
 [bash](/wiki/bash)
 [zsh](/wiki/zsh)
 [ssh](/wiki/ssh)
+[ssmtp](/wiki/ssmtp)
 [screen](/wiki/screen)
 [tmux](/wiki/tmux)
 [latex](/wiki/latex)
