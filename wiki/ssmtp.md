@@ -8,11 +8,10 @@ Especialmente útil para el envío de logs.
 
     root=mail_usuario@gmail.com
     mailhub=smtp.gmail.com:587
-    rewriteDomain=
     hostname=mail_usuario@gmail.com
-    UseSTARTTLS=YES
     AuthUser=mail_usuario
     AuthPass=mail_password
+    UseSTARTTLS=YES
     FromLineOverride=YES
 
 Archivo de configuración `/etc/ssmtp/ssmtp.conf`
