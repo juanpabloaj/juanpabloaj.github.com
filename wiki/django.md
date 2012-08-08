@@ -10,6 +10,11 @@ Levantar el server
 
     python manage.py runserver
 
+Usar python como shell
+
+    export DJANGO_SETTINGS_MODULE="settings"
+    python
+
 ##Models
 
 Crear las tablas en el db
