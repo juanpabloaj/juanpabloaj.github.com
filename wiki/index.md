@@ -61,6 +61,7 @@ title : Wiki
 
 ### Linux distribuciones
 [Debian](/wiki/debian)
+[Ubuntu](/wiki/ubuntu)
 [Suse](/wiki/suse)
 [Fedora](/wiki/fedora)
 [Centos](/wiki/centos)
