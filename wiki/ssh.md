@@ -2,6 +2,10 @@
 layout: default
 title: SSH
 ---
+Para comandos remotos
+
+    ssh remote_host '/sbin/lspci | grep Ether'
+
 ## scp
 Para transferencia de archivos usar el comando `scp`
 
