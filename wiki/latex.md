@@ -2,7 +2,7 @@
 layout: default
 title : Latex
 ---
-Para hacer referencia a una ecuación es más como usar `\eqref` que `\ref`, ya que auto agrega los `()`.  
+Para hacer referencia a una ecuación es más como usar `\eqref` que `\ref`, ya que auto agrega los `()`.
 
 Una frase entre comillas, con dos acentos graves &#96;&#96; al inicio y una comilla doble `"` al final
 
@@ -17,6 +17,19 @@ Y
     \sum_{b\in \mathcal{B}}
 
 Es que en el primer caso el indice queda abajo, en el segundo queda al lado de la sumaria.
+
+##Tamaño de fuentes
+
+    \tiny
+    \scriptsize
+    \footnotesize
+    \small
+    \normalsize
+    \large
+    \Large
+    \LARGE
+    \huge
+    \Huge
 
 ##Tablas
 Cambiar el caption de cuadro a tabla, cambiar la llamada al paquete spanish
