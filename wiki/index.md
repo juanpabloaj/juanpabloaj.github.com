@@ -23,6 +23,7 @@ title : Wiki
 [rvm](/wiki/rvm)
 [brew](/wiki/brew)
 [gurobi](/wiki/gurobi)
+[nis](/wiki/nis)
 [Visual Studio](/wiki/visualStudio)
 [irssi](/wiki/irssi)
 [dropbox](/wiki/dropbox)
