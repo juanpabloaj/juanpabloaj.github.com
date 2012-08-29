@@ -2,6 +2,10 @@
 layout: default
 title : Debian
 ---
+Paquetes instalados
+
+    dpkg --get-selections
+
 Ver servicios disponibles
 
     service --status-all
