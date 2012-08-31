@@ -22,6 +22,10 @@ Crear las tablas en el db
     python manage.py sql places
     python manage.py syncdb
 
+Mostrar tablas existentes
+
+    python manage.py sqlall app_name
+
 Para inicializar datos, crear el archivo `initdata.json` en el directorio fixtures de la app y usar el comando
 
     python manage.py loaddata initdata.json
