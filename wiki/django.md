@@ -30,6 +30,12 @@ Para inicializar datos, crear el archivo `initdata.json` en el directorio fixtur
 
     python manage.py loaddata initdata.json
 
+Respaldar datos y resetear
+
+    python manage.py dumpdata <your_app> > temp_data.json
+    python manage.py reset <your_app>
+    python manage.py loaddata temp_data.json
+
 ##Referencias
 
 * [Django documentation - Getting started](https://docs.djangoproject.com/en/dev/intro/)
