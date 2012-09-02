@@ -36,6 +36,12 @@ Respaldar datos y resetear
     python manage.py reset <your_app>
     python manage.py loaddata temp_data.json
 
+Los datos que estén en
+
+    app_name/fixtures/initial_data.json
+
+Serán cargados al hacer `syncdb`.
+
 ##Referencias
 
 * [Django documentation - Getting started](https://docs.djangoproject.com/en/dev/intro/)
