@@ -38,6 +38,14 @@ Dejar `C-a` como screen
     set -g prefix C-a
     bind C-a send-prefix
 
+## Paneles
+
+Rotar paneles
+
+    C-a M-o
+
+Donde `M` es OSX se interpreta como `Esc`
+
 ## Ventanas
 Crear nueva ventana en fondo desde comando
 
