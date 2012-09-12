@@ -12,6 +12,10 @@ Verificar que wol este activado
 
     ethtool eth0
 
+Habilitar wol
+
+    ethtool -s eth0 wol g
+
 Levantar
 
     wakeonlan MAC-Address-Here
