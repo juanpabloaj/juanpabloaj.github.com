@@ -19,3 +19,7 @@ Habilitar wol
 Levantar
 
     wakeonlan MAC-Address-Here
+
+### Referencias
+
+[WOL Wakeonlan Guide: Turn On Servers Remotely Without Physical Access](http://www.thegeekstuff.com/2008/11/wol-wakeonlan-guide-remotely-turn-on-servers-without-physical-access/)
