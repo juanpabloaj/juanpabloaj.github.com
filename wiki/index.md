@@ -14,6 +14,7 @@ title : Wiki
 [xen](/wiki/xen)
 [bash](/wiki/bash)
 [zsh](/wiki/zsh)
+[gdl](/wiki/gdl)
 [ssh](/wiki/ssh)
 [ssmtp](/wiki/ssmtp)
 [screen](/wiki/screen)
