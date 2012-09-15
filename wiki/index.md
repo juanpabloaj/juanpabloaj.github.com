@@ -15,6 +15,7 @@ title : Wiki
 [bash](/wiki/bash)
 [zsh](/wiki/zsh)
 [gdl](/wiki/gdl)
+[make](/wiki/make)
 [mpich2](/wiki/mpich2)
 [ssh](/wiki/ssh)
 [ssmtp](/wiki/ssmtp)
