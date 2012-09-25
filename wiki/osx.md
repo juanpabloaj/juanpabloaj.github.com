@@ -65,6 +65,11 @@ Y volver al archivo a binario
 	# exit
 	$ killall SystemUIServer
 
+## Volumen modo consola
+El mínimo volumen es 0, el máximo es 10
+
+    osascript -e "set Volume 10"
+
 ## Referencias:
 [Screenshot filename in Lion](https://discussions.apple.com/thread/3214350?start=0&tstart=0)  
 [How do I change the default screenshot name in OS X Lion?](http://superuser.com/questions/339702/how-do-i-change-the-default-screenshot-name-in-os-x-lion/)  
