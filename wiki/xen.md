@@ -4,7 +4,7 @@ title: xen
 ---
 Listar imágenes existentes
 
-    xen-list-images 
+    xen-list-images
 
 Levantar una vm
 
