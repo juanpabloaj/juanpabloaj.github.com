@@ -29,6 +29,7 @@ title : Wiki
 [nis](/wiki/nis)
 [Visual Studio](/wiki/visualStudio)
 [irssi](/wiki/irssi)
+[applescript](/wiki/osx/applescript)
 [dropbox](/wiki/dropbox)
 [virtualbox](/wiki/virtualbox)
 [Xauthority](/wiki/Xauthority)
