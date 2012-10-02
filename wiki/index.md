@@ -27,6 +27,8 @@ title : Wiki
 [brew](/wiki/brew)
 [gurobi](/wiki/gurobi)
 [nis](/wiki/nis)
+[gnuplot](/wiki/gnuplot)
+[netcdf](/wiki/netcdf)
 [Visual Studio](/wiki/visualStudio)
 [irssi](/wiki/irssi)
 [applescript](/wiki/osx/applescript)
