@@ -12,6 +12,7 @@ title : Wiki
 [maruku](/wiki/maruku)
 [SGE](/wiki/sge)
 [xen](/wiki/xen)
+[uname](/wiki/uname)
 [bash](/wiki/bash)
 [zsh](/wiki/zsh)
 [gdl](/wiki/gdl)
