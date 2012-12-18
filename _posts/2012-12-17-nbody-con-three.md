@@ -1,14 +1,14 @@
 ---
 layout: post
 comments: true
-title : nbody con three.js
+title : Nbody con Three.js
 categories:
 ---
 
 [Three.js](http://mrdoob.github.com/three.js/) es una librería de javascript para 3D.
 Para mostrar lo simple que es usarla, un ejemplo del problema de los n cuerpos ( [nbody problem](http://en.wikipedia.org/wiki/N-body_problem) ).
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/juanpablo/nj8Mm/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 500px" src="http://jsfiddle.net/juanpablo/nj8Mm/embedded/result" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 Donde el script es
 
