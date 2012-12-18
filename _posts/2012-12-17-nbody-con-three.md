@@ -7,11 +7,11 @@ categories:
 
 [Three.js](http://mrdoob.github.com/three.js/) es una librería de javascript para 3D.
 
-Para mostrar lo simple que es usarla, un ejemplo del problema de los n cuerpos ( [nbody problem](http://en.wikipedia.org/wiki/N-body_problem) ).
+Para mostrar lo simple que es usarla, un ejemplo del problema de los n cuerpos ( [nbody problem](http://en.wikipedia.org/wiki/N-body_problem) ). Donde la interacción de las partículas está determinada principalmente por sus distancias, masas y una constante gravitacional.
 
 <iframe style="width: 100%; height: 500px" src="http://jsfiddle.net/juanpablo/nj8Mm/embedded/result" allowfullscreen="allowfullscreen" frameborder="0"> </iframe>
 
-Donde el script es
+El [script](http://jsfiddle.net/juanpablo/nj8Mm/) que determina las posiciones en base a la velocidad, aceleración y fuerzas involucradas:
 
     container = document.getElementById('container');
 
@@ -38,11 +38,13 @@ Donde el script es
     sgeometry = new THREE.SphereGeometry(3,16,16);
     smaterial = new THREE.MeshPhongMaterial({color: 0x0000ff});
 
+    // algunas constantes
     var spheres = new Array();
     var n = 10 ;
     var g = 6.670*0.01;
     var m = 0.5;
 
+    // posiciones iniciales
     for (var i = 0; i < n ; i += 1) {
         spheres[i] = new THREE.Mesh(sgeometry, smaterial);
         scene.add(spheres[i]);
@@ -56,6 +58,7 @@ Donde el script es
     var fx, fy, fz, dx, dy, dz, d2, d, f, ax, ay, az;
     function render() {
         requestAnimationFrame(render);
+        // fuerzas
         for (var i = 0; i < spheres.length; i += 1) {
             fx = 0;
             fy = 0;
@@ -90,4 +93,6 @@ Donde el script es
 
 ### Referencias
 
-* https://github.com/mrdoob/three.js/
+* [ Celia Cintas. THREE.JS ¿va a hacer todo eso por mi ? Hackers & Developers, 1.](http://www.hdmagazine.org/)  
+* [Three.js - github](https://github.com/mrdoob/three.js/)  
+* [Three.js - Creating a scene](http://mrdoob.github.com/three.js/docs/53/#Manual/Introduction/Creating-a-scene)  
