@@ -7,9 +7,9 @@ a:hover {text-decoration:none;color:#aaa;}
 #cuello div a {text-decoration:none;color:#bbb;}
 .enlaceGris a {text-decoration:none;color:#999;}
 .enlaceGris a:hover {text-decoration:none;color:#777;}
-/* sobreescribir Blueprint */
 .highlight {background:none;}
 pre, code {line-height:1.2;}
+code {padding:0px;}
 /* bootstrap */
 code {background:none;}
 #myCarousel img {
