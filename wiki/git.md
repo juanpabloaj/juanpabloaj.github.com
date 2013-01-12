@@ -108,7 +108,7 @@ Ver las branchs ocultas, incluyendo las remotas
 
 Crear una nueva rama llamada `test`
 
-	$git branch test
+	$ git branch test
 
 Cambiarse a una branch
 
@@ -156,6 +156,20 @@ Borrar una rama remota
 
 [ Pro git - remote branches](http://progit.org/book/ch3-5.html)
 
+### Archivos en otras ramas
+
+Los archivos que tienen cambios en otra rama
+
+    git diff --stat otraRama/master
+
+Las diferencias de un archivo en otra rama
+
+    git diff otraRama/master archivo
+
+Remplazar el archivo con el contenido del existente en la otra rama
+
+    git checkout otraRama/master archivo
+
 ### Remotes
 
 Merge con otros repos/forks
@@ -179,7 +193,7 @@ Fetch a todas las remotas
 
 ## graph
 
-log más gráfico
+Log más gráfico
 
 	lg = log --graph --pretty=format:'%Cgreen%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(blue)<%an>%Creset' --abbrev-commit --date=relative
 
@@ -240,4 +254,4 @@ Subir las tags
 
 ### Referencias
 
-* [resolving a merge](http://www.kernel.org/pub/software/scm/git/docs/v1.7.3/user-manual.html#resolving-a-merge)  
+* [Resolving a merge](http://www.kernel.org/pub/software/scm/git/docs/v1.7.3/user-manual.html#resolving-a-merge)  
