@@ -7,35 +7,35 @@ title : Git
 
 Descargar cambios
 
-	$ git pull
+	git pull
 
 Hacer un commit con mensaje
 
-	$ git commit -am "este es el mensaje"
+	git commit -am "este es el mensaje"
 
 Subir los cambios
 
-	$ git push
+	git push
 
 Eliminar cambios
 
-	$ git reset --hard
+	git reset --hard
 
 Volver a cambios del origin/master
 
-	$ git reset --hard origin/master
+	git reset --hard origin/master
 
 Forzar el borrado de archivos y directorios que se han agregado sin añadir
 
-	$ git clean -fd
+	git clean -fd
 
 Ver log de los últimos commits
 
-    $ git log -n5
+    git log -n5
 
 Regresar un archivo al estado anterior
 
-    $ git checkout HEAD~4 file
+    git checkout HEAD~4 file
 
 ## ~/.gitconfig
 
@@ -60,8 +60,8 @@ Definir las configuraciones de git. Ejemplo
 
 Excluir en todos los repos
 
-	$ git config --global core.excludesfile '~/.gitexcludes'
-	$ echo tags > ~/.gitexcludes
+	git config --global core.excludesfile '~/.gitexcludes'
+	echo tags > ~/.gitexcludes
 
 [Tracking generated files with Pathogen](https://github.com/tpope/vim-pathogen/issues/18)
 
@@ -69,22 +69,22 @@ Excluir en todos los repos
 
 Solo las lineas de diferencia
 
-	$ git diff -U0
+	git diff -U0
 
 Diferencias entre commits
 
-	$ git diff HEAD^ HEAD
-	$ git diff HEAD~2 HEAD
+	git diff HEAD^ HEAD
+	git diff HEAD~2 HEAD
 
 Diferencias en resumen
 
-	$ git diff --stat
+	git diff --stat
 
 ## rebase
 
 Eliminar un commit
 
-	$ git rebase -i HEAD~5
+	git rebase -i HEAD~5
 
 De la lista mostrada borrar la linea del commit
 [removing selected commits from repository](http://stackoverflow.com/questions/495345/git-removing-selected-commits-from-repository)
@@ -93,12 +93,12 @@ De la lista mostrada borrar la linea del commit
 
 Ver las branchs locales
 
-    $ git branch
+    git branch
     * master
 
 Ver las branchs ocultas, incluyendo las remotas
 
-    $ git branch -a
+    git branch -a
     * master
       remotes/origin/HEAD
       remotes/origin/master
@@ -108,51 +108,51 @@ Ver las branchs ocultas, incluyendo las remotas
 
 Crear una nueva rama llamada `test`
 
-	$ git branch test
+	git branch test
 
 Cambiarse a una branch
 
-    $ git checkout origin/experimental
+    git checkout origin/experimental
 
 Para trabajar en la branch
 
-    $ git checkout -b experimental origin/experimental
+    git checkout -b experimental origin/experimental
 
 Esto es valido para una branch no propia, puedes cambiarte a una branch de otro remote
 
-	$ git checkout -b experimental otroRepo/experimental
+	git checkout -b experimental otroRepo/experimental
 
 Ahora está entre las branchs
 
-    $ git branch
+    git branch
       master
     * experimental
 
 Mezclar dos ramas, estando en la rama `test`, me cambio `master` y traigo los cambios
 
-    $ git co master
-    $ git merge test
+    git co master
+    git merge test
 
 
 [Fuente stackOverflow](http://stackoverflow.com/questions/67699/how-do-i-clone-all-remote-branches-with-git)
 
 Borrar una rama
 
-	$ git branch -D nombreRama
+	git branch -D nombreRama
 
 ### Remote branches
 
 Track una branch remota
 
-	$ git checkout -b test origin/test
+	git checkout -b test origin/test
 
 Push los cambios de a la rama en el origen
 
-	$ git push origin test
+	git push origin test
 
 Borrar una rama remota
 
-	$ git push origin :test
+	git push origin :test
 
 [ Pro git - remote branches](http://progit.org/book/ch3-5.html)
 
@@ -174,22 +174,22 @@ Remplazar el archivo con el contenido del existente en la otra rama
 
 Merge con otros repos/forks
 
-	$ git co master
-	$ git remote add userRepo git://github.com/userRepo/otroRepo.git
-	$ git fetch userRepo
-	$ git merge userRepo/master
-	$ git push
+	git co master
+	git remote add userRepo git://github.com/userRepo/otroRepo.git
+	git fetch userRepo
+	git merge userRepo/master
+	git push
 
 Ver las diferencias con otros forks
 
-	$git fetch userRepo
-	$git log --oneline HEAD..userRepo/master
+	git fetch userRepo
+	git log --oneline HEAD..userRepo/master
 
 [github pull request](http://help.github.com/send-pull-requests/)
 
 Fetch a todas las remotas
 
-	$ git remote update
+	git remote update
 
 ## graph
 
@@ -200,12 +200,12 @@ Log más gráfico
 ## reset
 volver al estado del commit y borrar archivos recién creados
 
-	$ git reset --hard
-	$ git clean -f -d
+	git reset --hard
+	git clean -f -d
 
 Ver lo que se ha hecho
 
-	$ git reflog
+	git reflog
 
 Muy útil para recuperar hash que se resetearon
 
@@ -213,32 +213,32 @@ Muy útil para recuperar hash que se resetearon
 ###add
 Agregar un nuevo submodulo
 
-	$ git submodule add http://url_submodule path_a_instalar
+	git submodule add http://url_submodule path_a_instalar
 
 Iniciar y actualizar
 
-	$ git submodule init
-	$ git submodule update
+	git submodule init
+	git submodule update
 
 O
 
-	$ git submodule update --init
+	git submodule update --init
 
 Actualizar todos los submodulos
 
-	$ git submodule update --init --recursive
+	git submodule update --init --recursive
 
 ###rm
 No es tan simple como al agregar, es necesario eliminar las lineas que mencionen al submodulo en los archivos
 
-	$ vim .gitmodules # eliminar referencias al submodulo
-	$ vim .git/config #  eliminar referencias al submodulo
-	$ git rm --cached path_to_subModule
-	$ git commit
+	vim .gitmodules # eliminar referencias al submodulo
+	vim .git/config #  eliminar referencias al submodulo
+	git rm --cached path_to_subModule
+	git commit
 
 Pueden quedar archivos del submodulo
 
-	$ rm -rf path_to_subModule
+	rm -rf path_to_subModule
 
 ##Tags
 Crear una en el actual commit
