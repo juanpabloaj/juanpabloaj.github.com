@@ -10,3 +10,15 @@ Si tenemos en un archivo llamado `sincmd.m`, las lineas
 Para ejecutarlas en la linea de comandos
 
     matlab -r sincmd
+
+### Comentarios
+Comentarios de una linea
+
+    % este es un comentarios
+
+De varias lineas
+
+    %{
+        varios
+        comentarios
+    %}
