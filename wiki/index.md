@@ -18,6 +18,7 @@ title : Wiki
 [zsh](/wiki/zsh)
 [gdl](/wiki/gdl)
 [make](/wiki/make)
+[matlab](/wiki/matlab)
 [mpich2](/wiki/mpich2)
 [ssh](/wiki/ssh)
 [ssmtp](/wiki/ssmtp)
