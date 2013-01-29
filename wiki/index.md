@@ -79,6 +79,7 @@ title : Wiki
 [cpp](/wiki/cpp)
 [python](/wiki/python)
 [ruby](/wiki/ruby)
+[javascript](/wiki/javascript)
 [fortran](/wiki/fortran)
 {:enlaces}
 ## Control de versiones
