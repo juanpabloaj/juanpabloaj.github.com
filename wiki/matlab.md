@@ -2,6 +2,11 @@
 layout: default
 title: matlab
 ---
+
+Lanzar sin la ventana gráfica ni figura de matlab al cargar
+
+    matlab -nodesktop -nosplash
+
 Si tenemos en un archivo llamado `sincmd.m`, las lineas
 
     sin(0:0.1:1)
@@ -22,3 +27,4 @@ De varias lineas
         varios
         comentarios
     %}
+
