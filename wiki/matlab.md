@@ -57,3 +57,7 @@ Desde matlab compilar con
 Y llamar a la función creada
 
     cuadrado(2)
+
+## Referencias
+
+* [C/C++ Source MEX-Files](http://www.mathworks.com/help/matlab/matlab_external/c-c-source-mex-files.html)  
