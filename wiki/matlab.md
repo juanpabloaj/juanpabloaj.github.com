@@ -28,3 +28,7 @@ De varias lineas
         comentarios
     %}
 
+Funciones definidas en una linea
+
+    fu = @(x) x^2;
+    fu(2)
