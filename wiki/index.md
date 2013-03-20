@@ -30,6 +30,7 @@ title : Wiki
 [brew](/wiki/brew)
 [gurobi](/wiki/gurobi)
 [nis](/wiki/nis)
+[node](/wiki/node)
 [gnuplot](/wiki/gnuplot)
 [netcdf](/wiki/netcdf)
 [Visual Studio](/wiki/visualStudio)
