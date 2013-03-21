@@ -31,6 +31,7 @@ title : Wiki
 [gurobi](/wiki/gurobi)
 [nis](/wiki/nis)
 [node](/wiki/node)
+[node.io](/wiki/node.io)
 [gnuplot](/wiki/gnuplot)
 [netcdf](/wiki/netcdf)
 [Visual Studio](/wiki/visualStudio)

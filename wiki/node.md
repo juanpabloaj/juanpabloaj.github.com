@@ -1,6 +1,6 @@
 ---
 layout: default
-title: node
+title: Node.js
 ---
 
 ### Referencias
