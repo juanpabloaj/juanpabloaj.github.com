@@ -9,6 +9,10 @@ Permite editar archivos planos en ascii como comprimidos con bzip2, gzip, zip.
 	$ vim -o archivo1.txt archivo2.txt   # División horizontal
 	$ vim -p archivo1.txt archivo2.txt   # División por tab
 
+Varios archivos con el mismo nombre, pero diferente extensión
+
+    vim hello.{html,js,css}
+
 Abrir archivo en modo lectura
 
 	$ vim -R archivo
