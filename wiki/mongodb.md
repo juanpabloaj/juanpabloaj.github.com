@@ -36,6 +36,10 @@ Insertar documento (registro)
 
     db.myCollection.insert( <documento> );
 
+Mostrar todos los documentos
+
+	db.myCollection.find()
+
 Actualizar documento
 
     db.myCollection.update({_id:"..."}, { $set: {'xyz':'123'}, })
@@ -44,21 +48,17 @@ Borrar documento
 
     db.myCollection.remove( <query> );
 
-Copiar documento, cambiando algunos campos
+Mostrar los documentos sin un campo
 
-    db.myCollection.find( <query> ).forEach( function(x){ delete x._id; delete x.params; db.myCollection.insert(x) });
+    db.myCollection.find({'field':null})
 
 Mostrar un campo de varios documentos
 
     db.myCollection.find(<query>).forEach( function(x) { print (x.params) } );
 
-Mostrar todos los documentos
+Copiar documento, cambiando algunos campos
 
-	db.myCollection.find()
-
-Mostrar los documentos sin un campo
-
-    db.myCollection.find({'field':null})
+    db.myCollection.find( <query> ).forEach( function(x){ delete x._id; delete x.params; db.myCollection.insert(x) });
 
 Mostrar los documentos distintos de un campo
 
