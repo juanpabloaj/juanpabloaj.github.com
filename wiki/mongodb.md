@@ -15,33 +15,62 @@ Borrar db
     use dbName;
     db.dropDatabase();
 
-Mostrar todas las colecciones
+### Colecciones
 
-	> show collections;
+Mostrar todas las colecciones (tablas);
+
+	show collections;
+
+Borrar el contenido de una collection
+
+	db.myCollection.remove()
+
+Borrar una collection
+
+	db.myCollection.drop()
+
+
+### Documentos
 
 Insertar documento (registro)
 
     db.myCollection.insert( <documento> );
 
-Mostrar todos los registros
+Actualizar documento
 
-	> db.mycollection.find()
+    db.myCollection.update({_id:"..."}, { $set: {'xyz':'123'}, })
 
-Borrar el contenido de una collection
+Borrar documento
 
-	> db.mycollection.remove()
+    db.myCollection.remove( <query> );
 
-Borrar una collection
+Copiar documento, cambiando algunos campos
 
-	> db.mycollection.drop()
+    db.myCollection.find( <query> ).forEach( function(x){ delete x._id; delete x.params; db.myCollection.insert(x) });
 
-Contar todos los registros que tengan `nombre:"test"` y fecha mayor que el `2011-05-10`
+Mostrar un campo de varios documentos
 
-	> db.collTest.count({nombre:"test",fecha:{$gt:"2011-05-10"}})
+    db.myCollection.find(<query>).forEach( function(x) { print (x.params) } );
+
+Mostrar todos los documentos
+
+	db.myCollection.find()
+
+Mostrar los documentos sin un campo
+
+    db.myCollection.find({'field':null})
+
+Mostrar los documentos distintos de un campo
+
+    db.myCollection.distinct('field');
+
+Contar todos los documentos que tengan `nombre:"test"` y fecha mayor que el `2011-05-10`
+
+	db.collTest.count({nombre:"test",fecha:{$gt:"2011-05-10"}})
 
 La última fecha
 
-	> db.collTest.find({},{fecha:1}).sort({fecha:-1}).limit(1)
+	db.collTest.find({},{fecha:1}).sort({fecha:-1}).limit(1)
 
 ###mongoimport
 Generar un csv desde sql
