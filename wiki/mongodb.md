@@ -46,11 +46,11 @@ Actualizar documento
 
 Renombrar campo de un document
 
-    db.myCollection.update({<query>}, { $rebame : {'oldName': 'newName'}} )
+    db.myCollection.update({<query>}, { $rename : {'oldName': 'newName'}} )
 
 Por defecto `update` son singulares, para hacer la actualización sobre todos los campos es necesario agregar `{multi:true}`
 
-    db.myCollection.update({<query>}, { $rebame : {'oldName': 'newName'}} , {multi:true})
+    db.myCollection.update({<query>}, { $rename : {'oldName': 'newName'}} , {multi:true})
 
 Borrar documento
 
