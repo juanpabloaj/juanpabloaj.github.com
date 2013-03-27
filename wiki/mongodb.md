@@ -52,6 +52,10 @@ Por defecto `update` son singulares, para hacer la actualización sobre todos lo
 
     db.myCollection.update({<query>}, { $rename : {'oldName': 'newName'}} , {multi:true})
 
+Borrar campo de un documento
+
+    db.myCollection.update({<query>}, { $unset: {'fieldName': 1}} , {multi:true})
+
 Borrar documento
 
     db.myCollection.remove( <query> );
