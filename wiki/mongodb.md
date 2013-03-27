@@ -64,6 +64,10 @@ Mostrar los documentos sin un campo
 
     db.myCollection.find({'field':null})
 
+Mostrar los que incluyen un campo
+
+    db.myCollection.find({'field':{$exists:true}})
+
 Mostrar un campo de varios documentos
 
     db.myCollection.find(<query>).forEach( function(x) { print (x.params) } );
