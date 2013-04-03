@@ -17,23 +17,35 @@ Mostrar cajas de dialogo para shell scripts
 
 	dialog --msgbox "hola mundo" 6 25
 
-### Redirection
+## Modo de edición vi
+A modo vi
+
+    set -o vi
+
+Borrar toda la linea
+
+    <esc>dd
+
+## Redirection
 Agregar el `stderr` en el archivo de log, y dejar corriendo de fondo.
 
     ./script > script.log 2>&1 &
 
-### bashrc
+## bashrc
 Si cuando se entra a bash el prompt se ve similar a
 
     -bash-3.2
 
 Una de las posibles causas es la falta del archivo `.bash_profile`
 
-### Ejemplos
+## Ejemplos
 
-[Contando ips](/wiki/bash/contandoIp)  
-[Descomprimir varios Zip](/wiki/bash/descomprimirZip)  
-[Redimencionar varias imágenes](/wiki/bash/redimencionarImagenes)  
-[Barra de progreso](/wiki/bash/barraProgreso)  
-[Batería baja](/wiki/bash/bateriaBaja)  
-{:enlaces} 
+* [Contando ips](/wiki/bash/contandoIp)  
+* [Descomprimir varios Zip](/wiki/bash/descomprimirZip)  
+* [Redimencionar varias imágenes](/wiki/bash/redimencionarImagenes)  
+* [Barra de progreso](/wiki/bash/barraProgreso)  
+* [Batería baja](/wiki/bash/bateriaBaja)  
+
+## Referencias
+
+* [Working Productively in Bash's Vi Command Line Editing Mode](http://www.catonmat.net/blog/bash-vi-editing-mode-cheat-sheet/)  
