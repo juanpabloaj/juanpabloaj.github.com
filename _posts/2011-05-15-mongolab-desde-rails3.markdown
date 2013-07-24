@@ -66,4 +66,3 @@ Verificar la existencia del usuario en la db
 ### Referencias 
 [mongoDB && Rails 3 - Getting Started](http://www.mongodb.org/display/DOCS/Rails+3+-+Getting+Started)  
 [user.rb](https://github.com/banker/mongodb-rails3-sample/blob/master/app/models/user.rb)  
-{:enlaces}

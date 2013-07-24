@@ -7,7 +7,6 @@ categories:
 ### Mono 10
 Si necesitas .NET v4 en Linux la opción es mono 10.  
 Para facilitar la instalación es recomendable el script [mono_build.sh](https://github.com/firegrass/mono-installer-script/blob/master/mono_build.sh).  
-{:enlaces}
 Basta descargar, dar permisos y ejecutar
 
 	$ wget -c https://raw.github.com/firegrass/mono-installer-script/master/mono_build.sh
@@ -55,4 +54,3 @@ Para simplificar agregué estos alias a `~/.bashrc`
 * http://patrick.qmtech.net/blog/?p=41  
 * http://www.mentby.com/doug-blank/building-ironpythonironruby-for-mono-yes.html
 * http://ironpython.codeplex.com/wikipage?title=IronPython%20on%20Mono
-{:enlaces}

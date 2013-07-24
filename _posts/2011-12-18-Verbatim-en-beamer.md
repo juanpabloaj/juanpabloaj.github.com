@@ -48,4 +48,3 @@ Pasa lo mismo con el paquete `listings`
 
 ### Referencias
 * [LaTex, Problem with Beamer and Listings](http://stackoverflow.com/questions/2981008/latex-problem-with-beamer-and-listings)
-{:enlaces}

@@ -63,4 +63,3 @@ En ubuntu/debian basta con
 
 ###Referencias
 [virtualenv tutorial](http://simononsoftware.com/virtualenv-tutorial/)  
-{:enlaces}

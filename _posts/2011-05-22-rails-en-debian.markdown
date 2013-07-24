@@ -84,7 +84,6 @@ si al hacer
 	$ rake db:migrate 
 
 se presentan problemas con `rake 0.9.0` es recomendable [modificar el archivo Rakefile](https://gist.github.com/984326)
-{:enlaces}
 
 
 ##Referencias 
@@ -92,4 +91,3 @@ se presentan problemas con `rake 0.9.0` es recomendable [modificar el archivo Ra
 * [sqlite3 en lenny](http://cuasan.wordpress.com/2010/10/13/rails-3-on-debian-with-sqlite-3/)
 * [Rakefile modificado](https://gist.github.com/984326)
 * [Undefined method 'task' using rake 0.9.0](http://stackoverflow.com/questions/5287121/undefined-method-task-using-rake-0-9-0-beta-4)
-{:enlaces}

@@ -20,7 +20,6 @@ los 256 colores.
 
 Lo que sigue es una traducción rápida de
  [Get rxvt-unicode with 256 color support on Ubuntu](http://scie.nti.st/2008/10/13/get-rxvt-unicode-with-256-color-support-on-ubunut)
-{:enlaces}
 
 Descargar el src de `rxvt-unicode` y aplicar el parche para 256 colores
 
@@ -68,4 +67,3 @@ Con esto `dvtm` no debería mostrar más problemas.
 
 ### Referencias
 * [Get rxvt-unicode with 256 color support on Ubuntu](http://scie.nti.st/2008/10/13/get-rxvt-unicode-with-256-color-support-on-ubunut)
-{:enlaces}

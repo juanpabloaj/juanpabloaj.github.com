@@ -180,4 +180,3 @@ Pueden presentarse problema en el archivo `/opt/nginx/conf/nginx.conf` con las v
 [Instalar passenger](http://www.modrails.com/install.html)  
 [Debian squeeze redmine nginx phusion passenger](http://sourcode.net/debian-squeeze-redmine-nginx-phusion-passenger/)  
 [Rails en debian](http://juanpabloaj.github.com/rails/debian/rvm/2011/05/22/rails-en-debian.html) 
-{:enlaces}

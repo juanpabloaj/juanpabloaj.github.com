@@ -6,7 +6,6 @@ categories:
 ---
 
 Para probar canvas de HTML5 un automata celular con la [regla 110](http://en.wikipedia.org/wiki/Rule_110)
-{:enlaces}
 
 <div class="">
 		<img src="http://f.cl.ly/items/2p3h363K0C3b2y1B0s1z/ss%202011-12-11_at_13.54.51.png">
@@ -14,7 +13,6 @@ Para probar canvas de HTML5 un automata celular con la [regla 110](http://en.wik
 </div>
 
 Y el [código](https://gist.github.com/1461541) :
-{:enlaces}
 
 	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 		"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -71,4 +69,3 @@ Y el [código](https://gist.github.com/1461541) :
 
 ### Referencias
 * [html5rocks](http://www.html5rocks.com/en/)  
-{:enlaces}

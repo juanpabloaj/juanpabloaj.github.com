@@ -68,4 +68,3 @@ Este es un punto importante, `public` debe ser el directorio `public` de la apli
 
 ###Referencias 
 * [Rails on debian lenny](http://bootpolish.net/home_howto_installrubyonrails3ondebianlenny)
-{:enlaces}
