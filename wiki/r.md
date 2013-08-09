@@ -33,3 +33,8 @@ Guardar plot de histograma como `png`
     png(filename=png_name)
     hist(var)
     dev.off()
+
+
+### Referencias
+
+* [Histograms and Density Plots](http://www.statmethods.net/graphs/density.html)  
