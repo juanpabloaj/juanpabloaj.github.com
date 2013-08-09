@@ -23,3 +23,13 @@ Concatenar
     [1] "helloworld"
     > paste("hello", "world", sep="-")
     [1] "hello-world"
+
+
+### Plot
+
+Guardar plot de histograma como `png`
+
+    png_name <- paste(var_name,'_hist.png',sep='')
+    png(filename=png_name)
+    hist(var)
+    dev.off()
