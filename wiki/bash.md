@@ -48,4 +48,5 @@ Una de las posibles causas es la falta del archivo `.bash_profile`
 
 ## Referencias
 
+* [String manipulation](http://tldp.org/LDP/abs/html/string-manipulation.html)  
 * [Working Productively in Bash's Vi Command Line Editing Mode](http://www.catonmat.net/blog/bash-vi-editing-mode-cheat-sheet/)  
