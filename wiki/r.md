@@ -35,6 +35,10 @@ Guardar plot de histograma como `png`
     dev.off()
 
 
+### Packages
+
+* [fitdistrplus: Help to fit of a parametric distribution](http://cran.r-project.org/web/packages/fitdistrplus/)  
+
 ### Referencias
 
 * [Histograms and Density Plots](http://www.statmethods.net/graphs/density.html)  
