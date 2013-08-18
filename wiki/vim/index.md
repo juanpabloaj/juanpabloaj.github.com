@@ -258,3 +258,4 @@ Cuando mostrar la barra de estatus
 ### Enlaces externos
 
 * [Best of Vim Tips](http://rayninfo.co.uk/vimtips.html)  
+* [Plugins de vim que utilizo - github](https://github.com/juanpabloaj/dotfiles/tree/master/.vim/bundle)  

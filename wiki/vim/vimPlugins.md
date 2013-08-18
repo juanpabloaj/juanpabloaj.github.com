@@ -24,4 +24,7 @@ title: Vim Plugins
 [xoria256](http://github.com/vim-scripts/xoria256.vim)  
 [mayasmoke](http://github.com/vim-scripts/mayansmoke) para fondos blancos  
 [vim-pixelmuerto](https://github.com/juanpabloaj/vim-pixelmuerto)
-{.enlaceGris}
+
+### Enlaces externos
+
+* [Plugins de vim que utilizo - github](https://github.com/juanpabloaj/dotfiles/tree/master/.vim/bundle)  
