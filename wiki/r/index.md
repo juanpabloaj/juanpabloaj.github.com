@@ -12,7 +12,7 @@ title : R
 
     seq(-1,1,by=0.2)
     -1.0 -0.8 -0.6 -0.4 -0.2  0.0  0.2  0.4  0.6  0.8  1.0
-    
+
 ### Strings
 
 Concatenar
@@ -37,7 +37,7 @@ Guardar plot de histograma como `png`
 
 ### Packages
 
-* [fitdistrplus: Help to fit of a parametric distribution](http://cran.r-project.org/web/packages/fitdistrplus/)  
+* [fitdistrplus](/wiki/r/fitdistrplus)
 
 ### Referencias
 
