@@ -34,6 +34,11 @@ Guardar plot de histograma como `png`
     hist(var)
     dev.off()
 
+### Test
+
+Test de Kolmogorov-Smirnov
+
+    ks.test(datos, "pnormal", mu, s)
 
 ### Packages
 
