@@ -85,11 +85,13 @@ Devuelve un objeto de tipo generator
 ###more...
 [Herencia](/wiki/python/Herencia)
 
-#Libs
-[matplotlib](/wiki/python/matplotlib)
-[ftplib](/wiki/python/ftplib)
+###Libs
 
-#Ejemplos
+* [matplotlib](/wiki/python/matplotlib)  
+* [scipy](/wiki/python/scipy)  
+* [ftplib](/wiki/python/ftplib)  
+
+###Ejemplos
 
 * [Listas: moda y mediana](https://gist.github.com/2832821)  
 * [Archivos: suma columna](https://gist.github.com/2920582)  
