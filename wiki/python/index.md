@@ -98,3 +98,4 @@ Devuelve un objeto de tipo generator
 * [Archivos: suma columna](https://gist.github.com/2920582)  
 * [Captura de entrada](https://gist.github.com/2965892)  
 * [Búsqueda en varios archivos](https://gist.github.com/3050904)  
+* [numpy para archivos y columnas con loadtxt](https://gist.github.com/juanpabloaj/4535991)  
