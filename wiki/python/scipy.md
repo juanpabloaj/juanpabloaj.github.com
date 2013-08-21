@@ -23,6 +23,8 @@ title : scipy
     plt.plot(x, yn, 'o', x, func(x, *popt))
     plt.show()
 
+![curve_fit](http://f.cl.ly/items/321g2433160U2i451E2r/Captura_de_pantalla_082113_103655_AM.jpg)
+
 Código disponible en [gist](https://gist.github.com/juanpabloaj/6295191) .
 
 
