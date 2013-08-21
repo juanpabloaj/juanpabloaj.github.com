@@ -37,7 +37,7 @@ Con lo cual se crearan algunos directorios los cuales es necesario añadir al `P
     export PYTHONPATH=$HOME/opt/lib/python2.7/site-packages:$PYTHONPATH
 
 ##Pypi
-#General
+##General
 ### String
 Mostrar todas las letras
 
@@ -49,7 +49,8 @@ Mostrar todas las letras
 Ignorar warnings
 	import warnings
 	warnings.filterwarnings(action="ignore", message='the sets module is deprecated')
-## Listas
+
+### Listas
 ### Funcional
 
 Evaluar una lista con elementos booleanos
