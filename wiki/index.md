@@ -32,6 +32,7 @@ title : Wiki
 [nis](/wiki/nis)
 [chkconfig](/wiki/chkconfig)
 [date](/wiki/date)
+[powershell](/wiki/powershell)
 [fstab](/wiki/fstab)
 [ipython](/wiki/ipython)
 [logwatch](/wiki/logwatch)
