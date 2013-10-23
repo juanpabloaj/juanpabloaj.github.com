@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title : Instalando PySide
-categories:python PySide
+categories:
 ---
 
 ### Prerequisitos
