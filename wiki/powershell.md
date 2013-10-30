@@ -3,6 +3,14 @@ layout: default
 title: Powershell
 ---
 
+## General
+
+Definir alias
+
+    set-alias app_name C:\...\app_name.exe
+
+Los comentarios deben comenzar la linea con `#`.
+
 ## Variables
 
 Path
