@@ -9,5 +9,6 @@ Crear un .exe
 
 ## Referencias
 
-* [PyInstaller](http://www.pyinstaller.org/)
+* [PyInstaller](http://www.pyinstaller.org/)  
+* [PyInstaller - github](https://github.com/pyinstaller/pyinstaller)  
 
