@@ -3,6 +3,14 @@ layout: default
 title: PyInstaller
 ---
 
+## Install
+
+### Windows
+
+En Windows es instalable desde pip, pero depende de la libreria pywin32
+
+## Uso
+
 Crear un .exe
 
     pyinstaller.exe --noconsole --onefile --name=script script.py
