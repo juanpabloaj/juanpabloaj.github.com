@@ -40,6 +40,16 @@ Test de Kolmogorov-Smirnov
 
     ks.test(datos, "pnormal", mu, s)
 
+### Scripts
+
+LLamar archivos scripts `.r`.
+
+    source("archivo.r")
+    
+Mostrar comandos ejecutados en el script y salidas
+
+    source("archivo.r", echo=TRUE)
+
 ### Packages
 
 * [fitdistrplus](/wiki/r/fitdistrplus)
