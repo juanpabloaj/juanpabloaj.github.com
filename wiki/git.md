@@ -251,7 +251,14 @@ Mostrarla
 Subir las tags
 
 	git push --tags
+	
+## archive
+
+Archivar solo los últimos archivos modificados
+
+    git archive HEAD $(git diff --name-only HEAD^) | tar -x -C ..
 
 ### Referencias
 
 * [Resolving a merge](http://www.kernel.org/pub/software/scm/git/docs/v1.7.3/user-manual.html#resolving-a-merge)  
+* [Using Git to create an archive of changed files](http://tosbourn.com/2011/05/git/using-git-to-create-an-archive-of-changed-files/)
