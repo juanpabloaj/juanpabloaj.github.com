@@ -1,6 +1,6 @@
 ---
 layout: default
-title: hooks
+title: Hooks
 ---
 
 ## Ejemplos
@@ -28,3 +28,4 @@ Un hook `post-commit`, dependiendo de la rama actual, se copian los archivos a l
 ## Referencias
 
 * [Customizing Git - Git Hooks](http://git-scm.com/book/en/Customizing-Git-Git-Hooks)  
+* [Automatizando tareas con git hooks](http://juanpabloaj.com/2013/07/24/Automatizando-tareas-con-githooks/)  
