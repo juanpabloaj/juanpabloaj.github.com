@@ -240,6 +240,12 @@ Pueden quedar archivos del submodulo
 
 	rm -rf path_to_subModule
 
+## show
+
+Mostrar commit, author, fecha y solo mensaje de commit (sin diff)
+
+	git show -s HEAD~3..HEAD
+
 ##Tags
 Crear una en el actual commit
 
