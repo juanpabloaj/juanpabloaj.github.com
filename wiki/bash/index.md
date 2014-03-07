@@ -45,6 +45,7 @@ Una de las posibles causas es la falta del archivo `.bash_profile`
 * [Redimencionar varias imágenes](/wiki/bash/redimencionarImagenes)  
 * [Barra de progreso](/wiki/bash/barraProgreso)  
 * [Batería baja](/wiki/bash/bateriaBaja)  
+* [Manipulación de texto](/wiki/bash/manipulacion-de-texto)  
 
 ## Referencias
 
