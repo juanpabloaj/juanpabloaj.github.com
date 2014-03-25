@@ -8,10 +8,22 @@ title : Git
 Descargar cambios
 
 	git pull
+	
+Agregar cambios del archivo
 
-Hacer un commit con mensaje
+	git add file
+
+Hacer commit con mensaje
+
+	git commit -m "este es el mensaje"
+
+Agregar todos los cambios y hacer commit con mensaje
 
 	git commit -am "este es el mensaje"
+	
+Agregar selectiva e interactivamente los cambios
+
+	git add file --patch
 
 Subir los cambios
 
