@@ -7,7 +7,7 @@ categories:
 
 En un post anterior, [Una vista rápida a virtualenv](http://juanpabloaj.com/2011/11/19/Una-vista-rapida-a-virtualenv/), vimos como usar `virtualenv` desde cero.
 
-Ahora veremos un ejemplo de como instalar las librerías necesarias para comenzar a trabajas.
+Ahora veremos un ejemplo de como instalar las librerías necesarias para comenzar a trabajar.
 
 Con el comando
 
