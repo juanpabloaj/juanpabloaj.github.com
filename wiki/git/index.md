@@ -23,7 +23,7 @@ Agregar todos los cambios y hacer commit con mensaje
 	
 Agregar selectiva e interactivamente los cambios
 
-	git add file --patch
+	git add --patch file
 
 Subir los cambios
 
@@ -91,6 +91,10 @@ Diferencias entre commits
 Diferencias en resumen
 
 	git diff --stat
+
+Ver solamente los cambios ya agregados
+
+    git diff --cached
 
 ## rebase
 
