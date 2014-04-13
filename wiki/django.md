@@ -42,6 +42,12 @@ Los datos que estén en
 
 Serán cargados al hacer `syncdb`.
 
+## Admin
+
+Crear nuevo super usuario
+
+    python manage.py createsuperuser
+
 ##Referencias
 
 * [Django documentation - Getting started](https://docs.djangoproject.com/en/dev/intro/)
