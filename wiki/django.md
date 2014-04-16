@@ -48,6 +48,10 @@ Crear nuevo super usuario
 
     python manage.py createsuperuser
 
+## test
+
+    python manage.py test --verbosity=2
+
 ##Referencias
 
 * [Django documentation - Getting started](https://docs.djangoproject.com/en/dev/intro/)
