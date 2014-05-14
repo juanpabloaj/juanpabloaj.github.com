@@ -52,6 +52,7 @@ title : Wiki
 [alsa](/wiki/alsa)
 [node](/wiki/node)
 [node.io](/wiki/node.io)
+[openshift](/wiki/openshift)
 [gnuplot](/wiki/gnuplot)
 [netcdf](/wiki/netcdf)
 [Visual Studio](/wiki/visualStudio)
