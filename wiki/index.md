@@ -75,19 +75,15 @@ title : Wiki
 [fdisk](/wiki/fdisk)
 [mail](/wiki/mail)
 [pip](/wiki/pip)
-{:enlaces}
 ## DB
 [MySQL](/wiki/mysql)
 [MongoDB](/wiki/mongodb)
-{:enlaces}
 ## CMS
 [Wordpress](/wiki/wordpress)
 [Joomla](/wiki/joomla)
-{:enlaces}
 ## Frameworks
 [Rails](/wiki/rails)
 [Django](/wiki/django)
-{:enlaces}
 ## OS
 [OSX](/wiki/osx)
 
@@ -103,9 +99,7 @@ title : Wiki
 [ruby](/wiki/ruby)
 [javascript](/wiki/javascript)
 [fortran](/wiki/fortran)
-{:enlaces}
 ## Control de versiones
 [Mercurial](/wiki/mercurial)
 [Git](/wiki/git)
 [Subversion](/wiki/subversion)
-{:enlaces}
