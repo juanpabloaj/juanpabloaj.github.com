@@ -96,6 +96,20 @@ Ver solamente los cambios ya agregados
 
     git diff --cached
 
+### stash
+
+Almacenar temporalmente cambios sin un commit
+
+    git stash
+
+Listar cambios almacenados con stash
+
+    git stash list
+
+Aplicar un cambio de stash
+
+    git stash apply
+
 ## rebase
 
 Eliminar un commit
