@@ -91,6 +91,7 @@ Devuelve un objeto de tipo generator
 * [matplotlib](/wiki/python/matplotlib)  
 * [scipy](/wiki/python/scipy)  
 * [ftplib](/wiki/python/ftplib)  
+* [unittest](/wiki/python/unittest)  
 
 ###Ejemplos
 
