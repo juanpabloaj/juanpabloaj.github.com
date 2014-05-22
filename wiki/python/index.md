@@ -92,6 +92,7 @@ Devuelve un objeto de tipo generator
 * [scipy](/wiki/python/scipy)  
 * [ftplib](/wiki/python/ftplib)  
 * [unittest](/wiki/python/unittest)  
+* [setuptools](/wiki/python/setuptools)  
 
 ###Ejemplos
 
