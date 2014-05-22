@@ -2,18 +2,18 @@
 layout: default
 title : R
 ---
-### loops
+## loops
 
     for ( i in 1:10){
         print(i)
     }
 
-### Secuencias
+## Secuencias
 
     seq(-1,1,by=0.2)
     -1.0 -0.8 -0.6 -0.4 -0.2  0.0  0.2  0.4  0.6  0.8  1.0
 
-### Strings
+## Strings
 
 Concatenar
 
@@ -25,7 +25,7 @@ Concatenar
     [1] "hello-world"
 
 
-### Plot
+## Plot
 
 Guardar plot de histograma como `png`
 
@@ -34,26 +34,36 @@ Guardar plot de histograma como `png`
     hist(var)
     dev.off()
 
-### Test
+Histograma por frecuencia
+
+    d <- rexp(1000, 0.5)
+    hist(d)
+
+Histograma por densidad
+
+    d <- rexp(1000, 0.5)
+    hist(d, prob=T)
+
+## Test
 
 Test de Kolmogorov-Smirnov
 
     ks.test(datos, "pnormal", mu, s)
 
-### Scripts
+## Scripts
 
-LLamar archivos scripts `.r`.
+Llamar archivos scripts `.r`.
 
     source("archivo.r")
-    
+
 Mostrar comandos ejecutados en el script y salidas
 
     source("archivo.r", echo=TRUE)
 
-### Packages
+## Packages
 
 * [fitdistrplus](/wiki/r/fitdistrplus)
 
-### Referencias
+## Referencias
 
 * [Histograms and Density Plots](http://www.statmethods.net/graphs/density.html)  
