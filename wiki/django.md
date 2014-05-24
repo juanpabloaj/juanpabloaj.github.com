@@ -42,6 +42,10 @@ Los datos que estén en
 
 Serán cargados al hacer `syncdb`.
 
+Borrar toda la db
+
+    python manage.py flush
+
 ## Admin
 
 Crear nuevo super usuario
