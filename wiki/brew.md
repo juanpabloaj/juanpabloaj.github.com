@@ -1,9 +1,11 @@
 ---
 layout: default
-title: brew
+title: Brew
 ---
 
 ## Recomendados para instalar
+
+<script src="https://gist.github.com/juanpabloaj/1177435.js"></script>
 
 ### bash-completion
 Agrega autocompletación para bash, es necesario agregar a `~/.bash_profile`
