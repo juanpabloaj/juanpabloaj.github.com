@@ -56,6 +56,10 @@ Crear nuevo super usuario
 
     python manage.py test --verbosity=2
 
+## tools
+
+* [South](/wiki/django/south)  
+
 ##Referencias
 
 * [Django documentation - Getting started](https://docs.djangoproject.com/en/dev/intro/)
