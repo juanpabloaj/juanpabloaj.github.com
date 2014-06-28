@@ -8,6 +8,5 @@ plugins:     ./_plugins
 future:      true
 lsi:         false
 highlighter:    true
-markdown:    maruku
 permalink:   pretty
 
