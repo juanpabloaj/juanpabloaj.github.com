@@ -20,6 +20,8 @@ title : Wiki
 [make](/wiki/make)
 [rake](/wiki/rake)
 [gem](/wiki/gem)
+[npm](/wiki/npm)
+[grunt](/wiki/grunt)
 [matlab](/wiki/matlab)
 [mpich2](/wiki/mpich2)
 [ssh](/wiki/ssh)
