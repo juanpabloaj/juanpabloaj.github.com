@@ -18,6 +18,8 @@ title : Wiki
 [zsh](/wiki/zsh)
 [gdl](/wiki/gdl)
 [make](/wiki/make)
+[rake](/wiki/rake)
+[gem](/wiki/gem)
 [matlab](/wiki/matlab)
 [mpich2](/wiki/mpich2)
 [ssh](/wiki/ssh)
