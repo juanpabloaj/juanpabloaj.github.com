@@ -17,7 +17,6 @@ title: Vim Plugins
 [vim-rails](https://github.com/tpope/vim-rails)  
 [vim-surround](https://github.com/tpope/vim-surround)  
 [vim-taglist-plus](https://github.com/int3/vim-taglist-plus)  
-{.enlaceGris}
 
 ### Colorscheme
 
