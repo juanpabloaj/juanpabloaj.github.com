@@ -65,7 +65,9 @@ title : Wiki
 [dropbox](/wiki/dropbox)
 [virtualbox](/wiki/virtualbox)
 [Xauthority](/wiki/Xauthority)
+
 ## Comandos
+
 [ldconfig](/wiki/ldconfig)
 [tar](/wiki/tar)
 [dd](/wiki/dd)
@@ -80,31 +82,44 @@ title : Wiki
 [fdisk](/wiki/fdisk)
 [mail](/wiki/mail)
 [pip](/wiki/pip)
+
 ## DB
+
 [MySQL](/wiki/mysql)
 [MongoDB](/wiki/mongodb)
+
 ## CMS
+
 [Wordpress](/wiki/wordpress)
 [Joomla](/wiki/joomla)
+
 ## Frameworks
+
 [Rails](/wiki/rails)
 [Django](/wiki/django)
+
 ## OS
+
 [OSX](/wiki/osx)
 
 ### Linux distribuciones
+
 [Debian](/wiki/debian)
 [Ubuntu](/wiki/ubuntu)
 [Suse](/wiki/suse)
 [Fedora](/wiki/fedora)
 [Centos](/wiki/centos)
+
 ## Lenguajes
+
 [cpp](/wiki/cpp)
 [python](/wiki/python)
 [ruby](/wiki/ruby)
 [javascript](/wiki/javascript)
 [fortran](/wiki/fortran)
+
 ## Control de versiones
+
 [Mercurial](/wiki/mercurial)
 [Git](/wiki/git)
 [Subversion](/wiki/subversion)
