@@ -4,7 +4,7 @@ comments: true
 title : CSS con stylus
 categories:
 ---
-Como ahorrar tiempo con al momento de trabajar con CSS?  
+Como ahorrar tiempo al momento de trabajar con CSS?  
 
 He probado un poco con [less](http://lesscss.org/), y es una gran ayuda, especialmente con el uso de variables. Pero después de probar estas soluciones, te preguntas ¿es necesario usar las llaves ({})?.  
 
