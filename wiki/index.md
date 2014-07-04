@@ -34,6 +34,7 @@ title : Wiki
 [brew](/wiki/brew)
 [gurobi](/wiki/gurobi)
 [nis](/wiki/nis)
+[virtualenvwrapper](/wiki/virtualenvwrapper)
 [chkconfig](/wiki/chkconfig)
 [date](/wiki/date)
 [grep](/wiki/grep)
