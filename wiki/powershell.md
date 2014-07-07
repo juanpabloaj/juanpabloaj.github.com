@@ -17,6 +17,15 @@ Path
 
     $env:path
 
+Version actual
+
+    $PSVersionTable.PSVersion
+
+O
+
+    $PSVersionTable
+
+
 ## Profile
 
 Archivo de configuración de powershell, cargado al comienzo.
