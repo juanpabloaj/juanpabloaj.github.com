@@ -43,6 +43,12 @@ Para agregar directorios al `PATH`
 
     $env:Path += ";C:\Program Files\dir_name\bin"
 
+## Get-EventSubscriber
+
+Cancela la suscripción al evento llamado `FileCreated`
+
+    Unregister-Event FileCreated
+
 ## Get-WmiObject
 
 Obtener información del procesador
