@@ -20,3 +20,7 @@ Para usar la versión específica de un paquete se puede crear un archivo requir
 Y usar pip con el argumento `-r`
 
     pip install -r requirements.txt
+
+Instalación desde un repositorio local en editable mode
+
+    pip install -e .
