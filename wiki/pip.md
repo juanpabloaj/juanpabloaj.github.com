@@ -24,3 +24,15 @@ Y usar pip con el argumento `-r`
 Instalación desde un repositorio local en editable mode
 
     pip install -e .
+
+## Pypi
+
+Crear distribución
+
+    python setup.py sdist
+
+Crear y subir a pypi
+
+    python setup.py sdist upload -r pypi
+
+#### .pypirc
