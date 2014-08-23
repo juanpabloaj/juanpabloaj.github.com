@@ -25,6 +25,10 @@ Instalación desde un repositorio local en editable mode
 
     pip install -e .
 
+Instalación desde la rama en un repositorio remoto
+
+    pip install git+git://github.com/juanpabloaj/repo_name.git@branch_name
+
 ## Pypi
 
 Crear distribución
