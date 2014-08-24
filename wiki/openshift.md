@@ -20,3 +20,7 @@ Ver lista de llaves ssh agregadas en la app
 Agregar llave publica ssh
 
     rhc sshkey add key_name /path/to/key.pub
+
+Definir una variable de entorno en la app
+
+    rhc set-env VARIABLE1=VALUE1 VARIABLE2=VALUE2 -a myapp
