@@ -92,17 +92,17 @@ Devuelve un objeto de tipo generator
 
 ###Libs
 
-* [matplotlib](/wiki/python/matplotlib)  
-* [scipy](/wiki/python/scipy)  
-* [ftplib](/wiki/python/ftplib)  
-* [unittest](/wiki/python/unittest)  
-* [flake8](/wiki/python/flake8)  
-* [setuptools](/wiki/python/setuptools)  
+* [matplotlib](/wiki/python/matplotlib)
+* [scipy](/wiki/python/scipy)
+* [ftplib](/wiki/python/ftplib)
+* [unittest](/wiki/python/unittest)
+* [flake8](/wiki/python/flake8)
+* [setuptools](/wiki/python/setuptools)
 
 ###Ejemplos
 
-* [Listas: moda y mediana](https://gist.github.com/2832821)  
-* [Archivos: suma columna](https://gist.github.com/2920582)  
-* [Captura de entrada](https://gist.github.com/2965892)  
-* [Búsqueda en varios archivos](https://gist.github.com/3050904)  
-* [numpy para archivos y columnas con loadtxt](https://gist.github.com/juanpabloaj/4535991)  
+* [Listas: moda y mediana](https://gist.github.com/2832821)
+* [Archivos: suma columna](https://gist.github.com/2920582)
+* [Captura de entrada](https://gist.github.com/2965892)
+* [Búsqueda en varios archivos](https://gist.github.com/3050904)
+* [numpy para archivos y columnas con loadtxt](https://gist.github.com/juanpabloaj/4535991)
