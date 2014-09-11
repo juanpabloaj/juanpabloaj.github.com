@@ -3,6 +3,7 @@ layout: default
 title : python
 ---
 #Install
+
 ## Windows
 python se debería instalar en `C:\python26` o un directorio similar.
 
@@ -37,7 +38,9 @@ Con lo cual se crearan algunos directorios los cuales es necesario añadir al `P
     export PYTHONPATH=$HOME/opt/lib/python2.7/site-packages:$PYTHONPATH
 
 ##Pypi
+
 ##General
+
 ### String
 Mostrar todas las letras
 
@@ -51,6 +54,7 @@ Ignorar warnings
 	warnings.filterwarnings(action="ignore", message='the sets module is deprecated')
 
 ### Listas
+
 ### Funcional
 
 Evaluar una lista con elementos booleanos
