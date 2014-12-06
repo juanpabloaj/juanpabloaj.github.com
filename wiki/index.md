@@ -59,6 +59,7 @@ title : Wiki
 [node](/wiki/node)
 [node.io](/wiki/node.io)
 [openshift](/wiki/openshift)
+[heroku](/wiki/heroku)
 [gnuplot](/wiki/gnuplot)
 [netcdf](/wiki/netcdf)
 [Visual Studio](/wiki/visualStudio)
