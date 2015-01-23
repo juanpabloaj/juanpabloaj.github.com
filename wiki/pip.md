@@ -31,6 +31,10 @@ Instalación desde la rama en un repositorio remoto
 
 ## Pypi
 
+Registrarse
+
+    python setup.py register
+
 Crear distribución
 
     python setup.py sdist
