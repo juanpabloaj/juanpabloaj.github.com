@@ -8,8 +8,7 @@
     <![endif]-->
 
     <!-- Le styles -->
-<!--<link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen" />-->
-<link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 <link rel="stylesheet" href="/css/style.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="/css/syntax.css" type="text/css" media="screen" />
 <title>{{ page.title }}</title>
@@ -30,27 +29,25 @@
 
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="navbar-inner">
-            <div class="container-fluid">
-                <ul class="nav">
-                    <li><a href="/">Home</a></li>
-                    <li class="active"><a href="/blog">Blog</a></li>
-                    <li><a href="/wiki">Wiki</a></li>
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">Home</a>
+                <a class="navbar-brand" href="/blog">Blog</a>
+                <a class="navbar-brand" href="/wiki">Wiki</a>
+            </div>
+            <div class="collapse navbar-collapse pull-right">
+                <ul class="nav navbar-nav">
+                    <li><a href="http://twitter.com/juanpabloaj">twitter</a></li>
+                    <li><a href="http://github.com/juanpabloaj">github</a></li>
+                    <li><a href="https://bitbucket.org/juanpablo">bitbucket</a></li>
+                        <li ><a href="#"><span id="mail"></span></a></li>
                 </ul>
-                <div class="pull-right">
-                    <ul class="nav">
-                        <li><a href="http://twitter.com/juanpabloaj">twitter</a></li>
-                        <li><a href="http://github.com/juanpabloaj">github</a></li>
-                        <li><a href="https://bitbucket.org/juanpablo">bitbucket</a></li>
-                            <li ><a href="#"><span id="mail"></span></a></li>
-                    </ul>
-                </div>
             </div>
         </div>
     </div>
-<div class="container-fluid">
-    <div class="row-fluid">
-        <div class="span3">
+<div class="container">
+    <div class="row">
+        <div class="col-md-3 hidden-sm">
                         <a href="/">
                         <img class="img-polaroid" src="http://f.cl.ly/items/332o2z0V0h2T2w0M2Y0m/deLado.jpg" alt="" />
                         </a>
@@ -61,7 +58,7 @@
                 </div>
             {% endfor %}
         </div>
-        <div class="span9">
+        <div class="col-md-8">
             <h1>{{ page.title }}</h1>
             {{ content }}
             {{ % if page.comments % }}
