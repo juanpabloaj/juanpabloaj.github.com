@@ -6,15 +6,15 @@ body {
 }
 a {
     text-decoration:none;
-    color:#bbb;
+    color:#212121;
 }
 a:hover {
     text-decoration:none;
-    color:#aaa;
+    color:#727272;
 }
 .postEnlace a {
     text-decoration:none;
-    color:#bbb;
+    color:#727272;
 }
 #cuello div {
     float:left;
@@ -22,15 +22,15 @@ a:hover {
 }
 #cuello div a {
     text-decoration:none;
-    color:#bbb;
+    color:#727272;
 }
 .enlaceGris a {
     text-decoration:none;
-    color:#999;
+    color:#727272;
 }
 .enlaceGris a:hover {
     text-decoration:none;
-    color:#777;
+    color:#727272;
 }
 .highlight {
     background:none;
