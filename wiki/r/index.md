@@ -66,6 +66,10 @@ Mostrar comandos ejecutados en el script y salidas
 
     source("archivo.r", echo=TRUE)
 
+Cuando el scripts tiene texto `utf-8`, como títulos de gráficos
+
+    source('r_script.r', encoding='utf-8')
+
 ## Packages
 
 * [fitdistrplus](/wiki/r/fitdistrplus)
