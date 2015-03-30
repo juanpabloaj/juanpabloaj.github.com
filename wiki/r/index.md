@@ -19,6 +19,13 @@ Pedir la columna dos y tres de una lista
 
     lista[,2:3]
 
+
+Pedir rango de una lista
+
+    > l <- 1:10
+    > l[ l > 3 & l < 8]
+    [1] 4 5 6 7
+
 ## Strings
 
 Concatenar
@@ -71,6 +78,10 @@ Cuando el scripts tiene texto `utf-8`, como títulos de gráficos
     source('r_script.r', encoding='utf-8')
 
 ## Packages
+
+Instalar paquetes
+
+    install.packages('package-name')
 
 * [fitdistrplus](/wiki/r/fitdistrplus)
 
