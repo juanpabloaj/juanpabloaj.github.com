@@ -240,7 +240,9 @@ Ver lo que se ha hecho
 Muy útil para recuperar hash que se resetearon
 
 ## submodules
-###add
+
+### add
+
 Agregar un nuevo submodulo
 
 	git submodule add http://url_submodule path_a_instalar
