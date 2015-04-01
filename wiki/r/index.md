@@ -37,6 +37,22 @@ Concatenar
     > paste("hello", "world", sep="-")
     [1] "hello-world"
 
+## read
+
+Cargar un archivo `csv` separado por `;`
+
+    archivo_csv <- read.csv('archiv.csv', sep=';')
+
+Cargar todos los archivos `csv` de un directorio y calcular los quantiles de una columna
+
+    csv_names <- dir(pattern='*.csv')
+
+    for (name in csv_names) {
+        print(name)
+        csv_content <- read.csv(name)
+        valores <- csv_content$nombre_columna
+        print(quantile(valores, c(0.1, 0.5, 0.9)))
+    }
 
 ## Plot
 
