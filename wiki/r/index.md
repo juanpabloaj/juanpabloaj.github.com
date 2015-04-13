@@ -50,6 +50,10 @@ Sub rango de un data.frame
     4       4      d
     5       5      e
 
+Recibir todas las columnas del data.frame
+
+    > numeros_letras[numeros_letras$numeros > 3, names(numeros_letras)]
+
 ## read
 
 Cargar un archivo `csv` separado por `;`
