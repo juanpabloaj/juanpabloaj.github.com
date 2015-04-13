@@ -37,6 +37,19 @@ Concatenar
     > paste("hello", "world", sep="-")
     [1] "hello-world"
 
+## data.frame
+
+Sub rango de un data.frame
+
+    > numeros_letras <- data.frame(
+        numeros=c(1,2,3,4,5),
+        letras=c('a', 'b', 'c', 'd', 'e')
+    )
+    > numeros_letras[numeros_letras$numeros > 3, c('numeros', 'letras')]
+      numeros letras
+    4       4      d
+    5       5      e
+
 ## read
 
 Cargar un archivo `csv` separado por `;`
