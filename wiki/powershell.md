@@ -68,6 +68,13 @@ Obtener porcentaje de carga del procesador
 
     Get-WmiObject win32_processor | select LoadPercentage | fl
 
+
+## Rename-Item
+
+Re nombrar los archivos y directorios de un directorio
+
+    dir | Rename-Item -NewName { $_.name -replace " ","_" }
+
 ## Referencias
 
 * [How to find CPU Usage Percent with Powershell? ](http://powershell-tips.blogspot.com/2011/08/how-to-find-cpu-usage-percent-with.html)  
