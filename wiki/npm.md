@@ -13,3 +13,7 @@ Instalar dependencias descritas en archivo `package.json`
 Instalar globalmente
 
     npm install -g grunt-cli
+
+Listar paquetes instalados globalmente, sin mostrar todas sus dependencias
+
+    npm ls -g --depth=0
