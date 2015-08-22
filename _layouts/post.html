@@ -47,7 +47,7 @@
     </div>
 <div class="container">
     <div class="row">
-        <div class="col-md-3 hidden-sm">
+        <div class="col-md-3 hidden-xs hidden-sm">
             <a href="/">
             <img class="img-thumbnail" src="http://f.cl.ly/items/332o2z0V0h2T2w0M2Y0m/deLado.jpg" alt="" />
             </a>
@@ -60,7 +60,9 @@
         </div>
         <div class="col-md-8">
             <h1>{{ page.title }}</h1>
+            <hr />
             {{ content }}
+            <hr />
             {{ % if page.comments % }}
                 <div id="disqus_thread"></div>
                 <script type="text/javascript">
