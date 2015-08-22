@@ -1,0 +1,23 @@
+{
+  "name": "juanpabloaj-site",
+  "version": "0.1.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juanpabloaj/juanpabloaj.github.com.git"
+  },
+  "author": "juanpabloaj",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/juanpabloaj/juanpabloaj.github.com/issues"
+  },
+  "homepage": "https://github.com/juanpabloaj/juanpabloaj.github.com#readme",
+  "devDependencies": {
+    "browser-sync": "^2.8.2",
+    "gulp": "^3.9.0"
+  }
+}
