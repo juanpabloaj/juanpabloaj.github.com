@@ -22,6 +22,7 @@ title : Wiki
 [gem](/wiki/gem)
 [npm](/wiki/npm)
 [grunt](/wiki/grunt)
+[docker](/wiki/docker)
 [matlab](/wiki/matlab)
 [mpich2](/wiki/mpich2)
 [ssh](/wiki/ssh)
