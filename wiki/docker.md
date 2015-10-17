@@ -13,3 +13,7 @@ Lanzar docker container
 Usar puerto del host
 
     docker run -p 80:80 image_name
+
+Entrar al contenedor con bash
+
+    docker run -it image_name bash
