@@ -69,6 +69,10 @@ Crear desde la linea de comandos
 
     new-session -s nueva_session
 
+Recuperar sesión
+
+    tmux attach -t session_name
+
 Cambiar de nombre a la sesión
 
     C-a $
