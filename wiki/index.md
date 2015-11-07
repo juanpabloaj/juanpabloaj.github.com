@@ -36,6 +36,7 @@ title : Wiki
 [gurobi](/wiki/gurobi)
 [nis](/wiki/nis)
 [virtualenvwrapper](/wiki/virtualenvwrapper)
+[tox](/wiki/tox)
 [chkconfig](/wiki/chkconfig)
 [date](/wiki/date)
 [grep](/wiki/grep)
