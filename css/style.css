@@ -12,6 +12,14 @@ a:hover {
     text-decoration:none;
     color:#727272;
 }
+
+p a {
+    color:#512DA8;
+}
+p a:hover {
+    color:#7C4DFF;
+}
+
 .postEnlace a {
     text-decoration:none;
     color:#727272;
