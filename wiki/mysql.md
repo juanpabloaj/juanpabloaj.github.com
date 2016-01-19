@@ -2,6 +2,31 @@
 layout: default
 title : MySQL
 ---
+
+### Tablas
+
+Crear tabla
+
+    CREATE TABLE `table_name`(
+    	ID INT(6) NOT NULL,
+	names VARCHAR(20) NOT NULL,
+    	PRIMARY KEY (ID)
+    );
+
+Borrar tabla si existe
+
+    DROP TABLE IF EXISTS `table_name`;
+
+### Usuarios
+
+Crear usuario
+
+    grant all on table_name. * to 'username'@'localhost';
+
+Crear usuario con acceso externo
+
+    grant select on table_name. * to 'username'@'localhost';
+
 Mostrar usuarios
 
     SELECT user FROM mysql.user;
