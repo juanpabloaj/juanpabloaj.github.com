@@ -8,7 +8,7 @@ Instalar
 
 Convertir código python a binario
 
-    nuitka --recurse-all program.py
+    nuitka --recurse-all --standalone program.py
 
 ## Referencias
 
