@@ -2,7 +2,7 @@
 layout: default
 title : python
 ---
-#Install
+# Install
 
 ## Windows
 python se debería instalar en `C:\python26` o un directorio similar.
@@ -11,14 +11,14 @@ Es recomendable agregar la ubicación en la variable de entorno `PATH` en
 
 	Sistema > optiones avanzadas > variables de entorno
 
-###Executable
+### Executable
 Para crear un executable para windows es necesario bajar el paquete [py2exe](http://py2exe.org/).
 
 Crear un archivo `setup.py` y usar el comando
 
 	python setup.py py2exe
 
-##easy_install
+## easy_install
 Para facilitar la instalación de paquetes.
 
 	easy_install networkx
@@ -37,9 +37,9 @@ Con lo cual se crearan algunos directorios los cuales es necesario añadir al `P
 
     export PYTHONPATH=$HOME/opt/lib/python2.7/site-packages:$PYTHONPATH
 
-##Pypi
+## Pypi
 
-##General
+## General
 
 ### String
 Mostrar todas las letras
@@ -48,7 +48,7 @@ Mostrar todas las letras
 	for a in string.lowercase:
 		print a
 
-###warnings
+### warnings
 Ignorar warnings
 	import warnings
 	warnings.filterwarnings(action="ignore", message='the sets module is deprecated')
@@ -83,14 +83,14 @@ map entrega una lista y reduce un valor
 
 Devuelve un objeto de tipo generator
 
-###hash
+### hash
 
 	__hash__
 
-###more...
+### more...
 [Herencia](/wiki/python/Herencia)
 
-###Libs
+### Libs
 
 * [matplotlib](/wiki/python/matplotlib)
 * [scipy](/wiki/python/scipy)
@@ -99,7 +99,7 @@ Devuelve un objeto de tipo generator
 * [flake8](/wiki/python/flake8)
 * [setuptools](/wiki/python/setuptools)
 
-###Ejemplos
+### Ejemplos
 
 * [Listas: moda y mediana](https://gist.github.com/2832821)
 * [Archivos: suma columna](https://gist.github.com/2920582)
