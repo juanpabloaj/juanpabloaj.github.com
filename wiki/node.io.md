@@ -2,7 +2,7 @@
 layout: default
 title: Node.io
 ---
-##Install
+## Install
 Para que el binario `node.io` sea visible en el `PATH` es necesario instalarlo global.
 
     npm install -g node.io

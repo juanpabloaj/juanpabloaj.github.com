@@ -4,9 +4,9 @@ title : NIS
 ---
 Network Information Service
 
-#Server
+# Server
 
-#Client
+# Client
 
 Agregar servicios al inicio
 

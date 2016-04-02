@@ -15,7 +15,7 @@ Usar python como shell
     export DJANGO_SETTINGS_MODULE="settings"
     python
 
-##Models
+## Models
 
 Crear las tablas en el db
 
@@ -60,6 +60,6 @@ Crear nuevo super usuario
 
 * [South](/wiki/django/south)  
 
-##Referencias
+## Referencias
 
 * [Django documentation - Getting started](https://docs.djangoproject.com/en/dev/intro/)

@@ -14,7 +14,7 @@ Para definir la zona horaria
 
     dpkg-reconfigure tzdata
 
-###Recuperar password
+### Recuperar password
 En grub presionar `e`, al final de la linea del kernel agregar
 
     init=/bin/bash
@@ -27,7 +27,7 @@ Y cambiar el password
 
     passwd
 
-###De lenny a squeeze
+### De lenny a squeeze
 En el archivo `/etc/apt/source.list` remplezar todas las palabras lenny por squeeze.
 
 Actualizar los paquetes necesario

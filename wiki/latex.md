@@ -18,7 +18,7 @@ Y
 
 Es que en el primer caso el indice queda abajo, en el segundo queda al lado de la sumaria.
 
-##Tamaño de fuentes
+## Tamaño de fuentes
 
     \tiny
     \scriptsize
@@ -31,7 +31,7 @@ Es que en el primer caso el indice queda abajo, en el segundo queda al lado de l
     \huge
     \Huge
 
-##Tablas
+## Tablas
 Cambiar el caption de cuadro a tabla, cambiar la llamada al paquete spanish
 
     \usepackage[spanish, es-tabla]{babel}
@@ -45,13 +45,13 @@ Y al declarar la tabla usar `H`
 
     \begin{table}[H]
 
-##Citaciones
+## Citaciones
 
 Multiples citaciones
 
     \cite{citation01,citation02,citation03}
 
-##Referencias
+## Referencias
 
 * [wikibooks](http://en.wikibooks.org/wiki/LaTeX/Bibliography_Management)  
 * [Keeping tables/figures close to where they are mentioned](http://tex.stackexchange.com/questions/2275/keeping-tables-figures-close-to-where-they-are-mentioned)  

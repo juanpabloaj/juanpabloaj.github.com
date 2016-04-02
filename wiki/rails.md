@@ -96,13 +96,13 @@ La app básica debería estar funcionando, levantar un servidor local para visua
 
 Y en el navegador escribir la dirección `localhost:3000/users`. Con lo cual se debería ver una página donde se puede comenzar a agregar usuarios.  
 
-##Gems 
+## Gems 
 
 [MongoMapper](/wiki/rails/mongomapper)  
 [Passenger](/wiki/rails/passenger)
 {:enlaces}
 
-##Docs
+## Docs
 
 * [getting started](http://guides.rubyonrails.org/getting_started)  
 {:enlaces}

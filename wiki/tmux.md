@@ -77,7 +77,7 @@ Cambiar de nombre a la sesión
 
     C-a $
 
-##Referencias
+## Referencias
 
 * [tmux.conf](https://github.com/juanpabloaj/dotfiles/blob/master/.tmux.conf)  
 * [Tmux: How can I link a window as split-window?](http://superuser.com/questions/266567/tmux-how-can-i-link-a-window-as-split-window)  

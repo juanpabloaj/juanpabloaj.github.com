@@ -115,8 +115,8 @@ Agregar al archivo `~/.hgrc`
 	[extensions]
 	hgext.graphlog =
 
-##.hgrc
-###alias
+## .hgrc
+### alias
 
 	[alias]
 	d0 = diff -U0

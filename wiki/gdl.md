@@ -2,9 +2,9 @@
 layout: default
 title: gdl
 ---
-#Gnu Data Language
+# Gnu Data Language
 
-##Ubuntu
+## Ubuntu
 
 Para instalar
 
@@ -14,7 +14,7 @@ Para plotear en algunas distribuciones en necesario
 
     sudo apt-get install plplot11-driver-xwin
 
-##Ejemplo
+## Ejemplo
 
     orig = sin((findgen(200)/35)^2.5)
     plot,orig

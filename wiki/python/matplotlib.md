@@ -2,12 +2,12 @@
 layout: default
 title : matplotlib
 ---
-##Install
+## Install
 En ubuntu lo más simple fue
 
     apt-get install python-matplotlib
 
-##Ejemplos
+## Ejemplos
 Agregar puntos en los números del eje Y
 
 	#!/usr/bin/python

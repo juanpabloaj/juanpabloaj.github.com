@@ -2,9 +2,9 @@
 layout: default
 title: xen
 ---
-#Install
+# Install
 
-##Ubuntu
+## Ubuntu
 Instalar los paquetes
 
     sudo apt-get install xen-hypervisor-4.1-amd64 xen-utils-4.1 xenwatch xen-tools xen-utils-common xenstore-utils virtinst
@@ -30,7 +30,7 @@ Reiniciar, escoger el kernel de xen y verificar
     Utilizando API: Xen 0.9.8
     Ejecutando hypervisor: Xen 4.1.0
 
-#Uso
+# Uso
 
 Información de xen
 

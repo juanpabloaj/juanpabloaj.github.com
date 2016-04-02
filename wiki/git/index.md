@@ -260,7 +260,7 @@ Actualizar todos los submodulos
 
 	git submodule update --init --recursive
 
-###rm
+### rm
 No es tan simple como al agregar, es necesario eliminar las lineas que mencionen al submodulo en los archivos
 
 	vim .gitmodules # eliminar referencias al submodulo
@@ -278,7 +278,7 @@ Mostrar commit, author, fecha y solo mensaje de commit (sin diff)
 
 	git show -s HEAD~3..HEAD
 
-##Tags
+## Tags
 Crear una en el actual commit
 
 	git tag v0.0.1

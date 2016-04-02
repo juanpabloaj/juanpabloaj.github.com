@@ -15,11 +15,11 @@ Donde `host` es el remoto donde se transferirá el archivo, notar los dos puntos
 
 ## SSH sin password
 
-###Automático
+### Automático
 
 	ssh-copy-id -i ~/.ssh/id_rsa.pub user@remoteHost
 
-###Manual
+### Manual
 Generar llave en equipo cliente
 
 	ssh-keygen -t rsa
@@ -90,7 +90,7 @@ No permitir password, solo se puede autentificar por llave
 
     PasswordAuthentication no
 
-##Referencias
+## Referencias
 
 * [How do I get publickey user authentication to work?](http://www.snailbook.com/faq/publickey-userauth.auto.html)  
 * [Using Putty on Windows to login Linux securely via OpenSSH](http://www.linux-sxs.org/networking/openssh.putty.html)  

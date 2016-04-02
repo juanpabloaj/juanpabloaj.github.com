@@ -21,7 +21,7 @@ Construir
 
 En la instalación necesita `yodl` para generar la documentación
 
-###for
+### for
 repetir hasta que haya un problema, útil para detener con `ctrl-c`
 
 	for i in {1..10}
