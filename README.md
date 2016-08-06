@@ -16,3 +16,8 @@ Instalar dependencias
 Lanzar jekyll con browsersync
 
     gulp
+
+Es necesario tener instalado `gulp` y `jekyll`.
+
+* gulp: npm install -g gulp
+* jekyll: gem install jekyll
