@@ -1,19 +1,27 @@
---- 
-layout: default
-title : Subversion 
 ---
-descargar el repositorio
+layout: default
+title : Subversion
+---
+Descargar el repositorio
 
 	svn ckeckout http://url_del_repositiorio
 
-actualizar 
+Actualizar
 
-	svn update 
+	svn update
 
-actualizar a revisión específica 
+Mostrar revisión actual
+
+    svn info
+
+Actualizar a revisión específica
 
 	svn update -r <number>
 
-`svn diff `  
-revertir los cambios   
-`svn revert archivos_modificado`   
+Mostrar diferencias
+
+    svn diff
+
+Revertir los cambios
+
+    svn revert archivos_modificado
