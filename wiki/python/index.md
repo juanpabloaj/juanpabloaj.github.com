@@ -88,16 +88,19 @@ Devuelve un objeto de tipo generator
 	__hash__
 
 ### more...
+
 [Herencia](/wiki/python/Herencia)
 
 ### Libs
 
-* [matplotlib](/wiki/python/matplotlib)
-* [scipy](/wiki/python/scipy)
-* [ftplib](/wiki/python/ftplib)
-* [unittest](/wiki/python/unittest)
 * [flake8](/wiki/python/flake8)
+* [ftplib](/wiki/python/ftplib)
+* [ipython](/wiki/python/ipython)
+* [matplotlib](/wiki/python/matplotlib)
+* [networkx](/wiki/python/networkx)
+* [scipy](/wiki/python/scipy)
 * [setuptools](/wiki/python/setuptools)
+* [unittest](/wiki/python/unittest)
 
 ### Ejemplos
 

@@ -42,7 +42,6 @@ title : Wiki
 [grep](/wiki/grep)
 [powershell](/wiki/powershell)
 [fstab](/wiki/fstab)
-[ipython](/wiki/ipython)
 [pyinstaller](/wiki/pyinstaller)
 [cx_freeze](/wiki/cx_freeze)
 [logwatch](/wiki/logwatch)
