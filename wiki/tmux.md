@@ -53,14 +53,6 @@ Crear nueva ventana en fondo desde comando
 
 ## Sesiones
 
-Escoger entre sesiones
-
-    C-a s
-
-Listar sesiones existentes
-
-    tmux ls
-
 Crear una nueva sesión, la cual debe crearse fuera de tmux
 
     tmux new -s nueva_session
@@ -68,6 +60,19 @@ Crear una nueva sesión, la cual debe crearse fuera de tmux
 Crear desde la linea de comandos
 
     new-session -s nueva_session
+
+Escoger entre sesiones
+
+    C-a s
+
+Cambiar entre previa y siguiente sesión
+
+    C-a )
+    C-a (
+
+Listar sesiones existentes
+
+    tmux ls
 
 Recuperar sesión
 
