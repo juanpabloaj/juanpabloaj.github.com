@@ -8,7 +8,7 @@ title : Git
 Descargar cambios
 
 	git pull
-	
+
 Agregar cambios del archivo
 
 	git add file
@@ -20,7 +20,7 @@ Hacer commit con mensaje
 Agregar todos los cambios y hacer commit con mensaje
 
 	git commit -am "este es el mensaje"
-	
+
 Agregar selectiva e interactivamente los cambios
 
 	git add --patch file
@@ -111,6 +111,13 @@ Aplicar un cambio de stash
     git stash apply
 
 ## rebase
+
+En lugar de merge, para un historial más ordenado
+
+    git checkout new-feature
+    git rebase master
+    git checkout master
+    git merge new-feature
 
 Eliminar un commit
 
@@ -289,7 +296,7 @@ Mostrarla
 Subir las tags
 
 	git push --tags
-	
+
 ## archive
 
 Archivar solo los últimos archivos modificados
@@ -298,5 +305,6 @@ Archivar solo los últimos archivos modificados
 
 ### Referencias
 
-* [Resolving a merge](http://www.kernel.org/pub/software/scm/git/docs/v1.7.3/user-manual.html#resolving-a-merge)  
+* [When do you use git rebase instead of git merge?](http://stackoverflow.com/questions/804115/when-do-you-use-git-rebase-instead-of-git-merge)
+* [Resolving a merge](http://www.kernel.org/pub/software/scm/git/docs/v1.7.3/user-manual.html#resolving-a-merge)
 * [Using Git to create an archive of changed files](http://tosbourn.com/2011/05/git/using-git-to-create-an-archive-of-changed-files/)
