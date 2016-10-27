@@ -70,12 +70,11 @@ Definir las configuraciones de git. Ejemplo
 	[alias]
 		st = status
 
-Excluir en todos los repos
+Excluir en todos los repos ([Tracking generated files with Pathogen][tracking-pathogen])
 
 	git config --global core.excludesfile '~/.gitexcludes'
 	echo tags > ~/.gitexcludes
 
-[Tracking generated files with Pathogen](https://github.com/tpope/vim-pathogen/issues/18)
 
 ## Diff
 
@@ -123,8 +122,7 @@ Eliminar un commit
 
 	git rebase -i HEAD~5
 
-De la lista mostrada borrar la linea del commit
-[removing selected commits from repository](http://stackoverflow.com/questions/495345/git-removing-selected-commits-from-repository)
+De la lista mostrada borrar la linea del commit ([removing selected commits from repository][removing-selected-commits])
 
 ## Branch
 
@@ -165,13 +163,12 @@ Ahora está entre las branchs
       master
     * experimental
 
-Mezclar dos ramas, estando en la rama `test`, me cambio `master` y traigo los cambios
+Mezclar dos ramas, estando en la rama `test`, me cambio `master` y traigo los cambios ([How to clone all remote branches in Git?][clone-remote-branches])
 
     git co master
     git merge test
 
 
-[Fuente stackOverflow](http://stackoverflow.com/questions/67699/how-do-i-clone-all-remote-branches-with-git)
 
 Borrar una rama
 
@@ -187,11 +184,10 @@ Push los cambios de a la rama en el origen
 
 	git push origin test
 
-Borrar una rama remota
+Borrar una rama remota ([Pro git - remote branches][pro-git-remote-branches])
 
 	git push origin :test
 
-[ Pro git - remote branches](http://progit.org/book/ch3-5.html)
 
 ### Archivos en otras ramas
 
@@ -217,12 +213,11 @@ Merge con otros repos/forks
 	git merge userRepo/master
 	git push
 
-Ver las diferencias con otros forks
+Ver las diferencias con otros forks ([Github pull request][github-pull-request])
 
 	git fetch userRepo
 	git log --oneline HEAD..userRepo/master
 
-[github pull request](http://help.github.com/send-pull-requests/)
 
 Fetch a todas las remotas
 
@@ -308,3 +303,15 @@ Archivar solo los últimos archivos modificados
 * [When do you use git rebase instead of git merge?](http://stackoverflow.com/questions/804115/when-do-you-use-git-rebase-instead-of-git-merge)
 * [Resolving a merge](http://www.kernel.org/pub/software/scm/git/docs/v1.7.3/user-manual.html#resolving-a-merge)
 * [Using Git to create an archive of changed files](http://tosbourn.com/2011/05/git/using-git-to-create-an-archive-of-changed-files/)
+* [Tracking generated files with Pathogen](tracking-pathogen)
+* [How to remove selected commit log entries from a Git repository while keeping their changes?][removing-selected-commits]
+* [How to clone all remote branches in Git?][remove-remote-branches]
+* [Pro git: remote branches][pro-git-remote-branches]
+* [Github pull request][github-pull-request]
+
+
+[github-pull-request]: http://help.github.com/send-pull-requests/
+[pro-git-remote-branches]: http://progit.org/book/ch3-5.html
+[remove-remote-branches]: http://stackoverflow.com/questions/67699/how-do-i-clone-all-remote-branches-with-git
+[removing-selected-commits]: http://stackoverflow.com/questions/495345/git-removing-selected-commits-from-repository
+[tracking-pathogen]: https://github.com/tpope/vim-pathogen/issues/18
