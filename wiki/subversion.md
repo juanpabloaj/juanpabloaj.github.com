@@ -22,6 +22,10 @@ Mostrar diferencias
 
     svn diff
 
+Mostrar diferencias y log de un archivo
+
+    svn log --diff nombre_de_archivo
+
 Revertir los cambios
 
     svn revert archivos_modificado
