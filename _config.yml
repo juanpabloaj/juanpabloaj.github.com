@@ -11,3 +11,6 @@ highlighter:    true
 markdown:    kramdown
 permalink:   pretty
 
+kramdown:
+  input: GFM
+  auto_ids: false
