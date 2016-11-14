@@ -70,6 +70,10 @@ Cambiar entre previa y siguiente sesión
     C-a )
     C-a (
 
+Escoger sessión
+
+    C-a s
+
 Listar sesiones existentes
 
     tmux ls
