@@ -19,6 +19,28 @@ Compilar lo que se necesita
     make -C gnu/gcc
     make -C gnu/gcc install
 
+Algunos paquetes pueden necesitar dependecias externas, por ejemplo gcc necesita zlib (supongo que no las incluyen por inconpatibilidad de licencia).
+
+### Instalar zlib
+
+Descargar, compilar e instalar zlib
+
+    wget https://github.com/madler/zlib/archive/v1.2.7.tar.gz
+    mv v1.2.7 zlib-1.2.7.tar.gz
+    tar xvfz zlib-1.2.7.tar.gz
+    cd zlib-1.2.7
+    ./configure --prefix=$HOME/opt
+    make
+    make install
+
+Agregar la ubicación de zlib a `LD_LIBRARY_PATH` in `~/.bashrc`.
+
+    LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/opt/lib
+
+Recargar `~/.bashrc`
+
+    source ~/.bashrc
+
 ### Referencias
 
 * [gsrc][gsrc]
