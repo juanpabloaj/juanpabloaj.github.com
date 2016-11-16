@@ -87,6 +87,7 @@ title : Wiki
 [fdisk](/wiki/fdisk)
 [mail](/wiki/mail)
 [pip](/wiki/pip)
+[gsrc](/wiki/gsrc)
 
 ## DB
 
