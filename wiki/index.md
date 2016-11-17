@@ -70,6 +70,8 @@ title : Wiki
 [dropbox](/wiki/dropbox)
 [virtualbox](/wiki/virtualbox)
 [Xauthority](/wiki/Xauthority)
+[gsrc](/wiki/gsrc)
+[nvim](/wiki/nvim)
 
 ## Comandos
 
@@ -87,7 +89,6 @@ title : Wiki
 [fdisk](/wiki/fdisk)
 [mail](/wiki/mail)
 [pip](/wiki/pip)
-[gsrc](/wiki/gsrc)
 
 ## DB
 
