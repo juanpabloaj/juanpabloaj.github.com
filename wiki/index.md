@@ -72,6 +72,7 @@ title : Wiki
 [Xauthority](/wiki/Xauthority)
 [gsrc](/wiki/gsrc)
 [nvim](/wiki/nvim)
+[doxygen](/wiki/doxygen)
 
 ## Comandos
 
