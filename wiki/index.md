@@ -120,11 +120,12 @@ title : Wiki
 
 ## Lenguajes
 
+[c](/wiki/c)
 [cpp](/wiki/cpp)
+[fortran](/wiki/fortran)
+[javascript](/wiki/javascript)
 [python](/wiki/python)
 [ruby](/wiki/ruby)
-[javascript](/wiki/javascript)
-[fortran](/wiki/fortran)
 
 ## Control de versiones
 
