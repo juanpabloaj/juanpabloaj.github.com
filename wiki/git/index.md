@@ -49,6 +49,10 @@ Regresar un archivo al estado anterior
 
     git checkout HEAD~4 file
 
+Restaurar cambios interactivamente, git va preguntando que cambios restaurar y cuales no
+
+    git checkout --patch file
+
 ## ~/.gitconfig
 
 Definir las configuraciones de git. Ejemplo
