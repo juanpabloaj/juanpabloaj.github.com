@@ -19,3 +19,15 @@ Descargar, descomprimir y compilar
 ### OSX
 
     brew install valgrind
+
+
+## Uso
+
+Para utilizar es necesario compilar con el flag `-g`
+
+    gcc -g ...
+
+Verificar "fugas" de memoria
+
+    valgrind --leak-check=full ./main.exe
+
