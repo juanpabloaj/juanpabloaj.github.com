@@ -29,3 +29,11 @@ Mostrar diferencias y log de un archivo
 Revertir los cambios
 
     svn revert archivos_modificado
+
+Ignorar `.log` en directorio actual
+
+    svn propset svn:ignore "*.log" .
+
+Ignorar todos los archivos del directorio `bin`
+
+    svn propset svn:ignore "*" bin
