@@ -31,3 +31,7 @@ Verificar "fugas" de memoria
 
     valgrind --leak-check=full ./main.exe
 
+
+Usar callgrind
+
+    valgrind --tool=callgrind ./main.exe
