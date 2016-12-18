@@ -40,6 +40,7 @@ gulp.task('watch', function () {
     gulp.watch(
       [
         'index.html',
+        'index.md',
         '_layouts/*.html',
         '_posts/*',
         'css/*.css',
