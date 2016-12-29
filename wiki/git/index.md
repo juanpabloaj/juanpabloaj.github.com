@@ -99,6 +99,10 @@ Ver solamente los cambios ya agregados
 
     git diff --cached
 
+Listar solo los nombres de los archivos modificados
+
+    git ls-files -m
+
 ### stash
 
 Almacenar temporalmente cambios sin un commit
