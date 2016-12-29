@@ -12,6 +12,12 @@ solución
 
 ### qsub
 
+### qrsh
+
+Conectarse a un nodo específico
+
+    qrsh -l h='compute-0-2'
+
 
 ### qstat
 
