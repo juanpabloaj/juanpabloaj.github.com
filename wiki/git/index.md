@@ -103,6 +103,10 @@ Listar solo los nombres de los archivos modificados
 
     git ls-files -m
 
+Listar nombres de archivos que han cambiado respecto a otra rama (rama develop)
+
+    git diff develop --name-only
+
 ### stash
 
 Almacenar temporalmente cambios sin un commit
