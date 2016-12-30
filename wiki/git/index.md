@@ -121,6 +121,10 @@ Aplicar un cambio de stash
 
     git stash apply
 
+Sacar el último cambio del stash y aplicar
+
+    git stash pop
+
 ## rebase
 
 En lugar de merge, para un historial más ordenado
