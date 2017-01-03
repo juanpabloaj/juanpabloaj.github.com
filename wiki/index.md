@@ -4,6 +4,7 @@ title : Wiki
 ---
 
 [vim](/wiki/vim)
+[neovim](/wiki/neovim)
 [Cygwin](/wiki/cygwin)
 [MinGW](/wiki/mingw)
 [Apache](/wiki/apache)
