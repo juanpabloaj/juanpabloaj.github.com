@@ -32,6 +32,7 @@ title : Wiki
 [latex](/wiki/latex)
 [jekyll](/wiki/jekyll)
 [rvm](/wiki/rvm)
+[pyenv](/wiki/pyenv)
 [brew](/wiki/brew)
 [gurobi](/wiki/gurobi)
 [nis](/wiki/nis)
