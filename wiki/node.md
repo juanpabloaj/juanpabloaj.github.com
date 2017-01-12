@@ -3,6 +3,12 @@ layout: default
 title: Node.js
 ---
 
+Para ejecutar un script interactivamente desde el `REPL`
+
+    .load ./script.js
+
+### Dependencias
+
 Para el manejo de dependencias, agregar en el archivo `package.json`
 
     {
@@ -11,6 +17,12 @@ Para el manejo de dependencias, agregar en el archivo `package.json`
             "express": "3.x"
         }
     }
+
+O cuando se instala una dependencia agregar `--save`
+
+    npm install express --save
+
+Con lo que la dependencia se agrega automáticamente a `package.json`.
 
 Para instalar en base al archivo
 
