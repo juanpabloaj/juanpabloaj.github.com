@@ -41,6 +41,7 @@ title : Wiki
 [tox](/wiki/tox)
 [chkconfig](/wiki/chkconfig)
 [date](/wiki/date)
+[unzip](/wiki/unzip)
 [valgrind](/wiki/valgrind)
 [grep](/wiki/grep)
 [powershell](/wiki/powershell)
