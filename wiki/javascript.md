@@ -24,6 +24,11 @@ Literal
     > false == ''
     true
 
+    > 10 == '10'
+    true
+    > 10 === '10'
+    false
+
 
 # Referencias
 
