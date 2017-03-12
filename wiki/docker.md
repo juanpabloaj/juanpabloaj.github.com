@@ -17,3 +17,7 @@ Usar puerto del host
 Entrar al contenedor con bash
 
     docker run -it image_name bash
+
+Automáticamente borrar contenedor al salir de él
+
+    docker run --rm -it image_name bash
