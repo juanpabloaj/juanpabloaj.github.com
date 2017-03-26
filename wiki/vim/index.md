@@ -2,6 +2,9 @@
 layout: default
 title : vim
 ---
+
+* [Compilación](/wiki/vim/install)
+
 ### General
 Permite editar archivos planos en ascii como comprimidos con bzip2, gzip, zip.
 
