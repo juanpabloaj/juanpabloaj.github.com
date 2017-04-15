@@ -80,6 +80,17 @@ Excluir en todos los repos ([Tracking generated files with Pathogen][tracking-pa
 	echo tags > ~/.gitexcludes
 
 
+## Commit
+
+Modificar último commit, realizar cambios en los archivos, agregarlos y
+
+    git commit --amend
+
+Crear un commit con una fecha específica
+
+    tempDate=$(date -R --date='12 hours ago')
+    GIT_COMMITTER_DATE="$tempDate" git ci --date "$tempDate"
+
 ## Diff
 
 Solo las lineas de diferencia
