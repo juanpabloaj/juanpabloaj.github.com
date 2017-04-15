@@ -7,39 +7,39 @@ title : Git
 
 Descargar cambios
 
-	git pull
+    git pull
 
 Agregar cambios del archivo
 
-	git add file
+    git add file
 
 Hacer commit con mensaje
 
-	git commit -m "este es el mensaje"
+    git commit -m "este es el mensaje"
 
 Agregar todos los cambios y hacer commit con mensaje
 
-	git commit -am "este es el mensaje"
+    git commit -am "este es el mensaje"
 
 Agregar selectiva e interactivamente los cambios
 
-	git add --patch file
+    git add --patch file
 
 Subir los cambios
 
-	git push
+    git push
 
 Eliminar cambios
 
-	git reset --hard
+    git reset --hard
 
 Volver a cambios del origin/master
 
-	git reset --hard origin/master
+    git reset --hard origin/master
 
 Forzar el borrado de archivos y directorios que se han agregado sin añadir
 
-	git clean -fd
+    git clean -fd
 
 Ver log de los últimos commits
 
@@ -57,27 +57,27 @@ Restaurar cambios interactivamente, git va preguntando que cambios restaurar y c
 
 Definir las configuraciones de git. Ejemplo
 
-	[user]
-		name = userName
-		email = userName@gmail.com
+    [user]
+        name = userName
+        email = userName@gmail.com
 
-	[diff]
-		color = auto
+    [diff]
+        color = auto
 
-	[pager]
-		color = true
+    [pager]
+        color = true
 
-	[status]
-		color = auto
-	[push]
-		default = current
-	[alias]
-		st = status
+    [status]
+        color = auto
+    [push]
+        default = current
+    [alias]
+        st = status
 
 Excluir en todos los repos ([Tracking generated files with Pathogen][tracking-pathogen])
 
-	git config --global core.excludesfile '~/.gitexcludes'
-	echo tags > ~/.gitexcludes
+    git config --global core.excludesfile '~/.gitexcludes'
+    echo tags > ~/.gitexcludes
 
 
 ## Commit
@@ -95,16 +95,16 @@ Crear un commit con una fecha específica
 
 Solo las lineas de diferencia
 
-	git diff -U0
+    git diff -U0
 
 Diferencias entre commits
 
-	git diff HEAD^ HEAD
-	git diff HEAD~2 HEAD
+    git diff HEAD^ HEAD
+    git diff HEAD~2 HEAD
 
 Diferencias en resumen
 
-	git diff --stat
+    git diff --stat
 
 Ver solamente los cambios ya agregados
 
@@ -147,7 +147,7 @@ En lugar de merge, para un historial más ordenado
 
 Eliminar un commit
 
-	git rebase -i HEAD~5
+    git rebase -i HEAD~5
 
 De la lista mostrada borrar la linea del commit ([removing selected commits from repository][removing-selected-commits])
 
@@ -166,11 +166,11 @@ Ver las branchs ocultas, incluyendo las remotas
       remotes/origin/master
       remotes/origin/v1.0-stable
       remotes/origin/experimental
-	  remotes/otroRepo/experimental
+      remotes/otroRepo/experimental
 
 Crear una nueva rama llamada `test`
 
-	git branch test
+    git branch test
 
 Cambiarse a una branch
 
@@ -182,7 +182,7 @@ Para trabajar en la branch
 
 Esto es valido para una branch no propia, puedes cambiarte a una branch de otro remote
 
-	git checkout -b experimental otroRepo/experimental
+    git checkout -b experimental otroRepo/experimental
 
 Ahora está entre las branchs
 
@@ -199,21 +199,21 @@ Mezclar dos ramas, estando en la rama `test`, me cambio `master` y traigo los ca
 
 Borrar una rama
 
-	git branch -D nombreRama
+    git branch -D nombreRama
 
 ### Remote branches
 
 Track una branch remota
 
-	git checkout -b test origin/test
+    git checkout -b test origin/test
 
 Push los cambios de a la rama en el origen
 
-	git push origin test
+    git push origin test
 
 Borrar una rama remota ([Pro git - remote branches][pro-git-remote-branches])
 
-	git push origin :test
+    git push origin :test
 
 
 ### Archivos en otras ramas
@@ -234,37 +234,37 @@ Remplazar el archivo con el contenido del existente en la otra rama
 
 Merge con otros repos/forks
 
-	git co master
-	git remote add userRepo git://github.com/userRepo/otroRepo.git
-	git fetch userRepo
-	git merge userRepo/master
-	git push
+    git co master
+    git remote add userRepo git://github.com/userRepo/otroRepo.git
+    git fetch userRepo
+    git merge userRepo/master
+    git push
 
 Ver las diferencias con otros forks ([Github pull request][github-pull-request])
 
-	git fetch userRepo
-	git log --oneline HEAD..userRepo/master
+    git fetch userRepo
+    git log --oneline HEAD..userRepo/master
 
 
 Fetch a todas las remotas
 
-	git remote update
+    git remote update
 
 ## graph
 
 Log más gráfico
 
-	lg = log --graph --pretty=format:'%Cgreen%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(blue)<%an>%Creset' --abbrev-commit --date=relative
+    lg = log --graph --pretty=format:'%Cgreen%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(blue)<%an>%Creset' --abbrev-commit --date=relative
 
 ## reset
 volver al estado del commit y borrar archivos recién creados
 
-	git reset --hard
-	git clean -f -d
+    git reset --hard
+    git clean -f -d
 
 Ver lo que se ha hecho
 
-	git reflog
+    git reflog
 
 Muy útil para recuperar hash que se resetearon
 
@@ -274,50 +274,50 @@ Muy útil para recuperar hash que se resetearon
 
 Agregar un nuevo submodulo
 
-	git submodule add http://url_submodule path_a_instalar
+    git submodule add http://url_submodule path_a_instalar
 
 Iniciar y actualizar
 
-	git submodule init
-	git submodule update
+    git submodule init
+    git submodule update
 
 O
 
-	git submodule update --init
+    git submodule update --init
 
 Actualizar todos los submodulos
 
-	git submodule update --init --recursive
+    git submodule update --init --recursive
 
 ### rm
 No es tan simple como al agregar, es necesario eliminar las lineas que mencionen al submodulo en los archivos
 
-	vim .gitmodules # eliminar referencias al submodulo
-	vim .git/config #  eliminar referencias al submodulo
-	git rm --cached path_to_subModule
-	git commit
+    vim .gitmodules # eliminar referencias al submodulo
+    vim .git/config #  eliminar referencias al submodulo
+    git rm --cached path_to_subModule
+    git commit
 
 Pueden quedar archivos del submodulo
 
-	rm -rf path_to_subModule
+    rm -rf path_to_subModule
 
 ## show
 
 Mostrar commit, author, fecha y solo mensaje de commit (sin diff)
 
-	git show -s HEAD~3..HEAD
+    git show -s HEAD~3..HEAD
 
 ## Tags
 Crear una en el actual commit
 
-	git tag v0.0.1
+    git tag v0.0.1
 Mostrarla
 
-	git show v0.0.1
+    git show v0.0.1
 
 Subir las tags
 
-	git push --tags
+    git push --tags
 
 ## archive
 
