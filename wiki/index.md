@@ -50,6 +50,7 @@ title : Wiki
 [cx_freeze](/wiki/cx_freeze)
 [logwatch](/wiki/logwatch)
 [mutt](/wiki/mutt)
+[nmap](/wiki/nmap)
 [nc](/wiki/nc)
 [ncl](/wiki/ncl)
 [nsound](/wiki/nsound)
