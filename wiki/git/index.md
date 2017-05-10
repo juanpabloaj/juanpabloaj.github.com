@@ -117,6 +117,20 @@ Listar solo los nombres de los archivos modificados
 Listar nombres de archivos que han cambiado respecto a otra rama (rama develop)
 
     git diff develop --name-only
+    
+### rev-list
+
+Obtener hash del último commit antes de la fecha
+
+    git rev-list -n 1 --before="2017-03-01" HEAD
+
+Obtener archivos modificados desde el último commit antes de la fecha
+
+    git diff --name-only $(git rev-list -n 1 --before="2017-03-01" HEAD)
+
+Ver el log del último commit antes de la fecha
+
+    git log -1 $(git rev-list -n 1 --before="2017-03-01" HEAD)
 
 ### stash
 
