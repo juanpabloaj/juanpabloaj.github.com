@@ -73,6 +73,7 @@ title : Wiki
 [applescript](/wiki/osx/applescript)
 [dropbox](/wiki/dropbox)
 [virtualbox](/wiki/virtualbox)
+[vagrant](/wiki/vagrant)
 [Xauthority](/wiki/Xauthority)
 [gsrc](/wiki/gsrc)
 [nvim](/wiki/nvim)
