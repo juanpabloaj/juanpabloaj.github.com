@@ -43,6 +43,17 @@ Mostrar un intervalo de fechas
 
     select * from miTable fecha > now() - interval 4 hour and fecha < now() + interval 4 hour
 
+## Fechas
+
+Restar 10 segundos a una fecha
+
+    select now(), TIMESTAMPADD(SECOND, -10, now());
+    +---------------------+----------------------------------+
+    | now()               | TIMESTAMPADD(SECOND, -10, now()) |
+    +---------------------+----------------------------------+
+    | 2017-07-05 22:16:21 | 2017-07-05 22:16:11              |
+    +---------------------+----------------------------------+
+
 ### my.conf
 El `/etc/mysql/my.conf/` se definen las configuraciones.
 
