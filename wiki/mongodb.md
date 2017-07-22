@@ -112,3 +112,7 @@ Cuando se importa se sobre escribe la collection
 Reparar db
 
 	db.repairDatabase()
+
+## Referencias
+
+* https://medium.com/@roberto.b/geolocation-csv-mongodb-and-compass-3918889c1474
