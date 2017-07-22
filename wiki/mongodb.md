@@ -88,6 +88,14 @@ La última fecha
 
 	db.collTest.find({},{fecha:1}).sort({fecha:-1}).limit(1)
 
+Unir lat, lng en un registro
+
+    db.orders.find().forEach(function(item) {
+        loc = [item.lng, item.lat]
+        item.loc = loc
+        db.orders.save(item)
+    })
+
 ### mongoimport
 Generar un csv desde sql
 
