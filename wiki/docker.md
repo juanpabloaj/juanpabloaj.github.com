@@ -21,3 +21,11 @@ Entrar al contenedor con bash
 Automáticamente borrar contenedor al salir de él
 
     docker run --rm -it image_name bash
+
+Mostrar containers
+
+    docker ps -a
+
+Borrar containers
+
+    docker container rm container_id
