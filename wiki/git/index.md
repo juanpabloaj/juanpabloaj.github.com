@@ -150,6 +150,10 @@ Sacar el último cambio del stash y aplicar
 
     git stash pop
 
+Diferencias contra el stash
+
+    git stash show -p stash@{0}
+
 ## rebase
 
 En lugar de merge, para un historial más ordenado
