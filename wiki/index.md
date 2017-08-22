@@ -18,6 +18,7 @@ title : Wiki
 [bash](/wiki/bash)
 [zsh](/wiki/zsh)
 [gdl](/wiki/gdl)
+[gdb](/wiki/gdb)
 [make](/wiki/make)
 [rake](/wiki/rake)
 [gem](/wiki/gem)
