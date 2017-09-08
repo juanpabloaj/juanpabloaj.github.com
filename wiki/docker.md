@@ -29,3 +29,29 @@ Mostrar containers
 Borrar containers
 
     docker container rm container_id
+
+Construir imagen desde Dockerfile
+
+    docker build -t image_name .
+
+Agregar usuario a grupo docker
+
+    sudo usermod -a -G docker $USER
+
+## Registry
+
+Obtener imágenes en registro
+
+    curl http://registry:5000/v2/_catalog
+
+Obtener tags de la imagen
+
+    curl -X GET http://registry:5000/v2/ubuntu/tags/list
+
+Para usar un registro sin https agregar al archivo `/etc/docker/daemon.json`.
+
+    {
+      "insecure-registries" : ["191.168.0.10:5000"]
+    }
+
+https://docs.docker.com/registry/deploying/
