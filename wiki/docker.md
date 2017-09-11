@@ -14,13 +14,17 @@ Usar puerto del host
 
     docker run -p 80:80 image_name
 
-Entrar al contenedor con bash
+Entrar a un contenedor nuevo con bash
 
     docker run -it image_name bash
 
 Automáticamente borrar contenedor al salir de él
 
     docker run --rm -it image_name bash
+
+Entrar a un contenedor existente con bash
+
+    docker exec -it image_name bash
 
 Mostrar containers
 
