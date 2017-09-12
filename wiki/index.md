@@ -15,6 +15,7 @@ title : Wiki
 [xen](/wiki/xen)
 [wget](/wiki/wget)
 [uname](/wiki/uname)
+[truncate](/wiki/truncate)
 [bash](/wiki/bash)
 [zsh](/wiki/zsh)
 [gdl](/wiki/gdl)
