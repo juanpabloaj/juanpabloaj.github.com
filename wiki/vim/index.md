@@ -151,6 +151,11 @@ Ver los registros
 
     :registers
 
+Copiar coincidencias expresión regular (caracteres entre espacios en blanco) de la linea a registro `a` y pegar
+
+    let @a='' | s:\s*\S*\s*:\=setreg('A', submatch(0)):n | put a
+
+
 ### Folding
 
 Fold se puede traducir como pliegue, es un trozo de código o texto que se "pliega" en una linea. Con lo cual es posible trabajar de una forma más fácil sobre ficheros con muchas lineas.
