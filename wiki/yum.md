@@ -15,3 +15,11 @@ Mostrar repositorios disponibles
 Limpiar cache de yum
 
     yum clean all
+
+Listar repositorios
+
+    yum -v repolist
+
+Habilitar y deshabilitar repositorio
+
+    yum --disablerepo=* --enablerepo=epel update
