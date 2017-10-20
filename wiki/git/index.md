@@ -225,6 +225,10 @@ Track una branch remota
 
     git checkout -b test origin/test
 
+Forzar a que una rama ya creada quede con "track" a la remota
+
+    git branch -u upstream/foo
+
 Push los cambios de a la rama en el origen
 
     git push origin test
