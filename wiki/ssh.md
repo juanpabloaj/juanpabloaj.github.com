@@ -90,7 +90,18 @@ No permitir password, solo se puede autentificar por llave
 
     PasswordAuthentication no
 
+## Errores
+
+    Bad owner or permissions on /home/user/.ssh/config
+    fatal: The remote end hung up unexpectedly
+
+Solución
+
+    chmod 600 ~/.ssh/config
+
+
 ## Referencias
 
-* [How do I get publickey user authentication to work?](http://www.snailbook.com/faq/publickey-userauth.auto.html)  
-* [Using Putty on Windows to login Linux securely via OpenSSH](http://www.linux-sxs.org/networking/openssh.putty.html)  
+* [How do I get publickey user authentication to work?](http://www.snailbook.com/faq/publickey-userauth.auto.html)
+* [Using Putty on Windows to login Linux securely via OpenSSH](http://www.linux-sxs.org/networking/openssh.putty.html)
+* [ssh returns “Bad owner or permissions on ~/.ssh/config”](https://serverfault.com/questions/253313/ssh-returns-bad-owner-or-permissions-on-ssh-config)
