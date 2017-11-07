@@ -42,6 +42,10 @@ Agregar usuario a grupo docker
 
     sudo usermod -a -G docker $USER
 
+Mostrar logs del contenedor
+
+    docker logs container_id
+
 ## Registry
 
 Obtener imágenes en registro
