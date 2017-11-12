@@ -46,6 +46,10 @@ Mostrar logs del contenedor
 
     docker logs container_id
 
+Borrar imágenes no utilizadas
+
+    docker image prune
+
 ## Registry
 
 Obtener imágenes en registro
