@@ -67,3 +67,20 @@ Para usar un registro sin https agregar al archivo `/etc/docker/daemon.json`.
     }
 
 https://docs.docker.com/registry/deploying/
+
+### overlay2
+
+Usar `overlay2` como storage driver. Agregar al archivo `/etc/docker/daemon.json`.
+
+    {
+        "storage-driver": "overlay2"
+    }
+
+Y reiniciar docker. En la info de docker debe mostrar
+
+    $ docker info | grep Storage
+    Storage Driver: overlay2
+
+### Referencias
+
+* https://docs.docker.com/engine/userguide/storagedriver/overlayfs-driver/#configure-docker-with-the-overlay-or-overlay2-storage-driver
