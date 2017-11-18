@@ -96,6 +96,10 @@ Unir lat, lng en un registro
         db.orders.save(item)
     })
 
+Ordenar un arreglo de objetos de un documento, para aplicar sobre todos los documentos de la colección es necesario usar el `{multi: true}`.
+
+    db.entries.update({}, { $push: { arrayName: { $each: [ ], $sort: {score:-1} } } }, {multi:true})
+
 ### mongoimport
 Generar un csv desde sql
 
