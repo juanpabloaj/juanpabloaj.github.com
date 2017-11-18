@@ -50,6 +50,10 @@ Borrar imágenes no utilizadas
 
     docker image prune
 
+Copiar archivos desde host a contenedor
+
+    docker cp /tmp/file.txt container_name:/tmp/file.txt
+
 ## Registry
 
 Obtener imágenes en registro
