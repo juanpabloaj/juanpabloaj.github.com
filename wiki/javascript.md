@@ -19,6 +19,13 @@ Literal
 
 ### Porque usar === y no ==
 
+    > '' == '0'
+    false
+    > '' == 0
+    true
+    > 0 == '0'
+    true
+
     > false  === ''
     false
     > false == ''
@@ -33,3 +40,4 @@ Literal
 # Referencias
 
 * [w3schools](http://www.w3schools.com/js/js_obj_array.asp)
+* JavaScript: The Good Parts, Douglas Crockford
