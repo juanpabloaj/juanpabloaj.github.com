@@ -43,6 +43,11 @@ Mostrar un intervalo de fechas
 
     select * from miTable fecha > now() - interval 4 hour and fecha < now() + interval 4 hour
 
+Levantar como usuario
+
+    sudo chown -R user_name /var/lib/mysql
+    /usr/sbin/mysqld --user=user_name
+
 ## Fechas
 
 Restar 10 segundos a una fecha
