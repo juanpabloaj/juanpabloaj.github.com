@@ -20,3 +20,18 @@ Escoger
 ## Discos de arranque
 
 Para crear un Ubuntu que bootee desde USB se puede utilizar el creador de discos de arranque (Startup Disk Creator) que trae la distribución.
+
+## DNS
+
+Agregar DNS, al final de archivo `/etc/network/interfaces` agregar
+
+    dns-nameservers dnsserverip
+
+Reiniciar red
+
+    sudo /etc/init.d/networking restart
+
+
+## Referencias
+
+* https://unix.stackexchange.com/questions/174349/what-overwrites-etc-resolv-conf-on-every-boot
