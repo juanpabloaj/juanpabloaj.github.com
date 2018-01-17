@@ -31,6 +31,12 @@ Reiniciar red
 
     sudo /etc/init.d/networking restart
 
+## Interfaces de red
+
+Agregar gateway a interfaz de red
+
+    route add default gw 192.168.1.1 enp3s0
+
 
 ## Referencias
 
