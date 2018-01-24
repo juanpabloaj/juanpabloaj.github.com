@@ -150,9 +150,13 @@ Sacar el último cambio del stash y aplicar
 
     git stash pop
 
-Diferencias contra el stash
+Diferencias del stash
 
     git stash show -p stash@{0}
+
+Diferencias contra del stash
+
+    git diff stash@{0}
 
 ## rebase
 
