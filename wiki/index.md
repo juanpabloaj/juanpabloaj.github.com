@@ -26,6 +26,7 @@ title : Wiki
 [npm](/wiki/npm)
 [grunt](/wiki/grunt)
 [docker](/wiki/docker)
+[docker-compose](/wiki/docker-compose)
 [matlab](/wiki/matlab)
 [mpich2](/wiki/mpich2)
 [ssh](/wiki/ssh)
