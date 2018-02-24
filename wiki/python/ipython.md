@@ -3,6 +3,14 @@ layout: default
 title : ipython
 ---
 
+## Instalar
+
+Para python 2.7 ipython solo tiene soporte hasta la version 5.x. Por lo que es necesario forzar la version de instalación en python 2.7
+
+    pip install -U ipython==5.5
+
+## matplotlib
+
 Ejecutar un script
 
     run script_file.py
