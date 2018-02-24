@@ -34,4 +34,5 @@ Solución, agregar a `~/.matplotlib/matplotlibrc`
 ## Referencias
 
 * [ipython](http://ipython.org/)
+* [ipython install](http://ipython.readthedocs.io/en/stable/install/install.html)
 * [Installation Issue with matplotlib Python](http://stackoverflow.com/questions/21784641/installation-issue-with-matplotlib-python)
