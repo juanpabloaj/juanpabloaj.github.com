@@ -57,9 +57,13 @@ Crear una nueva sesión, la cual debe crearse fuera de tmux
 
     tmux new -s nueva_session
 
-Crear desde la linea de comandos
+Crear desde la linea de comandos de tmux
 
     new-session -s nueva_session
+
+O
+
+    new
 
 Escoger entre sesiones
 
