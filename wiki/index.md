@@ -69,6 +69,7 @@ title : Wiki
 [node.io](/wiki/node.io)
 [openshift](/wiki/openshift)
 [heroku](/wiki/heroku)
+[kubernetes](/wiki/kubernetes)
 [gnuplot](/wiki/gnuplot)
 [netcdf](/wiki/netcdf)
 [Visual Studio](/wiki/visualStudio)
