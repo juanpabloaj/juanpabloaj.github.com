@@ -138,6 +138,10 @@ Almacenar temporalmente cambios sin un commit
 
     git stash
 
+Solo almacenar los archivos que no están `staged`
+
+    git stash --keep-index
+
 Listar cambios almacenados con stash
 
     git stash list
