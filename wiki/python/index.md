@@ -41,6 +41,13 @@ Con lo cual se crearan algunos directorios los cuales es necesario añadir al `P
 
 ## General
 
+Las siguientes variables contienen el nombre de archivo con path, archivo sin extensión ni path y nombre de clase
+
+    __file__
+    __name__
+    self.__name__
+    self.__class__.__name__
+
 ### String
 Mostrar todas las letras
 
