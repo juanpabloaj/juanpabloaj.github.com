@@ -68,3 +68,14 @@ Para que se pueda realizar una consulta remota es necesario cambiar la linea que
     bind-address    = ip_real
 
 Y reiniciar el el servicio `MySQL`.
+
+## mysqldump
+
+`mysqldump` con `where`
+
+    mysqldump -u user dababase_name table_name --where="id=10"
+
+
+## Referencias
+
+* https://stackoverflow.com/questions/935556/mysql-dump-by-query
