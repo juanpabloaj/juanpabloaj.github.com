@@ -54,6 +54,7 @@ title : Wiki
 [logwatch](/wiki/logwatch)
 [mutt](/wiki/mutt)
 [nmap](/wiki/nmap)
+[rpm](/wiki/rpm)
 [nc](/wiki/nc)
 [ncl](/wiki/ncl)
 [nsound](/wiki/nsound)
