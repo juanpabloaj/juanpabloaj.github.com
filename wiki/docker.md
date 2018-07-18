@@ -85,6 +85,14 @@ Y reiniciar docker. En la info de docker debe mostrar
     $ docker info | grep Storage
     Storage Driver: overlay2
 
+
+Para desactivar iptables por defecto y evitar problemas de no acceso a los contenedores desde fuera de la maquina, agregar al archivo
+
+    /etc/default/docker
+
+    DOCKER_OPTS="--iptables=false"
+
 ### Referencias
 
 * https://docs.docker.com/engine/userguide/storagedriver/overlayfs-driver/#configure-docker-with-the-overlay-or-overlay2-storage-driver
+* https://blog.viktorpetersson.com/2014/11/03/the-dangers-of-ufw-docker.html
