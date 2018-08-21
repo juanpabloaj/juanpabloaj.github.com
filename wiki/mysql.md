@@ -75,6 +75,10 @@ Y reiniciar el el servicio `MySQL`.
 
     mysqldump -u user dababase_name table_name --where="id=10"
 
+Solo datos, sin creación de tablas y con multiples insert por registro
+
+    mysqldump --no-create-info --extended-insert=FALSE -u user_name db_name
+
 
 ## Referencias
 
