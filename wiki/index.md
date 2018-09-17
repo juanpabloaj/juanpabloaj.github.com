@@ -136,6 +136,7 @@ title : Wiki
 
 [c](/wiki/c)
 [cpp](/wiki/cpp)
+[elixir](/wiki/elixir)
 [fortran](/wiki/fortran)
 [javascript](/wiki/javascript)
 [python](/wiki/python)
