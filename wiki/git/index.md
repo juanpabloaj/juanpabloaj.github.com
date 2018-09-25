@@ -347,7 +347,16 @@ Mostrar commit, author, fecha y solo mensaje de commit (sin diff)
 Crear una en el actual commit
 
     git tag v0.0.1
-Mostrarla
+
+Crear un tag con anotación (una descripción similar a un commit)
+
+    git tag -a
+
+Con lo anterior se abre el editor por defecto, si se quiere agregar la anotación directamente
+
+    git tag -a -m "alguna descripcion del tag"
+
+Mostrar el tag
 
     git show v0.0.1
 
