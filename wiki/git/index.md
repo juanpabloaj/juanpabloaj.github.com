@@ -117,7 +117,7 @@ Listar solo los nombres de los archivos modificados
 Listar nombres de archivos que han cambiado respecto a otra rama (rama develop)
 
     git diff develop --name-only
-    
+
 ### rev-list
 
 Obtener hash del último commit antes de la fecha
@@ -131,6 +131,12 @@ Obtener archivos modificados desde el último commit antes de la fecha
 Ver el log del último commit antes de la fecha
 
     git log -1 $(git rev-list -n 1 --before="2017-03-01" HEAD)
+
+### grep
+
+Buscar una expresión en todos los commits
+
+    git grep <regexp> $(git rev-list --all)
 
 ### stash
 
@@ -365,6 +371,7 @@ Archivar solo los últimos archivos modificados
 * [How to clone all remote branches in Git?][remove-remote-branches]
 * [Pro git: remote branches][pro-git-remote-branches]
 * [Github pull request][github-pull-request]
+* https://stackoverflow.com/questions/2928584/how-to-grep-search-committed-code-in-the-git-history
 
 
 [github-pull-request]: http://help.github.com/send-pull-requests/
