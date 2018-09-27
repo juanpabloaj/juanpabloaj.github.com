@@ -3,6 +3,10 @@ layout: default
 title: Phoenix framework
 ---
 
+No crear archivos ecto de base de datos
+
+    mix phx.new --no-ecto hello
+
 ## Errors
 
 ### ERROR 22023 (invalid parameter value): new encoding (UTF8) is incompatible
