@@ -62,6 +62,7 @@ title : Wiki
 [rake](/wiki/rake)
 [rpm](/wiki/rpm)
 [rsync](/wiki/rsync)
+[rsyslog](/wiki/rsyslog)
 [rvm](/wiki/rvm)
 [screen](/wiki/screen)
 [sqlite](/wiki/sqlite)
