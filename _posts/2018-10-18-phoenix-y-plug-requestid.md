@@ -6,7 +6,7 @@ categories:
 ---
 Para que cada request tenga un id único y sea mostrado en el log
 
-1.
+1. Crear proyecto
 
     mix http://phx.new  --no-ecto request
 
