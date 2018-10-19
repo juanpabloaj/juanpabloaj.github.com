@@ -10,11 +10,11 @@ Para que cada request tenga un id único y sea mostrado en el log
 
     mix http://phx.new  --no-ecto request
 
-2) Agregar al archivo `lib/request_web/endpoint.ex`
+2. Agregar al archivo `lib/request_web/endpoint.ex`
 
     plug Plug.RequestId
 
-3) Editar el archivo `config/dev.exs` para mostrar el id del request en el log
+3. Editar el archivo `config/dev.exs` para mostrar el id del request en el log
 
     config :logger, :console,
       format: "[$level] $metadata$message\n",
