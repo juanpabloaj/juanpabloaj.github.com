@@ -8,7 +8,7 @@ Para que cada request tenga un id único y sea mostrado en el log
 
 1. Crear proyecto
 
-        mix http://phx.new  --no-ecto request
+        mix phx.new  --no-ecto request
 
 2. Agregar al archivo `lib/request_web/endpoint.ex`
 
