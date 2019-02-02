@@ -5,9 +5,7 @@ title : Distribuir variables con consul/envconsul
 categories:
 ---
 
-El siguiente ejemplo pretende mostrar como almacenar variables en consul y mediates envconsul utilizarlas como variables de ambiente en un servicio.
-
-El siguiente ejemplo se realizará utilizando contenedores docker y el código fuente se encuentra disponible en el repositorio [envconsul with a service][envconsul-with-a-service].
+El siguiente ejemplo pretende mostrar como almacenar variables en consul y mediates envconsul utilizarlas como variables de ambiente en un servicio. Se realizará utilizando contenedores docker, el código fuente se encuentra disponible en el repositorio [envconsul with a service][envconsul-with-a-service].
 
 Levantar consul, usando el docker-compose de [este enlace](https://github.com/juanpabloaj/envconsul_with_a_service/blob/master/docker-compose.yaml) y el comando
 
