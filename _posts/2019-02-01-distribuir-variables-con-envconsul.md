@@ -22,6 +22,28 @@ Levantar el servicio con el docker-compose [del siguiente enlace](https://github
     docker-compose -f docker-compose-services.yaml build
     docker-compose -f docker-compose-services.yaml up -d
 
+[El servicio](https://github.com/juanpabloaj/envconsul_with_a_service/blob/master/hello.py) está desarrollado con python/flask, cada vez que recibe una consulta retorna el valor de la variable de entorno `max_conns`.
+
+    # -*- coding: utf-8 -*-
+    import os
+    from flask import Flask
+    from flask import jsonify
+    app = Flask(__name__)
+
+    @app.route("/")
+    def hello():
+        return jsonify(value=os.environ['max_conns'])
+
+    if __name__ == '__main__':
+       app.run(host='0.0.0.0')
+
+El servicio se ejecuta en un [contener docker](https://github.com/juanpabloaj/envconsul_with_a_service/blob/master/Dockerfile), es iniciado y mantenido en ejecución por envconsul, el cual obtiene las variables desde consul y las disponibiliza como variables de entorno. Si una variable es actualizada, envconsul reinicia el servicio.
+
+    CMD envconsul \
+        -consul-addr "consul-server-bootstrap:8500" \
+        -prefix hello-app \
+        python hello.py
+
 Consultar al servicio
 
     curl localhost:5000
