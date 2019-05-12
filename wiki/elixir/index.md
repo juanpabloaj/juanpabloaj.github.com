@@ -11,6 +11,20 @@ Cargar desde iex
 
     iex> r MyModule
 
+Entrar a iex con la configuracion del proyecto/mix
+
+    iex -S mix
+
+### mix
+
+Obtener dependencias
+
+    mix deps.get
+
+Actualizar dependencias
+
+    mix deps.update
+
 Dar formato a archivo con mix
 
     mix format file.ex
@@ -23,6 +37,7 @@ Verificar formato con mix
 
 * [Elixir - Getting started][elixir-lang-doc]
 * [Elixir school][elixirschool]
+* [mix](https://hexdocs.pm/mix/Mix.html)
 
 [elixir-lang-doc]: http://elixir-lang.org/getting-started/introduction.html
 [elixirschool]: http://elixirschool.com/
