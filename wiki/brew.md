@@ -3,6 +3,10 @@ layout: default
 title: Brew
 ---
 
+Limpiar y recuperar espacio
+
+    brew cleanup
+
 ## Recomendados para instalar
 
 <script src="https://gist.github.com/juanpabloaj/1177435.js"></script>
