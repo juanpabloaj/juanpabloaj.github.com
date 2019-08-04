@@ -344,6 +344,7 @@ Mostrar commit, author, fecha y solo mensaje de commit (sin diff)
     git show -s HEAD~3..HEAD
 
 ## Tags
+
 Crear una en el actual commit
 
     git tag v0.0.1
@@ -364,6 +365,10 @@ Subir las tags
 
     git push --tags
 
+Obtener el tag más cercana al commit actual
+
+    git describe --abbrev=0
+
 ## archive
 
 Archivar solo los últimos archivos modificados
@@ -381,6 +386,7 @@ Archivar solo los últimos archivos modificados
 * [Pro git: remote branches][pro-git-remote-branches]
 * [Github pull request][github-pull-request]
 * https://stackoverflow.com/questions/2928584/how-to-grep-search-committed-code-in-the-git-history
+* [Get latest tag on git](https://gist.github.com/rponte/fdc0724dd984088606b0)
 
 
 [github-pull-request]: http://help.github.com/send-pull-requests/
