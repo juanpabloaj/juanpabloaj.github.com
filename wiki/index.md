@@ -32,6 +32,7 @@ title : Wiki
 [heroku](/wiki/heroku)
 [irssi](/wiki/irssi)
 [jekyll](/wiki/jekyll)
+[jupyter](/wiki/jupyter)
 [kubernetes](/wiki/kubernetes)
 [latex](/wiki/latex)
 [logwatch](/wiki/logwatch)
