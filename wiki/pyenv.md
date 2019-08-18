@@ -7,6 +7,9 @@ Apuntar a python 3.5.1 instalado con pyenv desde python3
 
     pyenv global system 3.5.1
 
+Cargar dos versiones de python
+
+    pyenv shell 2.7.13 3.6.6
 
 ### Referencias
 
