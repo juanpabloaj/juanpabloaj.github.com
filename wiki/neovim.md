@@ -20,12 +20,7 @@ Retorna 0 falta instalar
 
     pip3 install neovim
 
-## Instalar en centos 6
+## Referencias
 
-Con script
-
-    https://gist.github.com/juanpabloaj/3b2184e951f7f8161fabf8d4cbf89438
-
-Con rpm/spec
-
-    https://gist.github.com/juanpabloaj/62cd3f1a5bad97e19e1e1e9bc5dc2672
+* [Instalar en centos 6 con script](https://gist.github.com/juanpabloaj/3b2184e951f7f8161fabf8d4cbf89438)
+* [Instalar en centos 6 con rpm/spec](https://gist.github.com/juanpabloaj/62cd3f1a5bad97e19e1e1e9bc5dc2672)
