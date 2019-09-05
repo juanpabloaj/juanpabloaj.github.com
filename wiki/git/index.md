@@ -369,6 +369,10 @@ Obtener el tag más cercana al commit actual
 
     git describe --abbrev=0
 
+Con más detalles
+
+    git describe --tags --always --dirty
+
 ## archive
 
 Archivar solo los últimos archivos modificados
