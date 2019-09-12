@@ -3,6 +3,10 @@ layout: default
 title: asdf
 ---
 
+Mostrar paquetes instalados
+
+    asdf list
+
 Mostrar plugins disponibles
 
     asdf plugin-list
