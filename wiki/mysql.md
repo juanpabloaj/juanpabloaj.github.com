@@ -67,6 +67,12 @@ Para que se pueda realizar una consulta remota es necesario cambiar la linea que
     [mysqld]
     bind-address    = ip_real
 
+## character set
+
+Revisar configuración de los character set
+
+    show variables like 'char%'; show variables like 'collation%';
+
 Y reiniciar el el servicio `MySQL`.
 
 ## mysqldump
