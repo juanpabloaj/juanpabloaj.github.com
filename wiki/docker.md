@@ -92,6 +92,19 @@ Para desactivar iptables por defecto y evitar problemas de no acceso a los conte
 
     DOCKER_OPTS="--iptables=false"
 
+### Errores frecuentes
+
+	ERROR: Couldn't connect to Docker daemon at http+docker://localunixsocket - is it running?
+	If it's at a non-standard location, specify the URL with the DOCKER_HOST environment variable.
+
+Solución, buscar archivos con permisos de root
+
+	find . -user root -perm -u+rwx
+
+Intentar que git borre todos los archivos mencionados en el gitignore
+
+	git clean -xf
+
 ### Referencias
 
 * https://docs.docker.com/engine/userguide/storagedriver/overlayfs-driver/#configure-docker-with-the-overlay-or-overlay2-storage-driver
