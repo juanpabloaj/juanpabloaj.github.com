@@ -9,6 +9,28 @@ No crear archivos ecto de base de datos
 
 ## Errors
 
+### Jason y no Poison
+
+Si se está usando Jason en lugar de Poison como dependencia
+
+    {:jason, "~> 1.0"},
+
+https://github.com/chrismccord/phoenix_live_view_example/blob/366abefc66769312fe60a9602704a998da309b70/mix.exs#L47
+
+Es necesario modificar en los archivos
+
+config/config.exs
+
+    config :phoenix, :json_library, Jason
+
+https://github.com/chrismccord/phoenix_live_view_example/blob/366abefc66769312fe60a9602704a998da309b70/config/config.exs#L26
+
+lib/demo_web/endpoint.ex
+
+    json_decoder: Phoenix.json_library()
+
+https://github.com/chrismccord/phoenix_live_view_example/blob/366abefc66769312fe60a9602704a998da309b70/lib/demo_web/endpoint.ex#L34
+
 ### ERROR 22023 (invalid parameter value): new encoding (UTF8) is incompatible
 
 	mix ecto.create
