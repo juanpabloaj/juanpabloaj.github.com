@@ -7,6 +7,10 @@ No crear archivos ecto de base de datos
 
     mix phx.new --no-ecto hello
 
+Context sin schema
+
+    mix phx.gen.context Dashboard Message messages content --no-schema
+
 ## Errors
 
 ### Jason y no Poison
@@ -52,3 +56,6 @@ I solved adding the line "template: "template0"," to the database configuration 
 	template: "template0",
 	pool_size: 10
 
+## Referencias
+
+* https://hexdocs.pm/phoenix/Mix.Tasks.Phx.Gen.Context.html
