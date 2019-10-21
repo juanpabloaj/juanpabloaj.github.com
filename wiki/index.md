@@ -11,6 +11,7 @@ title : Wiki
 [Xauthority](/wiki/Xauthority)
 [alsa](/wiki/alsa)
 [applescript](/wiki/osx/applescript)
+[arp](/wiki/arp)
 [asdf](/wiki/asdf)
 [bash](/wiki/bash)
 [brew](/wiki/brew)
