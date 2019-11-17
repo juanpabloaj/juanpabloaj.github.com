@@ -11,6 +11,10 @@ Mostrar plugins disponibles
 
     asdf plugin-list
 
+Mostrar versiones para un plugin
+
+    asdf list-all python
+
 Instalar elixir
 
     asdf plugin-add elixir
