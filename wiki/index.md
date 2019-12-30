@@ -143,6 +143,7 @@ title : Wiki
 [cpp](/wiki/cpp)
 [elixir](/wiki/elixir)
 [fortran](/wiki/fortran)
+[go](/wiki/go)
 [javascript](/wiki/javascript)
 [python](/wiki/python)
 [ruby](/wiki/ruby)
