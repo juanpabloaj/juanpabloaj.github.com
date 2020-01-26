@@ -21,6 +21,11 @@ Agrega autocompletación para bash, es necesario agregar a `~/.bash_profile`
 ### coreutils
 Instalar herramientas gnu, todas con la letra g como prefijo, ejemplo : `gls`.
 
+Para tener las herramientas sin el prefijo es necesario agregar esta ruta al PATH
+
+    PATH="$(brew --prefix)/opt/coreutils/libexec/gnubin:$PATH"
+
 ## Referencias
 
-[homebrew](http://mxcl.github.com/homebrew/)  
+* [homebrew](http://mxcl.github.com/homebrew/)
+* https://formulae.brew.sh/formula/coreutils
