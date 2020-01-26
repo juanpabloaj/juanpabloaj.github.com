@@ -3,6 +3,10 @@ layout: default
 title: pyenv
 ---
 
+Mostrar versiones disponibles
+
+    pyenv install --list
+
 Apuntar a python 3.5.1 instalado con pyenv desde python3
 
     pyenv global system 3.5.1
