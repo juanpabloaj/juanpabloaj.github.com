@@ -36,6 +36,7 @@ title : Wiki
 [irssi](/wiki/irssi)
 [jekyll](/wiki/jekyll)
 [jupyter](/wiki/jupyter)
+[k3s](/wiki/k3s)
 [kubernetes](/wiki/kubernetes)
 [latex](/wiki/latex)
 [logwatch](/wiki/logwatch)

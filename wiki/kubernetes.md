@@ -34,7 +34,15 @@ Obtener yaml de un pod
 
     kubectl get pod pod-name-9d85d7c9-2dljw -o yaml
 
+## Ingress
+
+Instalar en GKE
+
+    kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/static/provider/cloud-generic.yaml
+
 ## Referencias
 
 * https://meteatamel.wordpress.com/2018/04/24/istio-101-with-minikube/
 * https://kubernetes.io/docs/concepts/services-networking/connect-applications-service/
+* https://matthewpalmer.net/kubernetes-app-developer/articles/kubernetes-ingress-guide-nginx-example.html
+* https://kubernetes.github.io/ingress-nginx/deploy
