@@ -29,8 +29,13 @@ Levantar contenedor
 
 	docker-compose up -d service_name
 
+Para que el ancho del terminal se mantenga al interior del contenedor
+
+    docker-compose exec -e COLUMNS=$COLUMNS -e LINES=$LINES develop sh
+
 
 ### Referencias
 
 * https://stackoverflow.com/questions/18136389/using-ssh-keys-inside-docker-container
 * http://blog.joncairns.com/2013/12/understanding-ssh-agent-and-ssh-add/
+* https://github.com/wodby/docker4drupal/issues/273
