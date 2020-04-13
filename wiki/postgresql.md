@@ -7,7 +7,7 @@ title : PostgreSQL
 
 Entrar a posgres, con el usuario postgres
 
-    psql
+    psql -U postgres
 
 Listar las bases de datos
 
@@ -20,6 +20,10 @@ Cambiar a una base de datos
 Listar tablas
 
     \dt
+
+Describir tabla
+
+    \d table_name
 
 ## Referencias
 
