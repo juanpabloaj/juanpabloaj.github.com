@@ -13,7 +13,7 @@ Buscar los insert a base de datos
 
 Mostrar consulta respuesta en puerto 5500
 
-    tcpdump  -s 0 -i lo -A host 127.0.0.1 and tcp port 5500
+    tcpdump  -s 0 -i any -A host 127.0.0.1 and tcp port 5500
 
 ##Referencias
 
