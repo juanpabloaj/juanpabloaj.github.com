@@ -40,9 +40,25 @@ Instalar ingress-nginx en GKE
 
     kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/static/provider/cloud-generic.yaml
 
+## Service accounts
+
+Obtener las service accounts
+
+    kubectl get serviceaccounts
+
+Obtener las services accounts de un namespace
+
+    kubectl get -n namespace_name serviceaccounts
+
+Obtener la service account de un namespace
+
+    kubectl get -n namespace serviceaccounts/service-account-name -o yaml
+
 ## Referencias
+
 
 * https://meteatamel.wordpress.com/2018/04/24/istio-101-with-minikube/
 * https://kubernetes.io/docs/concepts/services-networking/connect-applications-service/
 * https://matthewpalmer.net/kubernetes-app-developer/articles/kubernetes-ingress-guide-nginx-example.html
 * https://kubernetes.github.io/ingress-nginx/deploy
+* https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/
