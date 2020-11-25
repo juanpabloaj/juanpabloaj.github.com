@@ -34,6 +34,12 @@ Obtener yaml de un pod
 
     kubectl get pod pod-name-9d85d7c9-2dljw -o yaml
 
+## Proxy
+
+Acceder desde otra máquina
+
+    kubectl proxy --address='0.0.0.0' --accept-hosts='.*'
+
 ## Ingress
 
 Instalar ingress-nginx en GKE
