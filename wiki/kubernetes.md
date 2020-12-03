@@ -2,6 +2,20 @@
 layout: default
 title: kubernetes
 ---
+
+## Google cloud
+
+Cambiar proyecto
+
+    gcloud config set project project_name
+
+Obtener credenciales del cluster
+
+    gcloud container clusters get-credentials cluster_name --zone zone_name
+
+## Configuraciones
+
+
 Configuraciones de contexto se agregan en
 
     ~/.kube/config
@@ -33,6 +47,10 @@ Mostrar info del DNS de kubernetes
 Obtener yaml de un pod
 
     kubectl get pod pod-name-9d85d7c9-2dljw -o yaml
+
+Utilizar un curl en el cluster
+
+    kubectl run curl-tmp --image=radial/busyboxplus:curl -i --tty --rm
 
 ## Proxy
 
