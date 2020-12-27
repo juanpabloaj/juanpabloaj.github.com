@@ -43,6 +43,7 @@ title : Wiki
 [make](/wiki/make)
 [maruku](/wiki/maruku)
 [matlab](/wiki/matlab)
+[mosquitto](/wiki/mosquitto)
 [mpich2](/wiki/mpich2)
 [mutt](/wiki/mutt)
 [nc](/wiki/nc)
