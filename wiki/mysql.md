@@ -17,6 +17,15 @@ Borrar tabla si existe
 
     DROP TABLE IF EXISTS `table_name`;
 
+Alter table para dejar campos fechas con valor por defecto o cambiar valor cada vez que se actualiza
+
+    ALTER TABLE `users`
+        CHANGE COLUMN `createdAt` `createdAt` TIMESTAMP
+        NOT NULL DEFAULT CURRENT_TIMESTAMP;
+    ALTER TABLE `users`
+        CHANGE COLUMN `updatedAt` `updatedAt` TIMESTAMP
+        NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP;
+
 ### Usuarios
 
 Crear usuario
