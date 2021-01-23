@@ -5,9 +5,6 @@ title : OSX
 ## Recomendados
 
 * TotalTerminal
-* geektool
-* Alfred
-* Sparrow
 * cloudapp
 * iTerm2
 * moon
@@ -65,6 +62,22 @@ Y volver al archivo a binario
 	# exit
 	$ killall SystemUIServer
 
+## Recuperar espacio
+
+Revisar el directorio `Caches` y borrar algunos de los directorios que utilizan más espacio
+
+    du --max-depth=1 -h ~/Library/Caches/ | sort -hk1
+
+Revisar el directorio de docker y hacer un prune para limpiar, con esto se perderán volúmenes e imágenes docker.
+
+    du --max-depth=1 -h ~/Library/Containers/com.docker.docker/Data
+    docker system prune -a --volumes
+
+Limpiar y recuperar espacio utilizado por brew
+
+    brew cleanup
+
+
 ## Referencias:
-[Screenshot filename in Lion](https://discussions.apple.com/thread/3214350?start=0&tstart=0)  
-[How do I change the default screenshot name in OS X Lion?](http://superuser.com/questions/339702/how-do-i-change-the-default-screenshot-name-in-os-x-lion/)  
+* [Screenshot filename in Lion](https://discussions.apple.com/thread/3214350?start=0&tstart=0)
+* [How do I change the default screenshot name in OS X Lion?](http://superuser.com/questions/339702/how-do-i-change-the-default-screenshot-name-in-os-x-lion/)
