@@ -105,7 +105,21 @@ Intentar que git borre todos los archivos mencionados en el gitignore
 
 	git clean -xf
 
-### Referencias
+## OSX
+
+Docker puede llegar a utilizar mucho espacio en OSX.
+
+Este almacena los datos en el directorio
+
+    ~/Library/Containers/com.docker.docker/Data
+
+Para recuperar espacio
+
+    docker system prune -a --volumes
+
+## Referencias
 
 * https://docs.docker.com/engine/userguide/storagedriver/overlayfs-driver/#configure-docker-with-the-overlay-or-overlay2-storage-driver
 * https://blog.viktorpetersson.com/2014/11/03/the-dangers-of-ufw-docker.html
+* https://docs.docker.com/docker-for-mac/space/
+* https://stackoverflow.com/questions/39878939/docker-filling-up-storage-on-macos
