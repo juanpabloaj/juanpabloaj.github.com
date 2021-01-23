@@ -71,6 +71,7 @@ title : Wiki
 [rsyslog](/wiki/rsyslog)
 [rvm](/wiki/rvm)
 [screen](/wiki/screen)
+[sort](/wiki/sort)
 [sqlite](/wiki/sqlite)
 [ss](/wiki/ss)
 [ssh](/wiki/ssh)
