@@ -4,6 +4,7 @@ title : Wiki
 ---
 
 [Apache](/wiki/apache)
+[ansible](/wiki/ansible)
 [Cygwin](/wiki/cygwin)
 [MinGW](/wiki/mingw)
 [SGE](/wiki/sge)
