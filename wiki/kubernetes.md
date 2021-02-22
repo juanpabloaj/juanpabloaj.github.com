@@ -58,6 +58,16 @@ Acceder desde otra máquina
 
     kubectl proxy --address='0.0.0.0' --accept-hosts='.*'
 
+## Port-forward
+
+Activar port forward en local
+
+    kubectl -n namespace_name port-forward service/service_name 8080:80
+
+Con se puede llamar al servicio con
+
+    curl 0.0.0.0:8080/metrics
+
 ## Ingress
 
 Instalar ingress-nginx en GKE
