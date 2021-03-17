@@ -102,3 +102,4 @@ Crear configmap desde directorio
 * https://matthewpalmer.net/kubernetes-app-developer/articles/kubernetes-ingress-guide-nginx-example.html
 * https://kubernetes.github.io/ingress-nginx/deploy
 * https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/
+* https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-configmap
