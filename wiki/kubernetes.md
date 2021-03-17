@@ -88,6 +88,12 @@ Obtener la service account de un namespace
 
     kubectl get -n namespace serviceaccounts/service-account-name -o yaml
 
+## configmap
+
+Crear configmap desde directorio
+
+    kubectl -n namespaceName create configmap configNameZZ --from-file=zzDirectoryName
+
 ## Referencias
 
 
