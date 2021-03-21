@@ -73,6 +73,41 @@ $ export FLASK_APP=hello.py
 $ flask run
 ```
 
+## Ejecutar como contenedor
+
+`requirements.txt`
+
+    Flask==1.1.2
+
+`Dockerfile`
+
+Notar en el `ENTRYPOINT` el `--host=0.0.0.0` para que el contenedor pueda ser llamado desde fuera.
+
+```
+FROM python:3.8-alpine
+
+ENV FLASK_APP app.py
+
+WORKDIR /app
+
+COPY . /app
+
+RUN pip install -r requirements.txt
+
+ENTRYPOINT ["flask", "run", "--host=0.0.0.0"]
+```
+
+Construir contenedor
+
+    docker build -t flask-hello .
+
+Ejecutar contenedor
+
+    docker run -d -p 5000:5000 flask-hello
+
+Consultar contenedor
+
+    $ curl 0.0.0.0:5000/posts/hello_world
 
 ## Referencias
 
