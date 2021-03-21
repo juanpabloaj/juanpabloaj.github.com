@@ -40,19 +40,9 @@ p a:hover {
     text-decoration:none;
     color:#727272;
 }
-.highlight {
-    background:none;
-}
-pre, code {
-    line-height:1.2;
-}
-code {
-    padding:0px;
-}
+
 /* bootstrap */
-code {
-    background:none;
-}
+
 #myCarousel img {
     margin:auto;
     width:620px;
