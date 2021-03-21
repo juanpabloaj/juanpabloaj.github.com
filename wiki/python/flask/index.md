@@ -109,7 +109,7 @@ Consultar contenedor
 
     $ curl 0.0.0.0:5000/posts/hello_world
 
-## Accediendo a bases datos con Flask-SQLAlchemy
+## Accediendo a base de datos con Flask-SQLAlchemy
 
 Instalar `Flask-SQLAlchemy`
 
