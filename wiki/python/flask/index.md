@@ -12,6 +12,16 @@ Instalar dependencias con pyenv
 
 ## Ejemplo con template
 
+Archivos del ejemplo
+
+```
+├── hello.py
+├── static
+│   └── style.css
+└── templates
+    └── post.html
+```
+
 `hello.py`
 
 ```
