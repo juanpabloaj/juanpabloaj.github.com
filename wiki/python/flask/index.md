@@ -14,7 +14,7 @@ Instalar dependencias con pyenv
 
 `hello.py`
 
-```python
+```
 from flask import Flask
 from flask import render_template
 
@@ -33,7 +33,7 @@ def show_post(post_id):
 
 `template/post.html`
 
-```html
+```
 <!DOCTYPE html>
 <html>
   <head>
@@ -50,7 +50,7 @@ def show_post(post_id):
 
 `static/style.css`
 
-```css
+```
 body {
   background-color: #eee;
 }
