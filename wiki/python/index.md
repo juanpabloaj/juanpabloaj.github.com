@@ -94,9 +94,10 @@ Devuelve un objeto de tipo generator
 
 	__hash__
 
-### more...
+### More
 
 [Herencia](/wiki/python/Herencia)
+[pyenv](/wiki/pyenv)
 
 ### Libs
 
