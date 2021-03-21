@@ -97,6 +97,7 @@ Devuelve un objeto de tipo generator
 ### More
 
 [Herencia](/wiki/python/Herencia)
+[flask](/wiki/python/flask)
 [pyenv](/wiki/pyenv)
 
 ### Libs
