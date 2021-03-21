@@ -96,17 +96,14 @@ Devuelve un objeto de tipo generator
 
 ### More
 
-[Herencia](/wiki/python/Herencia)
-[flask](/wiki/python/flask)
-[pyenv](/wiki/pyenv)
-
-### Libs
-
+* [Herencia](/wiki/python/Herencia)
 * [flake8](/wiki/python/flake8)
+* [flask](/wiki/python/flask)
 * [ftplib](/wiki/python/ftplib)
 * [ipython](/wiki/python/ipython)
 * [matplotlib](/wiki/python/matplotlib)
 * [networkx](/wiki/python/networkx)
+* [pyenv](/wiki/pyenv)
 * [scipy](/wiki/python/scipy)
 * [setuptools](/wiki/python/setuptools)
 * [unittest](/wiki/python/unittest)
