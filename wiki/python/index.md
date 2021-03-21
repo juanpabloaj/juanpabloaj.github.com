@@ -96,7 +96,7 @@ Devuelve un objeto de tipo generator
 
 ### More
 
-* [Herencia](/wiki/python/Herencia)
+* [Herencia](/wiki/python/herencia)
 * [flake8](/wiki/python/flake8)
 * [flask](/wiki/python/flask)
 * [ftplib](/wiki/python/ftplib)
