@@ -72,6 +72,13 @@ Para usar un registro sin https agregar al archivo `/etc/docker/daemon.json`.
 
 https://docs.docker.com/registry/deploying/
 
+Para agregar DNS a docker, con esto nombre de dominio locales serán visibles en los contenedores.
+Agregar a `/etc/docker/daemon.json`. (192.168.0.10 es el IP de un DNS local)
+
+    {
+        "dns": ["192.168.1.10", "8.8.8.8"],
+    }
+
 ### overlay2
 
 Usar `overlay2` como storage driver. Agregar al archivo `/etc/docker/daemon.json`.
