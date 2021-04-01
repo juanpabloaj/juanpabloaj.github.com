@@ -8,7 +8,7 @@ Lanzar test con verbosity
 
 Descubrir test en el directorio, los archivos que comiencen con `test_` y que tengan referencias al modulo `unittest`
 
-    python -m unittest -v test_module
+    python -m unittest
 
 ## Referencias
 
