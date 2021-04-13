@@ -18,7 +18,7 @@ Convertir notebook a script python, para ejecutar desde la consola
 
 Ejemplo
 
-    %matplotlib
+    %matplotlib inline
     import matplotlib.pyplot as plt
 
     plt.plot([[0,1], [1,1]], linewidth=4, label='two lines')
