@@ -105,6 +105,7 @@ Devuelve un objeto de tipo generator
 * [networkx](/wiki/python/networkx)
 * [pyenv](/wiki/pyenv)
 * [scipy](/wiki/python/scipy)
+* [seaborn](/wiki/python/seaborn)
 * [setuptools](/wiki/python/setuptools)
 * [unittest](/wiki/python/unittest)
 
