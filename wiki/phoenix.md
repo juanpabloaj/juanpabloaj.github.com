@@ -7,9 +7,22 @@ No crear archivos ecto de base de datos
 
     mix phx.new --no-ecto hello
 
+Generar con live
+
+    mix phx.new demo --live
+
 Context sin schema
 
     mix phx.gen.context Dashboard Message messages content --no-schema
+
+Generar live
+
+    mix phx.gen.live Accounts User users name:string age:integer
+
+Iniciar
+
+    mix ecto.create
+    mix phx.server
 
 ## Errors
 
@@ -59,3 +72,6 @@ I solved adding the line "template: "template0"," to the database configuration 
 ## Referencias
 
 * https://hexdocs.pm/phoenix/Mix.Tasks.Phx.Gen.Context.html
+* https://github.com/phoenixframework/phoenix
+* https://github.com/phoenixframework/phoenix_live_view
+* https://hexdocs.pm/phoenix/Mix.Tasks.Phx.Gen.Live.html
