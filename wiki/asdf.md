@@ -25,6 +25,10 @@ Instalar elixir
     asdf install erlang 20.3.8.22
     asdf global erlang 20.3.8.22
 
+Borrar
+
+    asdf uninstall elixir 1.11.4-otp-23
+
 ## Referencias
 
 * https://asdf-vm.com
