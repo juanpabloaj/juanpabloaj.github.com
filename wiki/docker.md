@@ -124,6 +124,12 @@ Para recuperar espacio
 
     docker system prune -a --volumes
 
+## inspect
+
+Obtener variables del contenedor
+
+    docker inspect --format='{{json .Config.Env}}' container_name
+
 ## Referencias
 
 * https://docs.docker.com/engine/userguide/storagedriver/overlayfs-driver/#configure-docker-with-the-overlay-or-overlay2-storage-driver
