@@ -4,13 +4,13 @@ title : Wiki
 ---
 
 [Apache](/wiki/apache)
-[ansible](/wiki/ansible)
 [Cygwin](/wiki/cygwin)
 [MinGW](/wiki/mingw)
 [SGE](/wiki/sge)
 [Visual Studio](/wiki/visualStudio)
 [Xauthority](/wiki/Xauthority)
 [alsa](/wiki/alsa)
+[ansible](/wiki/ansible)
 [applescript](/wiki/osx/applescript)
 [arp](/wiki/arp)
 [asdf](/wiki/asdf)
@@ -79,6 +79,7 @@ title : Wiki
 [ssmtp](/wiki/ssmtp)
 [sudo](/wiki/sudo)
 [swig](/wiki/swig)
+[telegram](/wiki/telegram)
 [tmux](/wiki/tmux)
 [tox](/wiki/tox)
 [truncate](/wiki/truncate)
