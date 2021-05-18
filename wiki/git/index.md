@@ -227,11 +227,13 @@ Mezclar dos ramas, estando en la rama `test`, me cambio `master` y traigo los ca
     git co master
     git merge test
 
-
-
 Borrar una rama
 
     git branch -D nombreRama
+
+Borrar ramas que fueron mergeadas
+
+    git fetch origin --prune && git branch --merged | sed '/develop/d' | xargs git branch -D --
 
 ### Remote branches
 
