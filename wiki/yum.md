@@ -35,3 +35,4 @@ Habilitar y deshabilitar repositorio
 ## Referencias
 
 * https://unix.stackexchange.com/questions/6263/how-to-check-available-package-versions-in-rpm-systems
+* https://phoenixnap.com/kb/create-local-yum-repository-centos
