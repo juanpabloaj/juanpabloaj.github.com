@@ -79,6 +79,7 @@ title : Wiki
 [ssmtp](/wiki/ssmtp)
 [sudo](/wiki/sudo)
 [swig](/wiki/swig)
+[systemd](/wiki/systemd)
 [telegram](/wiki/telegram)
 [tmux](/wiki/tmux)
 [tox](/wiki/tox)
