@@ -94,6 +94,13 @@ Devuelve un objeto de tipo generator
 
 	__hash__
 
+### datetime
+
+Incrementar fecha en un día
+
+    import datetime
+    datetime.datetime.now() + datetime.timedelta(days=1)
+
 ### More
 
 * [Herencia](/wiki/python/herencia)
