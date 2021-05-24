@@ -14,6 +14,11 @@ Recolectar profile del heap y visualizar
     curl -sK -v http://localhost:6060/debug/pprof/heap > /tmp/heap.out
     go tool pprof -http 0.0.0.0:8080 heap.out
 
+### mod
+
+Borrar modulos del cache local
+
+    go clean --modcache
 
 ### Referencias
 
