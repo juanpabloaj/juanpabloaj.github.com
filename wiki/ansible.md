@@ -3,6 +3,10 @@ layout: default
 title: ansible
 ---
 
+Agregar hosts en el archivo
+
+    /etc/ansible/hosts
+
 Ejecutar comando en uno de los hosts
 
     ansible myhostname -m command -a "date"
