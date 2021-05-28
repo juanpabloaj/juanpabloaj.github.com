@@ -111,6 +111,7 @@ Incrementar fecha en un día
 * [matplotlib](/wiki/python/matplotlib)
 * [networkx](/wiki/python/networkx)
 * [pandas](/wiki/python/pandas)
+* [prophet](/wiki/python/prophet)
 * [pyenv](/wiki/pyenv)
 * [scipy](/wiki/python/scipy)
 * [seaborn](/wiki/python/seaborn)
