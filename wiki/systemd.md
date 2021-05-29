@@ -5,6 +5,10 @@ title: systemd
 
 ### crear un timer como usuario
 
+Cuando se crea un timer como usuario, solo se ejecutará cuando el usuario esté logeado.
+
+Para que el timer se ejecute siempre los archivos `*.{timer,service}` deben ser creados como root en `/etc/systemd/system/`.
+
 Crear el directorio de los archivos de configuración del servicio y del timer
 
     mkdir -p ~/.config/systemd/user/
