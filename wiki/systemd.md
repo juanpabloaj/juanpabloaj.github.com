@@ -3,6 +3,21 @@ layout: default
 title: systemd
 ---
 
+### Restringir el consumo de CPU del servicio
+
+Con `CPUQuota`
+
+    [Unit]
+    Description=a heavy task
+
+    [Service]
+    ExecStart=/usr/bin/my_heavy_task
+    CPUQuota=10%
+
+    [Install]
+    WantedBy=multi-user.target
+
+
 ### crear un timer como usuario
 
 Cuando se crea un timer como usuario, solo se ejecutará cuando el usuario esté logeado.
@@ -55,3 +70,4 @@ Seguir los logs con
 * http://unix.stackexchange.com/questions/600642/systemd-path-how-to-tell-which-pathchanged/
 * https://wiki.archlinux.org/title/Systemd/Timers
 * https://blog.dcycle.com/blog/112/systemd-replacement-cron-every-10-seconds/
+* https://serverfault.com/questions/683911/use-of-cpuquota-in-systemd
