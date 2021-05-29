@@ -6,6 +6,10 @@ Mostrar tablas
 
     .tables
 
+Describir tabla
+
+    .schema table_name
+
 Salir
 
     .quit
