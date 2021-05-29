@@ -30,10 +30,15 @@ El archivo del servicio `foo.service`
     ExecStart=bash -c "date && pwd"
     WorkingDirectory=/home/pablo/data
 
-Recargar el demonio y lanzar el servicio
+Recargar el demonio, lanzar timer y verificar su estado
 
     systemctl --user daemon-reload
-    systemctl --user start foo
+    systemctl --user start foo.timer
+    systemctl --user status foo.timer
+
+Listar los timers activos
+
+    systemctl --user list-timers --all
 
 Seguir los logs con
 
