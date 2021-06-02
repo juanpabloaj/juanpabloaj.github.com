@@ -46,10 +46,27 @@ Rotar paneles
 
 Donde `M` es OSX se interpreta como `Esc`
 
+Intercambiar paneles
+
+    swap-pane -U
+
+O
+
+    swap-pane -D
+
 ## Ventanas
+
 Crear nueva ventana en fondo desde comando
 
     new-window -n 'nueva_ventana' -d 'vim'
+
+Mover ventana a posición 0
+
+    move-window -t 0
+
+Intercambiar la ventana actual con la ventana 0
+
+    swap-window -t 0
 
 ## Sesiones
 
