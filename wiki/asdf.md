@@ -17,13 +17,20 @@ Mostrar versiones para un plugin
 
 Instalar elixir
 
+Para usar observer o debugger
+
+    brew install wxmac
+
+Instalar
+
     asdf plugin-add elixir
-    asdf install elixir 1.9.1
-    asdf global elixir 1.9.1
+    asdf install elixir 1.12.1-otp-24
+    asdf global elixir 1.12.1-otp-24
 
     asdf plugin-add erlang
-    asdf install erlang 20.3.8.22
-    asdf global erlang 20.3.8.22
+    asdf plugin-update erlang
+    asdf install erlang 24.0.2
+    asdf global erlang 24.0.2
 
 Borrar
 
