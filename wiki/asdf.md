@@ -17,7 +17,7 @@ Mostrar versiones para un plugin
 
 Instalar elixir
 
-Para usar observer o debugger
+Para usar observer o debugger de elixir
 
     brew install wxmac
 
