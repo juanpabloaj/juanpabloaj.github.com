@@ -15,6 +15,10 @@ Entrar a iex con la configuracion del proyecto/mix
 
     iex -S mix
 
+Iniciar observer
+
+    iex> :observer.start
+
 ### mix
 
 Obtener dependencias
