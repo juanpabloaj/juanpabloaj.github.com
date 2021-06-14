@@ -19,6 +19,10 @@ Iniciar observer
 
     iex> :observer.start
 
+Habilitar historial en iex
+
+    export ERL_AFLAGS="-kernel shell_history enabled"
+
 ### mix
 
 Obtener dependencias
@@ -51,3 +55,4 @@ Verificar formato con mix
 * https://samueldavies.net/2017/04/18/how-to-load-a-file-into-iex/
 * https://hexdocs.pm/mix/Mix.Tasks.Format.html#module-task-specific-options
 * https://hashrocket.com/blog/posts/format-your-elixir-code-now
+* https://stackoverflow.com/questions/45405070/how-do-i-save-iex-history
