@@ -14,6 +14,10 @@ Cargar desde iex
 Entrar a iex con la configuracion del proyecto/mix
 
     iex -S mix
+    
+Ejecutar script al iniciar `iex`
+
+    iex -S mix run startup.exs
 
 Iniciar observer
 
