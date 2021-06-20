@@ -27,6 +27,12 @@ Obtener aplicaciones que se están ejecutando
 
     iex> :application.which_applications
 
+Obtener lista de aplicaciones que se están ejecutando con sus pid y obtener info de ese pid.
+
+    iex> :application.info[:running]
+    ...
+    iex> pid(0, 316, 0) |> Process.info
+
 ### mix
 
 Obtener dependencias
@@ -61,3 +67,4 @@ Verificar formato con mix
 * https://hashrocket.com/blog/posts/format-your-elixir-code-now
 * https://stackoverflow.com/questions/45405070/how-do-i-save-iex-history
 * https://subscription.packtpub.com/book/application_development/9781784397517/1/ch01lvl1sec14/inspecting-your-system-in-iex
+* https://til.hashrocket.com/posts/mpqu7rjuy3-get-pids-for-each-beam-application-in-elixir
