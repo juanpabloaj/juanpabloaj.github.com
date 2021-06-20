@@ -22,6 +22,10 @@ Iniciar observer
 Habilitar historial en iex
 
     export ERL_AFLAGS="-kernel shell_history enabled"
+    
+Obtener aplicaciones que se están ejecutando
+
+    iex> :application.which_applications
 
 ### mix
 
@@ -56,3 +60,4 @@ Verificar formato con mix
 * https://hexdocs.pm/mix/Mix.Tasks.Format.html#module-task-specific-options
 * https://hashrocket.com/blog/posts/format-your-elixir-code-now
 * https://stackoverflow.com/questions/45405070/how-do-i-save-iex-history
+* https://subscription.packtpub.com/book/application_development/9781784397517/1/ch01lvl1sec14/inspecting-your-system-in-iex
