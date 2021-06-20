@@ -32,6 +32,10 @@ Obtener lista de aplicaciones que se están ejecutando con sus pid y obtener inf
     iex> :application.info[:running]
     ...
     iex> pid(0, 316, 0) |> Process.info
+    
+Listar los procesos bajo un supervisor
+
+    iex > Supervisor.which_children(MyApp.Supervisor)
 
 ### mix
 
@@ -68,3 +72,4 @@ Verificar formato con mix
 * https://stackoverflow.com/questions/45405070/how-do-i-save-iex-history
 * https://subscription.packtpub.com/book/application_development/9781784397517/1/ch01lvl1sec14/inspecting-your-system-in-iex
 * https://til.hashrocket.com/posts/mpqu7rjuy3-get-pids-for-each-beam-application-in-elixir
+* https://stackoverflow.com/questions/36063848/elixir-get-all-pids-for-processes-under-a-supervisor
