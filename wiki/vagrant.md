@@ -2,6 +2,24 @@
 layout: default
 title: vagrant
 ---
+Crear `Vagrantfile` inicial de ejemplo
+
+    vagrant init
+
+Levantar maquina virtual
+
+    vagrant up
+
+Recargar la configuración de la maquina virtual
+
+    vagrant reload
+
+Para utilizar red en modo bridge, en el archivo Vagrantfile descomentar la linea 
+
+    config.vm.network "public_network"
+
+Después de esto, al levantar la maquina solicitará la interfaz de red a usar.
+
 Conectarse a la maquina virtual vagrant por ssh en el host.
 
 En el directorio donde la maquina fue creada obtener la información de conexión
