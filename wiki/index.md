@@ -66,6 +66,7 @@ title : Wiki
 [pwgen](/wiki/pwgen)
 [pyenv](/wiki/pyenv)
 [pyinstaller](/wiki/pyinstaller)
+[rabbitmq](/wiki/rabbitmq)
 [rake](/wiki/rake)
 [rpm](/wiki/rpm)
 [rsync](/wiki/rsync)
