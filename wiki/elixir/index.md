@@ -40,6 +40,15 @@ Obtener lista de aplicaciones que se están ejecutando con sus pid y obtener inf
 Listar los procesos bajo un supervisor
 
     iex > Supervisor.which_children(MyApp.Supervisor)
+    
+Filtrar procesos por nombre y listarlos. Listar los que contienen `MyApp` en su nombre
+
+    Process.list
+    |> Enum.filter(fn(pid) ->
+        {:registered_name, name} = Process.info(pid, :registered_name)
+        to_string(name) =~ "MyApp"
+    end)
+    |> Enum.map(fn pid -> Process.info(pid, :registered_name) end)
 
 ### mix
 
@@ -77,3 +86,4 @@ Verificar formato con mix
 * https://subscription.packtpub.com/book/application_development/9781784397517/1/ch01lvl1sec14/inspecting-your-system-in-iex
 * https://til.hashrocket.com/posts/mpqu7rjuy3-get-pids-for-each-beam-application-in-elixir
 * https://stackoverflow.com/questions/36063848/elixir-get-all-pids-for-processes-under-a-supervisor
+* https://samuelmullen.com/articles/elixir-processes-observability/
