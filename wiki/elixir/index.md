@@ -49,6 +49,10 @@ Filtrar procesos por nombre y listarlos. Listar los que contienen `MyApp` en su 
         to_string(name) =~ "MyApp"
     end)
     |> Enum.map(fn pid -> Process.info(pid, :registered_name) end)
+    
+Obtener estado de un proceso
+
+    :sys.get_state(pid)
 
 ### mix
 
