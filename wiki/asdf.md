@@ -46,6 +46,10 @@ Borrar
     asdf install nodejs 16.4.0
     asdf global nodejs 16.4.0
 
+Para tener disponible los paquetes instalados de forma global, agregar al `~/.bashrc`
+
+    export PATH=$(asdf where nodejs)/.npm/bin:$PATH
+
 ## Referencias
 
 * https://asdf-vm.com
