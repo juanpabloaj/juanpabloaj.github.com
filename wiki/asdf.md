@@ -21,6 +21,10 @@ Para usar observer o debugger de elixir
 
     brew install wxmac
 
+Instalar dependecias de erlang
+
+    https://github.com/asdf-vm/asdf-erlang#before-asdf-install
+
 Instalar
 
     asdf plugin-add elixir
