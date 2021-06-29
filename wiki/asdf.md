@@ -15,7 +15,7 @@ Mostrar versiones para un plugin
 
     asdf list-all python
 
-Instalar elixir
+### elixir
 
 Para usar observer o debugger de elixir
 
@@ -40,6 +40,14 @@ Borrar
 
     asdf uninstall elixir 1.11.4-otp-23
 
+### nodejs
+
+    asdf plugin add nodejs
+    asdf install nodejs 16.4.0
+    asdf global nodejs 16.4.0
+
 ## Referencias
 
 * https://asdf-vm.com
+* https://github.com/asdf-vm/asdf-nodejs
+* https://github.com/asdf-vm/asdf-erlang
