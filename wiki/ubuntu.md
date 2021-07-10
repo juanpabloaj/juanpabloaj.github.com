@@ -7,6 +7,10 @@ Bloquear y desbloquear la pantalla desde la terminal
     DISPLAY=:0 gnome-screensaver-command -l
     DISPLAY=:0 gnome-screensaver-command -d
 
+Dejar una terminal en fullscreen desde una terminal remota
+
+    DISPLAY=:0 wmctrl -r ':ACTIVE:' -b toggle,fullscreen
+
 ## java
 
 Listar alternativas disponibles de java
