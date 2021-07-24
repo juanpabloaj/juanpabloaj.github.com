@@ -13,6 +13,10 @@ Listar las bases de datos
 
     \l
 
+Listar con detalles, como espacio utilizado por base de datos
+
+    \l+
+
 Cambiar a una base de datos
 
     \c database_name
