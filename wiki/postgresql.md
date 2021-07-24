@@ -9,6 +9,10 @@ Entrar a posgres, con el usuario postgres
 
     psql -U postgres
 
+Ejecutar comando sin paginación
+
+    psql -P pager -Upostgres myDatabase -c "select * from myTable"
+
 Listar las bases de datos
 
     \l
