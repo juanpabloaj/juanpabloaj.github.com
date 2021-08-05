@@ -7,6 +7,11 @@ Agregar la interfaz web
 
     rabbitmq-plugins enable rabbitmq_management
 
+Detener e iniciar rabbitmq
+
+    rabbitmqctl stop
+    rabbitmqctl start_app
+
 ## Referencias
 
 * https://x-team.com/blog/set-up-rabbitmq-with-docker-compose/
