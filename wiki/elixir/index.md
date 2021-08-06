@@ -37,6 +37,11 @@ Obtener lista de aplicaciones que se están ejecutando con sus pid y obtener inf
     ...
     iex> pid(0, 316, 0) |> Process.info
 
+Detener e iniciar una aplicación. Algunas veces he tenido que reiniciar `:logger` después de un `recompile`.
+
+    Application.stop(:logger)
+    Application.start(:logger)
+
 Listar los procesos bajo un supervisor
 
     iex > Supervisor.which_children(MyApp.Supervisor)
@@ -91,3 +96,4 @@ Verificar formato con mix
 * https://til.hashrocket.com/posts/mpqu7rjuy3-get-pids-for-each-beam-application-in-elixir
 * https://stackoverflow.com/questions/36063848/elixir-get-all-pids-for-processes-under-a-supervisor
 * https://samuelmullen.com/articles/elixir-processes-observability/
+* https://elixir-lang.org/getting-started/mix-otp/supervisor-and-application.html
