@@ -14,7 +14,7 @@ Cargar desde iex
 Entrar a iex con la configuracion del proyecto/mix
 
     iex -S mix
-    
+
 Ejecutar script al iniciar `iex`
 
     iex -S mix run startup.exs
@@ -26,7 +26,7 @@ Iniciar observer
 Habilitar historial en iex
 
     export ERL_AFLAGS="-kernel shell_history enabled"
-    
+
 Obtener aplicaciones que se están ejecutando
 
     iex> :application.which_applications
@@ -36,11 +36,11 @@ Obtener lista de aplicaciones que se están ejecutando con sus pid y obtener inf
     iex> :application.info[:running]
     ...
     iex> pid(0, 316, 0) |> Process.info
-    
+
 Listar los procesos bajo un supervisor
 
     iex > Supervisor.which_children(MyApp.Supervisor)
-    
+
 Filtrar procesos por nombre y listarlos. Listar los que contienen `MyApp` en su nombre
 
     Process.list
@@ -49,7 +49,7 @@ Filtrar procesos por nombre y listarlos. Listar los que contienen `MyApp` en su 
         to_string(name) =~ "MyApp"
     end)
     |> Enum.map(fn pid -> Process.info(pid, :registered_name) end)
-    
+
 Obtener estado de un proceso
 
     :sys.get_state(pid)
