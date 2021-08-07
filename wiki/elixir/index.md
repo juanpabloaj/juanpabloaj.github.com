@@ -97,3 +97,4 @@ Verificar formato con mix
 * https://stackoverflow.com/questions/36063848/elixir-get-all-pids-for-processes-under-a-supervisor
 * https://samuelmullen.com/articles/elixir-processes-observability/
 * https://elixir-lang.org/getting-started/mix-otp/supervisor-and-application.html
+* https://elixirforum.com/t/elixir-apps-as-systemd-services-info-wiki/2400
