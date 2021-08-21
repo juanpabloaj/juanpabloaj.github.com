@@ -3,6 +3,10 @@ layout: default
 title : pandas
 ---
 
+Convertir columna de string a datetime
+
+    df['Date'] = pd.to_datetime(df['Date'], format='%Y-%m-%d')
+
 Agrupar datos de por hora y hacer un boxplot de cada grupo
 
     durations['Time'] = pd.to_datetime(durations.Time)
@@ -20,3 +24,4 @@ Agrupar datos de por hora y hacer un boxplot de cada grupo
 ## Referencias
 
 * https://machinelearningmastery.com/time-series-data-visualization-with-python/
+* https://www.geeksforgeeks.org/convert-the-column-type-from-string-to-datetime-format-in-pandas-dataframe/
