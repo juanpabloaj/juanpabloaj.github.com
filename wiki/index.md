@@ -24,6 +24,7 @@ title : Wiki
 [docker](/wiki/docker)
 [doxygen](/wiki/doxygen)
 [dropbox](/wiki/dropbox)
+[ffmpeg](/wiki/ffmpeg)
 [fstab](/wiki/fstab)
 [gdb](/wiki/gdb)
 [gdl](/wiki/gdl)
