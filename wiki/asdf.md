@@ -43,8 +43,8 @@ Borrar
 ### nodejs
 
     asdf plugin add nodejs
-    asdf install nodejs 16.4.0
-    asdf global nodejs 16.4.0
+    asdf install nodejs 16.14.2
+    asdf global nodejs 16.14.2
 
 Para tener disponible los paquetes instalados de forma global, agregar al `~/.bashrc`
 
