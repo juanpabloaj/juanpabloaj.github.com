@@ -88,6 +88,7 @@ title : Wiki
 [tmux](/wiki/tmux)
 [tox](/wiki/tox)
 [truncate](/wiki/truncate)
+[tsp](/wiki/tsp)
 [uname](/wiki/uname)
 [unzip](/wiki/unzip)
 [vagrant](/wiki/vagrant)
