@@ -66,6 +66,11 @@ En el local
 
 	ssh -p 22222 u_remoto@localhost
 
+Modificar el usuario y correo en el repo
+
+    git config user.name "myuser"
+    git config user.email "myuser@gmail.com"
+
 ## Config
 
 Crear el archivo ~/.ssh/config con lo siguiente
