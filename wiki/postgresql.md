@@ -1,6 +1,6 @@
 ---
 layout: default
-title : PostgreSQL
+title: PostgreSQL
 ---
 
 ## Comandos básicos
@@ -39,7 +39,25 @@ Contar filas de una db
     FROM pg_stat_user_tables
     ORDER BY n_live_tup DESC;
 
+`LAG` para utilizar el dato anterior, calcular la diferencia y mostrar las distintas de 0.
+
+    SELECT inserted_at,
+           asset,
+           free,
+           inc
+    FROM   (
+                    SELECT   inserted_at,
+                             asset,
+                             free,
+                             Cast(free AS FLOAT) - Cast( Lag(free) OVER ( ORDER BY inserted_at ) AS FLOAT ) AS inc
+                    FROM     balances
+                    WHERE    asset IN ('BTC')
+                    ORDER BY inserted_at DESC limit 120 ) AS t
+    WHERE  inc != 0;
+
+Es necesario tener un select anidado para poder utilizar `inc` como filtro, sin esto no se puede usar en el `where`.
+
 ## Referencias
 
-* [How To Install and Use PostgreSQL on Ubuntu 14.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-14-04)
-* https://stackoverflow.com/questions/2596670/how-do-you-find-the-row-count-for-all-your-tables-in-postgres
+-   [How To Install and Use PostgreSQL on Ubuntu 14.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-14-04)
+-   https://stackoverflow.com/questions/2596670/how-do-you-find-the-row-count-for-all-your-tables-in-postgres
