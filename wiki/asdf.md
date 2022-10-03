@@ -27,14 +27,14 @@ Instalar dependecias de erlang
 
 Instalar
 
-    asdf plugin-add elixir
-    asdf install elixir 1.12.1-otp-24
-    asdf global elixir 1.12.1-otp-24
-
     asdf plugin-add erlang
     asdf plugin-update erlang
-    asdf install erlang 24.0.2
-    asdf global erlang 24.0.2
+    asdf install erlang 25.1.1
+    asdf global erlang 25.1.1
+
+    asdf plugin-add elixir
+    asdf install elixir 1.14.0-otp-25
+    asdf global elixir 1.14.0-otp-25
 
 Borrar
 
