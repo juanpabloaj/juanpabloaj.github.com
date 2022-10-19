@@ -15,6 +15,13 @@ Mostrar versiones para un plugin
 
     asdf list-all python
 
+### python
+
+    asdf plugin-add python
+    asdf install python 2.7.18
+    asdf install python 3.10.8
+    asdf global python 3.10.8 2.7.18
+
 ### elixir
 
 Para usar observer o debugger de elixir
@@ -55,3 +62,4 @@ Para tener disponible los paquetes instalados de forma global, agregar al `~/.ba
 * https://asdf-vm.com
 * https://github.com/asdf-vm/asdf-nodejs
 * https://github.com/asdf-vm/asdf-erlang
+* https://github.com/asdf-community/asdf-python
