@@ -9,6 +9,10 @@ title : OSX
 * iTerm2
 * moon
 
+Abrir Chrome desde la consola
+
+    open -a "Google Chrome" *.svg
+
 ## pbpaste
 Pegar en la terminal
 
