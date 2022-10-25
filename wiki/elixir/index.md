@@ -61,6 +61,22 @@ Obtener estado de un proceso
 
 ### mix
 
+Crear proyecto umbrella para tener sub apps
+
+    mix new hello_world --umbrella
+
+Crear app con supervisor
+
+    mix new hello_world --sup
+
+Crear módulo
+
+    mix new hello_world
+
+O el equivalente
+
+    mix new hello_world --module HelloWorld
+
 Obtener dependencias
 
     mix deps.get
@@ -79,22 +95,23 @@ Verificar formato con mix
 
 ### Documentación
 
-* [Elixir - Getting started][elixir-lang-doc]
-* [Elixir school][elixirschool]
-* [mix](https://hexdocs.pm/mix/Mix.html)
+-   [Elixir - Getting started][elixir-lang-doc]
+-   [Elixir school][elixirschool]
+-   [mix](https://hexdocs.pm/mix/Mix.html)
 
 [elixir-lang-doc]: http://elixir-lang.org/getting-started/introduction.html
 [elixirschool]: http://elixirschool.com/
 
 ### Referencias
 
-* https://samueldavies.net/2017/04/18/how-to-load-a-file-into-iex/
-* https://hexdocs.pm/mix/Mix.Tasks.Format.html#module-task-specific-options
-* https://hashrocket.com/blog/posts/format-your-elixir-code-now
-* https://stackoverflow.com/questions/45405070/how-do-i-save-iex-history
-* https://subscription.packtpub.com/book/application_development/9781784397517/1/ch01lvl1sec14/inspecting-your-system-in-iex
-* https://til.hashrocket.com/posts/mpqu7rjuy3-get-pids-for-each-beam-application-in-elixir
-* https://stackoverflow.com/questions/36063848/elixir-get-all-pids-for-processes-under-a-supervisor
-* https://samuelmullen.com/articles/elixir-processes-observability/
-* https://elixir-lang.org/getting-started/mix-otp/supervisor-and-application.html
-* https://elixirforum.com/t/elixir-apps-as-systemd-services-info-wiki/2400
+-   https://samueldavies.net/2017/04/18/how-to-load-a-file-into-iex/
+-   https://hexdocs.pm/mix/Mix.Tasks.Format.html#module-task-specific-options
+-   https://hashrocket.com/blog/posts/format-your-elixir-code-now
+-   https://stackoverflow.com/questions/45405070/how-do-i-save-iex-history
+-   https://subscription.packtpub.com/book/application_development/9781784397517/1/ch01lvl1sec14/inspecting-your-system-in-iex
+-   https://til.hashrocket.com/posts/mpqu7rjuy3-get-pids-for-each-beam-application-in-elixir
+-   https://stackoverflow.com/questions/36063848/elixir-get-all-pids-for-processes-under-a-supervisor
+-   https://samuelmullen.com/articles/elixir-processes-observability/
+-   https://elixir-lang.org/getting-started/mix-otp/supervisor-and-application.html
+-   https://elixirforum.com/t/elixir-apps-as-systemd-services-info-wiki/2400
+-   https://hexdocs.pm/mix/Mix.Tasks.New.html#module-examples
