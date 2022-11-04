@@ -57,6 +57,11 @@ Para tener disponible los paquetes instalados de forma global, agregar al `~/.ba
 
     export PATH=$(asdf where nodejs)/.npm/bin:$PATH
 
+### golang
+
+    asdf plugin-add golang
+    asdf global golang 1.19.3
+
 ## Referencias
 
 * https://asdf-vm.com
