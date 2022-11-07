@@ -7,6 +7,11 @@ Instalar goimports
 
     go get golang.org/x/tools/cmd/goimports
 
+Agregar GOPATH al `~/.bash_profile`
+
+    export GOPATH=$(go env GOPATH)
+    export PATH="$GOPATH/bin:$PATH"
+
 ### pprof
 
 Recolectar profile del heap y visualizar
