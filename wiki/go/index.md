@@ -12,6 +12,16 @@ Agregar GOPATH al `~/.bash_profile`
     export GOPATH=$(go env GOPATH)
     export PATH="$GOPATH/bin:$PATH"
 
+Instalar paquetes binarios, ejemplo con mockgen
+
+Go version < 1.16
+
+    GO111MODULE=on go get github.com/golang/mock/mockgen@v1.6.0
+
+Go 1.16+
+
+    go install github.com/golang/mock/mockgen@v1.6.0
+
 ### pprof
 
 Recolectar profile del heap y visualizar
