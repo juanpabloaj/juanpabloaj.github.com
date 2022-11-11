@@ -9,5 +9,5 @@ Agregar al archivo `/etc/sudoers`
 
 O
 
-    echo "user1 ALL=(root) NOPASSWD:ALL" > /etc/sudoers.d/user1
-    chmod 0440 /etc/sudoers.d/user1
+    echo "pablo ALL=(root) NOPASSWD:ALL" > /etc/sudoers.d/pablo
+    chmod 0440 /etc/sudoers.d/pablo
