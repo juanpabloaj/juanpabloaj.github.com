@@ -29,7 +29,7 @@ Mandar el panel actual a una ventana nueva en la misma sesión
 
 ## ~/.tmux.conf
 
-El archivo de configuración se llama `tmux.conf` y normalmente está ubicado en el home del usuario.
+El archivo de configuración se llama `.tmux.conf` y normalmente está ubicado en el home del usuario.
 
 Dejar `C-a` como screen
 
