@@ -38,6 +38,8 @@ Construir imagen desde Dockerfile
 
     docker build -t image_name .
 
+Para ignorar archivos en la etapa build y no copiarlos al hacer `ADD` o `COPY` usar el archivo `.dockerignore`
+
 Agregar usuario a grupo docker
 
     sudo usermod -a -G docker $USER
@@ -146,3 +148,4 @@ Obtener variables del contenedor
 * https://docs.docker.com/docker-for-mac/space/
 * https://stackoverflow.com/questions/39878939/docker-filling-up-storage-on-macos
 * https://docs.docker.com/config/containers/logging/configure/
+* https://docs.docker.com/engine/reference/builder/#dockerignore-file
