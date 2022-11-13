@@ -79,6 +79,15 @@ Agregar a `/etc/docker/daemon.json`. (192.168.0.10 es el IP de un DNS local)
         "dns": ["192.168.1.10", "8.8.8.8"],
     }
 
+Definir máximo tamaño de logs, en archivo `/etc/docker/daemon.json`
+
+    {
+      "log-opts": {
+        "max-size": "10m",
+        "max-file": "3",
+      }
+    }
+
 ### overlay2
 
 Usar `overlay2` como storage driver. Agregar al archivo `/etc/docker/daemon.json`.
@@ -136,3 +145,4 @@ Obtener variables del contenedor
 * https://blog.viktorpetersson.com/2014/11/03/the-dangers-of-ufw-docker.html
 * https://docs.docker.com/docker-for-mac/space/
 * https://stackoverflow.com/questions/39878939/docker-filling-up-storage-on-macos
+* https://docs.docker.com/config/containers/logging/configure/
