@@ -35,8 +35,14 @@ Borrar modulos del cache local
 
     go clean --modcache
 
+Reemplazar dependencies con un fork o similar.
+Repo `someone` version `1.2.3` con repo `you` en commit `aabbcc` (este hash puede ser una rama).
+
+    go mod edit -replace="github.com/someone/repo@v1.2.3=github.com/you/repo@aabbcc"
+
 ### Referencias
 
 * https://jvns.ca/blog/2017/09/24/profiling-go-with-pprof/
 * https://gowalker.org/net/http/pprof
 * https://godoc.org/golang.org/x/tools/cmd/goimports
+* https://stackoverflow.com/questions/14323872/using-forked-package-import-in-go
