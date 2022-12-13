@@ -57,7 +57,16 @@ Contar filas de una db
 
 Es necesario tener un select anidado para poder utilizar `inc` como filtro, sin esto no se puede usar en el `where`.
 
+Backup de contenedor
+
+    docker exec -t container_name pg_dump -c -U postgres db_name > dump_`date +%Y%m%d_%H%M%S`.sql
+
+Restaurar backup en contenedor
+
+    cat dump_20221213_131716.sql | docker exec -i container_name psql -U postgres db_name
+
 ## Referencias
 
 -   [How To Install and Use PostgreSQL on Ubuntu 14.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-14-04)
 -   https://stackoverflow.com/questions/2596670/how-do-you-find-the-row-count-for-all-your-tables-in-postgres
+-   https://stackoverflow.com/questions/24718706/backup-restore-a-dockerized-postgresql-database
