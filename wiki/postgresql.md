@@ -57,11 +57,13 @@ Contar filas de una db
 
 Es necesario tener un select anidado para poder utilizar `inc` como filtro, sin esto no se puede usar en el `where`.
 
-Backup de contenedor
+### Backup
+
+Backup de base de datos en contenedor
 
     docker exec -t container_name pg_dump -c -U postgres db_name > dump_`date +%Y%m%d_%H%M%S`.sql
 
-Restaurar backup en contenedor
+Restaurar base de datos a contenedor
 
     cat dump_20221213_131716.sql | docker exec -i container_name psql -U postgres db_name
 
