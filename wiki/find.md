@@ -41,3 +41,11 @@ Mostrar permisos y ultima fecha de ultima modificación
 Antes de la fecha exacta
 
     $ find . \! -cnewer marker
+
+Borrar archivos `.sql` con más de 10 días
+
+    find ./my_dir -mtime +10 -type f -name "*.sql" -delete
+
+## Referencias
+
+* https://stackoverflow.com/questions/13489398/delete-files-older-than-10-days-using-shell-script-in-unix
