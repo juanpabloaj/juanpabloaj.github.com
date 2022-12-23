@@ -23,12 +23,16 @@ Buscar por nombre
 
     find . -name "archivo*.tx*"
 
+Buscar por nombre ignorando algunos directorios, en este caso ignorando los directorios `node_modules`
+
+    find . -name "index.js" -not -path "*/node_modules/*"
+
 por fecha
 
-Buscar archivos creados después de la  fecha exacta
+Buscar archivos creados después de la fecha exacta
 
-	$ touch -d "13 may 2001 17:54:19" marker
-	$ find . -newer marker
+    $ touch -d "13 may 2001 17:54:19" marker
+    $ find . -newer marker
 
 Mostrar su fecha de creación y nombre
 
@@ -48,4 +52,4 @@ Borrar archivos `.sql` con más de 10 días
 
 ## Referencias
 
-* https://stackoverflow.com/questions/13489398/delete-files-older-than-10-days-using-shell-script-in-unix
+-   https://stackoverflow.com/questions/13489398/delete-files-older-than-10-days-using-shell-script-in-unix
