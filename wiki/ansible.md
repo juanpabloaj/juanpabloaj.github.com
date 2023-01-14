@@ -17,7 +17,7 @@ Ping a los hosts
 
 Ejecutar comando en uno de los hosts
 
-    ansible myhostname -m command -a "date"
+    ansible myhostname -a "date"
 
 Validar playbook
 
