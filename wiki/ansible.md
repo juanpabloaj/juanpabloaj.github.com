@@ -7,6 +7,14 @@ Agregar hosts en el archivo
 
     /etc/ansible/hosts
 
+Listar hosts
+
+    ansible-inventory --list -y
+
+Ping a los hosts
+
+    ansible all -m ping
+
 Ejecutar comando en uno de los hosts
 
     ansible myhostname -m command -a "date"
@@ -22,3 +30,4 @@ Aplicar playbook en un host
 ## Referencias
 
 -   https://www.redhat.com/en/blog/system-administrators-guide-getting-started-ansible-fast
+-   https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-ansible-on-ubuntu-20-04
