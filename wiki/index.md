@@ -93,6 +93,7 @@ title : Wiki
 [unzip](/wiki/unzip)
 [vagrant](/wiki/vagrant)
 [valgrind](/wiki/valgrind)
+[venv](/wiki/venv)
 [vim](/wiki/vim)
 [virtualbox](/wiki/virtualbox)
 [virtualenvwrapper](/wiki/virtualenvwrapper)
