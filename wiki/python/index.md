@@ -101,6 +101,10 @@ Incrementar fecha en un día
     import datetime
     datetime.datetime.now() + datetime.timedelta(days=1)
 
+### virtual environments
+
+    python3 -m venv /path/to/new/virtual/environment
+
 ### More
 
 * [Herencia](/wiki/python/herencia)
