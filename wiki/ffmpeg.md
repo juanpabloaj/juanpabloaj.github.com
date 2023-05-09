@@ -22,3 +22,7 @@ Generar video desde imágenes, una por cada dos segundos
 Escalar video
 
     ffmpeg -i video.mp4 -vf scale=1024:-1 out.mp4
+
+Generar video con mayor velocidad
+
+    ffmpeg -i input.mov -vf "setpts=0.1*PTS" output.mp4
