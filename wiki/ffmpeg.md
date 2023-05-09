@@ -26,3 +26,11 @@ Escalar video
 Generar video con mayor velocidad
 
     ffmpeg -i input.mov -vf "setpts=0.1*PTS" output.mp4
+
+Copiar el último segundo de un video y unirlo al comienzo del original en un video nuevo
+
+    duration=$(ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 input.mp4)
+    start_time=$(bc <<< "scale=2; $duration - 1")
+    ffmpeg -ss $start_time -i input.mp4 -t 1 -c copy last_second.mp4
+    echo -e "file 'last_second.mp4'\nfile 'input.mp4'" > playlist.txt
+    ffmpeg -f concat -safe 0 -i playlist.txt -c copy output.mp4
