@@ -2,6 +2,9 @@
 layout: default
 title: Brew
 ---
+Actualizar brew
+
+    brew update
 
 Limpiar y recuperar espacio
 

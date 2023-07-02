@@ -2,6 +2,14 @@
 layout: default
 title: neovim
 ---
+Instalar con homebrew
+
+    brew install neovim
+
+Actualizar con homebrew
+
+    brew update
+    brew upgrade neovim
 
 Ubicación del archivo de configuración
 
@@ -24,3 +32,4 @@ Retorna 0 falta instalar
 
 * [Instalar en centos 6 con script](https://gist.github.com/juanpabloaj/3b2184e951f7f8161fabf8d4cbf89438)
 * [Instalar en centos 6 con rpm/spec](https://gist.github.com/juanpabloaj/62cd3f1a5bad97e19e1e1e9bc5dc2672)
+* https://github.com/neovim/homebrew-neovim
