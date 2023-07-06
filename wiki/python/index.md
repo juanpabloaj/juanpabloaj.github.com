@@ -104,6 +104,7 @@ Incrementar fecha en un día
 ### virtual environments
 
     python3 -m venv /path/to/new/virtual/environment
+    source venv/bin/activate
 
 ### More
 
