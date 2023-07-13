@@ -67,6 +67,23 @@ Restaurar base de datos a contenedor
 
     cat dump_20221213_131716.sql | docker exec -i container_name psql -U postgres db_name
 
+docker-compose de postgres
+
+    version: '3.8'
+    services:
+      db:
+        image: postgres:14.1-alpine
+        restart: always
+        environment:
+          - POSTGRES_USER=postgres
+          - POSTGRES_PASSWORD=postgres
+        ports:
+          - '5432:5432'
+        volumes:
+          - db:/var/lib/postgresql/data
+    volumes:
+      db:
+
 ## Referencias
 
 -   [How To Install and Use PostgreSQL on Ubuntu 14.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-14-04)
