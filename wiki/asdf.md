@@ -36,12 +36,13 @@ Instalar
 
     asdf plugin-add erlang
     asdf plugin-update erlang
-    asdf install erlang 25.1.1
-    asdf global erlang 25.1.1
+    asdf install erlang 26.0.2
+    asdf global erlang 26.0.2
 
     asdf plugin-add elixir
-    asdf install elixir 1.14.0-otp-25
-    asdf global elixir 1.14.0-otp-25
+    asdf plugin-update elixir
+    asdf install elixir 1.15.2-otp-26
+    asdf global elixir 1.15.2-otp-26
 
 Borrar
 
