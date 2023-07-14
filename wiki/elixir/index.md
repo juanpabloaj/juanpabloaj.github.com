@@ -93,6 +93,33 @@ Verificar formato con mix
 
     mix format --check-formatted file.ex
 
+### nvim
+
+Para syntaxis `nvim-treesitter`.
+
+Agregar `nvim-treesitter` a `~/.config/nvim/init.vim`
+
+    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
+E instalar
+
+    :PlugInstall
+
+Activar el `highlight` en `~/.config/nvim/lua/init.lua`
+
+    require'nvim-treesitter.configs'.setup{
+      highlight={
+        enable=true
+      }
+    }
+
+Agregar `elixir` a `treesitter`
+
+    :TSInstall elixir
+    :TSInstall heex
+
+Pasé de `vim-elixir` a `treesitter` porque en algún momento `vim-elixir` dejó de mostrar la sintaxis de los archivos `heex`, más detalles en https://github.com/elixir-editors/vim-elixir/issues/562
+
 ### Documentación
 
 -   [Elixir - Getting started][elixir-lang-doc]
