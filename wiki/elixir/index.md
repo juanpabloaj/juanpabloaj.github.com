@@ -77,6 +77,15 @@ O el equivalente
 
     mix new hello_world --module HelloWorld
 
+Lanzar los tests del módulo
+
+    mix test
+
+Lanzar los test del módulo cuando hay cambios en algún archivo. Es necesario
+tener instalado `fswatch` (`brew install fswatch`).
+
+    fswatch lib test | mix test --listen-on-stdin
+
 Obtener dependencias
 
     mix deps.get
