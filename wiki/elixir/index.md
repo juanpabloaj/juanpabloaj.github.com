@@ -131,6 +131,7 @@ Pasé de `vim-elixir` a `treesitter` porque en algún momento `vim-elixir` dejó
 
 ### Referencias
 
+-   https://elixir-lang.org/getting-started/modules-and-functions.html
 -   https://samueldavies.net/2017/04/18/how-to-load-a-file-into-iex/
 -   https://hexdocs.pm/mix/Mix.Tasks.Format.html#module-task-specific-options
 -   https://hashrocket.com/blog/posts/format-your-elixir-code-now
