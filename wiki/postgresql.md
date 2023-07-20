@@ -17,6 +17,10 @@ Listar las bases de datos
 
     \l
 
+Borrar base de datos
+
+    drop database myDatabase;
+
 Listar con detalles, como espacio utilizado por base de datos
 
     \l+
