@@ -86,6 +86,7 @@ title : Wiki
 [systemd](/wiki/systemd)
 [telegram](/wiki/telegram)
 [tmux](/wiki/tmux)
+[todoist](/wiki/todoist)
 [tox](/wiki/tox)
 [truncate](/wiki/truncate)
 [tsp](/wiki/tsp)
