@@ -24,6 +24,11 @@ p a:hover {
     text-decoration:none;
     color:#727272;
 }
+
+.post_date {
+  text-align: center;
+}
+
 #cuello div {
     float:left;
     margin:10px 4px 0px 4px;
