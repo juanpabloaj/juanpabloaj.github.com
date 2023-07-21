@@ -101,6 +101,15 @@
         font-weight: bold;
         color: #054950;
       }
+      #entry {
+        display: flex;
+      }
+      .entry_date {
+        width: 16%;
+      }
+      ul {
+        list-style-type: none;
+      }
     </style>
   </head>
 
@@ -110,7 +119,20 @@
         <div class="row-fluid">
           <div id="about" class="">
             {{ content }}
-            <br />
+            <hr />
+            <ul>
+              {% for post in site.posts limit:5 %}
+              <li>
+                <div id="entry">
+                  <div class="entry_date">{{ post.date | date_to_string }}</div>
+                  <div>
+                    <a href="{{ post.url }}"> {{ post.title }} </a>
+                  </div>
+                </div>
+              </li>
+              {% endfor %}
+            </ul>
+            <hr />
             <div class="navbar pull-right">
               <ul class="nav">
                 <li><a href="/blog">blog</a></li>
