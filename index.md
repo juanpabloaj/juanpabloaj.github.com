@@ -1,10 +1,19 @@
 ---
-layout: home
+layout: blog
 title : JuanPabloAJ
 ---
-Me llamo Juan Pablo, llevo algún tiempo moviéndome en proyectos de modelamiento, innovación tecnológica y desarrollo.
+<br />
+{% for post in site.posts %}
+<a href="{{ post.url }}"><h1>{{ post.title }}</h1></a>
+    <div>
+        {{ post.content }}
+    </div>
+{% endfor %}
 
-Entre otras cosas, he creado aplicaciones web como [getscreenshots] y  [platon].
-
-[getscreenshots]: http://getscreenshots.io
-[platon]: http://platon.io
+<br />
+<!--
+{{ site.categories | size}}
+{% for category in site.categories %}
+	<a name="{{ category | first }}">{{ category | first }}</a>
+{% endfor %}
+-->
