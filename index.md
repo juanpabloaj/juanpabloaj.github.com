@@ -2,9 +2,6 @@
 layout: home
 title : JuanPabloAJ
 ---
-Me llamo Juan Pablo, llevo algún tiempo moviéndome en proyectos de modelamiento, innovación tecnológica y desarrollo.
+Hola, me llamo Juan Pablo. Mi trabajo se centra principalmente en el desarrollo de software, especialmente con Python, Go y Elixir.
 
-Entre otras cosas, he creado aplicaciones web como [getscreenshots] y  [platon].
-
-[getscreenshots]: http://getscreenshots.io
-[platon]: http://platon.io
+En este sitio comparto mis experiencias relacionadas con programación, en la sección blog he publicado algunos posts del tema y en la sección wiki tengo apuntes generales.
