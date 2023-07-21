@@ -43,20 +43,19 @@ def show_post(post_id):
 
 `template/post.html`
 
-```
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <title>{{ post_id }}</title>
-  </head>
-  <body>
-    <h1>{{ post_id }}</h1>
-  </body>
-</html>
-```
+{% raw %}
+    <html>
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="stylesheet" href\="{{ url_for('static', filename='style.css') }}">
+        <title>{{ post_id }}</title>
+      </head>
+      <body>
+        <h1>{{ post_id }}</h1>
+      </body>
+    </html>
+{% endraw %}
 
 `static/style.css`
 
@@ -145,24 +144,23 @@ def posts():
 
 Y un template `templates/posts.html`
 
-```
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <title>Posts</title>
-  </head>
-  <body>
-    <ul>
-    {% for post in posts %}
-      <li>{{ post }}</li>
-    {% endfor %}
-    </ul>
-  </body>
-</html>
-```
+{% raw %}
+    <html>
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <title>Posts</title>
+      </head>
+      <body>
+        <ul>
+        {% for post in posts %}
+          <li>{{ post }}</li>
+        {% endfor %}
+        </ul>
+      </body>
+    </html>
+{% endraw %}
 
 Agregar algunos registros a la base de datos
 
