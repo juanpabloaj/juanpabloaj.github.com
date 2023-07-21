@@ -11,6 +11,10 @@ Generar con live
 
     mix phx.new demo --live
 
+Sin html ni assets
+
+    mix phx.new demo --no-html --no-assets
+
 Context sin schema
 
     mix phx.gen.context Dashboard Message messages content --no-schema
