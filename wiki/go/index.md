@@ -40,6 +40,18 @@ Repo `someone` version `1.2.3` con repo `you` en commit `aabbcc` (este hash pued
 
     go mod edit -replace="github.com/someone/repo@v1.2.3=github.com/you/repo@aabbcc"
 
+Después de haber hecho `go mod init` y haber agregado dependencies, crear un directorio vendor con una copia local de las dependencies.
+
+    go mod vendor
+
+Utilizar el directorio vendor al hacer el build
+
+    go mod build -mod=vendor
+
+Al tener el directorio vendor las dependencies ser agregadas al repo para disminuir los tiempos de pipelines al no tener que descargar las dependencies cada vez.
+
+Algo en contra de esta método es que el tamaño del repositorio incrementa, solo depender de logrus agrega 7.8MB al repo.
+
 ### Referencias
 
 * https://jvns.ca/blog/2017/09/24/profiling-go-with-pprof/
