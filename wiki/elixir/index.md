@@ -7,9 +7,14 @@ Cargar archivo al iniciar `iex`
 
     iex -r elixir_file.ex
 
-Cargar desde iex
+Compilar con `elixirc` y cargar desde iex
 
-    iex> r MyModule
+    $ elixirc my_module.ex
+    iex> l MyModule
+
+Compilar desde `iex`
+
+    iex> c "my_module.ex"
 
 Entrar a iex con la configuracion del proyecto/mix
 
