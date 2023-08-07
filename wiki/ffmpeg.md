@@ -21,6 +21,10 @@ Generar video desde imágenes, una por cada dos segundos
 
 Escalar video
 
+    ffmpeg -i video.mp4 -s 720x480 -c:a copy out.mp4
+
+O
+
     ffmpeg -i video.mp4 -vf scale=1024:-1 out.mp4
 
 Generar video con mayor velocidad
@@ -34,3 +38,7 @@ Copiar el último segundo de un video y unirlo al comienzo del original en un vi
     ffmpeg -ss $start_time -i input.mp4 -t 1 -c copy last_second.mp4
     echo -e "file 'last_second.mp4'\nfile 'input.mp4'" > playlist.txt
     ffmpeg -f concat -safe 0 -i playlist.txt -c copy output.mp4
+
+Referencias
+
+-   https://superuser.com/questions/624563/how-to-resize-a-video-to-make-it-smaller-with-ffmpeg
