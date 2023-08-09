@@ -63,6 +63,10 @@ Seguir los logs con
 
     journalctl --user -f
 
+Seguir los logs de un servicio
+
+    journalctl -fu service_name
+
 ### Referencias
 
 * https://www.redhat.com/sysadmin/introduction-path-units
