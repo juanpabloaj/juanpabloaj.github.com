@@ -58,13 +58,19 @@ Listar los timers activos
 
     systemctl --user list-timers --all
 
-Seguir los logs con
+Seguir logs con
 
     journalctl --user -f
 
-Seguir los logs de un servicio
+Seguir logs de un servicio
 
     journalctl -fu service_name
+
+Obtener logs usando fechas como filtro
+
+    journalctl --since yesterday
+    journalctl --since "1 hour ago"
+    journalctl --since "2023-08-07" --until "1 hour ago"
 
 ### Referencias
 
@@ -74,3 +80,4 @@ Seguir los logs de un servicio
 -   https://wiki.archlinux.org/title/Systemd/Timers
 -   https://blog.dcycle.com/blog/112/systemd-replacement-cron-every-10-seconds/
 -   https://serverfault.com/questions/683911/use-of-cpuquota-in-systemd
+-   https://www.digitalocean.com/community/tutorials/how-to-use-journalctl-to-view-and-manipulate-systemd-logs
