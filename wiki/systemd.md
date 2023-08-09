@@ -17,7 +17,6 @@ Con `CPUQuota`
     [Install]
     WantedBy=multi-user.target
 
-
 ### crear un timer como usuario
 
 Cuando se crea un timer como usuario, solo se ejecutará cuando el usuario esté logeado.
@@ -69,9 +68,9 @@ Seguir los logs de un servicio
 
 ### Referencias
 
-* https://www.redhat.com/sysadmin/introduction-path-units
-* https://www.unixsysadmin.com/systemd-user-services/
-* http://unix.stackexchange.com/questions/600642/systemd-path-how-to-tell-which-pathchanged/
-* https://wiki.archlinux.org/title/Systemd/Timers
-* https://blog.dcycle.com/blog/112/systemd-replacement-cron-every-10-seconds/
-* https://serverfault.com/questions/683911/use-of-cpuquota-in-systemd
+-   https://www.redhat.com/sysadmin/introduction-path-units
+-   https://www.unixsysadmin.com/systemd-user-services/
+-   http://unix.stackexchange.com/questions/600642/systemd-path-how-to-tell-which-pathchanged/
+-   https://wiki.archlinux.org/title/Systemd/Timers
+-   https://blog.dcycle.com/blog/112/systemd-replacement-cron-every-10-seconds/
+-   https://serverfault.com/questions/683911/use-of-cpuquota-in-systemd
