@@ -1,15 +1,17 @@
 ---
 layout: default
-title : tar
+title: tar
 ---
 
 Comprimir como .tar.gz
 
-	$ tar cvfz comprimido.tar.gz archivo1 archivo2
+    $ tar cvfz comprimido.tar.gz archivo1 archivo2
 
 Descomprimir
 
-	$ tar xvfz comprimido.tar.gz
+    $ tar xvfz comprimido.tar.gz
+
+    $ tar Jxvf comprimido.tar.xz
 
 Descomprimir a un directorio
 
