@@ -9,7 +9,7 @@ There have been instances where I required data persistence with an Elixir appli
 
 In this post, I'm going to show how to use Elixir and Ecto with SQLite3. This is strongly based on [an article from fly.io][fly_sqlite] although that article is oriented to Phoenix, I'm going to focus on creating a small Elixir project. The project will have a `GenServer` that writes a random value every second into the SQLite database.
 
-I will be using Elixir version 1.5.2 and Erlang version 26.0.2.
+I will be using Elixir version 1.15.2 and Erlang version 26.0.2.
 
 First, create the project's directory with a supervisor.
 
