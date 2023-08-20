@@ -17,6 +17,12 @@ Mostrar versiones para un plugin
 
 ### python
 
+Dependencias de python
+
+    https://github.com/pyenv/pyenv/wiki#suggested-build-environment
+
+Instalar python 2 y 3
+
     asdf plugin-add python
     asdf install python 2.7.18
     asdf install python 3.10.8
