@@ -1,7 +1,8 @@
 ---
 layout: home
-title : JuanPabloAJ
+title: JuanPabloAJ
 ---
-Hola, me llamo Juan Pablo. Mi trabajo se centra en desarrollo de software, especialmente con Python, Go y Elixir.
 
-En este sitio comparto mis experiencias relacionadas con programación, en la sección blog he publicado algunos posts del tema y en la sección wiki tengo apuntes generales.
+Hello, my name is Juan Pablo. My work focuses on software development, especially with Python, Go, and Elixir.
+
+On this site, I share my experiences related to programming. In the blog section, I have published some posts on the topic, and in the wiki section, I have general notes.
