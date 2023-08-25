@@ -103,6 +103,10 @@ Copiar el registro 0 después linea 10
 
     10pu 0
 
+Copiar todo el buffer actual al clipboard
+
+    :%y+
+
 Agregar opciones especificas a un archivo
 
     # vim: st=8
