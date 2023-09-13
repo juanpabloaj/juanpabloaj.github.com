@@ -27,6 +27,10 @@ O
 
     ffmpeg -i video.mp4 -vf scale=1024:-1 out.mp4
 
+Quitar audio, cortar primer segundo y cambiar codec para reducir tamaño, para mantener codec `-c:v copy`
+
+    ffmpeg -i video.mov -ss 00:00:01 -t 00:00:08 -c:v libx264 -an out.mp4
+
 Generar video con mayor velocidad
 
     ffmpeg -i input.mov -vf "setpts=0.1*PTS" output.mp4
