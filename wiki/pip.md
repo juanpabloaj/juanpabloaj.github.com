@@ -29,6 +29,8 @@ Instalación desde la rama en un repositorio remoto
 
     pip install git+git://github.com/juanpabloaj/repo_name.git@branch_name
 
+    pip install git+https://github.com/juanpabloaj/my_repo@patch-1
+
 ## Pypi
 
 Registrarse
