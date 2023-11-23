@@ -122,6 +122,7 @@ Incrementar fecha en un día
 * [seaborn](/wiki/python/seaborn)
 * [setuptools](/wiki/python/setuptools)
 * [unittest](/wiki/python/unittest)
+* [logging](/wiki/python/logging)
 
 ### Ejemplos
 
