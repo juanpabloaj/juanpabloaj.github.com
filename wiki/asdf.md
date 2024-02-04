@@ -67,7 +67,8 @@ Para tener disponible los paquetes instalados de forma global, agregar al `~/.ba
 ### golang
 
     asdf plugin-add golang
-    asdf global golang 1.19.3
+    asdf install golang 1.21.1
+    asdf global golang 1.21.1
 
 ## Referencias
 
