@@ -39,6 +39,10 @@ Generar video con mayor velocidad
 
     ffmpeg -i input.mov -vf "setpts=0.1*PTS" output.mp4
 
+En ciclos de cinco segundos, conservar los tres primeros, o lo que es lo mismo, borrar los últimos dos segundos.
+
+    ffmpeg -i input.mp4 -vf "select='if(lt(mod(t,5),3),1,0)'" -vsync vfr out.mp4
+
 Copiar el último segundo de un video y unirlo al comienzo del original en un video nuevo
 
     duration=$(ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 input.mp4)
