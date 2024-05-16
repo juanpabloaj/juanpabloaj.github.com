@@ -106,20 +106,22 @@ title : Wiki
 
 ## Comandos
 
-[ldconfig](/wiki/ldconfig)
-[tar](/wiki/tar)
+[awk](/wiki/awk)
+[cron](/wiki/cron)
 [dd](/wiki/dd)
 [du](/wiki/du)
-[hwclock](/wiki/hwclock)
-[cron](/wiki/cron)
-[yum](/wiki/yum)
-[sed](/wiki/sed)
-[mount](/wiki/mount)
-[awk](/wiki/awk)
-[find](/wiki/find)
 [fdisk](/wiki/fdisk)
+[find](/wiki/find)
+[hwclock](/wiki/hwclock)
+[ldconfig](/wiki/ldconfig)
 [mail](/wiki/mail)
+[mount](/wiki/mount)
 [pip](/wiki/pip)
+[sed](/wiki/sed)
+[tar](/wiki/tar)
+[top](/wiki/top)
+[tree](/wiki/tree)
+[yum](/wiki/yum)
 
 ## DB
 
