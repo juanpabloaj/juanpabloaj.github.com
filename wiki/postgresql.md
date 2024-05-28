@@ -13,6 +13,10 @@ Ejecutar comando sin paginación
 
     psql -P pager -Upostgres myDatabase -c "select * from myTable"
 
+No tener paginación en las consultas
+
+    \pset pager 0
+
 Listar las bases de datos
 
     \l
