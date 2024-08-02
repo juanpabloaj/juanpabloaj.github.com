@@ -83,6 +83,10 @@ Restaurar base de datos a contenedor
 
     cat dump_20221213_131716.sql | docker exec -i container_name psql -U postgres db_name
 
+En algunas ocasiones el dump no era cargado porque no encontraba la extensión `pgcrypto`, la solución fue comentar la linea, incluida en el dump, relacionada con `search_path`.
+
+    -- SELECT pg_catalog.set_config('search_path', '', false);
+
 docker-compose de postgres
 
     version: '3.8'
