@@ -75,6 +75,10 @@ Backup de base de datos en contenedor.
 
     docker exec -t container_name pg_dump -c -F p -E UTF-8 -U postgres db_name > dump_`date +%Y%m%d_%H%M%S`.sql
 
+Adicionalmente para no crear roles se pueden agrear las opciones
+
+    --no-owner --no-privileges
+
 Restaurar base de datos a contenedor
 
     cat dump_20221213_131716.sql | docker exec -i container_name psql -U postgres db_name
