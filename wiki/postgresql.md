@@ -67,7 +67,11 @@ Es necesario tener un select anidado para poder utilizar `inc` como filtro, sin 
 
 ### Backup
 
-Backup de base de datos en contenedor. -F para formato de salida (p, plain). -E para encoding (UTF-8).
+Backup de base de datos en contenedor.
+
+    -F para formato de salida (p, plain)
+    -E para encoding (UTF-8)
+    -c clean agregar drop table if exists
 
     docker exec -t container_name pg_dump -c -F p -E UTF-8 -U postgres db_name > dump_`date +%Y%m%d_%H%M%S`.sql
 
