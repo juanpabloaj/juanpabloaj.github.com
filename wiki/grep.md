@@ -14,6 +14,10 @@ Solo mostrar texto que siga expresión regular
 
     grep -Po '(temp_input=[0-9]+)'
 
+En la búsqueda recursiva, solo buscar en los archivos .go
+
+    grep -r --color --include=\*.go expression_to_search .
+
 ## Referencias
 
 * https://stackoverflow.com/questions/29465612/how-to-detect-invalid-utf8-unicode-binary-in-a-text-file
