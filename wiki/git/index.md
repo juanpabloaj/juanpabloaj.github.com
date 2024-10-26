@@ -25,6 +25,8 @@ Agregar selectiva e interactivamente los cambios
 
     git add --patch file
 
+Con s, fragmentas lo que se va a agregar, con e puedes editar manualmente el fragmento a agregar (al guardar y salir se agrega).
+
 Subir los cambios
 
     git push
