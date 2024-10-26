@@ -47,6 +47,10 @@ Ver log de los últimos commits
 
     git log -n5
 
+Ver los commits que están en esta rama pero no en `otherBranch`.
+
+    git log --graph otherBranch..HEAD
+
 Regresar un archivo al estado anterior
 
     git checkout HEAD~4 file
@@ -385,6 +389,7 @@ Archivar solo los últimos archivos modificados
 
 ### Referencias
 
+* https://jvns.ca/blog/2023/11/01/confusing-git-terminology/#and
 * [When do you use git rebase instead of git merge?](http://stackoverflow.com/questions/804115/when-do-you-use-git-rebase-instead-of-git-merge)
 * [Resolving a merge](http://www.kernel.org/pub/software/scm/git/docs/v1.7.3/user-manual.html#resolving-a-merge)
 * [Using Git to create an archive of changed files](http://tosbourn.com/2011/05/git/using-git-to-create-an-archive-of-changed-files/)
