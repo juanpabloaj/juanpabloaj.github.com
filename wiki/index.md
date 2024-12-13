@@ -113,6 +113,7 @@ title : Wiki
 [fdisk](/wiki/fdisk)
 [find](/wiki/find)
 [hwclock](/wiki/hwclock)
+[kcat](/wiki/kcat)
 [ldconfig](/wiki/ldconfig)
 [mail](/wiki/mail)
 [mount](/wiki/mount)
