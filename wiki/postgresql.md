@@ -65,6 +65,13 @@ Contar filas de una db
 
 Es necesario tener un select anidado para poder utilizar `inc` como filtro, sin esto no se puede usar en el `where`.
 
+Obtener todos los indices de las tablas de la base de datos
+
+    SELECT schemaname, tablename, indexname, indexdef
+    FROM pg_indexes
+    WHERE schemaname NOT IN ('pg_catalog', 'information_schema')
+    ORDER BY tablename;
+
 ### Backup
 
 Backup de base de datos en contenedor.
