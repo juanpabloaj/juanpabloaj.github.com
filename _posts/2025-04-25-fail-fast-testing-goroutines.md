@@ -41,8 +41,8 @@ func TestCinema(t *testing.T) {
 
     done := make(chan struct{})
     go func() {
+        defer close(done)
         wg.Wait()
-        close(done)
     }()
 
     select {
