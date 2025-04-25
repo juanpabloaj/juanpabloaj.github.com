@@ -1,12 +1,11 @@
 ---
 layout: post
 comments: true
-title : fail fast testing goroutines
+title : Fail-Fast Testing of Goroutines with WaitGroup and time.After
 categories:
 ---
-# Fail-Fast Testing of Goroutines with WaitGroup and time.After
-
 TL;DR
+
 Unit-testing async code in Go? Drop in a mock that just closes a sync.WaitGroup, then wrap the wait in a select with time.After. If the goroutine never returns, the test fails quickly instead of hanging your CI.
 
 Your function fires a goroutine — maybe it pushes to Kafka or hits an API. In a test you don’t care about the payload; you care that the goroutine actually ran. And if it deadlocks, you want to know fast.
