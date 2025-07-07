@@ -36,9 +36,17 @@ Mostrar pods y su estado
 
     kubectl get pods
 
+Mostrar las imágenes de los pods
+
+    kubectl -n dev get pods -o custom-columns=NAME:.metadata.name,IMAGE:.spec.containers[*].image
+
 Mostrar log de un pod
 
     kubectl logs pod-name
+
+Mostrar los logs de un deployment
+
+    kubectl -n dev logs deployment/deplyment-name
 
 Mostrar info del DNS de kubernetes
 
