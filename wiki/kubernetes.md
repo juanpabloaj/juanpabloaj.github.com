@@ -36,9 +36,9 @@ Mostrar pods y su estado
 
     kubectl get pods
 
-Mostrar las imágenes de los pods
+Mostrar las imágenes de los pods y fecha de actualización
 
-    kubectl -n dev get pods -o custom-columns=NAME:.metadata.name,IMAGE:.spec.containers[*].image
+    kubectl -n dev get pods -o custom-columns=CREATED:.metadata.creationTimestamp,NAME:.metadata.name,IMAGE:.spec.containers[*].image
 
 Mostrar log de un pod
 
