@@ -71,6 +71,7 @@ title : Wiki
 [pyinstaller](/wiki/pyinstaller)
 [rabbitmq](/wiki/rabbitmq)
 [rake](/wiki/rake)
+[rancher](/wiki/rancher)
 [rpm](/wiki/rpm)
 [rsync](/wiki/rsync)
 [rsyslog](/wiki/rsyslog)
