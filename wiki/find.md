@@ -50,6 +50,10 @@ Borrar archivos `.sql` con más de 10 días
 
     find ./my_dir -mtime +10 -type f -name "*.sql" -delete
 
+Borrar todos los que no coincidan con un patron
+
+    find ./my_dir -name "*test.go" ! -name "*_keep_this_name_*" -delete
+
 ## Referencias
 
 -   https://stackoverflow.com/questions/13489398/delete-files-older-than-10-days-using-shell-script-in-unix
