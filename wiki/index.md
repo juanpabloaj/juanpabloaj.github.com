@@ -63,6 +63,7 @@ title : Wiki
 [nsound](/wiki/nsound)
 [nvim](/wiki/nvim)
 [openshift](/wiki/openshift)
+[orb](/wiki/orb)
 [perl](/wiki/perl)
 [powershell](/wiki/powershell)
 [ps](/wiki/ps)
