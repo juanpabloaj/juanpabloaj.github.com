@@ -174,6 +174,10 @@ Diferencias contra del stash
 
     git diff stash@{0}
 
+Obtener los cambios de un archivo en el stash
+
+    git checkout stash{0} -- file_path
+
 ## rebase
 
 En lugar de merge, para un historial más ordenado
