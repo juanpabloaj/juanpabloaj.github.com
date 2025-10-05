@@ -260,3 +260,8 @@ video {
     padding: 1.25rem .5rem 0;
   }
 }
+
+pre code {
+  padding: 0;
+  background: transparent;
+}
