@@ -7,7 +7,7 @@
   <title>{{ page.title | default: site.title }}</title>
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 </head>
-<body>
+<body class="{{ page.layout | default: 'default' }}">
   <main class="wrap">
     {{ content }}
   </main>
@@ -17,9 +17,9 @@
       <a class="footlink" href="{{ '/posts' | relative_url }}">Writing</a> ·
       <a class="footlink" href="{{ '/wiki' | relative_url }}">Wiki</a> ·
       <a class="footlink" href="https://github.com/juanpabloaj" target="_blank" rel="noopener">GitHub</a> ·
-      <a class="footlink" href="https://www.linkedin.com/in/juan-pablo-abarz%C3%BAa-jaramillo-88312314/" target="_blank" rel="noopener">LinkedIn</a> ·
+      <a class="footlink" href="https://www.linkedin.com/in/juanpabloaj" target="_blank" rel="noopener">LinkedIn</a> ·
       <a class="footlink" href="{{ '/feed.xml' | relative_url }}">RSS</a> ·
-      © {{ site.time | date: '%Y' }} {{ site.author | default: 'Juan Pablo AJ' }}
+      © {{ site.time | date: '%Y' }} Juan Pablo AJ
     </small>
   </footer>
 </body>

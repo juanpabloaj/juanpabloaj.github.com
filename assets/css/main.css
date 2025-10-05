@@ -63,6 +63,10 @@ main {
   margin-bottom: 1.5rem;
 }
 
+.home .desc {
+  margin-top: 1.5rem;
+}
+
 .desc p {
   margin: 0 0 1rem;
 }
