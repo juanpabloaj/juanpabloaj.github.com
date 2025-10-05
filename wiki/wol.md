@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: wiki-note
 title: Wake on LAN
 ---
 Levantar un equipo con ethernet.

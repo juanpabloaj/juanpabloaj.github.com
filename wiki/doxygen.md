@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: wiki-note
 title: doxygen
 ---
 Generar un archivo de configuración base

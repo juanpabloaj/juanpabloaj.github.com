@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: wiki-note
 title: mail
 ---
 Usar less como PAGER de mail

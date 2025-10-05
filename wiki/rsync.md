@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: wiki-note
 title: rsync
 ---
 Copiar solo los nuevos, incluyendo directorios sobre, ssh

@@ -1,0 +1,262 @@
+:root {
+  --max-ch: 60ch;
+  --lh: 1.6;
+  --pad: 18px;
+  --fg: #111111;
+  --muted: #555;
+  --bg: #FFFFFF;
+  --border: rgba(0,0,0,.08);
+  --code-fg: #111111;
+  --code-bg: #F7F7F7;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fg: #EDEDED;
+    --muted: #A9A9A9;
+    --bg: #0E0E0E;
+    --border: rgba(255,255,255,.12);
+    --code-fg: #EDEDED;
+    --code-bg: #1A1A1A;
+  }
+}
+
+html {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Noto Sans", "Liberation Sans", sans-serif;
+  font-size: 16px;
+  line-height: var(--lh);
+  color: var(--fg);
+  background: var(--bg);
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+  color: #222;
+}
+
+:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+.wrap {
+  max-width: var(--max-ch);
+  margin: 0 auto;
+  padding: var(--pad);
+}
+
+main {
+  padding-top: calc(var(--pad) * 1.5);
+}
+
+.desc {
+  margin-bottom: 1.5rem;
+}
+
+.desc p {
+  margin: 0 0 1rem;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  color: var(--muted);
+  font-size: .9rem;
+  margin-bottom: .75rem;
+}
+
+.breadcrumb a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+/* Lists: date + title */
+ul.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 11ch 1fr;
+  column-gap: .75rem;
+  align-items: baseline;
+  margin: 0 0 .35rem;
+}
+
+.item a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.item a:hover {
+  text-decoration-thickness: 2px;
+  color: #222;
+}
+
+.date {
+  color: var(--muted);
+  justify-self: end;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Typography: post/wiki titles and meta */
+h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  line-height: 1.2;
+  margin: 0 0 .5rem;
+}
+
+.meta {
+  color: var(--muted);
+  margin: 0 0 2rem;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Article */
+article {
+  max-width: var(--max-ch);
+  line-height: 1.7;
+}
+
+article p {
+  margin: 0 0 1rem;
+}
+
+article ul,
+article ol {
+  margin: 0 0 1rem 1.25rem;
+}
+
+article li {
+  margin: 0 0 .25rem;
+}
+
+article blockquote {
+  margin: 0 0 1.5rem;
+  padding-left: 1rem;
+  border-left: 2px solid var(--border);
+  color: var(--muted);
+  background: rgba(0,0,0,.02);
+}
+
+/* Code */
+pre,
+code,
+kbd,
+samp {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  color: var(--code-fg);
+  background: var(--code-bg);
+}
+
+pre {
+  overflow: auto;
+  overflow-x: auto;
+  padding: .75rem;
+  border-radius: 4px;
+  margin: 0 0 1.5rem;
+  border: 1px solid var(--border);
+  line-height: 1.45;
+}
+
+code {
+  padding: .1rem .25rem;
+  border-radius: 3px;
+}
+
+/* Post bottom nav */
+.postnav {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 0.5px solid var(--border);
+  color: var(--muted);
+  font-size: .9rem;
+}
+
+.postnav a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.postnav a:hover {
+  text-decoration: underline;
+  color: #555;
+}
+
+/* Footer */
+footer {
+  border-top: 0.5px solid var(--border);
+  color: var(--muted);
+  text-align: center;
+  font-size: .8rem;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  line-height: 1.6;
+}
+
+footer small {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: .25rem;
+  justify-content: center;
+}
+
+.footlink {
+  color: #777;
+  text-decoration: none;
+}
+
+.footlink:hover {
+  text-decoration: underline;
+  color: #555;
+}
+
+/* Media */
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .item {
+    grid-template-columns: 1fr;
+  }
+
+  .date {
+    justify-self: start;
+    margin-bottom: .125rem;
+  }
+
+  article {
+    padding: 0 .5rem;
+  }
+
+  footer {
+    font-size: .9rem;
+    line-height: 1.4;
+    padding: 1.25rem .5rem 0;
+  }
+}

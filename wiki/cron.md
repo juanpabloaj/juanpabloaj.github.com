@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: wiki-note
 title: cron
 ---
 Es recomendable definir algunas variables en crontab, como

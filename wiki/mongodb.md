@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: wiki-note
 title : MongoDB
 ---
 Mostrar las bases de datos

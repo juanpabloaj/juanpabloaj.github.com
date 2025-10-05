@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: wiki-note
 title: k3s
 ---
 Agregar repositorio privado sin TLS ni autenticación, en `/etc/rancher/k3s/registries.yaml

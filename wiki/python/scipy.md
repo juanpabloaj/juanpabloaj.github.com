@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: wiki-note
 title : scipy
 ---
 ### Ajuste de curva y ploteo

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: wiki-note
 title: sudo
 ---
 Usuarios sin password en `sudo`.

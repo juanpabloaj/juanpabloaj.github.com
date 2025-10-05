@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: wiki-note
 title: jekyll
 ---
 lanzar jekyll como servicio y auto actualizar cuando de modifique algún archivo fuente

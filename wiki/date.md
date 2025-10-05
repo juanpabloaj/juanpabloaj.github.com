@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: wiki-note
 title: date
 ---
 Crear un directorio llamado la fecha actual

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: wiki-note
 title : MinGW
 ---
 Compiladores gcc, g++, fortran, etc para windows.

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: wiki-note
 title: gsrc
 ---
 Si no se tiene permisos de administrado se pueden instalar herramientas gnu (gcc, etc).

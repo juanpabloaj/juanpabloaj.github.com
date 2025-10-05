@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<nav class="breadcrumb" aria-label="Breadcrumb"><a href="{{ '/' | relative_url }}">Home</a> /</nav>
+
+{% assign posts_list = site.posts %}
+{% if page.limit %}
+  {% assign posts_list = posts_list | slice: 0, page.limit %}
+{% endif %}
+
+<ul class="list">
+  {% for post in posts_list %}
+    <li class="item">
+      <span class="date">{{ post.date | date: '%Y-%m-%d' }}</span>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>

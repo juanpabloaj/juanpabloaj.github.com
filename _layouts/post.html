@@ -1,98 +1,28 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+---
+layout: default
+---
 
-    <!-- Le styles -->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="/css/style.css"
-      type="text/css"
-      media="screen"
-    />
-    <link
-      rel="stylesheet"
-      href="/css/syntax.css"
-      type="text/css"
-      media="screen"
-    />
-    <title>{{ page.title }}</title>
-    <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(["_setAccount", "UA-16949831-9"]);
-      _gaq.push(["_trackPageview"]);
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="{{ '/' | relative_url }}">Home</a> /
+  <a href="{{ '/posts/' | relative_url }}">Writing</a> /
+</nav>
 
-      (function () {
-        var ga = document.createElement("script");
-        ga.type = "text/javascript";
-        ga.async = true;
-        ga.src =
-          ("https:" == document.location.protocol
-            ? "https://ssl"
-            : "http://www") + ".google-analytics.com/ga.js";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(ga, s);
-      })();
-    </script>
-  </head>
+<h1>{{ page.title }}</h1>
+<p class="meta">{{ page.date | date: '%Y-%m-%d' }}</p>
 
-  <body>
-    {% include navbar.html %}
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3 hidden-xs hidden-sm">
-          <h3>Posts</h3>
-          {% for post in site.posts %}
-          <div class="enlaceGris">
-            <div><a href="{{ post.url }}">{{ post.title }}</a></div>
-          </div>
-          {% endfor %}
-        </div>
-        <div class="col-md-8">
-          <div class="post_date">
-            <h1>{{ page.title }}</h1>
-            {{ page.date | date_to_string }}
-          </div>
-          </br>
-          {{ content }}
-          <hr />
-          {% if page.comments %}
-          <div id="disqus_thread"></div>
-          <script type="text/javascript">
-            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-            var disqus_shortname = "juanpabloaj"; // required: replace example with your forum shortname
+<article>
+  {{ content }}
+</article>
 
-            /* * * DON'T EDIT BELOW THIS LINE * * */
-            (function () {
-              var dsq = document.createElement("script");
-              dsq.type = "text/javascript";
-              dsq.async = true;
-              dsq.src = "https://" + disqus_shortname + ".disqus.com/embed.js";
-              (
-                document.getElementsByTagName("head")[0] ||
-                document.getElementsByTagName("body")[0]
-              ).appendChild(dsq);
-            })();
-          </script>
-          <noscript
-            >Please enable JavaScript to view the
-            <a href="https://disqus.com/?ref_noscript"
-              >comments powered by Disqus.</a
-            ></noscript
-          >
-          {% endif %}
-        </div>
-      </div>
-
-      {% include footer.html %}
-    </div>
-  </body>
-</html>
+<nav class="postnav">
+  <span>
+    {% if page.previous %}
+      <a href="{{ page.previous.url | relative_url }}">Previous: {{ page.previous.title }}</a>
+    {% endif %}
+  </span>
+  <span>
+    {% if page.next %}
+      <a href="{{ page.next.url | relative_url }}">Next: {{ page.next.title }}</a>
+    {% endif %}
+  </span>
+</nav>

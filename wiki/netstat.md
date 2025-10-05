@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: wiki-note
 title: netstat
 ---
 listar procesos y puertos relacionados

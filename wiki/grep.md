@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: wiki-note
 title: grep
 ---
 buscar dos expresiones diferentes en un archivo

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: wiki-note
 title: virtualenvwrapper
 ---
 Crear entorno virtual llamada `env1`

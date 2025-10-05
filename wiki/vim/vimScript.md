@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: wiki-note
 title: Vim Scripts
 ---
 Mostrar el tipo de archivo

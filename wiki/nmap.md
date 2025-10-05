@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: wiki-note
 title: nmap
 ---
 Escanear puerto 22 en rango de ips

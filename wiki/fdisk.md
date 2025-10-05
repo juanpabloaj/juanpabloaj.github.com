@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: wiki-note
 title: fdisk
 ---
 Mostrar los discos y particiones

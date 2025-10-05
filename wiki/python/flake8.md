@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: wiki-note
 title : flake8
 ---
 Ignorar error W191, producido por usar `\t`

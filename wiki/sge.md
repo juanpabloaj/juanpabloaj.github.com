@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: wiki-note
 title: SGE
 ---
 un host de ejecución no se carga, no se ven sus características al hacer

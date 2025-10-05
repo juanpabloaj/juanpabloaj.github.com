@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: wiki-note
 title: npm
 ---
 Instalar y agregar a archivo `package.json`

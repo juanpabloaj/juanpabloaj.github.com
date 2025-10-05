@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: wiki-note
 title : perl
 ---
 Fecha de hoy y en tres días más

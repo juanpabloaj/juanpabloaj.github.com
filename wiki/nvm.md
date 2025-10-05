@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: wiki-note
 title: nvm
 ---
 Definir version por defecto a usar

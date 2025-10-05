@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: wiki-note
 title: SSH
 ---
 Para comandos remotos

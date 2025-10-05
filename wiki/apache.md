@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: wiki-note
 title : apache2
 ---
 ## public_html

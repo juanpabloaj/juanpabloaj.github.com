@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: wiki-note
 title: rancher
 ---
 Cambiar de contexto

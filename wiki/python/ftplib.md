@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: wiki-note
 title : ftplib
 ---
 Listar el contenido de un directorio FTP

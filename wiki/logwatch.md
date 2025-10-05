@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: wiki-note
 title: logwatch 
 ---
 Revisar los logs de un servicio específico

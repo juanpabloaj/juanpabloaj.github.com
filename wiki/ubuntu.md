@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: wiki-note
 title : Ubuntu
 ---
 Bloquear y desbloquear la pantalla desde la terminal

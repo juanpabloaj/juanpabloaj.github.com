@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: wiki-note
 title: task spooler
 ---
 Lanzar trabajos con etiquetas

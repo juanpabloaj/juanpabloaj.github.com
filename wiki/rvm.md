@@ -1,5 +1,5 @@
 --- 
-layout: default
+layout: wiki-note
 title : rvm
 ---
 [rvm site](https://rvm.beginrescueend.com/)  

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: wiki-note
 title: redimencionar Imágenes
 ---
 Sera necesario tener instalado imagemagic

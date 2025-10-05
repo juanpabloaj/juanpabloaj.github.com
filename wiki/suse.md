@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: wiki-note
 title : Suse
 ---
 Para definir en proxy http, en el archivo `/etc/sysconfig/proxy` crear la variable

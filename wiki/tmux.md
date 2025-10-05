@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: wiki-note
 title : tmux
 ---
 En tmux hay al menos tres conceptos claves:

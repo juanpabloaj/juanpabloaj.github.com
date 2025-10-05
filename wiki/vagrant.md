@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: wiki-note
 title: vagrant
 ---
 Crear `Vagrantfile` inicial de ejemplo

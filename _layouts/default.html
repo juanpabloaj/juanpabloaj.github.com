@@ -1,71 +1,26 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>{{ page.title | default: site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+</head>
+<body>
+  <main class="wrap">
+    {{ content }}
+  </main>
 
-    <!-- Le styles -->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"
-    />
-    <script src="//cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="/css/style.css"
-      type="text/css"
-      media="screen"
-    />
-    <link
-      rel="stylesheet"
-      href="/css/syntax.css"
-      type="text/css"
-      media="screen"
-    />
-    <title>{{ page.title }}</title>
-    <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(["_setAccount", "UA-16949831-9"]);
-      _gaq.push(["_trackPageview"]);
-
-      (function () {
-        var ga = document.createElement("script");
-        ga.type = "text/javascript";
-        ga.async = true;
-        ga.src =
-          ("https:" == document.location.protocol
-            ? "https://ssl"
-            : "http://www") + ".google-analytics.com/ga.js";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(ga, s);
-      })();
-    </script>
-  </head>
-
-  <body>
-    {% include navbar.html %}
-    <div class="container">
-      <div id="wiki_content">
-        <h1>{{ page.title }}</h1>
-        {{ content }}
-      </div>
-      {% include footer.html %}
-    </div>
-    <script type="text/javascript" charset="utf-8">
-      /**
-       * AnchorJS v3.2.0 options and selector
-       */
-
-      (function () {
-        "use strict";
-
-        anchors.options.placement = "right";
-
-        anchors.add("h2, h3");
-      })();
-    </script>
-  </body>
+  <footer class="wrap">
+    <small>
+      <a class="footlink" href="{{ '/posts' | relative_url }}">Writing</a> ·
+      <a class="footlink" href="{{ '/wiki' | relative_url }}">Wiki</a> ·
+      <a class="footlink" href="https://github.com/juanpabloaj" target="_blank" rel="noopener">GitHub</a> ·
+      <a class="footlink" href="https://www.linkedin.com/in/juanpabloaj" target="_blank" rel="noopener">LinkedIn</a> ·
+      <a class="footlink" href="{{ '/feed.xml' | relative_url }}">RSS</a> ·
+      © {{ site.time | date: '%Y' }} {{ site.author | default: 'Juan Pablo AJ' }}
+    </small>
+  </footer>
+</body>
 </html>

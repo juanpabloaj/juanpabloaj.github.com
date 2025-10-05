@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: wiki-note
 title: ssmtp
 ---
 Para evitar el uso de sendmail, utilizando un servidor externo de smtp.

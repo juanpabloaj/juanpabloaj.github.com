@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: wiki-note
 title: awk
 ---
 La suma del tamaño de los archivos

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: wiki-note
 title: hwclock
 ---
 Ver la hora del sistema

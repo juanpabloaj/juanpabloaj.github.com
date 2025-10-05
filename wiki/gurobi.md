@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: wiki-note
 title: Gurobi
 ---
 # Install 4.5.1

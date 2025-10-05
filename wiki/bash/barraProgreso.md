@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: wiki-note
 title: redimencionar Imágenes
 ---
 primero un ejemplo de un contador en una linea 

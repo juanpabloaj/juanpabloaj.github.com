@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: wiki-note
 title: ldconfig
 ---
 Para actualizar/configurar las librerías dinámicas.  
