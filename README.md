@@ -1,5 +1,8 @@
 ## juanpabloaj
 
+Crear post
+
+    rake post[post-title]
 
 ## jekyll
 
