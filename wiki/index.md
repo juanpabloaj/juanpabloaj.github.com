@@ -40,6 +40,7 @@ title : Wiki
 [jq](/wiki/jq)
 [jupyter](/wiki/jupyter)
 [k3s](/wiki/k3s)
+[kafka](/wiki/kafka)
 [kubernetes](/wiki/kubernetes)
 [latex](/wiki/latex)
 [logwatch](/wiki/logwatch)
