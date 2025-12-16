@@ -124,6 +124,10 @@ Listar nombres de archivos que han cambiado respecto a otra rama (rama develop)
 
     git diff develop --name-only
 
+Ignorar cambios de espacios en blanco y modificaciones de salto de línea
+
+    git diff -w
+
 ### rev-list
 
 Obtener hash del último commit antes de la fecha
