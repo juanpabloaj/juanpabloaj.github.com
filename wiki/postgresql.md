@@ -37,6 +37,14 @@ Listar tablas
 
     \dt
 
+Listar schemas
+
+    \dn
+
+Listar tablas en un schema
+
+    \dt schema_name.*
+
 Describir tabla
 
     \d table_name
