@@ -112,6 +112,10 @@ Diferencias en resumen
 
     git diff --stat
 
+Diferencias excluyendo un patrón (archivos de test en Go)
+
+    git diff '*.go' ':(exclude)*_test.go'
+
 Ver solamente los cambios ya agregados
 
     git diff --cached
