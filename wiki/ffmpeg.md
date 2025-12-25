@@ -15,6 +15,10 @@ Extraer image desde frame
 
     ffmpeg -i vodeo.mp4 -ss 00:00:08.5 -frames:v 1 screenshot.png
 
+Modificar imagen para reel de Instagram (9:16)
+
+    ffmpeg -i image.jpeg -vf "pad=width=iw:height=trunc(iw*16/9/2)*2:x=(ow-iw)/2:y=(oh-ih)/2:color=black" image_for_reel.jpeg
+
 Subir fps de 30 a 60
 
     ffmpeg -i file.mp4 -filter:v "setpts=PTS/2" -r 60 changed_file.mp4
