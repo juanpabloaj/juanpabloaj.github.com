@@ -6,10 +6,7 @@ title: go
 Después de una primera instalación de Go, es recomendable agregar algunas herramientas.
 
     go install golang.org/x/tools/gopls@latest
-
-Instalar goimports
-
-    go get golang.org/x/tools/cmd/goimports
+    go install golang.org/x/tools/cmd/goimports@latest
 
 Agregar GOPATH al `~/.bash_profile`
 
