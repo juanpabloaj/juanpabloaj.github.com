@@ -162,10 +162,14 @@ title : Wiki
 [cpp](/wiki/cpp)
 [elixir](/wiki/elixir)
 [fortran](/wiki/fortran)
-[go](/wiki/go)
 [javascript](/wiki/javascript)
 [python](/wiki/python)
 [ruby](/wiki/ruby)
+
+### Go
+
+[go](/wiki/go)
+[delve](/wiki/go/delve)
 
 ## Control de versiones
 
