@@ -120,6 +120,10 @@ Ver solamente los cambios ya agregados
 
     git diff --cached
 
+Listar archivos todavía no agregados (untracked)
+
+    git status --untracked-files=all --short
+
 Listar solo los nombres de los archivos modificados
 
     git ls-files -m
