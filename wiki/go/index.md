@@ -4,9 +4,12 @@ title: go
 ---
 
 Después de una primera instalación de Go, es recomendable agregar algunas herramientas.
-
     go install golang.org/x/tools/gopls@latest
     go install golang.org/x/tools/cmd/goimports@latest
+
+Si se está usando `vim-go`, en neovim usar el comando
+
+    :GoInstallBinaries
 
 Agregar GOPATH al `~/.bash_profile`
 
