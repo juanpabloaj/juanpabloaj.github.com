@@ -70,9 +70,20 @@ Para tener disponible los paquetes instalados de forma global, agregar al `~/.ba
     asdf install golang 1.21.1
     asdf global golang 1.21.1
 
+## vscode y zsh
+
+vscode utiliza por defecto zsh, para tener en vscode lo instalado con asdf, agregar al `~/.zshrc`
+
+    # asdf location, in my case is in $HOME/opt
+    export PATH=$HOME/opt/bin:$PATH
+
+    export ASDF_DATA_DIR=/Users/pablo/.asdf
+    export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+
 ## Referencias
 
 * https://asdf-vm.com
+* https://asdf-vm.com/guide/getting-started.html
 * https://github.com/asdf-vm/asdf-nodejs
 * https://github.com/asdf-vm/asdf-erlang
 * https://github.com/asdf-community/asdf-python
