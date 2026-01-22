@@ -44,6 +44,7 @@ title : Wiki
 [kubernetes](/wiki/kubernetes)
 [latex](/wiki/latex)
 [logwatch](/wiki/logwatch)
+[lsof](/wiki/lsof)
 [make](/wiki/make)
 [maruku](/wiki/maruku)
 [matlab](/wiki/matlab)

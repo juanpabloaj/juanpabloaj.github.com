@@ -29,6 +29,10 @@ Buscar por nombre ignorando algunos directorios, en este caso ignorando los dire
 
 por fecha
 
+Buscar archivos de los últimos 7 días (`-mtime -7`) que contengan checkboxes sin marcar
+
+    find . -type f -name "*.md" -mtime -7 -exec grep -l "\- \[ \]" {} \; | xargs ls -lt
+
 Buscar archivos creados después de la fecha exacta
 
     $ touch -d "13 may 2001 17:54:19" marker
