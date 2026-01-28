@@ -9,6 +9,8 @@ Entrar a posgres, con el usuario postgres
 
     psql -U postgres
 
+    psql -U postgres -h localhost
+
 Ejecutar comando sin paginación
 
     psql -P pager -Upostgres myDatabase -c "select * from myTable"

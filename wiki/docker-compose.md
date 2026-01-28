@@ -33,6 +33,24 @@ Para que el ancho del terminal se mantenga al interior del contenedor
 
     docker-compose exec -e COLUMNS=$COLUMNS -e LINES=$LINES develop sh
 
+### Ejemplo docker-compose.yml
+
+```
+services:
+  postgres:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres
+    ports:
+      - "5432:5432"
+```
+
+Entrar al contenedor
+
+    docker-compose exec postgres psql -U postgres
+
 
 ### Referencias
 
