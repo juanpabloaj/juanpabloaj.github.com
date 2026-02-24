@@ -13,11 +13,11 @@ O
     chmod 0440 /etc/sudoers.d/pablo
 
 
-En el archivo sudoers el orden importa, si el usuario m5stack pertenece al grupo wheel, y el grupo wheel tiene permisos para usar sudo con password, entonces el usuario m5stack también tendrá que usar password, por eso es importante colocar la línea de m5stack después de la línea del grupo wheel.
+En el archivo sudoers el orden importa, si el usuario myuser pertenece al grupo wheel, y el grupo wheel tiene permisos para usar sudo con password, entonces el usuario myuser también tendrá que usar password, por eso es importante colocar la línea de myuser después de la línea del grupo wheel.
 
-    unitv2# cat /etc/sudoers
+    $ cat /etc/sudoers
     root   ALL=(ALL) ALL
     %wheel ALL=(ALL) ALL
     %sudo  ALL=(ALL) ALL
     %wheel ALL=(ALL) ALL
-    m5stack ALL=(ALL) NOPASSWD:ALL
+    myuser ALL=(ALL) NOPASSWD:ALL
