@@ -271,3 +271,13 @@ pre code {
   padding: 0;
   background: transparent;
 }
+
+/* Prompt blocks: keep line breaks but allow wrapping for readability */
+.language-prompt pre,
+pre code.language-prompt,
+.language-prompt code {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  font-family: inherit;
+}
