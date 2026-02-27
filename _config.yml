@@ -14,3 +14,5 @@ permalink:   pretty
 kramdown:
   auto_ids: true
   input: GFM
+
+google_analytics: G-NEFV5441Y5
