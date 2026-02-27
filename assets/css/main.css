@@ -2,6 +2,8 @@
   --max-ch: 60ch;
   --lh: 1.6;
   --pad: 18px;
+  --font-body: "Avenir Next", "IBM Plex Sans", "Nunito Sans", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
   --fg: #111111;
   --muted: #555;
   --bg: #FFFFFF;
@@ -21,7 +23,7 @@
 }
 
 html {
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Noto Sans", "Liberation Sans", sans-serif;
+  font-family: var(--font-body);
   font-size: 16px;
   line-height: var(--lh);
   color: var(--fg);
@@ -97,9 +99,9 @@ ul.list {
 .item {
   display: grid;
   grid-template-columns: 11ch 1fr;
-  column-gap: .75rem;
+  column-gap: 1rem;
   align-items: baseline;
-  margin: 0 0 .35rem;
+  margin: 0 0 .45rem;
 }
 
 .item a {
@@ -117,21 +119,36 @@ ul.list {
   justify-self: end;
   white-space: nowrap;
   font-variant-numeric: tabular-nums;
+  font-size: .86rem;
+  line-height: 1.2;
+  opacity: .72;
 }
 
 /* Typography: post/wiki titles and meta */
 h1 {
+  font-family: var(--font-display);
   font-size: 1.8rem;
-  font-weight: 600;
-  letter-spacing: -0.005em;
+  font-weight: 700;
+  letter-spacing: -0.01em;
   line-height: 1.2;
   margin: 0 0 .5rem;
 }
 
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  letter-spacing: -0.005em;
+  line-height: 1.25;
+}
+
 .meta {
   color: var(--muted);
-  margin: 0 0 2rem;
+  margin: 0 0 1.6rem;
   font-variant-numeric: tabular-nums;
+  font-size: .86rem;
+  line-height: 1.2;
+  opacity: .72;
 }
 
 /* Article */
@@ -253,7 +270,15 @@ video {
 
   .date {
     justify-self: start;
-    margin-bottom: .125rem;
+    margin-bottom: .35rem;
+    font-size: .82rem;
+    opacity: .68;
+  }
+
+  .meta {
+    font-size: .82rem;
+    opacity: .68;
+    margin-bottom: 1.35rem;
   }
 
   article {
