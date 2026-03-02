@@ -11,9 +11,13 @@ Mostrar plugins disponibles
 
     asdf plugin-list
 
+Actualizar plugin
+
+    asdf plugin update python
+
 Mostrar versiones para un plugin
 
-    asdf list-all python
+    asdf list all python
 
 ### python
 
