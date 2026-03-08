@@ -4,7 +4,11 @@ comments: true
 title : From Agentic Reasoning to Deterministic Scripts
 categories:
 ---
-Trying to make AI agents progressively cheaper, faster, and more auditable over time.
+
+## TL;DR
+
+AI agents shouldn't solve the same task over and over.
+Their execution history could be used to detect recurring patterns and compile them into deterministic scripts, making agent systems progressively cheaper, faster, and more auditable.
 
 ## The Overhead of Routine Tasks
 
