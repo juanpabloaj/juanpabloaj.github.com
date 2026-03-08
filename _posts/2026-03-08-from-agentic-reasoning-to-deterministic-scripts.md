@@ -8,7 +8,9 @@ categories:
 ## TL;DR
 
 AI agents shouldn't solve the same task over and over.
-Their execution history could be used to detect recurring patterns and compile them into deterministic scripts, making agent systems progressively cheaper, faster, and more auditable.
+Their execution history could be used to detect recurring patterns and compile them into deterministic scripts.
+
+> The purpose of AI agents is not to execute tasks indefinitely, but to discover the procedures that replace them.
 
 ## The Overhead of Routine Tasks
 
