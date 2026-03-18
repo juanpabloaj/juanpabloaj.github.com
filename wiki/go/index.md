@@ -56,7 +56,15 @@ Al tener el directorio vendor las dependencies ser agregadas al repo para dismin
 
 Algo en contra de esta método es que el tamaño del repositorio incrementa, solo depender de logrus agrega 7.8MB al repo.
 
-### Referencias
+## Paquetes útiles
+
+### Bases de datos y migraciones
+
+- Generate type-safe code from SQL https://github.com/sqlc-dev/sqlc
+- A database migration tool https://github.com/pressly/goose
+- Declarative schema migrations https://github.com/ariga/atlas
+
+## Referencias
 
 -   https://jvns.ca/blog/2017/09/24/profiling-go-with-pprof/
 -   https://gowalker.org/net/http/pprof
