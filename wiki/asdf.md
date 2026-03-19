@@ -30,7 +30,7 @@ Instalar python 2 y 3
     asdf plugin-add python
     asdf install python 2.7.18
     asdf install python 3.10.8
-    asdf global python 3.10.8 2.7.18
+    asdf set -u python 3.10.8 2.7.18
 
 ### elixir
 
