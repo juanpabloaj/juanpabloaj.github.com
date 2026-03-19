@@ -19,7 +19,7 @@ Mostrar versiones para un plugin
 
     asdf list all python
 
-### python
+## python
 
 Dependencias de python
 
@@ -32,7 +32,7 @@ Instalar python 2 y 3
     asdf install python 3.10.8
     asdf set -u python 3.10.8 2.7.18
 
-### elixir
+## elixir
 
 Para usar observer o debugger de elixir
 
@@ -58,7 +58,7 @@ Borrar
 
     asdf uninstall elixir 1.11.4-otp-23
 
-### nodejs
+## nodejs
 
     asdf plugin add nodejs
     asdf install nodejs 16.14.2
@@ -68,7 +68,7 @@ Para tener disponible los paquetes instalados de forma global, agregar al `~/.ba
 
     export PATH=$(asdf where nodejs)/.npm/bin:$PATH
 
-### golang
+## golang
 
     asdf plugin-add golang
     asdf install golang 1.21.1
@@ -84,7 +84,59 @@ vscode utiliza por defecto zsh, para tener en vscode lo instalado con asdf, agre
     export ASDF_DATA_DIR=/Users/pablo/.asdf
     export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 
-## Referencias
+# Troubleshooting
+
+## Instalar Python 3.14 con asdf en macOS 12 Apple Silicon
+
+### Problema
+
+Al intentar `asdf install python 3.14.3` en macOS 12 (Monterey) con Apple Silicon (aarch64), el build falla con errores de linker como:
+
+```
+Undefined symbols for architecture x86_64:
+  "_libintl_bindtextdomain"
+  ...
+ld: symbol(s) not found for architecture x86_64
+```
+
+o bien:
+
+```
+ld: warning: ignoring file /opt/homebrew/opt/gettext/lib/libintl.dylib,
+building for macOS-x86_64 but attempting to link with file built for macOS-arm64
+```
+
+### Causa
+
+Dos problemas encadenados:
+
+1. Python 3.14 requiere `libintl` (parte de `gettext`) en macOS, pero el linker no la encuentra automáticamente.
+2. `brew upgrade gettext` falla en macOS 12 porque la fórmula de `gettext 1.0` tiene un bug con `json-c` (`spit.c:39:10: fatal error: 'json.h' file not found`).
+
+### Solución
+
+Usar la versión de gettext ya instalada (0.22.5) forzando la arquitectura arm64 explícitamente:
+
+```bash
+CFLAGS="-I/opt/homebrew/Cellar/gettext/0.22.5/include -arch arm64" \
+LDFLAGS="-L/opt/homebrew/Cellar/gettext/0.22.5/lib -lintl -arch arm64" \
+CPPFLAGS="-I/opt/homebrew/Cellar/gettext/0.22.5/include" \
+asdf install python 3.14.3
+```
+
+Para evitar que Homebrew intente actualizar gettext en el futuro:
+
+```bash
+brew pin gettext
+```
+
+### Entorno
+
+- macOS 12 (Monterey), Apple Silicon (aarch64)
+- Homebrew en `/opt/homebrew`
+- asdf para gestión de versiones de Python
+
+# Referencias
 
 * https://asdf-vm.com
 * https://asdf-vm.com/guide/getting-started.html
