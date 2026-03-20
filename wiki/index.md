@@ -63,14 +63,12 @@ title : Wiki
 [node](/wiki/node)
 [npm](/wiki/npm)
 [nsound](/wiki/nsound)
-[nvim](/wiki/nvim)
 [openshift](/wiki/openshift)
 [orb](/wiki/orb)
 [perl](/wiki/perl)
 [powershell](/wiki/powershell)
 [ps](/wiki/ps)
 [pwgen](/wiki/pwgen)
-[pyenv](/wiki/python/pyenv)
 [pyinstaller](/wiki/pyinstaller)
 [rabbitmq](/wiki/rabbitmq)
 [rake](/wiki/rake)
@@ -81,7 +79,6 @@ title : Wiki
 [rvm](/wiki/rvm)
 [screen](/wiki/screen)
 [sort](/wiki/sort)
-[sqlite](/wiki/sqlite)
 [ss](/wiki/ss)
 [ssh](/wiki/ssh)
 [ssmtp](/wiki/ssmtp)
@@ -96,7 +93,6 @@ title : Wiki
 [tsp](/wiki/tsp)
 [uname](/wiki/uname)
 [unzip](/wiki/unzip)
-[uv](/wiki/python/uv)
 [vagrant](/wiki/vagrant)
 [valgrind](/wiki/valgrind)
 [venv](/wiki/venv)
@@ -134,6 +130,7 @@ title : Wiki
 [MySQL](/wiki/mysql)
 [MongoDB](/wiki/mongodb)
 [PostgreSQL](/wiki/postgresql)
+[sqlite](/wiki/sqlite)
 
 ## CMS
 
@@ -165,8 +162,13 @@ title : Wiki
 [elixir](/wiki/elixir)
 [fortran](/wiki/fortran)
 [javascript](/wiki/javascript)
-[python](/wiki/python)
 [ruby](/wiki/ruby)
+
+### Python
+
+[python](/wiki/python)
+[pyenv](/wiki/python/pyenv)
+[uv](/wiki/python/uv)
 
 ### Go
 
