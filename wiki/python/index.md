@@ -113,17 +113,17 @@ Incrementar fecha en un día
 * [flask](/wiki/python/flask)
 * [ftplib](/wiki/python/ftplib)
 * [ipython](/wiki/python/ipython)
+* [logging](/wiki/python/logging)
 * [matplotlib](/wiki/python/matplotlib)
 * [networkx](/wiki/python/networkx)
 * [pandas](/wiki/python/pandas)
 * [prophet](/wiki/python/prophet)
-* [pyenv](/wiki/pyenv)
-* [uv](/wiki/python/uv)
+* [pyenv](/wiki/python/pyenv)
 * [scipy](/wiki/python/scipy)
 * [seaborn](/wiki/python/seaborn)
 * [setuptools](/wiki/python/setuptools)
 * [unittest](/wiki/python/unittest)
-* [logging](/wiki/python/logging)
+* [uv](/wiki/python/uv)
 
 ### Ejemplos
 
