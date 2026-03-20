@@ -118,6 +118,7 @@ Incrementar fecha en un día
 * [pandas](/wiki/python/pandas)
 * [prophet](/wiki/python/prophet)
 * [pyenv](/wiki/pyenv)
+* [uv](/wiki/python/uv)
 * [scipy](/wiki/python/scipy)
 * [seaborn](/wiki/python/seaborn)
 * [setuptools](/wiki/python/setuptools)
