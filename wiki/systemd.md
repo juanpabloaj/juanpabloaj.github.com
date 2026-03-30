@@ -72,6 +72,10 @@ Obtener logs usando fechas como filtro
     journalctl --since "1 hour ago"
     journalctl --since "2023-08-07" --until "1 hour ago"
 
+Obtener sin fechas del sistema y solo del servicio
+
+    journalctl -t service_name -o cat --since "2026-03-30 13:16:00" --no-pager
+
 ### Referencias
 
 -   https://www.redhat.com/sysadmin/introduction-path-units
