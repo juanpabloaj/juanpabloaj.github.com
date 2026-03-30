@@ -159,6 +159,13 @@ Copiar coincidencias expresión regular (caracteres entre espacios en blanco) de
 
     let @a='' | s:\s*\S*\s*:\=setreg('A', submatch(0)):n | put a
 
+### Buscar
+
+Buscar patrón seleccionado en visual, `y` + `/\V<C-r>"`
+
+* Selecciona el texto en visual (v, V, o `<C-v>`)
+* `y`para copiar
+* `/\V<C-r>"` - busca el texto literal (el \V desactiva regex)
 
 ### Folding
 
