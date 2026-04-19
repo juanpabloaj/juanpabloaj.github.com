@@ -212,6 +212,10 @@ Si se tiene creado el archivo `~/.ssh/config` se pueden usar los host definidos
 
 Cuando el primer `/` representa el `$HOME`
 
+Usando el plugin oil llegando al home
+
+    :e oil-ssh://usuario@servidor/
+
 ### :make
 
 Llamar al comando make con el respectivo archivo Makefile
