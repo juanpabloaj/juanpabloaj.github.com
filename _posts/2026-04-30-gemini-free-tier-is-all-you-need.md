@@ -92,7 +92,7 @@ I would not use Gemini free tier for:
 
 "Gemini free tier is all you need" is not true in general. It is true for a fairly common category of problems: personal automations, small prototypes, low-volume scripts, and mostly deterministic pipelines where the LLM covers one bounded step.
 
-This post is a practical note about something that has worked for me. If it is useful to you, leave a comment in the Hacker News thread where I will publish it; that feedback helps me decide whether it is worth writing more short notes like this.
+This post is a practical note about something that has worked for me. If it is useful to you, leave a comment in the [Hacker News thread](https://news.ycombinator.com/item?id=47969795) where I will publish it; that feedback helps me decide whether it is worth writing more short notes like this.
 
 ## References
 
