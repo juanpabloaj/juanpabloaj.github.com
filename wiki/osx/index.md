@@ -13,6 +13,10 @@ Abrir Chrome desde la consola
 
     open -a "Google Chrome" *.svg
 
+## Comandos
+
+* [pmset](/wiki/osx/pmset)
+
 ## pbpaste
 Pegar en la terminal
 
