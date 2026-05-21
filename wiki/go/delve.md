@@ -292,6 +292,59 @@ El programa se detendrá en la línea 14 solo cuando `sum` sea mayor que 5.
 
 6. **Reinicia en lugar de salir**: Usa `restart` en lugar de salir y volver a entrar si quieres ejecutar de nuevo.
 
+## Modo No Interactivo (scripted)
+
+A veces queremos ejecutar una sesión de Delve sin escribir comandos en vivo — por ejemplo para reproducir un bug, documentar una sesión, o pedir a un agente que ejecute el debugger por nosotros. Delve lee comandos desde `stdin`, así que podemos alimentarlo desde un archivo.
+
+### 1. Escribir un script con los comandos
+
+`session.txt`:
+
+```
+b calculateSum
+c
+args
+locals
+n
+n
+p sum
+c
+q
+y
+```
+
+> Nota: la `y` final responde al prompt *"Would you like to kill the process?"*
+> que Delve muestra al hacer `quit` con el proceso aún vivo.
+
+### 2. Ejecutar dlv redirigiendo stdin
+
+```bash
+dlv test --allow-non-terminal-interactive -- -test.run TestCalculateSum < session.txt
+```
+
+El flag `--allow-non-terminal-interactive` es necesario cuando `stdin` no es un TTY (redirección, pipe, CI); sin él Delve aborta con un error.
+
+### 3. Comandos en una sola línea
+
+Para sesiones cortas también puedes encadenar con:
+
+```bash
+dlv test --allow-non-terminal-interactive -- -test.run TestCalculateSum <<EOF
+b calculateSum
+c
+locals
+c
+q
+y
+EOF
+```
+
+### Limitaciones y tips
+
+- Cada línea del script equivale a pulsar `Enter` en la sesión: pega los comandos exactamente como los escribirías a mano.
+- `p variable` en la **línea donde se declara** falla con *"could not find symbol value for ..."* — la variable aún no existe en el frame. Pon el breakpoint **después** de la asignación o usa `n` antes de imprimir.
+- Si quieres capturar todo en un log: `dlv test ... < session.txt 2>&1 | tee debug.log`.
+
 ## Atajos de Teclado Comunes
 
 - `Enter`: Repetir el último comando
