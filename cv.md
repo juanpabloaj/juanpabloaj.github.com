@@ -34,9 +34,9 @@ My background in mathematical engineering has been useful in roles that combine 
 April 2024 to January 2026
 
 - Built and maintained backend services, REST APIs, and GraphQL microservices in Go.
-- Worked with containerized services deployed on GCP/GKE through CI/CD pipelines.
+- Deployed containerized services to GCP/GKE through CI/CD pipelines.
 - Improved backend reliability through automated testing practices.
-- Worked on SQL query tuning and backend performance improvements.
+- Tuned SQL queries and addressed backend performance bottlenecks.
 
 ### Pricing Analyst, Banco de Crédito e Inversiones (BCI)
 
@@ -59,9 +59,9 @@ February 2017 to April 2022
 
 - Developed HTTP services for telecommunications companies using Go and Python.
 - Built and improved automated testing workflows using Docker, GitLab CI, and Kubernetes.
-- Worked with Scrum and Kanban delivery workflows.
-- Worked on production service monitoring, including indexes, charts, and alerts.
-- Worked on resource utilization and response time improvements for production services.
+- Delivered features under Scrum and Kanban workflows.
+- Set up production service monitoring, including indexes, charts, and alerts.
+- Reduced resource utilization and response times for production services.
 - Participated in the full software lifecycle, from implementation to deployment and operation.
 
 ### Software Engineer, Universidad Adolfo Ibáñez
@@ -69,7 +69,7 @@ February 2017 to April 2022
 October 2016 to December 2016
 
 - Implemented software for mine scheduling and planning projects.
-- Worked with mixed-integer programming concepts and operational planning requirements.
+- Applied mixed-integer programming concepts to operational planning requirements.
 
 ### Geotechnical Software Engineer, E-Mining Technology
 
@@ -78,7 +78,7 @@ April 2013 to October 2016
 - Built scripts and software tools for numerical modeling, geotechnical analysis, surveillance, and mining stability analysis.
 - Used Python and R for data analysis and engineering workflows.
 - Automated manual technical analysis tasks for engineering teams.
-- Worked with multidisciplinary engineering and geology teams on large mining projects.
+- Collaborated with multidisciplinary engineering and geology teams on large mining projects.
 
 ### Earlier Technical and Research Work
 
