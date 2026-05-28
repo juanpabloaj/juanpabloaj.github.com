@@ -76,6 +76,7 @@ October 2016 to December 2016
 April 2013 to October 2016
 
 - Built scripts and software tools for numerical modeling, geotechnical analysis, surveillance, and mining stability analysis.
+- Analyzed field monitoring data from geotechnical instrumentation, including prism-based and radar-based measurements, to support operational risk assessment and engineering decisions.
 - Used Python and R for data analysis and engineering workflows.
 - Automated manual technical analysis tasks for engineering teams.
 - Collaborated with multidisciplinary engineering and geology teams on large mining projects.
