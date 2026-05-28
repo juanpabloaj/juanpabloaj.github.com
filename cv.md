@@ -89,7 +89,7 @@ April 2013 to October 2016
 - Taught an introductory Python programming course in the Department of Physics and Astronomy at Universidad de Valparaíso.
 - Supported research and software projects at Universidad de La Frontera, including AGROMOD, weather data platforms, WRF forecast visualization, and decision-support software for pasture-based beef production.
 - Supported mining planning research at Delphos, Universidad de Chile, including work on block model handling and scheduling-related tooling.
-- Administered and used Linux-based technical environments, including SGI Altix systems.
+- Administered and used Linux-based technical environments, including Beowulf clusters and SGI Altix systems.
 
 ## Community and Talks
 
