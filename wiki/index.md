@@ -174,6 +174,7 @@ title : Wiki
 ### Go
 
 [go](/wiki/go)
+[channels and errors](/wiki/go/channels-errors)
 [delve](/wiki/go/delve)
 [golang-migrate](/wiki/go/migrate)
 

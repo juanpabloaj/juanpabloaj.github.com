@@ -64,6 +64,10 @@ Algo en contra de esta método es que el tamaño del repositorio incrementa, sol
 - A database migration tool https://github.com/pressly/goose
 - Declarative schema migrations https://github.com/ariga/atlas
 
+## Notas
+
+- [channels and errors](/wiki/go/channels-errors)
+
 ## Referencias
 
 -   https://jvns.ca/blog/2017/09/24/profiling-go-with-pprof/
