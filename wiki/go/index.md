@@ -79,7 +79,9 @@ Algo en contra de esta método es que el tamaño del repositorio incrementa, sol
 
 ## Referencias
 
--   https://jvns.ca/blog/2017/09/24/profiling-go-with-pprof/
--   https://gowalker.org/net/http/pprof
--   https://godoc.org/golang.org/x/tools/cmd/goimports
--   https://stackoverflow.com/questions/14323872/using-forked-package-import-in-go
+- 100 Go Mistakes and How to Avoid Them https://www.manning.com/books/100-go-mistakes-and-how-to-avoid-them
+- https://jvns.ca/blog/2017/09/24/profiling-go-with-pprof/
+- https://gowalker.org/net/http/pprof
+- https://godoc.org/golang.org/x/tools/cmd/goimports
+- https://stackoverflow.com/questions/14323872/using-forked-package-import-in-go
+- https://github.com/avelino/awesome-go
