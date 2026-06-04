@@ -67,6 +67,12 @@ Algo en contra de esta método es que el tamaño del repositorio incrementa, sol
 ## Notas
 
 - [channels and errors](/wiki/go/channels-errors)
+- [service bootstrap](/wiki/go/service-bootstrap)
+- [http client and server](/wiki/go/http-client-server)
+- [docker service](/wiki/go/docker-service)
+- [testing http](/wiki/go/testing-http)
+- [service architecture](/wiki/go/service-architecture)
+- [functional options](/wiki/go/functional-options)
 
 ## Referencias
 
