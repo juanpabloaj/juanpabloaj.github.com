@@ -58,6 +58,9 @@ Algo en contra de esta método es que el tamaño del repositorio incrementa, sol
 
 ## Paquetes útiles
 
+* https://pkg.go.dev/golang.org/x/sync/errgroup
+* https://pkg.go.dev/github.com/google/go-cmp/cmp
+
 ### Bases de datos y migraciones
 
 - Generate type-safe code from SQL https://github.com/sqlc-dev/sqlc
