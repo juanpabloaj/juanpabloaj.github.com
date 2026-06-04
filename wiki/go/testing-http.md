@@ -12,7 +12,9 @@ servicios externos reales.
 func TestGetRecord(t *testing.T) {
 	server := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		if r.URL.Path != "/records/1" {
-			t.Fatalf("unexpected URL path: %s", r.URL.Path)
+			t.Errorf("unexpected URL path: %s", r.URL.Path)
+			http.Error(w, "unexpected path", http.StatusBadRequest)
+			return
 		}
 
 		w.WriteHeader(http.StatusOK)
