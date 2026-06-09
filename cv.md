@@ -23,6 +23,7 @@ My background in mathematical engineering has been useful in roles that combine 
 - Infrastructure: Docker, Kubernetes, Docker Compose, Linux, macOS.
 - Cloud and CI/CD: GCP/GKE, AWS, GitLab CI, Bitbucket Pipelines, Travis CI.
 - Databases: PostgreSQL, MySQL, MongoDB.
+- Messaging and event streaming: Apache Kafka, RabbitMQ.
 - Frameworks: Gin, Echo, Phoenix, Flask, Django, Express.
 - Domain-specific tools: R, Matlab, Scilab, Gurobi, mixed-integer programming, numerical methods, MPI, OpenMP, CUDA.
 - Version control: Git, Mercurial, Subversion.
@@ -34,6 +35,7 @@ My background in mathematical engineering has been useful in roles that combine 
 April 2024 to January 2026
 
 - Built and maintained backend services, REST APIs, and GraphQL microservices in Go.
+- Built event-driven services using Kafka for asynchronous, high-throughput messaging between microservices.
 - Deployed containerized services to GCP/GKE through CI/CD pipelines.
 - Improved backend reliability through automated testing practices.
 - Tuned SQL queries and addressed backend performance bottlenecks.
@@ -58,6 +60,7 @@ May 2022 to October 2023
 February 2017 to April 2022
 
 - Developed HTTP services for telecommunications companies using Go and Python.
+- Implemented asynchronous service-to-service messaging using RabbitMQ to decouple components and improve reliability.
 - Built and improved automated testing workflows using Docker, GitLab CI, and Kubernetes.
 - Delivered features under Scrum and Kanban workflows.
 - Set up production service monitoring, including indexes, charts, and alerts.
