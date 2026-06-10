@@ -35,7 +35,7 @@ RUN go build \
 
 ## Startup logs
 
-Al iniciar, loggear la versión del binario y la configuración efectiva. Esto
+Al iniciar, loggear la versión del binario y la configuración. Esto
 ayuda a diagnosticar imágenes, deploys y variables mal seteadas.
 
 ```go
@@ -145,7 +145,7 @@ if err := httpServer.Shutdown(shutdownCtx); err != nil {
 1. Configurar logger.
 2. Loggear build info.
 3. Cargar configuración.
-4. Loggear configuración efectiva.
+4. Loggear configuración.
 5. Crear clientes externos con timeouts.
 6. Crear adapters.
 7. Crear servicios de aplicación.
