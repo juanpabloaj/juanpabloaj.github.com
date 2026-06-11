@@ -12,20 +12,20 @@ Backend software engineer working mainly with Go and Python. Mathematical Civil 
 
 ## Summary
 
-Software engineer with more than 10 years of experience building backend services, automation workflows, and technical tools across telecommunications, mining, and research environments. Main work areas include HTTP APIs, REST and GraphQL services, high-concurrency web services, automated testing, SQL, Docker, Kubernetes, CI/CD pipelines, cloud-native deployments, and production-oriented Linux systems.
+Software engineer with more than 10 years of experience building backend services, automation workflows, and technical tools across telecommunications, mining, and research environments. Main work areas include REST and GraphQL services, high-concurrency web services, automated testing, SQL, Docker, Kubernetes, CI/CD pipelines, and Linux systems in production.
 
-My background in mathematical engineering has been useful in roles that combine software development with analytical work, optimization, data processing, or domain-specific technical constraints.
+A background in mathematical engineering has been useful in roles that combine software development with analytical work, optimization, data processing, or domain-specific technical constraints.
 
 ## Technical Skills
 
 - Languages: Go, Python, Elixir, JavaScript, Bash.
 - Backend: HTTP APIs, REST services, GraphQL services, microservices, SQL-backed applications.
-- Infrastructure: Docker, Kubernetes, Docker Compose, Linux, macOS.
+- Infrastructure: Docker, Docker Compose, Kubernetes, Linux.
 - Cloud and CI/CD: GCP/GKE, AWS, GitLab CI, Bitbucket Pipelines, Travis CI.
 - Databases: PostgreSQL, MySQL, MongoDB.
 - Messaging and event streaming: Apache Kafka, RabbitMQ.
 - Frameworks: Gin, Echo, Phoenix, Flask, Django, Express.
-- Domain-specific tools: R, Matlab, Scilab, Gurobi, mixed-integer programming, numerical methods, MPI, OpenMP, CUDA.
+- Scientific and numerical computing: R, Matlab, Scilab, Gurobi, mixed-integer programming, numerical methods, MPI, OpenMP, CUDA.
 - Version control: Git, Mercurial, Subversion.
 
 ## Experience
@@ -35,7 +35,7 @@ My background in mathematical engineering has been useful in roles that combine 
 April 2024 to January 2026
 
 - Built and maintained backend services, REST APIs, and GraphQL microservices in Go.
-- Built event-driven services using Kafka for asynchronous, high-throughput messaging between microservices.
+- Developed event-driven services using Kafka for asynchronous, high-throughput messaging between microservices.
 - Deployed containerized services to GCP/GKE through CI/CD pipelines.
 - Improved backend reliability through automated testing practices.
 - Tuned SQL queries and addressed backend performance bottlenecks.
@@ -52,8 +52,7 @@ November 2023 to March 2024
 
 May 2022 to October 2023
 
-- Completed an intensive English program at EF International Language Campuses in Cambridge, UK.
-- Took a planned career break after several years in telecommunications software development.
+- Planned career break; completed an intensive English program at EF International Language Campuses in Cambridge, UK.
 
 ### Senior Software Engineer, Zweicom
 
@@ -62,8 +61,8 @@ February 2017 to April 2022
 - Developed HTTP services for telecommunications companies using Go and Python.
 - Implemented asynchronous service-to-service messaging using RabbitMQ to decouple components and improve reliability.
 - Built and improved automated testing workflows using Docker, GitLab CI, and Kubernetes.
-- Delivered features under Scrum and Kanban workflows.
-- Set up production service monitoring, including indexes, charts, and alerts.
+- Delivered features in Scrum and Kanban teams.
+- Added Prometheus metrics to production services and monitored them with Grafana dashboards and alerts.
 - Reduced resource utilization and response times for production services.
 - Participated in the full software lifecycle, from implementation to deployment and operation.
 
@@ -78,7 +77,7 @@ October 2016 to December 2016
 
 April 2013 to October 2016
 
-- Built scripts and software tools for numerical modeling, geotechnical analysis, surveillance, and mining stability analysis.
+- Built scripts and software tools for numerical modeling, geotechnical monitoring, and mine stability analysis.
 - Analyzed field monitoring data from geotechnical instrumentation, including prism-based and radar-based measurements, to support operational risk assessment and engineering decisions.
 - Used Python and R for data analysis and engineering workflows.
 - Automated manual technical analysis tasks for engineering teams.
@@ -91,14 +90,14 @@ April 2013 to October 2016
 - Implemented numerical methods for stochastic differential equations using Matlab and C++ at Universidad de Valparaíso.
 - Taught an introductory Python programming course in the Department of Physics and Astronomy at Universidad de Valparaíso.
 - Supported research and software projects at Universidad de La Frontera, including AGROMOD, weather data platforms, WRF forecast visualization, and decision-support software for pasture-based beef production.
-- Supported mining planning research at Delphos, Universidad de Chile, including work on block model handling and scheduling-related tooling.
+- Contributed to mining planning research at Delphos, Universidad de Chile, including work on block model handling and scheduling-related tooling.
 - Administered and used Linux-based technical environments, including Beowulf clusters and SGI Altix systems.
 
 ## Community and Talks
 
 - Organized the Python Valparaíso y Viña del Mar programming meetup from August 2014 to August 2016.
 - Presented technical talks on Python packaging, Python unit testing, tox, PySide/PyInstaller, JavaScript, Node.js, Docker, and Git.
-- Presented earlier academic and technical talks on distributed computing, grid infrastructure, and scientific programming.
+- Gave earlier academic and technical talks on distributed computing, grid infrastructure, and scientific programming.
 
 ## Education
 
@@ -106,7 +105,7 @@ Mathematical Civil Engineering (Ingeniería Civil Matemática), Universidad de L
 
 Thesis: Comparison of algorithms for fast open-pit mine sequencing.
 
-Focus areas: computer science, applied mathematics, optimization, and engineering.
+Focus areas: computer science, applied mathematics, and optimization.
 
 ## Languages
 
