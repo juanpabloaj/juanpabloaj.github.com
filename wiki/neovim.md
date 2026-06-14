@@ -40,8 +40,10 @@ y se truncan si no caben en el ancho de la ventana. Para verlos completos:
 
 Defaults útiles de Neovim:
 
-* `[d` / `]d` — saltar al diagnóstico previo/siguiente.
-* `<C-W>d` — mostrar diagnóstico bajo el cursor (`open_float`).
+* `[d` / `]d` - saltar al diagnóstico previo/siguiente.
+* `<C-W>d` - mostrar diagnóstico bajo el cursor (`open_float`).
+* `gq` - formatear, separar una linea en varias.
+* `J` - unir varias lineas en una sola.
 
 Mapeo propio (en `~/.config/nvim/lua/init.lua`):
 
