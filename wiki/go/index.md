@@ -18,6 +18,11 @@ Agregar GOPATH al `~/.bash_profile`
 
 Instalar paquetes binarios, ejemplo con mockgen
 
+Instalar golangci-lint
+
+    # go install github.com/golangci/golangci-lint/cmd/golangci-lint@v1.61.0 or
+    go install github.com/golangci/golangci-lint/cmd/golangci-lint@vlatest
+
 Go version < 1.16
 
     GO111MODULE=on go get github.com/golang/mock/mockgen@v1.6.0
