@@ -20,7 +20,20 @@ Instalar paquetes binarios, ejemplo con mockgen
 
 Instalar golangci-lint
 
-    go install github.com/golangci/golangci-lint/cmd/golangci-lint@v1.61.0
+    go install github.com/golangci/golangci-lint/v2/cmd/golangci-lint@v2.12.2
+
+Desde la v2 la ruta del módulo lleva el sufijo `/v2` (*semantic import
+versioning*: todo major ≥ 2 va incluido en la ruta), por eso el comando de
+la v1 ya no instala la v2.
+
+`@latest` solo resuelve dentro de la ruta que escribes, no cruza majors:
+
+    .../golangci-lint/cmd/golangci-lint@latest       # última v1.x
+    .../golangci-lint/v2/cmd/golangci-lint@latest    # última v2.x
+
+Para saber el major vigente no le preguntes a `go`, mira los tags del repo:
+
+    git ls-remote --tags --refs --sort='-v:refname' https://github.com/golangci/golangci-lint | head -n 1
 
 Go version < 1.16
 
