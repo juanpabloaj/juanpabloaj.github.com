@@ -20,8 +20,7 @@ Instalar paquetes binarios, ejemplo con mockgen
 
 Instalar golangci-lint
 
-    # go install github.com/golangci/golangci-lint/cmd/golangci-lint@v1.61.0 or
-    go install github.com/golangci/golangci-lint/cmd/golangci-lint@vlatest
+    go install github.com/golangci/golangci-lint/cmd/golangci-lint@v1.61.0
 
 Go version < 1.16
 
@@ -90,3 +89,4 @@ Algo en contra de esta método es que el tamaño del repositorio incrementa, sol
 - https://godoc.org/golang.org/x/tools/cmd/goimports
 - https://stackoverflow.com/questions/14323872/using-forked-package-import-in-go
 - https://github.com/avelino/awesome-go
+- https://golangci-lint.run/welcome/install/#install-from-sources
